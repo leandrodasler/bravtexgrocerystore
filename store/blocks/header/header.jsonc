@@ -1,0 +1,268 @@
+{
+	"header": {
+		"blocks": ["header-layout.desktop", "header-layout.mobile"]
+	},
+	"header.full": {
+		"blocks": ["header-layout.desktop", "header-layout.mobile"],
+		"title": "Header"
+	},
+	/*Header Desktop*/
+	"header-layout.desktop": {
+		"children": [
+			"flex-layout.row#1-desktop",
+			"flex-layout.row#2-desktop",
+			"sticky-layout#3-desktop",
+			"flex-layout.row#4-desktop"
+		],
+		"title": "Header - Desktop"
+	},
+	"flex-layout.row#1-desktop": {
+		"children": ["telemarketing"],
+		"props": {
+			"fullWidth": true
+		}
+	},
+	"flex-layout.row#2-desktop": {
+		"props": {
+			"blockClass": "menu-link",
+			"preventHorizontalStretch": false,
+			"preventVerticalStretch": true,
+			"fullWidth": true
+		},
+		"children": ["flex-layout.row#topbar-desktop"]
+	},
+	"flex-layout.row#topbar-desktop": {
+		"props": {
+			"blockClass": "menu-link-top"
+		},
+		"children": ["flex-layout.col#top-bar-1", "flex-layout.col#top-bar-2"]
+	},
+	"flex-layout.col#spacer": {
+		"props": {
+			"width": "grow"
+		}
+	},
+	"sticky-layout#3-desktop": {
+		"props": {
+			"blockClass": "sticky-header"
+		},
+		"children": ["flex-layout.row#3-desktop"]
+	},
+	"flex-layout.row#3-desktop": {
+		"props": {
+			"blockClass": "main-header",
+			"horizontalAlign": "center",
+			"verticalAlign": "center",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"fullWidth": true
+		},
+		"children": [
+			"flex-layout.col#logo-desktop",
+			"flex-layout.col#spacer",
+			"search-bar#biggy",
+			"flex-layout.col#spacer",
+			"flex-layout.row#icons-desktop"
+		]
+	},
+	"flex-layout.row#icons-desktop": {
+		"props": {
+			"blockClass": "icons-header"
+		},
+		"children": ["login", "menu-item#wish-list", "minicart.v2"]
+	},
+	"login": {
+		"props": {
+			"emailAndPasswordTitle": "entrar com e-mail e senha",
+			"accessCodeTitle": "receber código de acesso por e-mail",
+			"emailPlaceholder": "e-mail",
+			"passwordPlaceholder": "senha",
+			"showPasswordVerificationIntoTooltip": true,
+			"iconLabel": "Entre ou Cadastre-se"
+		}
+	},
+	"flex-layout.col#logo-desktop": {
+		"props": {
+			"verticalAlign": "middle",
+			"blockClass": "logo-desktop"
+		},
+		"children": ["logo#desktop"]
+	},
+	"menu-item#wish-list": {
+		"props": {
+			"blockClass": "wishlist-custom",
+			"id": "menu-item-wish-list",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/wishlist",
+				"noFollow": false,
+				"tagTitle": "minhas listas",
+				"text": "Minhas Listas"
+			},
+			"iconProps": {
+				"id": "list-icon",
+				"size": 32,
+				"viewBox": "0 0 32 32",
+				"activeClassName": "wishlist-active-heart",
+				"mutedClassName": "wishlist-muted-heart"
+			},
+			"iconToTheLeft": true
+		}
+	},
+
+	"flex-layout.row#4-desktop": {
+		"props": {
+			"blockClass": "category-menu-header",
+			"horizontalAlign": "center",
+			"verticalAlign": "center",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"fullWidth": true
+		},
+		"children": ["flex-layout.col#category-menu"]
+	},
+
+	"flex-layout.col#category-menu": {
+		"props": {
+			"verticalAlign": "middle"
+		},
+		"children": ["vtex.menu@2.x:menu#category-menu"]
+	},
+	"logo#desktop": {
+		"props": {
+			"title": "Logo",
+			"href": "/",
+			"url": "https://bravtexgrocerystore.vteximg.com.br/arquivos/logo-vtex-v5.png",
+			"width": "100"
+		}
+	},
+	/*Header Mobile*/
+	"header-layout.mobile": {
+		"children": [
+			"flex-layout.row#1-mobile",
+			"sticky-layout#1-mobile",
+			"sticky-layout#1-tablet",
+			"flex-layout.row#3-mobile",
+			"flex-layout.row#4-mobile"
+		],
+		"title": "Header - Mobile"
+	},
+	"sticky-layout#1-tablet": {
+		"props": {
+			"blockClass": "sticky-tablet"
+		},
+		"children": ["flex-layout.row#main-tablet"],
+		"title": "Sticky Layout - Tablet"
+	},
+	"flex-layout.row#main-tablet": {
+		"children": ["drawer", "logo#mobile", "flex-layout.col#spacer", "flex-layout.row#icons-tablet"],
+		"props": {
+			"blockClass": "main-header-mobile",
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true
+		}
+	},
+	"flex-layout.row#icons-tablet": {
+		"props": {
+			"blockClass": "icons-header"
+		},
+		"children": ["menu-item#wish-list", "minicart.v2", "login"]
+	},
+	"sticky-layout#1-mobile": {
+		"props": {
+			"blockClass": "sticky-mobile"
+		},
+		"children": ["flex-layout.row#2-mobile"]
+	},
+	"flex-layout.row#1-mobile": {
+		"props": {
+			"blockClass": "menu-link",
+			"horizontalAlign": "center",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"fullWidth": true
+		},
+		"children": ["flex-layout.row#topbar-mobile"]
+	},
+	"flex-layout.row#topbar-mobile": {
+		"props": {
+			"blockClass": "menu-link-top-mobile",
+			"horizontalAlign": "center"
+		},
+		"children": []
+	},
+	"flex-layout.row#2-mobile": {
+		"children": ["drawer", "logo#mobile", "flex-layout.col#spacer", "flex-layout.row#icons-mobile"],
+		"props": {
+			"blockClass": "main-header-mobile",
+			"preventHorizontalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true
+		}
+	},
+	"flex-layout.row#3-mobile": {
+		"props": {
+			"blockClass": "row-searchbar",
+			"horizontalAlign": "center",
+			"fullWidth": true
+		},
+		"children": ["search-bar#biggy"]
+	},
+	"flex-layout.row#4-mobile": {
+		"props": {
+			"blockClass": "row-localization",
+			"fullWidth": true
+		},
+		"children": ["flex-layout.row#localization-mobile"]
+	},
+
+	"flex-layout.row#icons-mobile": {
+		"props": {
+			"blockClass": "icons-header"
+		},
+		"children": ["login", "menu-item#wish-list-mobile", "minicart.v2"]
+	},
+	"menu-item#wish-list-mobile": {
+		"props": {
+			"blockClass": "wishlist-custom",
+			"id": "menu-item-wish-list",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/wishlist",
+				"noFollow": false,
+				"tagTitle": "minhas listas",
+				"text": ""
+			},
+			"iconProps": {
+				"id": "list-icon",
+				"size": 32,
+				"viewBox": "0 0 32 32",
+				"activeClassName": "wishlist-active-heart",
+				"mutedClassName": "wishlist-muted-heart"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	"drawer": {
+		"children": ["menu#drawer"]
+	},
+	"menu#drawer": {
+		"children": ["menu#header-mobile", "flex-layout.row#icons-desktop"],
+		"props": {
+			"orientation": "vertical"
+		}
+	},
+	"logo#mobile": {
+		"props": {
+			"title": "Logo",
+			"href": "/",
+			"url": "https://gigadigital.vteximg.com.br/arquivos/logo-vtex-v5.png",
+			"width": "58"
+		}
+	}
+}

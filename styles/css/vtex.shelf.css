@@ -1,0 +1,55 @@
+.caretIcon--pdp-related-shelf {
+	color: #06623a;
+	width: 12px;
+	height: 12px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .sliderContainer--pdp-related-shelf .arrow {
+	background: #ffffff;
+	width: 32px;
+	height: 32px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	border-radius: 50%;
+	padding: 10px;
+}
+.sliderContainer--pdp-related-shelf {
+	padding: 0 50px;
+}
+.slide--pdp-related-shelf {
+	padding: 24px;
+}
+@media only screen and (max-width: 640px) {
+	.sliderContainer--pdp-related-shelf {
+		padding: 0;
+	}
+	.slide--pdp-related-shelf {
+		padding: 0;
+	}
+	.slide--pdp-related-shelf {
+		border-right: 1px solid #f1efed;
+	}
+	.slide--pdp-related-shelf:nth-child(even) {
+		border-right: none;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container)
+		.sliderContainer--pdp-related-shelf
+		.arrowLeft--pdp-related-shelf {
+		width: 21px;
+		padding: 0px;
+		top: 37%;
+		left: -1%;
+		height: 21px;
+		justify-content: center;
+		align-items: center;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container)
+		.sliderContainer--pdp-related-shelf
+		.arrowRight--pdp-related-shelf {
+		width: 21px;
+		padding: 0px;
+		top: 37%;
+		right: -1%;
+		height: 21px;
+		justify-content: center;
+		align-items: center;
+	}
+}

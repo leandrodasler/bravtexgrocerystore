@@ -1,0 +1,43 @@
+{
+	"search-result-layout#brand": {
+		"blocks": [
+			// "search-result-layout.desktop#brand",
+			// "search-result-layout.mobile#brand",
+			// "search-not-found-layout"
+		]
+	},
+	/* Desktop */
+	"search-result-layout.desktop#brand": {
+		"children": [
+			// "flex-layout.row#searchbread",
+			//  "flex-layout.row#searchtitle",
+			//  "flex-layout.row#result"
+		],
+		"props": {
+			"pagination": "show-more",
+			"preventRouteChange": false,
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			}
+		}
+	},
+	/* Mobile*/
+	"search-result-layout.mobile#brand": {
+		"children": [
+			// "flex-layout.row#searchinfomobile",
+			// "flex-layout.row#searchbread",
+			// "flex-layout.row#productCountMobile",
+			// "flex-layout.row#fetchprevious",
+			// "flex-layout.row#contentmobile",
+			// "flex-layout.row#fetchmore"
+		],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			}
+		}
+	}
+}

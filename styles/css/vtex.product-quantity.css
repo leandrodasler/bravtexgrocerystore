@@ -1,0 +1,40 @@
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content)
+	:global(.vtex-numeric-stepper__plus-button__text),
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content)
+	:global(.vtex-numeric-stepper__minus-button__text) {
+	font-size: 32px;
+	color: #292929;
+	font-weight: normal;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-numeric-stepper__input) {
+	font-size: 16px;
+	font-weight: bold;
+	color: #292929;
+    width: 116px;
+    height: 48px;
+	border-left: none;
+	border-right: none;
+	border-color: #f1efed;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content)
+	:global(.vtex-numeric-stepper__plus-button),
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content)
+	:global(.vtex-numeric-stepper__minus-button) {
+	height: 48px;
+	background-color: transparent;
+	border-color: #f1efed;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .quantitySelectorTitle {
+	display: none;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .quantitySelectorContainer {
+	margin: 0;
+}
+@media only screen and (max-width: 640px) {
+	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-numeric-stepper__input) {
+		width: 100%;
+	}
+	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .quantitySelectorContainer {
+		margin-bottom: 8px;
+	}
+}

@@ -1,0 +1,165 @@
+.skuSelectorContainer--quickview .skuSelectorItemImage .frameAround,
+.skuSelectorContainer--quickview .skuSelectorItemImage .skuSelectorInternalBox {
+	border-radius: 50%;
+}
+.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+	opacity: 0;
+	transition: opacity 200ms ease-in-out;
+}
+.container:hover :global(.vtex-modal-layout-0-x-triggerContainer) {
+	opacity: 1;
+}
+.nameContainer {
+	justify-content: start;
+	padding-top: 12px;
+	padding-bottom: 28px;
+}
+.brandName {
+	font-weight: 700;
+	font-size: 16px;
+	color: #F71963;
+}
+.container {
+	text-align: start;
+}
+.element {
+	padding-top: 0;
+}
+.imageContainer {
+	text-align: center;
+}
+.image {
+	border-radius: 0.25rem;
+	max-width: 148px;
+	height: 120px;
+}
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) .containerNormal :global(.vtex-button) {
+	color: #F71963;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 24px;
+	height: 48px;
+	max-width: 100%;
+}
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) .containerNormal :global(.vtex-button):hover,
+.element :global(.vtex-button):hover :global(.vtex-add-to-cart-button-0-x-buttonText) {
+	color: #F71963;
+}
+
+@media (max-width: 1024px) {
+	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-1) .containerNormal :global(.vtex-button),
+	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-2) .containerNormal :global(.vtex-button) {
+		font-size: 12px;
+		height: 29px;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-1) .imageNormal,
+	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-2) .imageNormal {
+		max-height: 123px !important;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-1) .nameWrapper,
+	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-2) .nameWrapper {
+		height: 51px;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-1) .brandName,
+	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-2) .brandName {
+		font-size: 12px;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-1) .spacer,
+	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-2) .spacer {
+		flex-grow: unset;
+	}
+}
+/*search pages*/
+.nameContainer--shelfName {
+	min-height: 72px;
+	padding: 12px 0 0;
+}
+.productBrand--shelfName {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 20px;
+	color: #F71963;
+}
+:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .element .brandName {
+	font-size: 16px;
+	color: #F71963;
+	font-weight: 700;
+	line-height: 24px;
+}
+:global(.vtex-shelf-1-x-slide--pdp-related-shelf) .containerNormal {
+	position: relative;
+	max-width: 200px !important;
+}
+:global(.vtex-shelf-1-x-slide--pdp-related-shelf) .nameContainer {
+	padding: 0;
+	min-height: 72px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--product-info) .productBrand--shelfName {
+	font-weight: bold;
+	font-size: 12px;
+}
+:global(.vtex-search-2-x-tileListItem) .container {
+	max-width: none !important;
+}
+:global(.vtex-flex-layout-0-x-flexRow--search-byggy) .nameContainer--shelfName {
+	padding: 0;
+	height: unset;
+}
+:global(.vtex-flex-layout-0-x-flexRow--search-byggy) .brandName--shelfName {
+	font-weight: 700;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.015em;
+}
+:global(.vtex-flex-layout-0-x-flexRow--search-byggy) .imageNormal {
+	width: 88px;
+	height: 88px;
+	object-fit: contain;
+	margin-right: 32px;
+}
+:global(.vtex-slider-layout-0-x-slide--not-found-shelf) .container {
+	background: #ffffff;
+	border: 1px solid #dadedc;
+	border-radius: 6px;
+	padding: 16px;
+	margin: 0;
+}
+@media only screen and (min-width: 1235px) {
+	:global(.vtex-flex-layout-0-x-flexRowContent--search-byggy) .imageNormal {
+		width: 80px;
+	}
+}
+@media screen and (max-width: 40em) {
+	.container :global(.vtex-modal-layout-0-x-triggerContainer) {
+		display: none;
+	}
+}
+/*tablet*/
+@media only screen and (max-width: 1025px) {
+	.productBrand--shelfName {
+		font-size: 14px;
+	}
+
+	.nameContainer--shelfName {
+		padding: 7px 0 0;
+		height: 100%;
+	}
+}
+/*mobile*/
+@media only screen and (max-width: 640px) {
+	:global(.vtex-shelf-1-x-slide--pdp-related-shelf) .containerNormal {
+		min-width: 133px;
+		margin: 0 7px;
+		max-width: 300px !important;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .element .brandName {
+		font-size: 12px;
+		line-height: 17px;
+	}
+	:global(.vtex-shelf-1-x-slide--pdp-related-shelf) .nameContainer {
+		min-height: 51px;
+	}
+	.productBrand--shelfName {
+		font-size: 12px;
+	}
+}

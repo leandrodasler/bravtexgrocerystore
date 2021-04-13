@@ -1,0 +1,55 @@
+{
+	"responsive-layout.phone#home": {
+		"children": [
+			"list-context.image-list#demo",
+			"flex-layout.row#deals",
+			"flex-layout.row#shelf-title1",
+			"flex-layout.row#shelf1-mobile",
+			"flex-layout.row#banner-home-mobile",
+			"flex-layout.row#shelf-title2",
+			"flex-layout.row#shelf2"
+		],
+		"title": "Home - Phone"
+	},
+	
+	"flex-layout.row#shelf1-mobile": {
+		"children": ["flex-layout.col#shelf", "flex-layout.col#shelf-banner-mobile"],
+		"props": {
+			"blockClass": ["home-shelf-1"]
+		},
+		"title": "Home - Prateleira 1"
+	},
+	
+	"flex-layout.col#shelf-banner-mobile": {
+		"children": ["image#shelf-banner-mobile"],
+		"props": {
+			"width": "25%",
+			"blockClass": ["shelf-banner"]
+		},
+		"title": "Prateleira 1 - Banner"
+	},
+	"image#shelf-banner-mobile": {
+		"props": {
+			"src": "/arquivos/banner_big_mobile.png",
+			"blockClass": "banner-sales"
+		},
+		"title": "Prateleira 1 - Imagem"
+	},
+	
+
+	"flex-layout.row#banner-home-mobile": {
+		"children": ["image#banner-home-mobile"],
+		"props": {
+			"blockClass": "banner-home"
+		},
+		"title": "Home - Banner"
+	},
+	"image#banner-home-mobile": {
+		"props": {
+			"src": "/arquivos/banner_small_mobile.png",
+			"maxHeight": 93,
+			"blockClass": "banner-home"
+		},
+		"title": "Banner - imagem"
+	}
+}

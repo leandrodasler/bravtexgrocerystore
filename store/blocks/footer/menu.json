@@ -1,0 +1,222 @@
+{
+	"vtex.menu@2.x:menu#Politica": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "footer-block"
+		},
+		"children": ["flex-layout.col#menuPolitica"],
+		"title": "Footer block content"
+	},
+	"flex-layout.col#menuPolitica": {
+		"props": {
+			"blockClass": "footer-block-content"
+		},
+		"children": ["rich-text#politicaTitle", "menu-item#termos", "menu-item#privacidade", "menu-item#cookies"],
+		"title": "Footer block content items"
+	},
+	"rich-text#politicaTitle": {
+		"props": {
+			"text": "Políticas",
+			"blockClass": "footer-menu-title"
+		},
+		"title": "Footer block title"
+	},
+	"menu-item#termos": {
+		"props": {
+			"id": "menu-item-termos",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"blockClass": "footer-menu-items",
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "termos",
+				"text": "Termos de Uso"
+			}
+		},
+		"title": "Footer block item"
+	},
+	"menu-item#privacidade": {
+		"props": {
+			"id": "menu-item-privacidade",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"blockClass": "footer-menu-items",
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "privacidade",
+				"text": "Política de Privacidade"
+			}
+		},
+		"title": "Footer block item"
+	},
+	"menu-item#cookies": {
+		"props": {
+			"id": "menu-item-cookies",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"blockClass": "footer-menu-items",
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "cookies",
+				"text": "Política de Cookies"
+			}
+		},
+		"title": "Footer block item"
+	},
+	"vtex.menu@2.x:menu#Instituicional": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "footer-instituicional"
+		},
+		"children": ["flex-layout.col#menuInstucional"]
+	},
+	"flex-layout.col#menuInstucional": {
+		"children": ["rich-text#institucionalTitle", "menu-item#quemSomos", "menu-item#nossasLojas", "menu-item#Folhetos"]
+	},
+	"rich-text#institucionalTitle": {
+		"props": {
+			"text": "Instituicional",
+			"blockClass": "footer-menu-title"
+		},
+		"title": "Footer block title"
+	},
+	"menu-item#quemSomos": {
+		"props": {
+			"id": "menu-item-quemSomos",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"blockClass": "footer-menu-items",
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "quemSomos",
+				"text": "Quem Somos"
+			}
+		},
+		"title": "Footer block item"
+	},
+	"menu-item#nossasLojas": {
+		"props": {
+			"id": "menu-item-nossasLojas",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"blockClass": "footer-menu-items",
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "nossasLojas",
+				"text": "Nossas Lojas"
+			}
+		},
+		"title": "Footer block item"
+	},
+	"menu-item#Folhetos": {
+		"props": {
+			"id": "menu-item-Folhetos",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"blockClass": "footer-menu-items",
+			"itemProps": {
+				"type": "internal",
+				"href": "#",
+				"noFollow": false,
+				"tagTitle": "Folhetos",
+				"text": "Folhetos"
+			}
+		},
+		"title": "Footer block item"
+	},
+	"vtex.menu@2.x:menu#AjudaSuporte": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "ajuda__suporte"
+		},
+		"children": ["flex-layout.col#menuAjuda"],
+		"title": "Footer block content items"
+	},
+	"flex-layout.col#menuAjuda": {
+		"props": {
+			"blockClass": "footer-block-help"
+		},
+		"children": ["rich-text#ajudaTitle", "rich-text#sac"],
+		"title": "Footer block item"
+	},
+	"rich-text#ajudaTitle": {
+		"props": {
+			"blockClass": "footer-menu-title",
+			"text": "Ajuda e Suporte"
+		},
+		"title": "Footer block title"
+	},
+	"rich-text#sac": {
+		"props": {
+			"blockClass": "footer-menu-items",
+			"text": "SAC: (11) 2388-8238\nE-mail: sac.vtex@vtex.com.br\nDe segunda a sexta das 08h às 22h.\nAos sábados das 08h às 20h."
+		},
+		"title": "Footer menu item"
+	},
+	"vtex.menu@2.x:menu#midias": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "footer-block-midias"
+		},
+		"children": ["flex-layout.col#menuMidas"],
+		"title": "Footer block midias"
+	},
+	"flex-layout.col#menuMidas": {
+		"props": {
+			"blockClass": "footer-block-midias-items"
+		},
+		"children": ["rich-text#midiasTitle", "flex-layout.row#midias"],
+		"title": "Footer block midia items"
+	},
+	"rich-text#midiasTitle": {
+		"props": {
+			"text": "Redes Sociais",
+			"blockClass": "footer-menu-title"
+		},
+		"title": "Footer block title"
+	},
+	"flex-layout.row#midias": {
+		"props": {
+			"blockClass": "midias-footer"
+		},
+		"children": ["image#whatsapp", "image#instagram", "image#facebook"],
+		"title": "Footer midias itens"
+	},
+	"image#whatsapp": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/whatsapp_midia.png",
+			"maxHeight": 40,
+			"maxWidth": 40
+		}
+	},
+	"image#instagram": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/instagram_midia.png",
+			"maxHeight": 40,
+			"maxWidth": 40
+		}
+	},
+	"image#facebook": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/facebook.png",
+			"maxHeight": 40,
+			"maxWidth": 40
+		}
+	}
+}

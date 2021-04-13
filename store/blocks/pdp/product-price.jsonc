@@ -1,0 +1,65 @@
+{
+	"flex-layout.row#selling-price": {
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "pdp-selling-price-container"
+		},
+		"children": ["product-selling-price"]
+	},
+	"flex-layout.row#list-price": {
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "pdp-list-price-container"
+		},
+		"children": ["product-list-price"]
+	},
+	"product-selling-price#summary": {
+		"props": {
+			"blockClass": "summary",
+			"message": "{sellingPriceValue} /un"
+		}
+	},
+	"product-list-price#summary": {
+		"props": {
+			"blockClass": "list-price",
+			"message": "{listPriceValue}"
+		}
+	},
+	"flex-layout.row#list-price-savings": {
+		"props": {
+			"colGap": 2,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"marginBottom": 2,
+			"marginTop": 5
+		},
+		"children": ["product-list-price", "product-price-savings"]
+	},
+	"flex-layout.row#selling-and-list-price": {
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "pdp-selling-and-list-price-container"
+		},
+		"children": ["product-list-price#summary", "product-selling-price#summary"]
+	},
+	"flex-layout.col#selling-and-list-price": {
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "pdp-selling-and-list-price-container"
+		},
+		"children": ["product-list-price#summary", "product-selling-price#summary"]
+	},
+	/* Futura Estrutura da PdP*/
+	"flex-layout.row#selling-and-list-price-new": {
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "pdp-selling-and-list-price-container"
+		},
+		"children": ["flex-layout.col#selling-and-list-price", "flex-layout.col#fixed-prices-plus-btn"]
+	}
+}

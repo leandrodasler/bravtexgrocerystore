@@ -1,0 +1,252 @@
+{
+	"search-result-layout#department": {
+		"blocks": [
+			"search-result-layout.desktop#departament",
+			"search-result-layout.mobile#departament-corredor",
+			"search-not-found-layout#departament"
+		],
+		"title": "Departament - Page"
+	},
+	"search-result-layout.desktop#departament": {
+		"children": [
+			"flex-layout.row#searchbread-departament",
+			"flex-layout.row#content-departament",
+			"flex-layout.row#fetchmore-departament"
+		],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			},
+			"blockClass": "departament-desktop"
+		},
+		"title": "Search Result - Departament"
+	},
+	"search-not-found-layout#departament": {
+		"children": ["flex-layout.row#searchbread-departament", "flex-layout.row#notfound"],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			},
+			"blockClass": "departament-desktop"
+		}
+	},
+	"flex-layout.row#searchbread-departament": {
+		"children": ["breadcrumb.search#departament"],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true,
+			"marginTop": 3,
+			"marginBottom": 3,
+			"blockClass": "searchbread-row-department"
+		}
+	},
+	"breadcrumb.search#departament": {
+		"props": {
+			"showOnMobile": true,
+			"blockClass": "search-bread"
+		}
+	},
+	"flex-layout.row#content-departament": {
+		"children": ["flex-layout.col#filter-departament", "flex-layout.col#products-departament"],
+		"props": {
+			"blockClass": "content-row-department"
+		}
+	},
+	"flex-layout.col#filter-departament": {
+		"children": ["filter-navigator.v3"],
+		"props": {
+			"width": "20%",
+			"blockClass": "filterCol"
+		}
+	},
+	"flex-layout.col#products-departament": {
+		"children": [
+			"flex-layout.col#title-banner",
+			"flex-layout.row#departament-searchinfo-corredor",
+			"flex-layout.row#departament-products-corredor"
+		],
+		"props": {
+			"preventVerticalStretch": true,
+			"blockClass": "searchbread-row-department"
+		}
+	},
+	"flex-layout.row#departament-searchinfo-corredor": {
+		"children": ["flex-layout.col#departament-productCount-corredor", "flex-layout.col#switcher-orderby-departament"],
+		"props": {
+			"blockClass": "searchinfo-corredor"
+		}
+	},
+	"flex-layout.col#title-banner": {
+		"children": ["flex-layout.row#searchtitle"],
+		"props": {
+			"blockClass": "title-banner"
+		}
+	},
+	"flex-layout.col#switcher-orderby-departament": {
+		"children": ["order-by.v2"],
+		"props": {
+			"blockClass": "switcher-orderByCol"
+		}
+	},
+	"flex-layout.col#departament-productCount-corredor": {
+		"children": ["total-products.v2"],
+		"props": {
+			"blockClass": "productCountCol"
+		}
+	},
+	"flex-layout.row#departament-products-corredor": {
+		"children": ["search-content"],
+		"props": {
+			"blockClass": "corredor-products"
+		}
+	},
+	"flex-layout.row#fetchmore-departament": {
+		"props": {
+			"blockClass": "fetch-more-button"
+		},
+		"children": ["search-fetch-more"]
+	},
+	"flex-layout.row#seo-text-departmentDesk": {
+		"children": ["rich-text#seo-textDesk"],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true,
+			"blockClass": "seo-text-departmentDesk"
+		},
+		"title": "SEO TextDesk - Content"
+	},
+	"rich-text#seo-textDesk": {
+		"props": {
+			"text": "##### **Lorem ipsum dolor sit amet** \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ipsum sit amet urna tempor feugiat quis vel est. Sed fermentum tristique efficitur. Vestibulum lacinia mauris ac tristique finibus. Etiam augue enim, sagittis at eros eget, condimentum rhoncus arcu. Fusce suscipit ipsum elementum tristique condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lectus nulla. Phasellus eget nisl et lectus elementum luctus a eget odio. Mauris iaculis ultrices dolor eget cursus. Etiam ullamcorper diam in efficitur aliquet. Mauris viverra ornare orci a maximus. Aenean bibendum convallis orci, ac mattis orci. Suspendisse ac libero urna. Vestibulum lacus urna, egestas et hendrerit ac, vulputate ut nisl.",
+			"blockClass": "text-main-seoDesk"
+		},
+		"title": "SEO TextDesk"
+	},
+	//-------mobile
+	"search-result-layout.mobile#departament-corredor": {
+		"children": [
+			// "flex-layout.row#searchbread-departament",
+			"flex-layout.row#mobile-banner-departament",
+			"flex-layout.row#search-info-tablet-corredor-departament",
+			"flex-layout.row#search-info-mobile-corredor-departament",
+			"flex-layout.row#departament-productCount-corredormob",
+			"flex-layout.row#searchtitle",
+			"flex-layout.row#departament-products-corredor",
+			"flex-layout.row#mobile-fetchmore-departament"
+			// "flex-layout.row#seo-text-department"
+		],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			}
+		}
+	},
+	"flex-layout.row#mobile-banner-departament": {
+		"children": ["list-context.image-list#mobile-departament"],
+		"props": {
+			"fullWidth": true,
+			"blockClass": "banner-row-department"
+		}
+	},
+	"list-context.image-list#mobile-departament": {
+		"children": ["slider-layout#mobile-departament-images"],
+		"props": {
+			"height": 300,
+			"images": [
+				{
+					"mobileImage": "https://gigadigital.vteximg.com.br/arquivos/banner-dep-mobile.png"
+				}
+			]
+		}
+	},
+	"slider-layout#mobile-departament-images": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showPaginationDots": "never",
+			"showNavigationArrows": "never",
+			"blockClass": "main-carousel"
+		}
+	},
+	"flex-layout.row#search-info-tablet-corredor-departament": {
+		"children": [
+			"flex-layout.col#filterMobile-corredor-departament",
+			"flex-layout.col#orderByMobile-corredor-departament"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto",
+			"colJustify": "around",
+			"blockClass": "search-info-tablet-corredor"
+		}
+	},
+	"flex-layout.row#search-info-mobile-corredor-departament": {
+		"children": [
+			"flex-layout.col#filterMobile-corredor-departament",
+			"flex-layout.col#orderByMobile-corredor-departament"
+			// "flex-layout.col#switcherMobile-corredor-departament"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto",
+			"colJustify": "around",
+			"blockClass": "searchinfomobile-corredor"
+		}
+	},
+	"flex-layout.col#orderByMobile-corredor-departament": {
+		"children": ["order-by.v2"],
+		"props": {
+			"blockClass": "orderByMobileCol"
+		}
+	},
+	"flex-layout.row#departament-productCount-corredormob": {
+		"children": ["total-products.v2"],
+		"props": {
+			"blockClass": "productCountColmob"
+		}
+	},
+	"flex-layout.col#filterMobile-corredor-departament": {
+		"children": ["filter-navigator.v3"],
+		"props": {
+			"blockClass": "filterMobileCol"
+		}
+	},
+	"flex-layout.col#switcherMobile-corredor-departament": {
+		"children": ["search-layout-switcher"],
+		"props": {
+			"blockClass": "switcherMobileCol"
+		}
+	},
+	"flex-layout.row#mobile-fetchmore-departament": {
+		"props": {
+			"blockClass": "fetch-more-button"
+		},
+		"children": ["search-fetch-more"]
+	}
+	// "flex-layout.row#seo-text-department": {
+	// 	"children": ["rich-text#seo-text"],
+	// 	"props": {
+	// 		"preserveLayoutOnMobile": true,
+	// 		"fullWidth": true,
+	// 		"blockClass": "seo-text-department"
+	// 	},
+	// 	"title": "SEO Text - Content"
+	// },
+	// "rich-text#seo-text": {
+	// 	"props": {
+	// 		"text": "**Lorem ipsum dolor sit amet** \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ipsum sit amet urna tempor feugiat quis vel est. Sed fermentum tristique efficitur. Vestibulum lacinia mauris ac tristique finibus. Etiam augue enim, sagittis at eros eget, condimentum rhoncus arcu. Fusce suscipit ipsum elementum tristique condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lectus nulla. Phasellus eget nisl et lectus elementum luctus a eget odio. Mauris iaculis ultrices dolor eget cursus. Etiam ullamcorper diam in efficitur aliquet. Mauris viverra ornare orci a maximus. Aenean bibendum convallis orci, ac mattis orci. Suspendisse ac libero urna. Vestibulum lacus urna, egestas et hendrerit ac, vulputate ut nisl.",
+	// 		"blockClass": "text-main-seo"
+	// 	},
+	// 	"title": "SEO Text"
+	// }
+}

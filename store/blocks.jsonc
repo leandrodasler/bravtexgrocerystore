@@ -1,0 +1,197 @@
+/* Blocks can be defined both on the store/blocks.json file, and in any number of json
+ * files inside the store/blocks directory, with any arbitrary directory structure.
+ *
+ * Additionally, all blocks files can support comments, such as this one, if given the
+ * .jsonc file extension.
+ *
+ * The store/blocks.json file is intended for backwards compatibility, for miscellaneous
+ * blocks, or if the app is simple enough that it doesn't warrant splitting the file.
+ */
+{
+	"store.orderplaced": {
+		"blocks": ["order-placed"]
+	},
+
+	"store.account": {
+		"blocks": ["my-account"],
+		"parent": {
+			"challenge": "challenge.profile"
+		}
+	},
+
+	"store.login": {
+		"blocks": ["login-content#default"]
+	},
+
+	"login-content#default": {
+		"props": {
+			"isInitialScreenOptionOnly": false,
+			"defaultOption": 1,
+			"showPasswordVerificationIntoTooltip": true
+		}
+	},
+
+	"store.product-review-form": {
+		"blocks": ["product-review-form"]
+	},
+
+	"store.not-found#product": {
+		"blocks": ["rich-text#not-found"]
+	},
+
+	"store.not-found#search": {
+		"blocks": ["rich-text#not-found"]
+	},
+
+	"rich-text#not-found": {
+		"props": {
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER",
+			"text": "**PAGE NOT FOUND**",
+			"font": "t-heading-1"
+		}
+	},
+	"search-bar#biggy": {
+		"blocks": ["autocomplete-result-list.v2"],
+		"props": {
+			"blockClass": "search-bar-header",
+			"openAutocompleteOnFocus": true,
+			"placeholder": "Pesquise por produtos ou marca...",
+			"maxWidth": 935
+		}
+	},
+	"autocomplete-result-list.v2": {
+		"blocks": ["product-summary.shelf#byggy"],
+		"props": {
+			"maxTopSearches": 10,
+			"maxSuggestedTerms": 5,
+			"__unstableProductOriginVtex": true,
+			"maxSuggestedProducts": 1,
+			"customBreakpoints": {
+				"md": {
+					"width": 1024,
+					"maxSuggestedProducts": 2
+				},
+				"lg": {
+					"width": 1360,
+					"maxSuggestedProducts": 2
+				},
+				"xlg": {
+					"width": 1440,
+					"maxSuggestedProducts": 2
+				}
+			}
+		}
+	},
+
+	"product-summary.shelf#byggy": {
+		"children": ["flex-layout.row#search-shelf"]
+	},
+	"flex-layout.row#search-shelf": {
+		"children": ["flex-layout.col#product-info", "stack-layout#productsum"],
+		"props": {
+			"blockClass": "search-byggy"
+		}
+	},
+	"flex-layout.col#product-info": {
+		"props": {
+			"blockClass": "product-info",
+			"preventVerticalStretch": true
+		},
+		"children": [
+			"add-to-list-btn#list-buy",
+			"product-summary-name",
+			"product-rating-inline",
+			"product-list-price#summary",
+			"product-selling-price#summary"
+		]
+	},
+	"product-summary.shelf#searchs": {
+		"children": [
+			"add-to-list-btn#list-buy",
+			"stack-layout#productsum",
+			"product-summary-name",
+			"flex-layout.col#selling-and-list-price",
+			"flex-layout.row#fixed-prices-plus-btn",
+			"flex-layout.row#add-btn-shelf-pdp-custom-component"
+		]
+	},
+	"stack-layout#productsum": {
+		"children": ["product-summary-image", "product-bookmark"]
+	},
+	"product-summary-name": {
+		"props": {
+			"blockClass": "shelfName"
+		}
+	},
+	"product-summary-name#pdp-product-name": {
+		"props": {
+			"blockClass": "pdp-name"
+		}
+	},
+	"flex-layout.row#shelfRef": {
+		"children": ["product-identifier.summary"],
+		"props": {
+			"blockClass": "shelfRef"
+		}
+	},
+	"product-summary-price": {
+		"props": {
+			"showSavings": true,
+			"showInstallments": true,
+			"blockClass": "shelfPrice"
+		}
+	},
+	"product-list-price": {
+		"props": {
+			"message": "{listPriceValue}"
+		}
+	},
+	"product-selling-price#shelfs": {
+		"props": {
+			"showDiscountValue": true,
+			"blockClass": "main-sell-summary",
+			"message": "{sellingPriceValue} /un"
+		},
+		"title": "Shelf- Preço de Venda"
+	},
+	"flex-layout.col#fixed-prices": {
+		"props": {
+			"width": "100%",
+			"blockClass": "fixed-prices"
+		},
+		"title": "Produto - Fixed prices",
+		"children": ["fixed-prices"]
+	},
+	"flex-layout.col#fixed-prices-plus-btn": {
+		"props": {
+			"width": "100%",
+			"blockClass": "fixed-prices"
+		},
+		"title": "Produto - Fixed prices",
+		"children": ["fixed-prices#plus-add-to-cart"]
+	},
+	"flex-layout.row#fixed-prices-plus-btn": {
+		"props": {
+			"width": "100%",
+			"blockClass": "fixed-prices"
+		},
+		"title": "Produto - Fixed prices",
+		"children": ["fixed-prices#plus-add-to-cart"]
+	},
+	"fixed-prices#plus-add-to-cart": {
+		"blocks": ["add-to-cart-button#custom-wholesale-price"]
+	},
+	"add-to-cart-button#custom-wholesale-price": {
+		"props": {
+			"blockClass": "custom-wholesale-add-to-cart-btn"
+		},
+		"title": "Botão - Adicionar ao Carrinho"
+	},
+	"rich-text#test": {
+		"props": {
+			"blockClass": "bennefit-price",
+			"text": "Acima de 5 unidades:\n\n**R$ 9,37**"
+		}
+	}
+}

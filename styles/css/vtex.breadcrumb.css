@@ -1,0 +1,95 @@
+.container--search-bread {
+	max-width: 1440px;
+	padding: 0 5%;
+}
+.link--search-bread {
+	font-size: 14px;
+	color: #F71963;
+	font-weight: normal;
+}
+:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .term {
+	color: #F71963;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0 20px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .link {
+	color: #F71963;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 0 20px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .homeIcon,
+.homeIcon--search-bread {
+	width: 22px;
+	height: 22px;
+}
+:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .arrow,
+:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .termArrow {
+	padding: 0;
+	color: #ccc6c0;
+}
+:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .homeLink,
+.homeLink--search-bread {
+	padding: 0 15px 0 0;
+}
+:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .container {
+	padding: 18px 0 50px 20px;
+}
+.arrow--search-bread {
+	padding: 0;
+	display: inline-flex;
+	align-items: center;
+}
+.caretIcon--search-bread {
+	color: #dadedc;
+	width: 16px;
+	height: 12px;
+}
+.link--search-bread--1 {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 20px;
+	color: #848a87;
+	padding: 0 13px;
+}
+@media only screen and (min-width: 1441px) {
+	.container--search-bread {
+		padding: 0;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.container--search-bread {
+		padding-left: 36px;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .term {
+		padding: 0 6px;
+		font-size: 12px;
+		display: flex;
+		align-items: center;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .container {
+		padding: 12px 0 20px;
+		display: flex;
+		align-items: center;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .link {
+		padding: 0 5px;
+		font-size: 12px;
+		white-space: nowrap;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .homeLink {
+		padding: 0 6px 0 0;
+		display: flex;
+		align-items: center;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .homeIcon {
+		width: 22px;
+		height: 22px;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .arrow,
+	:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .termArrow {
+		display: flex;
+		align-items: center;
+	}
+}

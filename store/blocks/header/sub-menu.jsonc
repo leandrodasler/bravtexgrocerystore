@@ -1,0 +1,405 @@
+{
+	"vtex.menu@2.x:submenu#category": {
+		"props": {
+			"width": "auto",
+			"blockClass": "megamenu-header"
+		},
+		"children": ["vtex.menu@2.x:menu#category"]
+	},
+	"vtex.menu@2.x:menu#category": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": [
+			"menu-item#bebidas",
+			"menu-item#mercearia",
+			"menu-item#padaria",
+			"menu-item#hortifruti",
+			"menu-item#carnes-aves",
+			"menu-item#congelados",
+			"menu-item#frios-laticinios",
+			"menu-item#higiene",
+			"menu-item#limpeza",
+			"menu-item#bazar",
+			"menu-item#petshop",
+			"menu-item#embalagens",
+			"menu-item#universos"
+		]
+	},
+	/*bebidas*/
+	"menu-item#bebidas": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": false,
+				"tagTitle": "bebidas",
+				"text": "Bebidas"
+			},
+			"iconProps": {
+				"id": "bebidas",
+				"size": 14,
+				"viewBox": "0 0 14 14"
+			},
+			"iconToTheLeft": true
+		}
+		// "blocks": ["submenu#category-test"]
+	},
+	// "submenu#category-test": {
+	// 	"props": {
+	// 		"width": "100%",
+	// 		"blockClass": "tests"
+	// 	},
+	// 	"children": ["flex-layout.row#moveis-sub-menu"]
+	// },
+	// "flex-layout.row#moveis-sub-menu": {
+	// 	"children": [
+	// 		"flex-layout.col#moveis-sub-menu-col",
+	// 		"flex-layout.col#moveis-sub-menu-col-2"
+	// 		// "flex-layout.col#moveis-sub-menu-col-3"
+	// 	],
+	// 	"props": {
+	// 		"blockClass": "row-submenu"
+	// 	},
+	// 	"title": ""
+	// },
+	// "flex-layout.col#moveis-sub-menu-col": {
+	// 	"children": ["rich-text#teste"],
+	// 	"props": {
+	// 		"blockClass": "col-submenu"
+	// 	},
+	// 	"title": "Coluna Submenu"
+	// },
+	// "flex-layout.col#moveis-sub-menu-col-2": {
+	// 	"children": ["rich-text#teste-2"],
+	// 	"props": {
+	// 		"blockClass": "col-submenu"
+	// 	},
+	// 	"title": "Coluna Submenu"
+	// },
+	// "rich-text#teste": {
+	// 	"props": {
+	// 		"text": "sadasdasd"
+	// 	}
+	// },
+	// "rich-text#teste-2": {
+	// 	"props": {
+	// 		"text": "hgfhdfdssad"
+	// 	}
+	// },
+	/*bebidas end*/
+	/*mercearia*/
+	"menu-item#mercearia": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": false,
+				"tagTitle": "mercearia",
+				"text": "Mercearia"
+			},
+			"iconProps": {
+				"id": "mercearia",
+				"size": 14,
+				"viewBox": "0 0 11 14"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	/*mercearia end*/
+	/*padaria*/
+	"menu-item#padaria": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": false,
+				"tagTitle": "padaria",
+				"text": "Padaria"
+			},
+			"iconProps": {
+				"id": "padaria",
+				"size": 14,
+				"viewBox": "0 0 14 10"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	/*padaria end*/
+	/*hortifruti*/
+	"menu-item#hortifruti": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": true,
+				"tagTitle": "hortifruti",
+				"text": "Hortifruti"
+			},
+			"iconProps": {
+				"id": "hortifruti",
+				"size": 14,
+				"viewBox": "0 0 14 14"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	/*hortifruti end*/
+	/*carnes aves etc*/
+	"menu-item#carnes-aves": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": true,
+				"tagTitle": "carnes, aves e pescados",
+				"text": "Carnes, Aves e Pescados"
+			},
+			"iconProps": {
+				"id": "carne",
+				"size": 14,
+				"viewBox": "0 0 14 13"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	/*carnes end*/
+	/*congelados*/
+	"menu-item#congelados": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": true,
+				"tagTitle": "Congelados",
+				"text": "Congelados"
+			},
+			"iconProps": {
+				"id": "frio",
+				"size": 14,
+				"viewBox": "0 0 12 14"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	/*congelados end*/
+	/*frios*/
+	"menu-item#frios-laticinios": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": true,
+				"tagTitle": "frios e laticinios",
+				"text": "Frios e Laticinios"
+			},
+			"iconProps": {
+				"id": "laticinio",
+				"size": 14,
+				"viewBox": "0 0 14 12"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	/*frios end*/
+	/*higiene*/
+	"menu-item#higiene": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": true,
+				"tagTitle": "higiene pessoal e beleza",
+				"text": "Higiene Pessoal e Beleza"
+			},
+			"iconProps": {
+				"id": "higiene",
+				"size": 14,
+				"viewBox": "0 0 10 14"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	/*higiene end*/
+	/*limpeza*/
+	"menu-item#limpeza": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": true,
+				"tagTitle": "limpeza",
+				"text": "Limpeza"
+			},
+			"iconProps": {
+				"id": "limpeza",
+				"size": 14,
+				"viewBox": "0 0 14 14"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	/*limpeza end*/
+	/*bazar*/
+	"menu-item#bazar": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": true,
+				"tagTitle": "bazar",
+				"text": "Bazar"
+			},
+			"iconProps": {
+				"id": "utensilios",
+				"size": 14,
+				"viewBox": "0 0 12 12"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	/*bazar end*/
+	/*petshop*/
+	"menu-item#petshop": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": true,
+				"tagTitle": "petshop",
+				"text": "Petshop"
+			},
+			"iconProps": {
+				"id": "petshop",
+				"size": 14,
+				"viewBox": "0 0 12 12"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	/*petshop end*/
+	/*embalagens*/
+	"menu-item#embalagens": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": true,
+				"tagTitle": "embalagens descartaveis",
+				"text": "Embalagens Descartaveis"
+			},
+			"iconProps": {
+				"id": "embalagens",
+				"size": 14,
+				"viewBox": "0 0 11 11"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	/*embalagens end*/
+	/*universos*/
+	"menu-item#universos": {
+		"props": {
+			"id": "sub-menu-item-category",
+			"blockClass": "sub-menu-header",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": true,
+				"tagTitle": "universos",
+				"text": "Universos"
+			},
+			"iconProps": {
+				"id": "universos",
+				"size": 14,
+				"viewBox": "0 0 13 13"
+			},
+			"iconToTheLeft": true
+		}
+	}
+	/*universos end*/
+	// "vtex.menu@2.x:submenu#more": {
+	// 	"props": {
+	// 		"width": "100%"
+	// 	},
+	// 	"children": ["flex-layout.row#menu-more"]
+	// },
+	// "flex-layout.row#menu-more": {
+	// 	"children": ["flex-layout.col#menu-more-1", "flex-layout.col#menu-more-2"]
+	// },
+	// "flex-layout.col#menu-more-1": {
+	// 	"children": ["vtex.menu@2.x:menu#more"]
+	// },
+	// "flex-layout.col#menu-more-2": {
+	// 	"children": []
+	// },
+	// "vtex.menu@2.x:menu#more": {
+	// 	"props": {
+	// 		"orientation": "vertical"
+	// 	},
+	// 	"children": ["menu-item#about-us", "menu-item#faq"]
+	// }
+}

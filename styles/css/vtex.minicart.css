@@ -1,0 +1,45 @@
+.cartIcon {
+	display: none;
+}
+.minicartIconContainer {
+	height: 25px;
+	width: 5px;
+}
+.minicartContainer :global(.vtex-button) {
+	background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='32' height='32' rx='16' fill='%23FFF6E6'/%3E%3Cpath d='M14 22C14.7364 22 15.3333 21.403 15.3333 20.6667C15.3333 19.9303 14.7364 19.3333 14 19.3333C13.2636 19.3333 12.6667 19.9303 12.6667 20.6667C12.6667 21.403 13.2636 22 14 22Z' stroke='%23FFA800' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M19.3333 22C20.0697 22 20.6667 21.403 20.6667 20.6667C20.6667 19.9303 20.0697 19.3333 19.3333 19.3333C18.597 19.3333 18 19.9303 18 20.6667C18 21.403 18.597 22 19.3333 22Z' stroke='%23FFA800' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 10H11.3333L12.6667 18C12.8105 18.409 13.0833 18.7602 13.444 19.0006C13.8047 19.2411 14.2338 19.3579 14.6667 19.3333H19.3333C19.7662 19.3579 20.1953 19.2411 20.556 19.0006C20.9167 18.7602 21.1895 18.409 21.3333 18L22 13.3333H11.8667' stroke='%23FFA800' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 32px;
+	height: 32px;
+}
+.openIconContainer {
+	padding: 12px 0;
+}
+.minicartQuantityBadgeDefault {
+  color: #FFF7F2;
+  background: #F71963;
+  right: 0px;
+}
+@media only screen and (min-width: 641px) {
+	.openIconContainer::after {
+		content: 'Meu Carrinho';
+		max-width: 50px;
+		display: inline-flex;
+		vertical-align: middle;
+		padding-left: 8px;
+		font-size: 12px;
+		font-weight: bold;
+		color: #4d4a48;
+  }
+  .minicartWrapperContainer {
+    width: 97px !important;
+  }
+}
+@media only screen and (max-width: 640px) {
+	.openIconContainer {
+		margin: 0;
+	}
+	.minicartContainer :global(.vtex-button) {
+		margin: 0 11px;
+	}
+}

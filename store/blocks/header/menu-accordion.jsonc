@@ -1,0 +1,36 @@
+{
+	"submenu.accordion#bebidas": {
+		"props": {
+			"blockClass": "header-mobile-accordion"
+		},
+		"children": ["menu#bebidas"]
+	},
+	"menu#bebidas": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": ["rich-text#text1"]
+	},
+	"rich-text#text1": {
+		"props": {
+			"text": "teste1"
+		}
+	},
+	"submenu.accordion#knits-mobile": {
+		"props": {
+			"blockClass": "header-mobile-accordion"
+		},
+		"children": ["menu#knits-accordion"]
+	},
+	"menu#knits-accordion": {
+		"props": {
+			"orientation": "vertical"
+		},
+		"children": ["rich-text#text2"]
+	},
+	"rich-text#text2": {
+		"props": {
+			"text": "teste2"
+		}
+	}
+}

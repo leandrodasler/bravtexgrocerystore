@@ -1,0 +1,324 @@
+/*search pages*/
+.notFound--layout--departament-desktop {
+	max-width: 1238px;
+	margin: 0 auto;
+}
+.searchResultContainer--departament-desktop,
+.searchResultContainer {
+	padding: 0 0 96px;
+	background-color: #f7faf9;
+	max-width: unset;
+}
+.filters--layout {
+	background: #ffffff;
+	border: 1px solid #dadedc;
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding: 24px;
+}
+.galleryTitle--layout {
+	margin: 0;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: #36403b;
+	quotes: '“' '”';
+}
+.galleryTitle--layout::before {
+	content: open-quote;
+}
+.galleryTitle--layout::after {
+	content: close-quote;
+}
+.caretIcon {
+	color: #F71963;
+}
+.filterItem :global(.vtex-checkbox__line-container) {
+	display: flex;
+	align-items: center;
+}
+.filterItem--selected :global(.vtex__icon-check) {
+	color: #ffffff;
+	background-color: #F71963;
+}
+.filterItem--selected :global(.vtex-checkbox__inner-container) {
+	border-color: #F71963;
+}
+.filter__container {
+	border-color: #dadedc;
+}
+.filter__container--priceRange {
+	border: none;
+}
+:global(.vtex-search-result-3-x-filter__container--priceRange) :global(.vtex-slider__base-internal),
+:global(.vtex-search-result-3-x-filter__container--priceRange) :global(.vtex-slider__selector) {
+	background-color: #F71963;
+}
+.gallery--search-gallery {
+	padding-left: 28px;
+}
+.galleryItem--search-gallery {
+	background: #ffffff;
+	border: 1px solid #dadedc;
+	box-sizing: border-box;
+	border-radius: 6px;
+	margin: 4px;
+	max-width: calc(20% - 8px) !important;
+	height: 396px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--switcher-orderByCol) .orderByButton {
+	padding: 0.5rem 4px 0 0;
+	background: none;
+	border: none;
+	margin-right: 4px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--switcher-orderByCol) .orderByButton::before {
+	content: 'Ordernar por';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #5d6561;
+	text-transform: none;
+}
+.filterPopupArrowIcon {
+	padding-right: 0;
+}
+.buttonShowMore :global(.vtex-button) {
+	background-color: #ffffff;
+	color: #F71963;
+	border-color: #F71963;
+}
+.buttonShowMore :global(.vtex-button):hover {
+	background-color: #F71963;
+	color: #ffffff;
+}
+.filterPopupTitle {
+	color: #F71963;
+	text-transform: none;
+	font-size: 16px;
+	margin-left: 16px;
+	background: #ffffff;
+	border: 1px solid #dadedc;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 8px 16px;
+	border-right: none;
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+	height: 40px;
+	display: inline-flex;
+	align-items: center;
+}
+.filterPopupArrowIcon {
+	background: #ffffff;
+	border: 1px solid #dadedc;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 8px 16px;
+	border-left: none;
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;
+	height: 40px;
+	display: inline-flex;
+	align-items: center;
+}
+.orderByText {
+	display: none;
+}
+.orderByOptionsContainer {
+	top: 50px;
+	z-index: 2;
+	min-width: 168px;
+	width: 168px;
+}
+.orderByOptionItem {
+	min-width: 164px;
+}
+.orderByOptionItem:hover {
+	background-color: #e2fff3;
+	color: #F71963;
+	font-weight: bold;
+}
+.orderByOptionItem--selected {
+	background-color: #e2fff3;
+	color: #F71963;
+	font-weight: bold;
+}
+.filterMessage {
+	display: none;
+}
+.filterTitle {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	color: #36403b;
+}
+.caretIcon {
+	color: #aab0ad;
+	width: 24px;
+	height: 12px;
+}
+.filter__container--title {
+	padding-bottom: 8px;
+}
+.filter__container--title::before {
+	content: 'Filtrar por';
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: #36403b;
+}
+.filter__container--category-1 .filterTitle,
+.filter__container--brand .filterTitle {
+	font-size: 0;
+}
+.filter__container--category-1 .filterTitle::before,
+.filter__container--brand .filterTitle::before {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 24px;
+	color: #36403b;
+}
+.filter__container--category-1 .filterTitle::before {
+	content: 'Categoria';
+}
+.filter__container--brand .filterTitle::before {
+	content: 'Marcas';
+}
+.totalProductsMessage {
+	font-size: 0;
+}
+.totalProducts--layout {
+	font-weight: 700;
+	font-size: 16px;
+	padding-left: 32px;
+	padding-bottom: 32px;
+}
+.totalProductsMessage::before {
+	content: 'produtos encontrados';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: #36403b;
+	text-transform: lowercase;
+}
+.notFound--layout {
+	background-color: #f7faf9;
+	margin: 0;
+	max-width: 100%;
+	padding-top: 24px !important;
+}
+/*breackpoint of container*/
+@media screen and (min-width: 40em) {
+	.notFound--layout--departament-desktop {
+		padding: 8px;
+	}
+}
+@media only screen and (max-width: 1440px) {
+	.galleryItem--search-gallery {
+		max-width: calc(25% - 8px) !important;
+	}
+}
+@media only screen and (max-width: 1285px) {
+	.notFound--layout--departament-desktop,
+	.searchResultContainer--departament-desktop {
+		max-width: 1160px;
+	}
+}
+@media only screen and (max-width: 1232px) {
+	.notFound--layout--departament-desktop, 
+	.searchResultContainer--departament-desktop {
+		max-width: 1084px;
+	}
+}
+.sliderLayoutContainer--shelf {
+	max-width: 1238px;
+}
+@media only screen and (max-width: 1149px) {
+	.notFound--layout--departament-desktop,
+	.searchResultContainer--departament-desktop {
+		max-width: 1000px;
+	}
+}
+@media only screen and (max-width: 1067px) {
+	.notFound--layout--departament-desktop,
+	.searchResultContainer--departament-desktop {
+		max-width: 920px;
+	}
+}
+@media only screen and (max-width: 1025px) {
+	.filterPopupButton .filterPopupTitle {
+		color: #4d4a48;
+	}
+	.filterIcon {
+		display: none;
+	}
+	.filterPopupButton .filterPopupTitle {
+		display: flex;
+		align-items: center;
+	}
+	.filterPopupButton .filterPopupTitle::after {
+		content: 'por';
+		color: #4d4a48;
+		padding-left: 4px;
+	}
+	.filterPopupButton .filterPopupTitle::before {
+		content: '';
+		background: url("data:image/svg+xml,%3Csvg width='9' height='11' viewBox='0 0 9 11' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.5 5.37912V10.6666H2.5L2.5 5.30994C2.30451 5.37903 2.09415 5.41663 1.875 5.41663C1.74658 5.41663 1.62117 5.40372 1.5 5.37912ZM1.5 1.70414C1.62117 1.67954 1.74658 1.66663 1.875 1.66663C2.09415 1.66663 2.30451 1.70423 2.5 1.77332L2.5 0.166626H1.5V1.70414Z' fill='%2306623A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1.875 4.6666C2.49632 4.6666 3 4.16292 3 3.5416C3 2.92028 2.49632 2.4166 1.875 2.4166C1.25368 2.4166 0.75 2.92028 0.75 3.5416C0.75 4.16292 1.25368 4.6666 1.875 4.6666ZM1.875 5.4166C2.91053 5.4166 3.75 4.57713 3.75 3.5416C3.75 2.50606 2.91053 1.6666 1.875 1.6666C0.839466 1.6666 0 2.50606 0 3.5416C0 4.57713 0.839466 5.4166 1.875 5.4166Z' fill='%2306623A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M6.75 9.12919V10.6666H7.75L7.75 9.06003C7.55452 9.12911 7.34417 9.1667 7.12504 9.1667C6.9966 9.1667 6.87118 9.15379 6.75 9.12919ZM6.75 5.45422C6.87118 5.42962 6.9966 5.4167 7.12504 5.4167C7.34417 5.4167 7.55452 5.45429 7.75 5.52338L7.75 0.166626H6.75V5.45422Z' fill='%2306623A'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.125 8.41666C7.74632 8.41666 8.25 7.91298 8.25 7.29166C8.25 6.67034 7.74632 6.16666 7.125 6.16666C6.50368 6.16666 6 6.67034 6 7.29166C6 7.91298 6.50368 8.41666 7.125 8.41666ZM7.125 9.16666C8.16053 9.16666 9 8.32719 9 7.29166C9 6.25612 8.16053 5.41666 7.125 5.41666C6.08947 5.41666 5.25 6.25612 5.25 7.29166C5.25 8.32719 6.08947 9.16666 7.125 9.16666Z' fill='%2306623A'/%3E%3C/svg%3E%0A")
+			no-repeat;
+		display: flex;
+		width: 10px;
+		height: 10px;
+		padding: 0 4px;
+	}
+	.filters--layout {
+		padding: 0;
+		border: none;
+	}
+	.totalProducts--layout {
+		border-top: none;
+		border-bottom: 1px solid #f1efed;
+	}
+	.galleryTitle--layout {
+		padding: 12px 0;
+	}
+	.orderByButton {
+		padding: 0.9rem 4px 0 0;
+	}
+	.filters--layout,
+	.orderByButton {
+		background: none;
+		padding: 0;
+		height: 48px;
+		border: 0;
+	}
+	.filterPopupTitle {
+		margin-left: 0;
+	}
+	.gallery--search-gallery {
+		padding-left: 0;
+	}
+}
+/*breackpoint of container end*/
+@media only screen and (max-width: 640px) {
+	.galleryTitle--layout {
+		font-size: 20px;
+	}
+	.filterPopupButton {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	.filterPopupTitle {
+		display: flex;
+		align-items: center;
+	}
+	.filterPopupArrowIcon {
+		padding-left: 0.5rem;
+	}
+	.orderByOptionsContainer {
+		top: 36px;
+	}
+	.galleryItem--search-gallery {
+		max-width: calc(50% - 8px) !important;
+	}
+}

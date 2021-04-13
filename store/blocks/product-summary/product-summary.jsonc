@@ -1,0 +1,121 @@
+{
+	"product-summary.shelf#home": {
+		"children": [
+			"add-to-list-btn#list-buy",
+			"stack-layout#prodsum",
+			"product-summary-name",
+			"flex-layout.col#selling-and-list-price",
+			"flex-layout.row#fixed-prices-plus-btn",
+			"flex-layout.row#add-btn-shelf-pdp-custom-component"
+		]
+	},
+
+	"stack-layout#prodsum": {
+		"children": ["product-summary-image#shelf", "vtex.product-highlights@2.x:product-highlights#collection"]
+	},
+
+	"product-summary-image#shelf": {
+		"props": {
+			"showBadge": true,
+			"aspectRatio": "1:1",
+			"maxHeight": 120
+		}
+	},
+	"vtex.product-highlights@2.x:product-highlights#collection": {
+		"props": {
+			"type": "collection"
+		},
+		"children": ["product-highlight-wrapper"]
+	},
+	"product-highlight-wrapper": {
+		"props": {
+			"blockClass": "collection"
+		},
+		"children": ["product-highlight-text"]
+	},
+	"product-highlight-text": {
+		"props": {
+			"message": "{highlightName}"
+		}
+	},
+	"flex-layout.row#selling-price-savings": {
+		"props": {
+			"colGap": 2,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"marginBottom": 4,
+			"blockClass": "price-container"
+		},
+		"children": ["product-selling-price#summary", "product-price-savings#summary"]
+	},
+	"product-installments#summary": {
+		"props": {
+			"blockClass": "summary"
+		}
+	},
+	"product-price-savings#summary": {
+		"props": {
+			"markers": ["discount"],
+			"blockClass": "summary"
+		}
+	},
+	"flex-layout.row#wholesale-price": {
+		"props": {
+			"colGap": 2,
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "wholesale"
+		},
+		"children": [],
+		"title": "Produto - Preço Atacado"
+	},
+	"product-summary.shelf#pdp-shelf": {
+		"children": [
+			"add-to-list-btn#list-buy",
+			"stack-layout#prodsum",
+			"product-summary-name",
+			"flex-layout.col#selling-and-list-price",
+			"flex-layout.row#fixed-prices-plus-btn",
+			"flex-layout.row#add-btn-shelf-pdp-custom-component"
+		]
+	},
+	"flex-layout.row#add-btn-shelf-pdp-custom-component": {
+		"props": {
+			"blockClass": "add-to-cart-btn-container-shelf"
+		},
+		"children": ["add-to-cart-quantity-stepper#shelf"]
+	},
+	"add-to-cart-quantity-stepper#shelf": {
+		"blocks": ["add-to-cart-button#shelf"]
+	},
+	"flex-layout.row#add-btn-shelf-pdp": {
+		"props": {
+			"blockClass": "add-to-cart-btn-container-shelf"
+		},
+		"children": ["add-to-cart-button#shelf"]
+	},
+	"add-to-cart-button#shelf": {
+		"props": {
+			"blockClass": "shelfs-add-to-cart-btn",
+			"addToCartFeedback": "customEvent",
+			"customPixelEventId": "add-to-cart-button",
+			"text": "ADICIONAR"
+		}
+	},
+	"add-to-list-btn#heart-shelf": {
+		"props": {
+			"blockClass": "wish-heart"
+		}
+	},
+	"add-to-list-btn#list-buy": {
+		"props": {
+			"blockClass": "list-buy"
+		}
+	},
+	"add-to-list-btn#heart-pdp": {
+		"props": {
+			"blockClass": "pdp-wish-heart"
+		},
+		"title": "Botão de Favorito"
+	}
+}

@@ -1,0 +1,76 @@
+{
+	"responsive-layout.phone#pdp": {
+		"children": [
+			"flex-layout.row#product-breadcrumb",
+			"flex-layout.row#product-main-mobile",
+			"flex-layout.row#title-shelf-pdp-1",
+			"flex-layout.row#shelf-pdp-1"
+		],
+		"title": "PdP - Phone"
+	},
+	"flex-layout.row#product-main-mobile": {
+		"props": {
+			"blockClass": "pdp-main-container",
+			"paddingBottom": 8
+		},
+		"children": ["flex-layout.col#stack", "flex-layout.col#right-col-mobile"]
+	},
+	"flex-layout.col#right-col-mobile": {
+		"props": {
+			"preventVerticalStretch": true,
+			"width": "43%",
+			"blockClass": "product-info-content"
+		},
+		"children": [
+			"flex-layout.row#product-brand-wish-share",
+			"flex-layout.row#product-name",
+			"product-identifier.product",
+			"flex-layout.col#selling-and-list-price",
+			"flex-layout.col#fixed-prices-plus-btn",
+			"sku-selector",
+			"flex-layout.row#quantity-buy-button-custom-component",
+			"availability-subscriber"
+		],
+		"title": "Informações do Produto"
+	},
+	"flex-layout.col#product-brand-name-ref": {
+		"props": {
+			"blockClass": "product-name-ref-brand-container"
+		},
+		"children": [
+			"vtex.store-components:product-brand",
+			"vtex.store-components:product-name",
+			"product-identifier.product"
+		]
+	},
+	"flex-layout.row#product-brand-wish-share": {
+		"props": {
+			"blockClass": "product-brand-container"
+		},
+		"children": ["flex-layout.col#product-brand-pdp", "flex-layout.col#wish-and-share-mobile"],
+		"title": "Marca do Produto"
+	},
+	"flex-layout.col#product-brand-pdp": {
+		"props": {
+			"width": "70%",
+			"blockClass": "product-col-brand-container"
+		},
+		"children": ["vtex.store-components:product-brand"]
+	},
+	"flex-layout.col#wish-and-share-mobile": {
+		"children": ["flex-layout.row#wish-and-share-mobile"],
+		"props": {
+			"width": "30%",
+			"blockClass": "pdp-wish-and-share-container"
+		},
+		"title": "Favorito + Compartilhamento"
+	},
+	"flex-layout.row#wish-and-share-mobile": {
+		"props": {
+			"blockClass": "pdp-wish-and-share-content",
+			"preventHorizontalStretch": true,
+			"fullWidth": true
+		},
+		"children": ["add-to-list-btn#heart-pdp", "share#custom"]
+	}
+}

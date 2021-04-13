@@ -1,0 +1,122 @@
+{
+	"flex-layout.col#top-bar-1": {
+		"props": {
+			"blockClass": "top-bar-col1"
+		},
+		"children": ["flex-layout.row#top-bar-row-1"]
+	},
+	"flex-layout.row#top-bar-row-1": {
+		"props": {
+			"blockClass": "top-bar-row-1",
+			"preventHorizontalStretch": false,
+			"horizontalAlign": "left"
+		},
+		"children": ["rich-text#top-text-1", "menu-item#instagram", "menu-item#facebook", "menu-item#whatsapp"]
+	},
+	"rich-text#top-text-1": {
+		"props": {
+			"text": "Como faço minha primeira compra?",
+			"textColor": "c-on-emphasis",
+			"blockClass": "text-top-1"
+		}
+	},
+	"menu-item#instagram": {
+		"props": {
+			"blockClass": "top-instagram",
+			"id": "top-instagram",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": false,
+				"tagTitle": "instagram",
+				"text": "Instagram"
+			},
+			"iconProps": {
+				"id": "instagram",
+				"size": 16,
+				"viewBox": "0 0 16 16"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	"menu-item#facebook": {
+		"props": {
+			"blockClass": "top-facebook",
+			"id": "top-facebook",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": false,
+				"tagTitle": "facebook",
+				"text": "Facebook"
+			},
+			"iconProps": {
+				"id": "facebook",
+				"size": 16,
+				"viewBox": "0 0 16 16"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	"menu-item#whatsapp": {
+		"props": {
+			"blockClass": "top-whatsapp",
+			"id": "top-whatsapp",
+			"type": "custom",
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"href": "/",
+				"noFollow": false,
+				"tagTitle": "whatsapp",
+				"text": "Whatsapp"
+			},
+			"iconProps": {
+				"id": "whatsapp",
+				"size": 16,
+				"viewBox": "0 0 16 16"
+			},
+			"iconToTheLeft": true
+		}
+	},
+	"flex-layout.col#top-bar-2": {
+		"props": {
+      "blockClass": "top-bar-col2"
+      // "width": "40%"
+		},
+		"children": ["flex-layout.row#top-bar-row-2"]
+	},
+	"flex-layout.row#top-bar-row-2": {
+		"props": {
+			"blockClass": "top-bar-row-2",
+			"preventHorizontalStretch": false,
+			"horizontalAlign": "right"
+		},
+		"children": ["rich-text#top-text-1-col-2", "rich-text#top-text-2-col-2", "rich-text#top-text-3-col-2"]
+	},
+	"rich-text#top-text-1-col-2": {
+		"props": {
+			"text": "Fale Conosco",
+			"textColor": "c-on-emphasis",
+			"blockClass": "text-top-1"
+		}
+	},
+	"rich-text#top-text-2-col-2": {
+		"props": {
+			"text": "Nossas Lojas",
+			"textColor": "c-on-emphasis",
+			"blockClass": "text-top-1"
+		}
+	},
+	"rich-text#top-text-3-col-2": {
+		"props": {
+			"text": "Politica de Troca",
+			"textColor": "c-on-emphasis",
+			"blockClass": "text-top-1"
+		}
+	}
+}

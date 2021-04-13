@@ -1,0 +1,249 @@
+{
+	"search-result-layout#category": {
+		"blocks": [
+			"search-result-layout.desktop#category",
+			"search-result-layout.mobile#category-corredor",
+			"search-not-found-layout#category"
+		],
+		"title": "Category - Page"
+	},
+	"search-result-layout.desktop#category": {
+		"children": [
+			"flex-layout.row#searchbread-category",
+			"flex-layout.row#content-category",
+			"flex-layout.row#fetchmore-category"
+		],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			},
+			"blockClass": "departament-desktop"
+		},
+		"title": "Search Result - Departament"
+	},
+	"search-not-found-layout#category": {
+		"children": ["flex-layout.row#searchbread-category", "flex-layout.row#notfound"],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			},
+			"blockClass": "departament-desktop"
+		}
+	},
+	"flex-layout.row#searchbread-category": {
+		"children": ["breadcrumb.search#category"],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true,
+			"marginTop": 3,
+			"marginBottom": 3,
+			"blockClass": "searchbread-row-department"
+		}
+	},
+	"breadcrumb.search#category": {
+		"props": {
+			"showOnMobile": true,
+			"blockClass": "search-bread"
+		}
+	},
+	"flex-layout.row#content-category": {
+		"children": ["flex-layout.col#filter-category", "flex-layout.col#products-category"],
+		"props": {
+			"blockClass": "content-row-department"
+		}
+	},
+	"flex-layout.col#filter-category": {
+		"children": ["filter-navigator.v3"],
+		"props": {
+			"width": "20%",
+			"blockClass": "filterCol"
+		}
+	},
+	"flex-layout.col#products-category": {
+		"children": [
+			"flex-layout.col#title-banner-category",
+			"flex-layout.row#category-searchinfo-corredor",
+			"flex-layout.row#category-products-corredor"
+		],
+		"props": {
+			"preventVerticalStretch": true,
+			"blockClass": "searchbread-row-department"
+		}
+	},
+	"flex-layout.row#category-searchinfo-corredor": {
+		"children": ["flex-layout.col#category-productCount-corredor", "flex-layout.col#switcher-orderby-category"],
+		"props": {
+			"blockClass": "searchinfo-corredor"
+		}
+	},
+	"flex-layout.col#title-banner-category": {
+		"children": ["flex-layout.row#searchtitle"],
+		"props": {
+			"blockClass": "title-banner"
+		}
+	},
+	"flex-layout.col#switcher-orderby-category": {
+		"children": ["order-by.v2"],
+		"props": {
+			"blockClass": "switcher-orderByCol"
+		}
+	},
+	"flex-layout.col#category-productCount-corredor": {
+		"children": ["total-products.v2"],
+		"props": {
+			"blockClass": "productCountCol"
+		}
+	},
+	"flex-layout.row#category-products-corredor": {
+		"children": ["search-content"],
+		"props": {
+			"blockClass": "corredor-products"
+		}
+	},
+	"flex-layout.row#fetchmore-category": {
+		"props": {
+			"blockClass": "fetch-more-button"
+		},
+		"children": ["search-fetch-more"]
+	},
+	"flex-layout.row#seo-text-categoryDesk": {
+		"children": ["rich-text#seo-categoryDesk"],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true,
+			"blockClass": "seo-text-categoryDesk"
+		},
+		"title": "SEO TextDesk - Content"
+	},
+	"rich-text#seo-categoryDesk": {
+		"props": {
+			"text": "##### **Lorem ipsum dolor sit amet** \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ipsum sit amet urna tempor feugiat quis vel est. Sed fermentum tristique efficitur. Vestibulum lacinia mauris ac tristique finibus. Etiam augue enim, sagittis at eros eget, condimentum rhoncus arcu. Fusce suscipit ipsum elementum tristique condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lectus nulla. Phasellus eget nisl et lectus elementum luctus a eget odio. Mauris iaculis ultrices dolor eget cursus. Etiam ullamcorper diam in efficitur aliquet. Mauris viverra ornare orci a maximus. Aenean bibendum convallis orci, ac mattis orci. Suspendisse ac libero urna. Vestibulum lacus urna, egestas et hendrerit ac, vulputate ut nisl.",
+			"blockClass": "text-main-seoDesk"
+		},
+		"title": "SEO TextDesk"
+	},
+	//-------mobile
+	"search-result-layout.mobile#category-corredor": {
+		"children": [
+			// "flex-layout.row#searchbread-category",
+			"flex-layout.row#mobile-banner-category",
+			"flex-layout.row#search-info-tablet-corredor-category",
+			"flex-layout.row#search-info-mobile-corredor-category",
+			"flex-layout.row#category-productCount-corredormob",
+			"flex-layout.row#searchtitle",
+			"flex-layout.row#departament-products-corredor",
+			"flex-layout.row#mobile-fetchmore-category"
+			// "flex-layout.row#seo-text-department"
+		],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			}
+		}
+	},
+	"flex-layout.row#mobile-banner-category": {
+		"children": ["list-context.image-list#mobile-category"],
+		"props": {
+			"fullWidth": true,
+			"blockClass": "banner-row-department"
+		}
+	},
+	"list-context.image-list#mobile-category": {
+		"children": ["slider-layout#mobile-category-images"],
+		"props": {
+			"height": 300,
+			"images": [
+				{
+					"mobileImage": "https://gigadigital.vteximg.com.br/arquivos/banner-dep-mobile.png"
+				}
+			]
+		}
+	},
+	"slider-layout#mobile-category-images": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 1,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showPaginationDots": "never",
+			"showNavigationArrows": "never",
+			"blockClass": "main-carousel"
+		}
+	},
+	"flex-layout.row#search-info-tablet-corredor-category": {
+		"children": ["flex-layout.col#filterMobile-corredor-category", "flex-layout.col#orderByMobile-corredor-category"],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto",
+			"colJustify": "around",
+			"blockClass": "search-info-tablet-corredor"
+		}
+	},
+	"flex-layout.row#search-info-mobile-corredor-category": {
+		"children": [
+			"flex-layout.col#filterMobile-corredor-category",
+			"flex-layout.col#orderByMobile-corredor-category"
+			// "flex-layout.col#switcherMobile-corredor-category"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto",
+			"colJustify": "around",
+			"blockClass": "searchinfomobile-corredor"
+		}
+	},
+	"flex-layout.col#orderByMobile-corredor-category": {
+		"children": ["order-by.v2"],
+		"props": {
+			"blockClass": "orderByMobileCol"
+		}
+	},
+	"flex-layout.row#category-productCount-corredormob": {
+		"children": ["total-products.v2"],
+		"props": {
+			"blockClass": "productCountColmob"
+		}
+	},
+	"flex-layout.col#filterMobile-corredor-category": {
+		"children": ["filter-navigator.v3"],
+		"props": {
+			"blockClass": "filterMobileCol"
+		}
+	},
+	"flex-layout.col#switcherMobile-corredor-category": {
+		"children": ["search-layout-switcher"],
+		"props": {
+			"blockClass": "switcherMobileCol"
+		}
+	},
+	"flex-layout.row#mobile-fetchmore-category": {
+		"props": {
+			"blockClass": "fetch-more-button"
+		},
+		"children": ["search-fetch-more"]
+	}
+	// "flex-layout.row#seo-text-department": {
+	// 	"children": ["rich-text#seo-text"],
+	// 	"props": {
+	// 		"preserveLayoutOnMobile": true,
+	// 		"fullWidth": true,
+	// 		"blockClass": "seo-text-department"
+	// 	},
+	// 	"title": "SEO Text - Content"
+	// },
+	// "rich-text#seo-text": {
+	// 	"props": {
+	// 		"text": "**Lorem ipsum dolor sit amet** \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ipsum sit amet urna tempor feugiat quis vel est. Sed fermentum tristique efficitur. Vestibulum lacinia mauris ac tristique finibus. Etiam augue enim, sagittis at eros eget, condimentum rhoncus arcu. Fusce suscipit ipsum elementum tristique condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lectus nulla. Phasellus eget nisl et lectus elementum luctus a eget odio. Mauris iaculis ultrices dolor eget cursus. Etiam ullamcorper diam in efficitur aliquet. Mauris viverra ornare orci a maximus. Aenean bibendum convallis orci, ac mattis orci. Suspendisse ac libero urna. Vestibulum lacus urna, egestas et hendrerit ac, vulputate ut nisl.",
+	// 		"blockClass": "text-main-seo"
+	// 	},
+	// 	"title": "SEO Text"
+	// }
+}

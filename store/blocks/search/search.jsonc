@@ -1,0 +1,515 @@
+{
+	"store.search": {
+		"blocks": ["search-result-layout#search-result"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"simulationBehavior": "skip"
+			}
+		}
+	},
+
+	"store.search#brand": {
+		"blocks": ["search-result-layout#brand"],
+		"props": {
+			"context": {
+				"orderByField": "OrderByReleaseDateDESC",
+				"hideUnavailableItems": true,
+				"maxItemsPerPage": 10,
+				"skusFilter": "ALL",
+				"simulationBehavior": "skip"
+			}
+		}
+	},
+
+	"store.search#department": {
+		"blocks": ["search-result-layout#department"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"simulationBehavior": "skip"
+				// "maxItemsPerPage": 2
+			}
+		}
+	},
+
+	"store.search#category": {
+		"blocks": ["search-result-layout#category"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"simulationBehavior": "skip"
+			}
+		}
+	},
+
+	"store.search#subcategory": {
+		"blocks": ["search-result-layout#subcategory"],
+		"props": {
+			"context": {
+				"skusFilter": "ALL",
+				"simulationBehavior": "skip"
+			}
+		}
+	},
+
+	"search-result-layout#search-result": {
+		"blocks": [
+			"search-result-layout.desktop#search-page",
+			"search-result-layout.mobile#search-page-corredor",
+			"search-not-found-layout#search-page"
+		],
+		"title": "search-page - Page"
+	},
+	"search-result-layout.desktop#search-page": {
+		"children": [
+			"flex-layout.row#searchbread-search-page",
+			"flex-layout.row#searchtitle",
+			"flex-layout.row#did-you-mean",
+			"flex-layout.row#content-search-page",
+			"flex-layout.row#fetchmore-search-page"
+		],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			},
+			"blockClass": "departament-desktop"
+		},
+		"title": "Search Result - Departament"
+	},
+	"search-not-found-layout#search-page": {
+		"children": [
+			"flex-layout.row#searchbread-search-page",
+			"flex-layout.row#notfound",
+			"flex-layout.row#not-found-shelf-title",
+			"flex-layout.row#not-found-shelf",
+			"flex-layout.row#deals-v2"
+		],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			},
+			"blockClass": "departament-desktop"
+		}
+	},
+	"flex-layout.row#searchbread-search-page": {
+		"children": ["breadcrumb.search#search-page"],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true,
+			"marginTop": 3,
+			"marginBottom": 3,
+			"blockClass": "searchbread-row-department"
+		}
+	},
+	"breadcrumb.search#search-page": {
+		"props": {
+			"showOnMobile": true,
+			"blockClass": "search-bread"
+		}
+	},
+	"flex-layout.row#did-you-mean": {
+		"children": ["did-you-mean"],
+		"props": {
+			"blockClass": "did-you-mean-suggestions"
+		}
+	},
+	"flex-layout.row#content-search-page": {
+		"children": ["flex-layout.col#filter-search-page", "flex-layout.col#products-search-page"],
+		"props": {
+			"blockClass": "content-row-department"
+		}
+	},
+	"flex-layout.col#filter-search-page": {
+		"children": ["filter-navigator.v3"],
+		"props": {
+			"width": "20%",
+			"blockClass": "filterCol"
+		}
+	},
+	"flex-layout.col#products-search-page": {
+		"children": ["flex-layout.row#search-page-searchinfo-corredor", "flex-layout.row#search-page-products-corredor"],
+		"props": {
+			"preventVerticalStretch": true,
+			"blockClass": "searchbread-row-department"
+		}
+	},
+	"flex-layout.row#search-page-searchinfo-corredor": {
+		"children": ["flex-layout.col#search-page-productCount-corredor", "flex-layout.col#switcher-orderby-search-page"],
+		"props": {
+			"blockClass": "searchinfo-corredor"
+		}
+	},
+	"flex-layout.col#switcher-orderby-search-page": {
+		"children": ["order-by.v2"],
+		"props": {
+			"blockClass": "switcher-orderByCol"
+		}
+	},
+	"flex-layout.col#search-page-productCount-corredor": {
+		"children": ["total-products.v2"],
+		"props": {
+			"blockClass": "productCountCol"
+		}
+	},
+	"flex-layout.row#search-page-products-corredor": {
+		"children": ["search-content"],
+		"props": {
+			"blockClass": "corredor-products"
+		}
+	},
+	"flex-layout.row#fetchmore-search-page": {
+		"props": {
+			"blockClass": "fetch-more-button"
+		},
+		"children": ["search-fetch-more"]
+	},
+	"flex-layout.row#seo-text-search-pageDesk": {
+		"children": ["rich-text#seo-search-pageDesk"],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true,
+			"blockClass": "seo-text-search-pageDesk"
+		},
+		"title": "SEO TextDesk - Content"
+	},
+	"rich-text#seo-search-pageDesk": {
+		"props": {
+			"text": "##### **Lorem ipsum dolor sit amet** \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ipsum sit amet urna tempor feugiat quis vel est. Sed fermentum tristique efficitur. Vestibulum lacinia mauris ac tristique finibus. Etiam augue enim, sagittis at eros eget, condimentum rhoncus arcu. Fusce suscipit ipsum elementum tristique condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lectus nulla. Phasellus eget nisl et lectus elementum luctus a eget odio. Mauris iaculis ultrices dolor eget cursus. Etiam ullamcorper diam in efficitur aliquet. Mauris viverra ornare orci a maximus. Aenean bibendum convallis orci, ac mattis orci. Suspendisse ac libero urna. Vestibulum lacus urna, egestas et hendrerit ac, vulputate ut nisl.",
+			"blockClass": "text-main-seoDesk"
+		},
+		"title": "SEO TextDesk"
+	},
+	//-------mobile
+	"search-result-layout.mobile#search-page-corredor": {
+		"children": [
+			// "flex-layout.row#searchbread-search-page",
+			"flex-layout.row#searchtitle",
+			"flex-layout.row#did-you-mean",
+			"flex-layout.row#search-info-tablet-corredor-search-page",
+			"flex-layout.row#search-info-mobile-corredor-search-page",
+			"flex-layout.row#search-page-productCount-corredormob",
+			"flex-layout.row#departament-products-corredor",
+			"flex-layout.row#mobile-fetchmore-search-page"
+			// "flex-layout.row#seo-text-department"
+		],
+		"props": {
+			"pagination": "show-more",
+			"mobileLayout": {
+				"mode1": "small",
+				"mode2": "normal"
+			}
+		}
+	},
+	"flex-layout.row#search-info-tablet-corredor-search-page": {
+		"children": [
+			"flex-layout.col#filterMobile-corredor-search-page",
+			"flex-layout.col#orderByMobile-corredor-search-page"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto",
+			"colJustify": "around",
+			"blockClass": "search-info-tablet-corredor"
+		}
+	},
+	"flex-layout.row#search-info-mobile-corredor-search-page": {
+		"children": [
+			"flex-layout.col#filterMobile-corredor-search-page",
+			"flex-layout.col#orderByMobile-corredor-search-page"
+			// "flex-layout.col#switcherMobile-corredor-search-page"
+		],
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"colSizing": "auto",
+			"colJustify": "around",
+			"blockClass": "searchinfomobile-corredor"
+		}
+	},
+	"flex-layout.col#orderByMobile-corredor-search-page": {
+		"children": ["order-by.v2"],
+		"props": {
+			"blockClass": "orderByMobileCol"
+		}
+	},
+	"flex-layout.row#search-page-productCount-corredormob": {
+		"children": ["total-products.v2"],
+		"props": {
+			"blockClass": "productCountColmob"
+		}
+	},
+	"flex-layout.col#filterMobile-corredor-search-page": {
+		"children": ["filter-navigator.v3"],
+		"props": {
+			"blockClass": "filterMobileCol"
+		}
+	},
+	"flex-layout.col#switcherMobile-corredor-search-page": {
+		"children": ["search-layout-switcher"],
+		"props": {
+			"blockClass": "switcherMobileCol"
+		}
+	},
+	"flex-layout.row#mobile-fetchmore-search-page": {
+		"props": {
+			"blockClass": "fetch-more-button"
+		},
+		"children": ["search-fetch-more"]
+	},
+	// "flex-layout.row#seo-text-department": {
+	// 	"children": ["rich-text#seo-text"],
+	// 	"props": {
+	// 		"preserveLayoutOnMobile": true,
+	// 		"fullWidth": true,
+	// 		"blockClass": "seo-text-department"
+	// 	},
+	// 	"title": "SEO Text - Content"
+	// },
+	// "rich-text#seo-text": {
+	// 	"props": {
+	// 		"text": "**Lorem ipsum dolor sit amet** \n \n Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ac ipsum sit amet urna tempor feugiat quis vel est. Sed fermentum tristique efficitur. Vestibulum lacinia mauris ac tristique finibus. Etiam augue enim, sagittis at eros eget, condimentum rhoncus arcu. Fusce suscipit ipsum elementum tristique condimentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et lectus nulla. Phasellus eget nisl et lectus elementum luctus a eget odio. Mauris iaculis ultrices dolor eget cursus. Etiam ullamcorper diam in efficitur aliquet. Mauris viverra ornare orci a maximus. Aenean bibendum convallis orci, ac mattis orci. Suspendisse ac libero urna. Vestibulum lacus urna, egestas et hendrerit ac, vulputate ut nisl.",
+	// 		"blockClass": "text-main-seo"
+	// 	},
+	// 	"title": "SEO Text"
+	// },
+	"flex-layout.row#searchtitle": {
+		"children": ["search-title.v2"],
+		"props": {
+			"blockClass": "searchTitleDesktop"
+		}
+	},
+	"flex-layout.row#notfound": {
+		"children": ["flex-layout.col#not-found-text", "flex-layout.col#not-found-image"],
+		"props": {
+			"blockClass": "not-found",
+			"fullWidth": true
+		}
+	},
+	"flex-layout.col#not-found-text": {
+		"children": ["rich-text#product-not-found"],
+		"props": {
+			"blockClass": "not-found-text",
+			"width": "50%"
+		}
+	},
+	"rich-text#product-not-found": {
+		"props": {
+			"blockClass": "not-found-text",
+			"textAlignment": "LEFT",
+			"textPosition": "LEFT",
+			"text": "#### Nenhum produto foi encontrado \n ## Oops!! \n ### O que eu faço agora? \n * Verifique os termos digitados. \n * Tente utilizar uma única palavra. \n * Utilize termos genéricos na busca. \n * Procure utilizar sinônimos ao termo desejado."
+		}
+	},
+	"flex-layout.col#not-found-image": {
+		"children": ["image#not-found"],
+		"props": {
+			"blockClass": "not-found-image",
+			"width": "50%"
+		}
+	},
+	"image#not-found": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/product-not-found-3.png",
+			"maxHeight": "251px"
+		},
+		"title": "Produto não encontrado - Imagem"
+	},
+	"search-content": {
+		"blocks": ["gallery", "not-found"]
+	},
+	"gallery": {
+		"blocks": ["product-summary.shelf#searchs"],
+		"props": {
+			"blockClass": "search-gallery",
+			"maxItemsPerRow": {
+				"desktop": 4,
+				"tablet": 3,
+				"phone": 2
+			}
+		}
+	},
+
+	"flex-layout.row#not-found-shelf-title": {
+		"children": ["rich-text#not-found-shelf-title"],
+		"props": {
+			"blockClass": ["not-found-shelf-title"]
+		},
+		"title": "Produto Não Encontrado - Prateleira - Título"
+	},
+	"rich-text#not-found-shelf-title": {
+		"props": {
+			"text": "Experimente \n ## Produtos mais populares",
+			"blockClass": ["not-found-shelf-title"]
+		},
+		"title": "Prateleira Produto Não Encontrado - Título"
+	},
+	"flex-layout.row#not-found-shelf": {
+		"props": {
+			"blockClass": ["not-found-shelf"]
+		},
+		"children": ["list-context.product-list#not-found"],
+		"title": "Produto Não Encontrado - Prateleira"
+	},
+	"list-context.product-list#not-found": {
+		"blocks": ["product-summary.shelf#home"],
+		"children": ["slider-layout#dnot-found"],
+		"props": {
+			"orderBy": "OrderByTopSaleDESC"
+		},
+		"title": "Prateleira Produto Não Encontrado - Produtos"
+	},
+	"slider-layout#dnot-found": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 6,
+				"tablet": 3,
+				"phone": 2
+			},
+			"infinite": true,
+			"fullWidth": false,
+			"blockClass": "not-found-shelf",
+			"showPaginationDots": "never",
+			"showNavigationArrows": "desktopOnly"
+		},
+		"title": "Prateleira Produto Não Encontrado - Slider"
+	},
+
+	"flex-layout.row#deals-v2": {
+		"children": ["slider-layout#deals-v2"],
+		"props": {
+			"blockClass": "deals-not-found"
+		},
+		"title": "Régua de Vantagens"
+	},
+
+	"slider-layout#deals-v2": {
+		"props": {
+			"itemsPerPage": {
+				"desktop": 5,
+				"tablet": 1,
+				"phone": 1
+			},
+			"infinite": true,
+			"showNavigationArrows": "mobileOnly",
+			"showPaginationDots": "never",
+			"blockClass": "deals-not-found"
+		},
+		"children": [
+			"flex-layout.col#deals1-v2",
+			"flex-layout.col#deals2-v2",
+			"flex-layout.col#deals3-v2",
+			"flex-layout.col#deals4-v2",
+			"flex-layout.col#deals5-v2"
+		]
+	},
+
+	"flex-layout.col#deals1-v2": {
+		"children": ["image#deal1", "rich-text#deal1"],
+		"props": {
+			"blockClass": "deals-not-found"
+		},
+		"title": "Régua de Vantagens - Item 1"
+	},
+	"image#deal1": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/Advantages-Icons-1.png",
+			"maxHeight": "40px"
+		},
+		"title": "Régua de Vantagens - Imagem 1"
+	},
+	"rich-text#deal1": {
+		"props": {
+			"text": "### Clique e Retire \n Nas lojas físicas",
+			"blockClass": "deals-not-found"
+		},
+		"title": "Régua de Vantagens - Texto 1"
+	},
+	"flex-layout.col#deals2-v2": {
+		"children": ["image#deal2", "rich-text#deal2"],
+		"props": {
+			"blockClass": "deals-not-found"
+		},
+		"title": "Régua de Vantagens - Item 2"
+	},
+	"image#deal2": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/Advantages-Icons-2.png",
+			"maxHeight": "40px"
+		},
+		"title": "Régua de Vantagens - Imagem 2"
+	},
+	"rich-text#deal2": {
+		"props": {
+			"text": "### Delivery \n Para seu conforto",
+			"blockClass": "deals-not-found"
+		},
+		"title": "Régua de Vantagens - Texto 2"
+	},
+	"flex-layout.col#deals3-v2": {
+		"children": ["image#deal3", "rich-text#deal3"],
+		"props": {
+			"blockClass": "deals-not-found"
+		},
+		"title": "Régua de Vantagens - Item 3"
+	},
+	"image#deal3": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/Advantages-Icons-3.png",
+			"maxHeight": "40px"
+		},
+		"title": "Régua de Vantagens - Imagem 3"
+	},
+	"rich-text#deal3": {
+		"props": {
+			"text": "### Localização \n Visite nossas lojas",
+			"blockClass": "deals-not-found"
+		},
+		"title": "Régua de Vantagens - Texto 3"
+	},
+	"flex-layout.col#deals4-v2": {
+		"children": ["image#deal4", "rich-text#deal4"],
+		"props": {
+			"blockClass": "deals-not-found"
+		},
+		"title": "Régua de Vantagens - Item 4"
+	},
+	"image#deal4": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/Advantages-Icons-4.png",
+			"maxHeight": "40px"
+		},
+		"title": "Régua de Vantagens - Imagem 4"
+	},
+	"rich-text#deal4": {
+		"props": {
+			"text": "### O melhor lugar \n Para comprar barato",
+			"blockClass": "deals-not-found"
+		},
+		"title": "Régua de Vantagens - Texto 4"
+	},
+	"flex-layout.col#deals5-v2": {
+		"children": ["image#deal5", "rich-text#deal5"],
+		"props": {
+			"blockClass": "deals-not-found"
+		},
+		"title": "Régua de Vantagens - Item 5"
+	},
+	"image#deal5": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/Advantages-Icons-5.png",
+			"maxHeight": "40px"
+		},
+		"title": "Régua de Vantagens - Imagem 5"
+	},
+	"rich-text#deal5": {
+		"props": {
+			"text": "### Variedade \n Mais de 500 marcas",
+			"blockClass": "deals-not-found"
+		},
+		"title": "Régua de Vantagens - Texto 5"
+	}
+}

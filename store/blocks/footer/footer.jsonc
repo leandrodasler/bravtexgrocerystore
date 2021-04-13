@@ -1,0 +1,296 @@
+{
+	"footer": {
+		"blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+	},
+	"footer-layout.desktop": {
+		"children": [
+			"flex-layout.row#newsletter",
+			"flex-layout.row#footer-1-desktop",
+			"flex-layout.row#footer-2-desktop",
+			"flex-layout.row#footer-3-desktop"
+		],
+		"title": "Footer desktop"
+	},
+	"flex-layout.row#footer-1-desktop": {
+		"title": "Footer menu",
+		"children": [
+			"vtex.menu@2.x:menu#Politica",
+			"vtex.menu@2.x:menu#Instituicional",
+			"vtex.menu@2.x:menu#AjudaSuporte",
+			"vtex.menu@2.x:menu#midias"
+		],
+		"props": {
+			"blockClass": "menu-row",
+			"paddingTop": 6,
+			"paddingBottom": 3
+		}
+	},
+	"flex-layout.row#footer-2-desktop": {
+		"title": "Footer payment",
+		"children": ["rich-text#texto-cartoes", "flex-layout.row#payments"],
+		"props": {
+			"blockClass": "payment-methods"
+		}
+	},
+	"rich-text#texto-cartoes": {
+		"props": {
+			"blockClass": "footer-payment-methods-text",
+			"text": "Aceitamos cartões de débito, crédito e vale alimentação"
+		},
+		"title": "Footer payment text"
+	},
+	"flex-layout.row#payments": {
+		"props": {
+			"blockClass": "payments-flags",
+			"horizontalAlign": "right",
+			"preventHorizontalStretch": true
+		},
+		"children": [
+			"image#visa",
+			"image#master",
+			"image#elo",
+			"image#diners",
+			"image#aexpress",
+			"image#alelo",
+			"image#caixa"
+		],
+		"title": "Footer flags payment"
+	},
+	"image#visa": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/cartaovisa_footer.png",
+			"maxHeight": 24,
+			"maxWidth": 32,
+			"blockClass": "first-img-grid"
+		}
+	},
+	"image#master": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/master_footer.png",
+			"maxHeight": 24,
+			"maxWidth": 32
+		}
+	},
+	"image#elo": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/elo_footer.png",
+			"maxHeight": 24,
+			"maxWidth": 32
+		}
+	},
+	"image#diners": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/diners_footer.png",
+			"maxHeight": 24,
+			"maxWidth": 32
+		}
+	},
+	"image#aexpress": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/american_express_footer.png",
+			"maxHeight": 24,
+			"maxWidth": 32,
+			"blockClass": "first-img-grid"
+		}
+	},
+	"image#alelo": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/alelo_footer.png",
+			"maxHeight": 24,
+			"maxWidth": 32
+		}
+	},
+	"image#caixa": {
+		"props": {
+			"blockClass": "caixa-image",
+			"src": "https://gigadigital.vteximg.com.br/arquivos/caixa_footer.png",
+			"maxHeight": 24,
+			"maxWidth": 32
+		}
+	},
+	"flex-layout.row#footer-3-desktop": {
+		"title": "Footer copyright",
+		"children": ["image#logo-footer", "rich-text#footer", "flex-layout.row#developedby-logos-container-desktop"],
+		"props": {
+			"blockClass": "credits"
+		}
+	},
+	"flex-layout.row#credits-desktop": {
+		"props": {
+			"blockClass": "credits-acct",
+			"preserveLayoutOnMobile": true
+		},
+		"children": [
+			"flex-layout.col#developedby-container-desktop",
+			"flex-layout.col#img-acct-container-desktop",
+			"flex-layout.col#img-vtex-container-desktop"
+		],
+		"title": "Footer ACCT"
+	},
+	"flex-layout.row#developedby-logos-container-desktop": {
+		"props": {
+			"blockClass": "container-developedby-desk",
+			"preventHorizontalStretch": true
+		},
+		"children": ["rich-text#developedBy", "image#acct-footer", "image#vtex-footer"]
+	},
+	"flex-layout.col#developedby-container-desktop": {
+		"props": {
+			"blockClass": "container-developedby-desk",
+			"width": "50%"
+		},
+		"children": ["rich-text#developedBy"]
+	},
+	"flex-layout.col#img-acct-container-desktop": {
+		"props": {
+			"blockClass": "container-logocopýright-desk",
+			"width": "25%"
+		},
+		"children": ["image#acct-footer"]
+	},
+	"flex-layout.col#img-vtex-container-desktop": {
+		"props": {
+			"blockClass": "container-logocopyright-desk",
+			"width": "25%"
+		},
+		"children": ["image#vtex-footer"]
+	},
+	"image#logo-footer": {
+		"props": {
+			"src": "",
+			"blockClass": "logo-giga-footer"
+		},
+		"title": "Footer logo"
+	},
+	"rich-text#footer": {
+		"props": {
+			"text": "VTEX Atacado © - 2020 - Todos os direitos reservados.",
+			"blockClass": "footer-copyright"
+		},
+		"title": "Footer copyright text"
+	},
+	"flex-layout.row#credits": {
+		"props": {
+			"blockClass": "credits-acct"
+		},
+		"children": ["rich-text#developedBy", "image#acct-footer"],
+		"title": "Footer ACCT"
+	},
+	"rich-text#developedBy": {
+		"props": {
+			"text": "Desenvolvido por",
+			"blockClass": "developedBy",
+			"textAlignment": "CENTER"
+		},
+		"title": "Footer ACCT text"
+	},
+	"image#acct-footer": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/acct-logo-footer.png",
+			"blockClass": "acct-logo-footer"
+		},
+		"title": "Footer ACCT image"
+	},
+	"footer-layout.mobile": {
+		"children": [
+			"flex-layout.row#newsletter",
+			"flex-layout.row#footer-menu-1-mobile",
+			"flex-layout.row#footer-menu-2-mobile",
+			"flex-layout.row#footer-menu-3-mobile",
+			"flex-layout.row#footer-menu-4-mobile",
+			"flex-layout.row#footer-2-mobile",
+			"flex-layout.row#footer-3-mobile-infos",
+			"flex-layout.row#credits-mobile"
+		],
+		"title": "Footer mobile"
+	},
+	"flex-layout.row#footer-menu-1-mobile": {
+		"title": "Footer - Mobile - Menu #1",
+		"children": ["vtex.menu@2.x:menu#footer-mobile"],
+		"props": {
+			"blockClass": "menus-footer-container"
+		}
+	},
+	"flex-layout.row#footer-menu-2-mobile": {
+		"title": "Footer - Mobile - Menu #2",
+		"children": ["vtex.menu@2.x:menu#footer-mobile-2"],
+		"props": {
+			"blockClass": "menus-footer-container"
+		}
+	},
+	"flex-layout.row#footer-menu-3-mobile": {
+		"title": "Footer - Mobile - Menu #3",
+		"children": ["vtex.menu@2.x:menu#footer-mobile-3"],
+		"props": {
+			"blockClass": "menus-footer-container"
+		}
+	},
+	"flex-layout.row#footer-menu-4-mobile": {
+		"title": "Footer - Mobile - Menu #4",
+		"children": ["vtex.menu@2.x:menu#footer-mobile-4"],
+		"props": {
+			"blockClass": "menus-footer-container"
+		}
+	},
+	"flex-layout.row#footer-2-mobile": {
+		"title": "Footer payment",
+		"children": ["rich-text#texto-cartoes", "flex-layout.row#payments"],
+		"props": {
+			"blockClass": "payment-methods"
+		}
+	},
+	"flex-layout.row#footer-3-mobile": {
+		"title": "Footer payment",
+		"children": ["image#logo-footer", "rich-text#footer", "flex-layout.row#credits"],
+		"props": {
+			"blockClass": "payment-methods-flags"
+		}
+	},
+	"flex-layout.row#footer-3-mobile-infos": {
+		"children": ["image#logo-footer", "rich-text#footer"],
+		"props": {
+			"blockClass": "payment-methods-flags"
+		}
+	},
+	"flex-layout.row#credits-mobile": {
+		"props": {
+			"blockClass": "credits-acct",
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true
+		},
+		"children": [
+			"flex-layout.col#developedby-container-mobile",
+			"flex-layout.col#img-acct-container-mobile",
+			"flex-layout.col#img-vtex-container-mobile"
+		],
+		"title": "Footer ACCT"
+	},
+	"flex-layout.col#developedby-container-mobile": {
+		"props": {
+			"blockClass": "container-developedby-mobile",
+			"width": "50%"
+		},
+		"children": ["rich-text#developedBy"]
+	},
+	"flex-layout.col#img-acct-container-mobile": {
+		"props": {
+			"blockClass": "container-developedby-mobile",
+			"width": "25%"
+		},
+		"children": ["image#acct-footer"]
+	},
+	"flex-layout.col#img-vtex-container-mobile": {
+		"props": {
+			"blockClass": "container-logocopyright-mobile",
+			"width": "25%"
+		},
+		"children": ["image#vtex-footer"]
+	},
+	"image#vtex-footer": {
+		"props": {
+			"src": "https://gigadigital.vteximg.com.br/arquivos/vtex-logo-mobile-new.png",
+			"blockClass": "acct-logo-footer"
+		},
+		"title": "VTEX - Logo"
+	}
+}

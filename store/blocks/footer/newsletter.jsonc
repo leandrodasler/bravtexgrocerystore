@@ -1,0 +1,101 @@
+{
+	"flex-layout.row#newsletter": {
+		"props": {
+			"blockClass": "newsletter"
+		},
+		"children": ["flex-layout.row#text", "flex-layout.col#newsletter-form"],
+		"title": "Newsletter bar"
+	},
+	"flex-layout.row#tablet": {
+		"props": {
+			"blockClass": ""
+		},
+		"children": ["flex-layout.row#text", "flex-layout.col#newsletter-form"]
+	},
+	"flex-layout.col#newsletter-form": {
+		"props": {
+			"blockClass": "newsletter-form"
+		},
+		"children": ["newsletter-form"],
+		"title": "Form block"
+	},
+	"newsletter-form": {
+		"props": {
+			"blockClass": "newsletter-input"
+		},
+		"title": "Form",
+		"children": ["newsletter-input-name", "newsletter-input-phone", "newsletter-submit"]
+	},
+	"newsletter-input-name": {
+		"props": {
+			"inputLabel": "Nome:",
+			"placeholderText": "Digite seu nome",
+			"blockClass": "newsletter-input-name--input"
+		},
+		"title": "Input name field"
+	},
+	"newsletter-input-phone": {
+		"props": {
+			"inputLabel": "Número:",
+			"placeholderText": "(99) 99999-9999",
+			"blockClass": "newsletter-input-phone--input"
+		},
+		"title": "Input phone field"
+	},
+	"newsletter-submit": {
+		"props": {
+			"submitButtonLabel": "CADASTRAR",
+			"blockClass": "newsletter-input-button"
+		},
+		"title": "Newsletter button"
+	},
+	"flex-layout.row#text": {
+		"props": {
+			"blockClass": "newsletter-text-container"
+		},
+		"children": ["flex-layout.col#text"]
+	},
+	"flex-layout.col#text": {
+		"props": {
+			"blockClass": "newsletter-text"
+		},
+		"title": "Text block",
+		"children": ["rich-text#newsletter"]
+	},
+	"rich-text#newsletter": {
+		"props": {
+			"text": "Cadastre seu número e receba novidades pelo whatsapp!",
+			"textColor": "#06623A",
+			"blockClass": "newsletter",
+			"font": "t-heading-3"
+		},
+		"title": "Whatsapp text"
+	},
+	"flex-layout.row#form": {
+		"children": ["form"]
+	},
+	"form": {
+		"children": ["form-input.text#firstName", "form-input.text#lastName", "form-submit"],
+		"blocks": ["form-success"]
+	},
+	"form-success": {
+		"children": ["rich-text#successSubmit"]
+	},
+	"rich-text#successSubmit": {
+		"props": {
+			"text": "Enviado com sucesso",
+			"textAlignment": "CENTER",
+			"textPosition": "CENTER"
+		}
+	},
+	"form-input.text#firstName": {
+		"props": {
+			"pointer": "#/properties/firstName"
+		}
+	},
+	"form-input.text#lastName": {
+		"props": {
+			"pointer": "#/properties/lastName"
+		}
+	}
+}

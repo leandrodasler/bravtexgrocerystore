@@ -1,0 +1,30 @@
+{
+	"vtex.menu@2.x:menu#footer-mobile": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "footer-menus-mobile"
+		},
+		"children": ["rich-text#politicaTitle", "menu-item#termos", "menu-item#privacidade", "menu-item#cookies"]
+	},
+	"vtex.menu@2.x:menu#footer-mobile-2": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "footer-menus-mobile"
+		},
+		"children": ["rich-text#institucionalTitle", "menu-item#quemSomos", "menu-item#nossasLojas", "menu-item#Folhetos"]
+	},
+	"vtex.menu@2.x:menu#footer-mobile-3": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "footer-menus-mobile"
+		},
+		"children": ["rich-text#ajudaTitle", "rich-text#sac"]
+	},
+	"vtex.menu@2.x:menu#footer-mobile-4": {
+		"props": {
+			"orientation": "vertical",
+			"blockClass": "footer-menus-mobile"
+		},
+		"children": ["rich-text#midiasTitle", "flex-layout.row#midias"]
+	}
+}

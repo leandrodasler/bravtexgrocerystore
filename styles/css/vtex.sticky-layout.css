@@ -1,0 +1,10 @@
+@media (max-width: 1025px) and (min-width: 641px) {
+	:global(.vtex-sticky-layout-0-x-wrapper--sticky-mobile) {
+		display: none;
+	}
+}
+@media (max-width: 640px) {
+	:global(.vtex-sticky-layout-0-x-wrapper--sticky-tablet) {
+		display: none;
+	}
+}

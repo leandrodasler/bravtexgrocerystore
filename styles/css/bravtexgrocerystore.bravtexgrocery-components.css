@@ -1,0 +1,147 @@
+:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf)
+	.contentQuantity
+	:global(.vtex-numeric-stepper__input) {
+	font-size: 16px;
+	font-weight: bold;
+	color: #F71963;
+	width: 117px;
+	height: 48px;
+	border-left: none;
+	border-right: none;
+	border-color: #f1efed;
+}
+:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf)
+	.contentQuantity
+	:global(.vtex-numeric-stepper__plus-button),
+:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf)
+	.contentQuantity
+	:global(.vtex-numeric-stepper__minus-button) {
+	height: 48px;
+	background-color: transparent;
+	border-color: #F71963;
+}
+:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf)
+	.contentQuantity
+	:global(.vtex-numeric-stepper__plus-button__text),
+:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf)
+	.contentQuantity
+	:global(.vtex-numeric-stepper__minus-button__text) {
+	font-size: 32px;
+	color: #F71963;
+	font-weight: normal;
+}
+
+:global(.vtex-shelf-1-x-shelfContentContainer--pdp-related-shelf) .containerQuantity,
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer) .containerQuantity,
+:global(.vtex-search-result-3-x-galleryItem) .containerQuantity {
+	height: 48px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .container {
+	padding: 20px 0 30px 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--fixed-prices) .container {
+	padding: 10px 0;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer) .contentQuantity :global(.vtex-numeric-stepper__input) {
+	width: 100%;
+}
+
+/* New Component*/
+.containerWholesaleButton :global(.vtex-button) {
+	width: 100%;
+	height: 40px !important;
+	border-radius: 4px;
+	border: 1px solid #f2f7f5;
+	background-color: #f2f7f5;
+	min-width: 168px;
+	min-height: 56px;
+	padding: 8px 12px;
+}
+.containerWholesaleButton :global(.vtex-button):hover {
+	background-color: #e5fff3;
+	border-color: #F71963;
+}
+.containerWholesaleButton :global(.vtex-button__label) {
+	padding: 0 !important;
+}
+:global(.vtex-product-summary-2-x-containerNormal) .containerWholesalePrice .wholesaleInformationsChecked {
+	width: 70%;
+}
+
+:global(.vtex-product-summary-2-x-containerNormal) .containerWholesaleButton :global(.vtex-button) {
+	padding: 0;
+}
+
+@media only screen and (max-width: 640px) {
+	:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf)
+		.contentQuantity
+		:global(.vtex-numeric-stepper__input) {
+		width: 100%;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf)
+		.contentQuantity
+		:global(.vtex-numeric-stepper__plus-button),
+	:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf)
+		.contentQuantity
+		:global(.vtex-numeric-stepper__minus-button) {
+		height: 30px;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf)
+		.contentQuantity
+		:global(.vtex-numeric-stepper__input) {
+		height: 30px;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf) .contentAddedToCartTxt {
+		font-size: 12px;
+	}
+	:global(.vtex-shelf-1-x-shelfContentContainer--pdp-related-shelf) .containerQuantity,
+	:global(.vtex-slider-layout-0-x-sliderLayoutContainer) .containerQuantity,
+	:global(.vtex-search-result-3-x-galleryItem) .containerQuantity {
+		height: 30px;
+	}
+	:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf)
+		.contentQuantity
+		:global(.vtex-numeric-stepper__plus-button__text),
+	:global(.vtex-flex-layout-0-x-flexRow--add-to-cart-btn-container-shelf)
+		.contentQuantity
+		:global(.vtex-numeric-stepper__minus-button__text) {
+		font-size: 22px;
+	}
+
+	/* Inner Component*/
+	:global(.vtex-product-summary-2-x-containerNormal) .containerWholesalePrice .wholePriceActiveCheckMark,
+	:global(.vtex-product-summary-2-x-containerNormal) .containerWholesalePrice .innerSVGButtonContainer {
+		display: none;
+	}
+	:global(.vtex-product-summary-2-x-containerNormal) .containerWholesalePrice {
+		min-width: 125px;
+	}
+	:global(.vtex-product-summary-2-x-containerNormal) .containerWholesalePrice .wholesaleInformationsChecked {
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		align-items: center;
+	}
+	:global(.vtex-product-summary-2-x-containerNormal) .containerWholesaleButton :global(.vtex-button) {
+		min-width: 128px;
+	}
+	:global(.vtex-product-summary-2-x-containerNormal) .wholesaleInformations {
+		padding: 0;
+		height: 100%;
+	}
+	:global(.vtex-product-summary-2-x-containerNormal) .wholesaleInformations .wholesaleInformationsChecked {
+		background-color: #e5fff3;
+	}
+	:global(.vtex-product-summary-2-x-containerNormal) .wholesaleInformationsChecked .unitPrice {
+		color: #F71963;
+	}
+}
+
+@media (min-width: 641px) and (max-width: 1025px) {
+	.containerWholesaleButton :global(.vtex-button) {
+		padding: 8px 12px;
+	}
+}

@@ -1,0 +1,19 @@
+.product-identifier--productReference {
+	margin-bottom: 1rem;
+	color: #807c78;
+	letter-spacing: 0.015em;
+	font-size: 12px;
+	line-height: 16px;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .product-identifier__separator {
+	display: none;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .product-identifier {
+	color: #807c78;
+	font-size: 12px;
+	line-height: 16px;
+	letter-spacing: 0.015em;
+}
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .product-identifier__value {
+	margin-left: 5px;
+}
