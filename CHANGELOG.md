@@ -7,6 +7,23 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.1.2] - 2021-04-14
+
+
+### Added
+
+- New logo;
+- New banners
+
+### Changed
+
+- Footer contact info;
+- Primary and hover button colors.
+
+### Removed
+
+- Unused credits from footer.
+
 ## [0.1.1] - 2021-02-09
 
 
