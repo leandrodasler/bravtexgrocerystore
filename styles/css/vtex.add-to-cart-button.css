@@ -30,7 +30,7 @@
 	background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 21C10.1046 21 11 20.1046 11 19C11 17.8954 10.1046 17 9 17C7.89543 17 7 17.8954 7 19C7 20.1046 7.89543 21 9 21Z' stroke='%2306623A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21Z' stroke='%2306623A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 3H5L7 15C7.21572 15.6135 7.62494 16.1402 8.16602 16.501C8.7071 16.8617 9.35075 17.0368 10 17H17C17.6493 17.0368 18.2929 16.8617 18.834 16.501C19.3751 16.1402 19.7843 15.6135 20 15L21 8H5.8' stroke='%2306623A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 .buttonText--pdp-add-to-cart-btn {
-	color: #F71963;
+	color: #FFFFFF;
 	font-weight: 700;
 	font-size: 16px;
 	letter-spacing: 0.05em;
@@ -45,7 +45,7 @@
 	font-weight: 700 !important;
 	font-size: 16px !important;
 	line-height: 24px;
-	color: #F71963 !important;
+	color: #FFFFFF !important;
 }
 .buttonText--shelfs-add-to-cart-btn::before {
 	content: '' !important;
