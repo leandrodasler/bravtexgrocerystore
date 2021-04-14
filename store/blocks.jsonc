@@ -57,7 +57,7 @@
 			"blockClass": "search-bar-header",
 			"openAutocompleteOnFocus": true,
 			"placeholder": "Pesquise por produtos ou marca...",
-			"maxWidth": 935
+			"maxWidth": 885
 		}
 	},
 	"autocomplete-result-list.v2": {
