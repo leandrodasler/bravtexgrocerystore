@@ -122,7 +122,6 @@
 		},
 		"children": [
 			"flex-layout.col#developedby-container-desktop",
-			"flex-layout.col#img-acct-container-desktop",
 			"flex-layout.col#img-vtex-container-desktop"
 		],
 		"title": "Footer ACCT"
@@ -132,7 +131,7 @@
 			"blockClass": "container-developedby-desk",
 			"preventHorizontalStretch": true
 		},
-		"children": ["rich-text#developedBy", "image#acct-footer", "image#vtex-footer"]
+		"children": ["rich-text#developedBy", "image#vtex-footer"]
 	},
 	"flex-layout.col#developedby-container-desktop": {
 		"props": {
@@ -140,13 +139,6 @@
 			"width": "50%"
 		},
 		"children": ["rich-text#developedBy"]
-	},
-	"flex-layout.col#img-acct-container-desktop": {
-		"props": {
-			"blockClass": "container-logocopýright-desk",
-			"width": "25%"
-		},
-		"children": ["image#acct-footer"]
 	},
 	"flex-layout.col#img-vtex-container-desktop": {
 		"props": {
@@ -164,7 +156,7 @@
 	},
 	"rich-text#footer": {
 		"props": {
-			"text": "VTEX Atacado © - 2020 - Todos os direitos reservados.",
+			"text": "VTEX Grocery © - 2020 - Todos os direitos reservados.",
 			"blockClass": "footer-copyright"
 		},
 		"title": "Footer copyright text"
@@ -173,7 +165,7 @@
 		"props": {
 			"blockClass": "credits-acct"
 		},
-		"children": ["rich-text#developedBy", "image#acct-footer"],
+		"children": ["rich-text#developedBy"],
 		"title": "Footer ACCT"
 	},
 	"rich-text#developedBy": {
@@ -183,13 +175,6 @@
 			"textAlignment": "CENTER"
 		},
 		"title": "Footer ACCT text"
-	},
-	"image#acct-footer": {
-		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/acct-logo-footer.png",
-			"blockClass": "acct-logo-footer"
-		},
-		"title": "Footer ACCT image"
 	},
 	"footer-layout.mobile": {
 		"children": [
@@ -260,7 +245,6 @@
 		},
 		"children": [
 			"flex-layout.col#developedby-container-mobile",
-			"flex-layout.col#img-acct-container-mobile",
 			"flex-layout.col#img-vtex-container-mobile"
 		],
 		"title": "Footer ACCT"
@@ -271,13 +255,6 @@
 			"width": "50%"
 		},
 		"children": ["rich-text#developedBy"]
-	},
-	"flex-layout.col#img-acct-container-mobile": {
-		"props": {
-			"blockClass": "container-developedby-mobile",
-			"width": "25%"
-		},
-		"children": ["image#acct-footer"]
 	},
 	"flex-layout.col#img-vtex-container-mobile": {
 		"props": {
