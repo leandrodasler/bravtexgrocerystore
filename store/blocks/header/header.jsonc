@@ -134,8 +134,8 @@
 		"props": {
 			"title": "Logo",
 			"href": "/",
-			"url": "https://bravtexgrocerystore.vteximg.com.br/arquivos/logo-vtex-v5.png",
-			"width": "100"
+			"url": "https://bravtexgrocerystore.vtexassets.com/arquivos/VTEX-grocery.png",
+			"width": "150"
 		}
 	},
 	/*Header Mobile*/
@@ -261,7 +261,7 @@
 		"props": {
 			"title": "Logo",
 			"href": "/",
-			"url": "https://gigadigital.vteximg.com.br/arquivos/logo-vtex-v5.png",
+			"url": "https://bravtexgrocerystore.vtexassets.com/arquivos/logo-grocery.png",
 			"width": "58"
 		}
 	}
