@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [0.1.3] - 2021-04-15
+
+### Added
+
+- New sale banner.
+
+### Changed
+
+- Replaced older icons from home to new ones (according to new UI).
+
+### Removed
+
+- Unused shelf banner.
+
 ## [0.1.2] - 2021-04-14
 
 
