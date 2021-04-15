@@ -21,7 +21,11 @@
 			"images": [
 				{
 					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Banner-Azeite-Desktop.png",
-					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Banner-Azeite-Mobile.png"
+					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Banner-Azeite-Mobile-novo.png"
+				},
+				{
+					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Banner-Margarina-Desktop-respiro.png",
+					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Banner-margarina-mobile.png"
 				}
 			]
 		},
