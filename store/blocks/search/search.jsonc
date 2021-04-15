@@ -416,7 +416,7 @@
 	},
 	"image#deal1": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/Advantages-Icons-1.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/store.png",
 			"maxHeight": "40px"
 		},
 		"title": "Régua de Vantagens - Imagem 1"
@@ -437,7 +437,7 @@
 	},
 	"image#deal2": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/Advantages-Icons-2.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/truck.png",
 			"maxHeight": "40px"
 		},
 		"title": "Régua de Vantagens - Imagem 2"
@@ -458,7 +458,7 @@
 	},
 	"image#deal3": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/Advantages-Icons-3.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/local.png",
 			"maxHeight": "40px"
 		},
 		"title": "Régua de Vantagens - Imagem 3"
@@ -479,7 +479,7 @@
 	},
 	"image#deal4": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/Advantages-Icons-4.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/discount.png",
 			"maxHeight": "40px"
 		},
 		"title": "Régua de Vantagens - Imagem 4"

@@ -7,14 +7,14 @@
 }
 :global(.vtex-login-2-x-container) :global(.vtex-button__label):before {
 	content: '';
-	background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='32' height='32' rx='16' fill='%23E6FFF3'/%3E%3Cpath d='M16 16C17.4728 16 18.6667 14.8061 18.6667 13.3333C18.6667 11.8606 17.4728 10.6667 16 10.6667C14.5272 10.6667 13.3333 11.8606 13.3333 13.3333C13.3333 14.8061 14.5272 16 16 16Z' stroke='%2300AC5A' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 22V20.6667C12 19.9594 12.281 19.2811 12.781 18.781C13.2811 18.281 13.9594 18 14.6667 18H17.3333C18.0406 18 18.7189 18.281 19.219 18.781C19.719 19.2811 20 19.9594 20 20.6667V22' stroke='%2300AC5A' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+	background-image: url("https://bravtexgrocerystore.vtexassets.com/arquivos/user.png");
 	background-repeat: no-repeat;
 	background-position: 50%;
+	background-size: contain;
 	padding: 0;
-	height: 32px;
-	width: 32px;
+	height: 26px;
+	width: 26px;
 	margin-top: 0;
-	margin-bottom: 3px;
 }
 :global(.vtex-login-2-x-label) {
 	white-space: pre-wrap;

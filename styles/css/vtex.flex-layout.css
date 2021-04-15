@@ -288,8 +288,8 @@
 	justify-content: flex-end;
 }
 .flexRow--add-to-cart-btn-container-shelf :global(.vtex-button) {
-	background: #00ac5a;
-	border: 1px solid #00ac5a;
+	background: #142032;
+	border: 1px solid #142032;
 	box-sizing: border-box;
 	border-radius: 4px;
 	padding: 8px 24px 8px 20px;

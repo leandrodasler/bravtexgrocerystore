@@ -165,7 +165,7 @@
 	"rich-text#sac": {
 		"props": {
 			"blockClass": "footer-menu-items",
-			"text": "SAC: (11) 2388-8238\nE-mail: sac.vtex@vtex.com.br\nDe segunda a sexta das 08h às 22h.\nAos sábados das 08h às 20h."
+			"text": "SAC: (21) 3174-5400\nE-mail: grocery.store@vtex.com.br\nDe segunda a sexta das 08h às 22h.\nAos sábados das 08h às 20h."
 		},
 		"title": "Footer menu item"
 	},
@@ -195,28 +195,21 @@
 		"props": {
 			"blockClass": "midias-footer"
 		},
-		"children": ["image#whatsapp", "image#instagram", "image#facebook"],
+		"children": ["image#instagram", "image#facebook"],
 		"title": "Footer midias itens"
-	},
-	"image#whatsapp": {
-		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/whatsapp_midia.png",
-			"maxHeight": 40,
-			"maxWidth": 40
-		}
 	},
 	"image#instagram": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/instagram_midia.png",
-			"maxHeight": 40,
-			"maxWidth": 40
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/instagramlogo1.png",
+			"maxHeight": 30,
+			"maxWidth": 30
 		}
 	},
 	"image#facebook": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/facebook.png",
-			"maxHeight": 40,
-			"maxWidth": 40
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/facebook1.png",
+			"maxHeight": 30,
+			"maxWidth": 30
 		}
 	}
 }
