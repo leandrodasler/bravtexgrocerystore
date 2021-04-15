@@ -22,13 +22,6 @@
 .buttonDataContainer--shelfs-add-to-cart-btn {
 	align-items: center;
 }
-.buttonDataContainer--pdp-add-to-cart-btn::before {
-	content: '';
-	width: 24px;
-	height: 24px;
-	margin-right: 15px;
-	background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 21C10.1046 21 11 20.1046 11 19C11 17.8954 10.1046 17 9 17C7.89543 17 7 17.8954 7 19C7 20.1046 7.89543 21 9 21Z' stroke='%2306623A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21Z' stroke='%2306623A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 3H5L7 15C7.21572 15.6135 7.62494 16.1402 8.16602 16.501C8.7071 16.8617 9.35075 17.0368 10 17H17C17.6493 17.0368 18.2929 16.8617 18.834 16.501C19.3751 16.1402 19.7843 15.6135 20 15L21 8H5.8' stroke='%2306623A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-}
 .buttonText--pdp-add-to-cart-btn {
 	color: #FFFFFF;
 	font-weight: 700;
@@ -47,18 +40,6 @@
 	line-height: 24px;
 	color: #FFFFFF !important;
 }
-.buttonText--shelfs-add-to-cart-btn::before {
-	content: '' !important;
-}
-@media (max-width: 1024px) {
-	.buttonDataContainer::before {
-		width: 19px;
-		height: 19px;
-		margin-right: 12px;
-		background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.25 16.25C8.07843 16.25 8.75 15.5784 8.75 14.75C8.75 13.9216 8.07843 13.25 7.25 13.25C6.42157 13.25 5.75 13.9216 5.75 14.75C5.75 15.5784 6.42157 16.25 7.25 16.25Z' stroke='%2306623A' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.25 16.25C14.0784 16.25 14.75 15.5784 14.75 14.75C14.75 13.9216 14.0784 13.25 13.25 13.25C12.4216 13.25 11.75 13.9216 11.75 14.75C11.75 15.5784 12.4216 16.25 13.25 16.25Z' stroke='%2306623A' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2.75 2.75H4.25L5.75 11.75C5.91179 12.2101 6.21871 12.6052 6.62452 12.8757C7.03033 13.1463 7.51306 13.2776 8 13.25H13.25C13.7369 13.2776 14.2197 13.1463 14.6255 12.8757C15.0313 12.6052 15.3382 12.2101 15.5 11.75L16.25 6.5H4.85' stroke='%2306623A' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-		background-size: contain;
-	}
-}
 @media only screen and (max-width: 1025px) {
 	:global(.vtex-product-summary-2-x-element) .buttonText {
 		font-size: 14px;
@@ -66,27 +47,7 @@
 }
 /* Pdp */
 @media only screen and (max-width: 640px) {
-	.buttonDataContainer--shelfs-add-to-cart-btn::before {
-		content: '';
-		width: 18px;
-		height: 18px;
-		margin-right: 15px;
-		background-repeat: no-repeat;
-		background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 19 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.25 16.25C8.07843 16.25 8.75 15.5784 8.75 14.75C8.75 13.9216 8.07843 13.25 7.25 13.25C6.42157 13.25 5.75 13.9216 5.75 14.75C5.75 15.5784 6.42157 16.25 7.25 16.25Z' stroke='%2306623A' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M13.25 16.25C14.0784 16.25 14.75 15.5784 14.75 14.75C14.75 13.9216 14.0784 13.25 13.25 13.25C12.4216 13.25 11.75 13.9216 11.75 14.75C11.75 15.5784 12.4216 16.25 13.25 16.25Z' stroke='%2306623A' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M2.75 2.75H4.25L5.75 11.75C5.91179 12.2101 6.21871 12.6052 6.62452 12.8757C7.03033 13.1463 7.51306 13.2776 8 13.25H13.25C13.7369 13.2776 14.2197 13.1463 14.6255 12.8757C15.0313 12.6052 15.3382 12.2101 15.5 11.75L16.25 6.5H4.85' stroke='%2306623A' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-	}
-	:global(.vtex-shelf-1-x-slide--pdp-related-shelf)
-		:global(.vtex-button):hover
-		.buttonDataContainer--shelfs-add-to-cart-btn::before {
-		width: 18px;
-		height: 24px;
-		margin-right: 15px;
-		background-repeat: no-repeat;
-		background-image: url("data:image/svg+xml,%3Csvg width='19' height='19' viewBox='0 0 24 19' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 21C10.1046 21 11 20.1046 11 19C11 17.8954 10.1046 17 9 17C7.89543 17 7 17.8954 7 19C7 20.1046 7.89543 21 9 21Z' stroke='%23FDB31B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M17 21C18.1046 21 19 20.1046 19 19C19 17.8954 18.1046 17 17 17C15.8954 17 15 17.8954 15 19C15 20.1046 15.8954 21 17 21Z' stroke='%23FDB31B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M3 3H5L7 15C7.21572 15.6135 7.62494 16.1402 8.16602 16.501C8.7071 16.8617 9.35075 17.0368 10 17H17C17.6493 17.0368 18.2929 16.8617 18.834 16.501C19.3751 16.1402 19.7843 15.6135 20 15L21 8H5.8' stroke='%23FDB31B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-	}
 	:global(.vtex-product-summary-2-x-element) .buttonText {
 		font-size: 12px;
-	}
-	.buttonDataContainer::before {
-		margin-right: 4px;
 	}
 }
