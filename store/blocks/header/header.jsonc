@@ -104,7 +104,7 @@
 			"iconProps": {
 				"id": "list-icon",
 				"size": 32,
-				"viewBox": "0 0 32 32",
+				"viewBox": "-3 -3 24 24",
 				"activeClassName": "wishlist-active-heart",
 				"mutedClassName": "wishlist-muted-heart"
 			},

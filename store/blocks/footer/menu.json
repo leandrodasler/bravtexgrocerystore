@@ -195,28 +195,21 @@
 		"props": {
 			"blockClass": "midias-footer"
 		},
-		"children": ["image#whatsapp", "image#instagram", "image#facebook"],
+		"children": ["image#instagram", "image#facebook"],
 		"title": "Footer midias itens"
-	},
-	"image#whatsapp": {
-		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/whatsapp_midia.png",
-			"maxHeight": 40,
-			"maxWidth": 40
-		}
 	},
 	"image#instagram": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/instagram_midia.png",
-			"maxHeight": 40,
-			"maxWidth": 40
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/instagramlogo1.png",
+			"maxHeight": 30,
+			"maxWidth": 30
 		}
 	},
 	"image#facebook": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/facebook.png",
-			"maxHeight": 40,
-			"maxWidth": 40
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/facebook1.png",
+			"maxHeight": 30,
+			"maxWidth": 30
 		}
 	}
 }
