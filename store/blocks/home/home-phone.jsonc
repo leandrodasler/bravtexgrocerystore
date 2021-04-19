@@ -3,9 +3,9 @@
 		"children": [
 			"list-context.image-list#demo",
 			"flex-layout.row#deals",
+			"flex-layout.row#shelf-banner-mobile",
 			"flex-layout.row#shelf-title1",
 			"flex-layout.row#shelf1-mobile",
-			"flex-layout.row#banner-home-mobile",
 			"flex-layout.row#shelf-title2",
 			"flex-layout.row#shelf2"
 		],
@@ -20,19 +20,19 @@
 		"title": "Home - Prateleira 1"
 	},
 
-	"flex-layout.row#banner-home-mobile": {
-		"children": ["image#banner-home-mobile"],
+	"flex-layout.row#shelf-banner-mobile": {
+		"children": ["image#shelf-banner-mobile"],
 		"props": {
-			"blockClass": "banner-home"
+			"width": "25%",
+			"blockClass": ["shelf-banner"]
 		},
-		"title": "Home - Banner"
+		"title": "Prateleira 1 - Banner"
 	},
-	"image#banner-home-mobile": {
+	"image#shelf-banner-mobile": {
 		"props": {
-			"src": "/arquivos/banner_small_mobile.png",
-			"maxHeight": 93,
-			"blockClass": "banner-home"
-		},
-		"title": "Banner - imagem"
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/Cart%C3%A3o-Mobile.png",
+			"blockClass": "banner-sales",
+			"link": "/"
+		}
 	}
 }

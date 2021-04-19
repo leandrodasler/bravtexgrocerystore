@@ -7,6 +7,7 @@
 		"children": [
 			"list-context.image-list#demo",
 			"flex-layout.row#deals",
+			"flex-layout.row#shelf-banner-desktop",
 			"flex-layout.row#shelf-title1",
 			"flex-layout.row#shelf1",
 			"flex-layout.row#shelf-title2",
@@ -20,12 +21,12 @@
 			"height": 328,
 			"images": [
 				{
-					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Banner-Azeite-Desktop.png",
-					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Banner-Azeite-Mobile-novo.png"
+					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Azeite-Desktop1.png",
+					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Azeite-Mobile1.png"
 				},
 				{
-					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Banner-Margarina-Desktop-respiro.png",
-					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Banner-margarina-mobile.png"
+					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Margarina-Desktop1.png",
+					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Margarina-Mobile1.png"
 				}
 			]
 		},
@@ -66,6 +67,22 @@
 		},
 		"children": ["flex-layout.col#shelf"],
 		"title": "Home - Prateleira 1"
+	},
+	"flex-layout.row#shelf-banner-desktop": {
+		"children": ["image#shelf-banner-desktop"],
+		"props": {
+			"width": "25%",
+			"blockClass": ["shelf-banner"]
+		},
+		"title": "Prateleira 1 - Banner"
+	},
+	"image#shelf-banner-desktop": {
+		"props": {
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/Cart%C3%A3o-Desktop.png",
+			"blockClass": "banner-sales",
+			"link": "/"
+		},
+		"title": "Prateleira 1 - Imagem"
 	},
 	"flex-layout.col#shelf": {
 		"children": ["list-context.product-list#demo1"],
