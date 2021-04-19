@@ -84,7 +84,7 @@
 .biggy-autocomplete-wrapper,
 .biggy-autocomplete {
 	flex-direction: column !important;
-	max-width: 936px;
+	max-width: 885px;
 	min-width: 786px;
 }
 .tileListList {
