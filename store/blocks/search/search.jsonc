@@ -66,6 +66,7 @@
 			"flex-layout.row#searchbread-search-page",
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#did-you-mean",
+			"flex-layout.row#banner-one",
 			"flex-layout.row#content-search-page",
 			"flex-layout.row#fetchmore-search-page"
 		],
@@ -168,6 +169,17 @@
 		},
 		"children": ["search-fetch-more"]
 	},
+  	"flex-layout.row#banner-one": {
+    	"children": ["search-banner#one"]
+  	},
+
+  	"search-banner#one": {
+    	"props": {
+      		"area": "one",
+      	"blockClass": "myBanner",
+      	"horizontalAlignment": "center"
+    }
+  },
 	"flex-layout.row#seo-text-search-pageDesk": {
 		"children": ["rich-text#seo-search-pageDesk"],
 		"props": {
@@ -190,6 +202,7 @@
 			// "flex-layout.row#searchbread-search-page",
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#did-you-mean",
+			"flex-layout.row#banner-one",
 			"flex-layout.row#search-info-tablet-corredor-search-page",
 			"flex-layout.row#search-info-mobile-corredor-search-page",
 			"flex-layout.row#search-page-productCount-corredormob",
