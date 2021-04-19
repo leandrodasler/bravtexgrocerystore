@@ -219,7 +219,7 @@
 		max-width: calc(25% - 8px) !important;
 	}
 }
-@media only screen and (max-width: 1285px) {
+@media only screen and (max-width: 1439px) {
 	.notFound--layout--departament-desktop,
 	.searchResultContainer--departament-desktop {
 		max-width: 1160px;
