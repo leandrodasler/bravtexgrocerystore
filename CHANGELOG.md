@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.2.0] - 2021-04-19
 
+### Added
+
+- New search-result banner.
+
+### Changed
+
+- Sales banner adjusted to new responsive one.
+- Adjusted search-result and home page styles to receive the new banners.
+
 ## [0.1.3] - 2021-04-15
 
 ### Added
