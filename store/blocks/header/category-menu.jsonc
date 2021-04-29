@@ -1,22 +1,40 @@
 {
 	"vtex.menu@2.x:menu#category-menu": {
 		"props": {
-			"experimentalOptimizeRendering": true
+			"experimentalOptimizeRendering": true,
+			"items": [
+			{
+				"id": "menu-item-category-ofertas",
+				"type": "custom",
+				"blockClass": "category-menu",
+				"iconId": null,
+				"highlight": false,
+				"itemProps": {
+				"type": "internal",
+				"href": "/home---ofertas/",
+				"noFollow": false,
+				"tagTitle": "ofertas",
+				"text": "Ofertas"
+				}
+			},
+			{
+				"id": "menu-item-category-maisvendidos",
+				"type": "custom",
+				"blockClass": "category-maisvendidos",
+				"iconId": null,
+				"highlight": false,
+				"itemProps": {
+				"type": "internal",
+				"href": "/home---maisvendidos/",
+				"noFollow": false,
+				"tagTitle": "maisvendidos",
+				"text": "Mais Vendidos"
+				}
+			}
+			]
 		},
-		"children": [
-			"flex-layout.row#localization",
-			"menu-item#category",
-			"menu-item#category-bebidas",
-			"menu-item#category-carnes",
-			"menu-item#category-mercearia",
-			"menu-item#category-hortifruti",
-			"menu-item#category-limpeza",
-			"menu-item#category-congelados",
-			"menu-item#category-padaria",
-			"menu-item#category-churrasco"
-			// "menu-item#location"
-		]
-	},
+		"children": ["flex-layout.row#localization", "menu-item#category"]
+		},
 	"menu-item#category": {
 		"props": {
 			"id": "menu-item-category-home",
@@ -43,167 +61,30 @@
 		"blocks": ["vtex.menu@2.x:submenu#category"]
 	},
 
-	"menu-item#category-bebidas": {
-		"props": {
-			"id": "menu-item-category-home",
-			"type": "custom",
-			"blockClass": "category-menu",
-			"iconId": null,
-			"highlight": false,
-			"itemProps": {
-				"type": "internal",
-				"href": "/home---decor/",
-				"noFollow": false,
-				"tagTitle": "bebidas",
-				"text": "Bebidas"
-			}
-		}
-	},
-	"menu-item#category-carnes": {
-		"props": {
-			"id": "menu-item-category-home",
-			"type": "custom",
-			"blockClass": "category-menu",
-			"iconId": null,
-			"highlight": false,
-			"itemProps": {
-				"type": "internal",
-				"href": "/home---decor/",
-				"noFollow": false,
-				"tagTitle": "carnes",
-				"text": "Carnes"
-			}
-		}
-	},
-	"menu-item#category-mercearia": {
-		"props": {
-			"id": "menu-item-category-home",
-			"type": "custom",
-			"blockClass": "category-menu",
-			"iconId": null,
-			"highlight": false,
-			"itemProps": {
-				"type": "internal",
-				"href": "/home---decor/",
-				"noFollow": false,
-				"tagTitle": "mercearia",
-				"text": "Mercearia"
-			}
-		}
-	},
-	"menu-item#category-hortifruti": {
-		"props": {
-			"id": "menu-item-category-home",
-			"type": "custom",
-			"blockClass": "category-menu",
-			"iconId": null,
-			"highlight": false,
-			"itemProps": {
-				"type": "internal",
-				"href": "/home---decor/",
-				"noFollow": false,
-				"tagTitle": "hortifruti",
-				"text": "Hortifruti"
-			}
-		}
-	},
-	"menu-item#category-limpeza": {
-		"props": {
-			"id": "menu-item-category-home",
-			"type": "custom",
-			"blockClass": "category-menu",
-			"iconId": null,
-			"highlight": false,
-			"itemProps": {
-				"type": "internal",
-				"href": "/home---decor/",
-				"noFollow": false,
-				"tagTitle": "limpeza",
-				"text": "Limpeza"
-			}
-		}
-	},
-	"menu-item#category-congelados": {
-		"props": {
-			"id": "menu-item-category-home",
-			"type": "custom",
-			"blockClass": "category-menu",
-			"iconId": null,
-			"highlight": false,
-			"itemProps": {
-				"type": "internal",
-				"href": "/home---decor/",
-				"noFollow": false,
-				"tagTitle": "congelados",
-				"text": "Congelados"
-			}
-		}
-	},
-	"menu-item#category-padaria": {
-		"props": {
-			"id": "menu-item-category-home",
-			"type": "custom",
-			"blockClass": "category-menu",
-			"iconId": null,
-			"highlight": false,
-			"itemProps": {
-				"type": "internal",
-				"href": "/home---decor/",
-				"noFollow": false,
-				"tagTitle": "padaria",
-				"text": "Padaria"
-			}
-		}
-	},
-	"menu-item#category-churrasco": {
-		"props": {
-			"id": "menu-item-category-home",
-			"type": "custom",
-			"blockClass": "category-menu",
-			"iconId": null,
-			"highlight": false,
-			"itemProps": {
-				"type": "internal",
-				"href": "/home---decor/",
-				"noFollow": false,
-				"tagTitle": "churrasco",
-				"text": "Churrasco"
-			}
-		}
-	},
 	"flex-layout.row#localization": {
 		"props": {
 			"blockClass": "localization-row"
 		},
-		"children": ["rich-text#localization"]
+		"children": ["modal-trigger#location"]
 	},
-	"rich-text#localization": {
-		"props": {
-			"blockClass": "localization",
-			"text": "Enviar para: \n\n **Guarulhos - SP**"
-		}
+	"modal-trigger#location": {
+		"children": [
+			"current-address-component#localization",
+		  	"modal-layout#localization"
+		]
+	  },
+	"current-address-component#localization": {
 	},
-	"rich-text#localization-mobile": {
-		"props": {
-			"blockClass": "localization",
-			"text": "Enviar para: **Guarulhos - SP**"
-		}
-	},
-	"flex-layout.col#send": {
-		"props": {
-			"verticalAlign": "middle",
-			"horizontalAlign": "left",
-			"width": "50%",
-			"blockClass": "send"
-		},
-		"children": ["rich-text#localization"]
-	},
-	"flex-layout.row#localization-mobile": {
-		"props": {
-			"blockClass": "localization-row"
-		},
-		"children": ["rich-text#localization-mobile"]
-	}
+	  "modal-layout#localization": {
+		"children": [
+		  "current-address-modal"
+		]
+	  },
+	  "modal-actions.close": {
+		  "props": {
+			  "label": "Fechar"
+		  }
+	  }
 	// "menu-item#location": {
 	//   "props": {
 	//     "id": "menu-item-category-home",
