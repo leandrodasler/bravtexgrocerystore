@@ -28,7 +28,6 @@
 	},
 	"newsletter-input-name": {
 		"props": {
-			"inputLabel": "Nome:",
 			"placeholderText": "Digite seu nome",
 			"blockClass": "newsletter-input-name--input"
 		},
@@ -36,8 +35,7 @@
 	},
 	"newsletter-input-phone": {
 		"props": {
-			"inputLabel": "Número:",
-			"placeholderText": "(99) 99999-9999",
+			"placeholderText": "Digite seu número de celular",
 			"blockClass": "newsletter-input-phone--input"
 		},
 		"title": "Input phone field"
@@ -65,7 +63,7 @@
 	"rich-text#newsletter": {
 		"props": {
 			"text": "Cadastre seu número e receba novidades pelo whatsapp!",
-			"textColor": "#06623A",
+			"textColor": "#FFFFFF",
 			"blockClass": "newsletter",
 			"font": "t-heading-3"
 		},
