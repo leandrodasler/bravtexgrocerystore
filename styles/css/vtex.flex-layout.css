@@ -18,7 +18,7 @@
 }
 .flexRowContent--main-header {
 	background-color: #ffffff;
-	max-width: 1440px;
+	max-width: 1238px;
 	margin: 0 auto;
 }
 .flexRowContent--main-header-mobile {
@@ -139,9 +139,10 @@
 	width: auto !important;
 }
 .flexRowContent--category-menu-header {
-	max-width: 1440px;
+	max-width: 1238px;
 	margin: 0 auto;
-	justify-content: flex-start;
+	justify-content: space-between;
+	margin-bottom: 0.5rem;
 }
 .flexCol--logo-desktop {
 	margin-right: 18px;
@@ -167,16 +168,22 @@
 	display: flex;
 	margin: 0px 26px;
 }
-.flexRow--newsletter {
-	background: #F71963;
+.flexRow--newsletter,
+.flexRow--menu-row,
+.flexRow--payment-methods,
+.flexRow--credits     {
+	background: #142032;
+	color: #FFFFFF !important;
+}
+
+.flexRow--payment-methods .stretchChildrenWidth:first-child {
+	width: 70% !important;
 }
 .flexColChild--newsletter-form {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
-.flexRow--menu-row {
-	background: #f8f5f2;
 }
 .flexRowContent--footer-menu {
 	justify-content: baseline;
@@ -184,11 +191,7 @@
 .flexRowContent--midias-footer .stretchChildrenWidth {
 	max-width: 48px;
 }
-.flexRow--payment-methods {
-	background: #f8f5f2;
-}
 .flexRow--credits {
-	background: #f8f5f2;
 	padding: 12px 0;
 	margin: 0 auto;
 }
@@ -400,11 +403,6 @@
 }
 .flexCol--fixed-prices {
 	padding-left: 24px;
-}
-@media screen and (min-width: 80rem) {
-	.flexRowContent--category-menu-header {
-		padding: 0 0.25rem;
-	}
 }
 
 @media (min-width: 1540px) {
@@ -656,12 +654,6 @@
 		display: flex;
 		justify-content: center;
 		padding-top: 16px;
-	}
-}
-@media screen and (min-width: 80rem) {
-	.flexRowContent--menu-link,
-	.flexRowContent--main-header {
-		padding: 0 0.25rem;
 	}
 }
 @media (min-width: 1540px) {
