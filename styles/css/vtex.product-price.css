@@ -89,7 +89,7 @@
 	line-height: 52px;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .listPrice--list-price {
-	color: #06623a;
+	color: #F71963;
 	font-size: 14px;
 	font-weight: 800;
 	text-decoration: line-through;
@@ -105,7 +105,7 @@
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) .listPrice--list-price {
 	font-size: 15px;
 	font-weight: bold;
-	color: #06623a;
+	color: #F71963;
 	line-height: 32px;
 	text-decoration: line-through;
 	text-decoration-color: #666360;

@@ -287,14 +287,14 @@ div[class*='vtex-pageHeader__container pa5 pa7-ns']
 .profile :global(.w-60-ns.w-100-s) :global(.vtex-button) > div::before {
 	content: 'Editar dados pessoais';
 	text-transform: initial;
-	color: #00ac5a;
+	color: #FEDDE8;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: bold;
 }
 .profile :global(.w-40-ns.w-100-s) :global(.vtex-button) > div::before {
 	text-transform: initial;
-	color: #00ac5a;
+	color: #FEDDE8;
 	font-size: 14px;
 	line-height: 20px;
 	font-weight: bold;
@@ -403,21 +403,21 @@ div[class*='vtex-profile-form-3-x-toggleBusinessButtonWrapper'] :global(.vtex-bu
 	max-width: 330px !important;
 }
 div[class*='vtex-pageHeader__children'] button:global(.vtex-button) {
-	background-color: #00ac5a;
+	background-color: #FEDDE8;
 	color: #fff;
-	border: 1px solid #00ac5a;
+	border: 1px solid #FEDDE8;
 }
 form[class*='vtex-profile-form-3-x-profileContainer']
 	button[class*='vtex-button bw1 ba fw5 v-mid relative pa0 lh-solid br2 min-h-small t-action--small bg-action-primary b--action-primary c-on-action-primary hover-bg-action-primary hover-b--action-primary hover-c-on-action-primary pointer w-100'] {
-	background-color: #00ac5a;
+	background-color: #FEDDE8;
 	color: #fff;
-	border: 1px solid #00ac5a;
+	border: 1px solid #FEDDE8;
 	font-weight: bold;
 	text-transform: inherit;
 	max-width: 330px !important;
 }
 .profileEdit :global(.vtex-profile-form-3-x-profileContainer) input {
-	border: solid 1px #00ac5a;
+	border: solid 1px #FEDDE8;
 	background-image: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z' stroke='%2300AC5A' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M6 7.99935L7.33333 9.33268L10 6.66602' stroke='%2300AC5A' stroke-width='1.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 	background-size: 16px 16px;
 	background-position: right 10px center;
@@ -576,10 +576,10 @@ div[class*='flex flex-grow-1 w-100 flex-column'] :global(.vtex-product-summary-2
 }
 .addressEdit :global(.vtex-button.bg-action-primary),
 .addressCreate :global(.vtex-button.bg-action-primary) {
-	background: #00ac5a;
+	background: #FEDDE8;
 	height: 40px;
 	margin-top: 20px;
-	border-color: #00ac5a;
+	border-color: #FEDDE8;
 }
 main[class*='vtex-account__page-body  vtex-my-account-1-x-addressEdit'] {
 	padding: 0;
@@ -940,7 +940,7 @@ a[class*='vtex-my-orders-app-3-x-cancelBtn'] span[class*='vtex-my-orders-app-3-x
 }
 a[class*='vtex-my-orders-app-3-x-detailsBtn'] {
 	background: #e6fff3;
-	color: #00ac5a;
+	color: #FEDDE8;
 	font-weight: bold;
 	font-size: 16px;
 }
@@ -1075,7 +1075,7 @@ span[class*='vtex-my-orders-app-3-x-orderProductQuantityValue']
 .profile footer :global(.vtex-button):hover,
 .addressBox footer button:hover,
 .profileEdit :global(.vtex-profile-form-3-x-profileContainer) :global(.vtex-button):hover {
-	border: solid 1px #00ac5a;
+	border: solid 1px #FEDDE8;
 }
 :global(.vtex-pageHeader-link__container) :global(.vtex-button):hover {
 	background: transparent;
@@ -1802,7 +1802,7 @@ main[class*='vtex-account__create-card'] button[class*='vtex-button'] {
 .addressBox footer :global(.vtex-button) > div {
 	text-transform: none;
 	text-decoration-line: none;
-	color: #00ac5a;
+	color: #FEDDE8;
 }
 .addressBox footer :global(.vtex-button) > div::before,
 :global(.vtex-account__page-body) :global(.address-summary) :global(.c-link.pointer)::before {
