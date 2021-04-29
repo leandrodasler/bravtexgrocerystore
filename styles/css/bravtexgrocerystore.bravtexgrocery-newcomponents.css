@@ -1,0 +1,23 @@
+.addressComponent {
+	display: flex;
+  }
+  
+  .addressComponentInfo {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .pinIcon {
+	margin-right: 1rem;
+  }
+  
+  .addressComponentTitle {
+	color: rgba(20, 32, 50, 0.6);
+	margin-bottom: 0.5rem;
+  }
+  
+  .addressComponentTitle,
+  .currentAddress {
+	font-weight: 400;
+  }
+  
