@@ -195,21 +195,23 @@
 		"props": {
 			"blockClass": "midias-footer"
 		},
-		"children": ["image#instagram", "image#facebook"],
+		"children": ["image#facebook", "image#instagram"],
 		"title": "Footer midias itens"
 	},
 	"image#instagram": {
 		"props": {
-			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/instagramlogo1.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/white-instagram.png",
 			"maxHeight": 30,
-			"maxWidth": 30
+			"maxWidth": 30,
+			"blockClass": "instagram-footer"
 		}
 	},
 	"image#facebook": {
 		"props": {
-			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/facebook1.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/whitefacebook.png",
 			"maxHeight": 30,
-			"maxWidth": 30
+			"maxWidth": 30,
+			"blockClass": "facebook-footer"
 		}
 	}
 }
