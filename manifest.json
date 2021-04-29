@@ -64,7 +64,8 @@
     "vtex.search": "2.x",
     "vtex.reviews-and-ratings": "1.x",
     "vtex.store-newsletter": "1.x",
-    "bravtexgrocerystore.bravtexgrocery-components": "0.x"
+    "bravtexgrocerystore.bravtexgrocery-components": "0.x",
+    "bravtexgrocerystore.bravtexgrocery-newcomponents": "0.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x"
