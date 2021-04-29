@@ -11,7 +11,7 @@
 		],
 		"title": "Footer desktop"
 	},
-	"flex-layout.row#footer-1-desktop": {
+	"flex-layout.row#footer-2-desktop": {
 		"title": "Footer menu",
 		"children": [
 			"vtex.menu@2.x:menu#Politica",
@@ -25,7 +25,7 @@
 			"paddingBottom": 3
 		}
 	},
-	"flex-layout.row#footer-2-desktop": {
+	"flex-layout.row#footer-1-desktop": {
 		"title": "Footer payment",
 		"children": ["rich-text#texto-cartoes", "flex-layout.row#payments"],
 		"props": {
@@ -131,7 +131,7 @@
 			"blockClass": "container-developedby-desk",
 			"preventHorizontalStretch": true
 		},
-		"children": ["rich-text#developedBy", "image#vtex-footer"]
+		"children": []
 	},
 	"flex-layout.col#developedby-container-desktop": {
 		"props": {
@@ -156,7 +156,7 @@
 	},
 	"rich-text#footer": {
 		"props": {
-			"text": "VTEX Grocery © - 2020 - Todos os direitos reservados.",
+			"text": "VTEX Atacado © - 2021 - Todos os direitos reservados.",
 			"blockClass": "footer-copyright"
 		},
 		"title": "Footer copyright text"
@@ -254,7 +254,7 @@
 			"blockClass": "container-developedby-mobile",
 			"width": "50%"
 		},
-		"children": ["rich-text#developedBy"]
+		"children": []
 	},
 	"flex-layout.col#img-vtex-container-mobile": {
 		"props": {
