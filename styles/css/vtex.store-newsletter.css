@@ -22,7 +22,6 @@
 .formSubmitContainer--newsletter-input-button {
 	display: flex;
 	align-items: center;
-	margin-top: 16px;
 }
 .formSubmitContainer :global(.vtex-button) {
 	background: #F71963;
@@ -124,3 +123,4 @@
 		margin: 0;
 	}
 }
+

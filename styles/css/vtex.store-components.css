@@ -22,8 +22,10 @@
 :global(.vtex-flex-layout-0-x-flexRow--payment-methods) .container {
 	padding-top: 15px;
 	padding-bottom: 15px;
-	border-top: 1px solid #f1efed;
-	border-bottom: 1px solid #f1efed;
+	border-top: 1px solid #222C44;
+	border-bottom: 1px solid #222C44;
+	padding-bottom: 2.5rem !important;
+	padding-top: 2.5rem !important;
 }
 :global(.vtex-flex-layout-0-x-flexRow--main-wishlist-title-container) .container,
 :global(.vtex-flex-layout-0-x-flexRow--wishlist-shelf) .container,
@@ -192,8 +194,7 @@
 	border: 1px solid #f7faf9;
 	border-radius: 4px;
 	height: 48px;
-	max-width: 935.75px;
-	width: 935.75px;
+	width: 523px;	
 }
 .autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group)::before {
 	content: '';
@@ -327,7 +328,7 @@
 	left: 0;
 	bottom: unset;
 	right: unset;
-	background: #f2ffff;
+	background: #FEDDE8;
 	border-radius: 12px;
 	font-weight: 700;
 	font-size: 12px;
@@ -617,4 +618,12 @@
 		max-width: 1480px;
 		padding: 0;
 	}
+}
+
+.flexRowContent--midias-footer .stretchChildrenWidth {
+	width: 100%;
+}
+
+.imageElement--instagram-footer {
+	margin-left: 1rem;
 }
