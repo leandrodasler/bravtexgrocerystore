@@ -6,7 +6,7 @@
 	text-decoration: underline;
 }
 .autoCompleteOuterContainer--search-bar-header :global(.vtex-styleguide-9-x-input) {
-	background-color: #f7faf9;
+	background-color: #FFFFFF;
 	padding: 0;
 }
 .infoCardContainer--info-card-home {
@@ -161,10 +161,10 @@
 }
 .autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group) {
 	box-sizing: border-box;
-	border-radius: 4px;
 	height: 48px;
-	background: #f7faf9;
-	border: 2px solid #f7faf9;
+	background: #FFFFFF;
+	border: 2px solid #CCCED8;
+	border-radius: 6px;
 }
 .autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group):hover,
 .autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group):active {
@@ -191,7 +191,7 @@
 	color: #36403b;
 	margin-left: 0;
 	border: none;
-	border: 1px solid #f7faf9;
+	border: 1px solid #FFFFFF;
 	border-radius: 4px;
 	height: 48px;
 	width: 523px;	
@@ -201,7 +201,7 @@
 	background: url("data:image/svg+xml,%3Csvg width='25' height='24' viewBox='0 0 25 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.25 19C15.6683 19 19.25 15.4183 19.25 11C19.25 6.58172 15.6683 3 11.25 3C6.83172 3 3.25 6.58172 3.25 11C3.25 15.4183 6.83172 19 11.25 19Z' stroke='%23AAB0AD' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M21.25 21L16.9 16.65' stroke='%23AAB0AD' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
 		no-repeat;
 	background-position: center;
-	background-color: #f7faf9;
+	background-color: #FFFFFF;
 	width: 24px;
 	padding: 12px 16px;
 }
@@ -209,7 +209,7 @@
 	background-color: #fff;
 }
 .autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group) :global(.vtex-input__suffix) {
-	background-color: #f7faf9;
+	background-color: #FFFFFF;
 }
 .autoCompleteOuterContainer--search-bar-header :global(.vtex-input__suffix) {
 	padding: 0px;
@@ -219,12 +219,14 @@
 	display: flex;
 	align-items: center;
 	padding: 0 24px;
+	background-color: #142032;
 }
 .suffixWrapper--search-bar-header .searchBarIcon--search-bar-header--search::before {
 	content: 'Buscar';
 	font-weight: bold;
 	font-size: 16px;
-	color: #F71963;
+	color: #FFFFFF;
+
 }
 .searchBarIcon.searchBarIcon--clear {
 	display: none;
