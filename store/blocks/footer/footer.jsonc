@@ -51,14 +51,13 @@
 			"image#elo",
 			"image#diners",
 			"image#aexpress",
-			"image#alelo",
-			"image#caixa"
+			"image#alelo"
 		],
 		"title": "Footer flags payment"
 	},
 	"image#visa": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/cartaovisa_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaovisa.png",
 			"maxHeight": 24,
 			"maxWidth": 32,
 			"blockClass": "first-img-grid"
@@ -66,28 +65,28 @@
 	},
 	"image#master": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/master_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaomaster.png",
 			"maxHeight": 24,
 			"maxWidth": 32
 		}
 	},
 	"image#elo": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/elo_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaoamerican.png",
 			"maxHeight": 24,
 			"maxWidth": 32
 		}
 	},
 	"image#diners": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/diners_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaoelo.png",
 			"maxHeight": 24,
 			"maxWidth": 32
 		}
 	},
 	"image#aexpress": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/american_express_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaohipercard.png",
 			"maxHeight": 24,
 			"maxWidth": 32,
 			"blockClass": "first-img-grid"
@@ -95,15 +94,7 @@
 	},
 	"image#alelo": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/alelo_footer.png",
-			"maxHeight": 24,
-			"maxWidth": 32
-		}
-	},
-	"image#caixa": {
-		"props": {
-			"blockClass": "caixa-image",
-			"src": "https://gigadigital.vteximg.com.br/arquivos/caixa_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaohiper.png",
 			"maxHeight": 24,
 			"maxWidth": 32
 		}
