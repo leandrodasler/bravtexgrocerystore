@@ -17,10 +17,10 @@
 	margin-top: 0;
 }
 :global(.vtex-login-2-x-label) {
-	white-space: pre-wrap;
-	font-size: 12px;
+	white-space: nowrap;
+	font-size: 14px;
 	font-weight: bold;
-	color: #4d4a48;
+	color: #F71963;
 	text-align: left;
 	text-transform: none;
 }
@@ -62,15 +62,15 @@ div[class*='vtex-login-2-x-arrowUp'] {
 	width: 1.5rem;
 }
 span[class*='vtex-login-2-x-profile'] {
-	white-space: pre-wrap;
+	white-space: nowrap;
 	text-transform: initial;
 	max-width: 77px;
 	text-align: start;
 	display: flex;
-	font-size: 12px;
+	font-size: 14px;
 	align-items: flex-end;
 	font-weight: bold;
-	color: #36403b;
+	color: #F71963;
 }
 span[class*='vtex-login-2-x-profile']::after {
 	content: '';

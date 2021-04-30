@@ -136,7 +136,7 @@
 	align-items: center;
 }
 .flexRowContent--icons-header .stretchChildrenWidth {
-	width: auto !important;
+	width: 150px !important;
 }
 .flexRowContent--category-menu-header {
 	max-width: 1238px;
@@ -164,7 +164,7 @@
 	content: '';
 	width: 1px;
 	height: 36px;
-	background-color: #f1efed;
+	background-color: transparent;
 	display: flex;
 	margin: 0px 26px;
 }

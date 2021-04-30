@@ -44,15 +44,15 @@
 			"highlight": false,
 			"itemProps": {
 				"type": "internal",
-				"href": "/apparel---accessories/",
+				"href": "/apparel---categorias/",
 				"noFollow": false,
-				"tagTitle": "todas as categorias",
-				"text": "Todas as Categorias"
+				"tagTitle": "categorias",
+				"text": "Categorias"
 			},
 			"iconProps": {
 				"id": "menu-icon",
-				"size": 16,
-				"viewBox": "0 0 16 16",
+				"size": 24,
+				"viewBox": "0 0 20 20",
 				"activeClassName": "main-menu-category",
 				"mutedClassName": "main-menu"
 			},

@@ -68,7 +68,7 @@
 		"props": {
 			"blockClass": "icons-header"
 		},
-		"children": ["login", "menu-item#wish-list", "minicart.v2"]
+		"children": ["minicart.v2","menu-item#wish-list", "login"]
 	},
 	"login": {
 		"props": {

@@ -1,9 +1,8 @@
 .styledLinkContent--wishlist-custom {
-  white-space: pre-wrap;
   align-items: center;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
-  color: #4d4a48;
+  color: #F71963;
   max-width: 90px;
 }
 .styledLinkIcon--wishlist-custom {
@@ -167,6 +166,7 @@
   .styledLinkIcon--main-category-menu {
     display: flex;
     align-items: center;
+	margin-right: 1rem;
   }
   .menuItem--sub-menu-header {
     display: flex;
