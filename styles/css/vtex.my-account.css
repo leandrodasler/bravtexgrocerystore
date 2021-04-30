@@ -49,7 +49,7 @@
 }
 .menuLinks a[class*='b--action-primary'] {
 	color: #F71963;
-	background: #f7faf9;
+	background: #FFFFFF;
 	border-color: #F71963;
 	font-weight: bold;
 	text-transform: capitalize;
@@ -613,7 +613,7 @@ main[class*='vtex-account__page-body  vtex-my-account-1-x-addressEdit'] {
 .addressEdit :global(.vtex-address-form__city) :global(.vtex-input-prefix__group),
 .addressCreate :global(.vtex-address-form__city) :global(.vtex-input-prefix__group) {
 	border: 1px solid #cccccc;
-	background: #f7faf9;
+	background: #FFFFFF;
 }
 .addressCreate
 	:global(.vtex-address-form-4-x-dropdown)
@@ -625,7 +625,7 @@ main[class*='vtex-account__page-body  vtex-my-account-1-x-addressEdit'] {
 .addressCreate
 	:global(.vtex-address-form-4-x-dropdown)
 	div[class*='vtex-address-form-4-x-container br2 relative bw1 ba b--disabled bg-disabled t-body h-regular'] {
-	background: #f7faf9;
+	background: #FFFFFF;
 }
 .addressEdit :global(.vtex-address-form__state) :global(.vtex-address-form-4-x-container),
 .addressCreate :global(.vtex-address-form__state) :global(.vtex-address-form-4-x-container) {

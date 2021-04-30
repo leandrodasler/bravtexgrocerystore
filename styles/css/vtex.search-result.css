@@ -6,7 +6,7 @@
 .searchResultContainer--departament-desktop,
 .searchResultContainer {
 	padding: 0 0 96px;
-	background-color: #f7faf9;
+	background-color: #FFFFFF;
 	max-width: unset;
 }
 .filters--layout {
@@ -203,7 +203,7 @@
 	text-transform: lowercase;
 }
 .notFound--layout {
-	background-color: #f7faf9;
+	background-color: #FFFFFF;
 	margin: 0;
 	max-width: 100%;
 	padding-top: 24px !important;
