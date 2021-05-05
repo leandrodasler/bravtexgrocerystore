@@ -69,7 +69,6 @@
 	},
 	"modal-trigger#location": {
 		"children": [
-			"current-address-component#localization",
 		  	"modal-layout#localization"
 		]
 	  },
