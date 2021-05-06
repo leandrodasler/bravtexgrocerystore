@@ -1,24 +1,24 @@
 .cartIcon {
-	display: none;
+  display: none;
 }
 .minicartIconContainer {
-	height: 25px;
-	width: 5px;
+  height: 25px;
+  width: 5px;
 }
 .minicartContainer :global(.vtex-button) {
-	background-image: url("https://bravtexgrocerystore.vtexassets.com/arquivos/shopping-cart.png");
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: contain;
-	width: 28px;
-	height: 28px;
+  background-image: url('https://bravtexgrocerystore.vtexassets.com/arquivos/shopping-cart.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 28px;
+  height: 28px;
 }
 .openIconContainer {
-	padding: 12px 0;
+  padding: 12px 0;
 }
 .minicartQuantityBadgeDefault {
-  color: #FFF7F2;
-  background: #F71963;
+  color: #fff7f2;
+  background: #f71963;
   right: 4px;
   top: -10px;
   width: 12px;
@@ -26,29 +26,48 @@
   font-size: 0.65rem !important;
 }
 @media only screen and (min-width: 641px) {
-	.openIconContainer::after {
-		content: 'Meu Carrinho';
-		max-width: 50px;
-		display: inline-flex;
-		vertical-align: middle;
-		padding-left: 8px;
-		font-size: 14px;
-		font-weight: bold;
-		color: #F71963;
-		white-space: nowrap;
+  .openIconContainer::after {
+    content: 'Meu Carrinho';
+    max-width: 50px;
+    display: inline-flex;
+    vertical-align: middle;
+    padding-left: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #f71963;
+    white-space: nowrap;
   }
   .minicartWrapperContainer {
     width: 97px !important;
   }
 }
 @media only screen and (max-width: 640px) {
-	.openIconContainer {
-		margin: 0;
-	}
-	.minicartContainer :global(.vtex-button) {
-		margin: 0 11px;
-	}
+  .openIconContainer {
+    margin: 0;
+  }
+  .minicartContainer :global(.vtex-button) {
+    margin: 0 11px;
+  }
 }
 .minicartCheckoutButton {
-	padding-bottom: 75px;
+  padding-bottom: 75px;
+}
+
+:global(.vtex-product-list-0-x-productPrice) {
+  font-size: 20px;
+  color: #f71963;
+}
+
+:global(.vtex-product-list-0-x-inputContainer) {
+  padding: 0;
+  width: 4rem;
+}
+
+:global(.vtex-checkout-summary-0-x-summaryItemContainer),
+:global(.vtex-checkout-summary-0-x-summaryItemLabel) {
+  color: #f71963;
+}
+
+:global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {
+  color: #a1a8b3;
 }
