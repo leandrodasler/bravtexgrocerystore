@@ -1,6 +1,6 @@
 {
-  "name": "checkout-ui-settings",
-  "vendor": "vtex",
+  "name": "bravtexgrocerystore-uicheckout",
+  "vendor": "bravtexgrocerystore-theme",
   "version": "0.1.0",
   "title": "Checkout UI Settings",
   "description": "Declare custom settings to be used by checkout ui",
