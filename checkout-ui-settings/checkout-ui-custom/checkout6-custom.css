@@ -62,24 +62,24 @@
 	text-decoration: none;
   }
   
-  .Items, .Discounts, .Shipping, .srp-summary-result {
+  .full-cart .Items, .full-cart .Discounts, .full-cart .Shipping, .full-cart .srp-summary-result {
 	border-bottom: none !important;
   }
   
-  .Items .info, .Discounts .info, .Shipping .info, .srp-summary-result .info {
+  .full-cart .Items .info, .Discounts .info, .Shipping .info, .srp-summary-result .info {
 	text-align: left !important;
 	font-size: 16px;
 	font-weight: 400;
   }
   
-  .Items .monetary, .Discounts .monetary, .Shipping .monetary, .srp-summary-result .monetary {
+  .full-cart .Items .monetary, .full-cart .Discounts .monetary, .full-cart .Shipping .monetary, .full-cart .srp-summary-result .monetary {
 	font-weight: bold;
 	font-size: 20px;
 	text-align: right !important;
 	width: 50%;
   }
   
-  tfoot .monetary {
+  .full-cart tfoot .monetary {
 	font-weight: bold;
 	font-size: 22px !important;
 	color: #f71963;
@@ -87,7 +87,7 @@
 	width: 50%;
   }
   
-  tfoot .info {
+  .full-cart tfoot .info {
 	text-align: left !important;
   }
   
@@ -95,7 +95,13 @@
 	display: none;
   }
   
-  #cart-to-orderform {
+  #cart-to-orderform, 
+  #btn-client-pre-email, 
+  #go-to-shipping, 
+  #go-to-payment, 
+  #find-pickups-manualy-button-denied, 
+  #payment-data-submit,
+  #btn-go-to-payment {
 	background-color: #f71963 !important;
 	background-image: none !important;
 	color: #ffffff;
@@ -103,6 +109,10 @@
 	font-size: 14px;
 	padding: 16px 84px;
 	border: none !important;
+  }
+
+  #payment-data-submit {
+	  padding: 8px;
   }
   
   #cart-coupon-add {
@@ -131,7 +141,7 @@
 	display: flex;
   }
   
-  .accordion-group {
+  .full-cart .accordion-group {
 	width: 25%;
 	margin-left: auto;
   }
@@ -143,4 +153,15 @@
   .icon-remove:before {
 	content: '\f014';
   }
-  
+
+  .client-pre-email .emailInfo .icon-lock {
+	  color: #FFF3F6;
+  }
+
+  .client-pre-email .emailInfo .icon-ok, .client-pre-email .emailInfo h3 {
+	  color: #f71963
+  }
+
+  .cart-fixed tfoot .info, .cart-fixed tfoot .monetary {
+	  color: #f71963 !important;
+  }

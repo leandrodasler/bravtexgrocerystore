@@ -4,6 +4,10 @@ window.onload = function () {
 
   addCouponButton.appendChild(addMoreProductsButton)
 
+  window.location.hash !== '#/cart'
+    ? (addMoreProductsButton.style.display = 'none')
+    : (addMoreProductsButton.style.display = 'flex')
+
   document.getElementById('cart-to-orderform').innerText = document
     .getElementById('cart-to-orderform')
     .innerText.toUpperCase()
