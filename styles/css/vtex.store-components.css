@@ -194,7 +194,7 @@
 	border: 1px solid #FFFFFF;
 	border-radius: 4px;
 	height: 48px;
-	width: 523px;	
+	width: 685px;	
 }
 .autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group)::before {
 	content: '';
@@ -370,7 +370,7 @@
 }
 @media only screen and (max-width: 1600px) {
 	.autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group) {
-		width: 895px;
+		width: 685px;
 	}
 	:global(.vtex-flex-layout-0-x-flexRow--main-wishlist-title-container) .container,
 	:global(.vtex-flex-layout-0-x-flexRow--wishlist-shelf) .container,
@@ -384,7 +384,7 @@
 }
 @media only screen and (max-width: 1500px) {
 	.autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group) {
-		width: 755px;
+		width: 685px;
 	}
 	:global(.vtex-flex-layout-0-x-flexRow--main-wishlist-title-container) .container,
 	:global(.vtex-flex-layout-0-x-flexRow--wishlist-shelf) .container,
@@ -397,7 +397,9 @@
 	}
 }
 @media only screen and (max-width: 1400px) {
-	.autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group) {
+	.autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group), 
+	.biggy-autocomplete-wrapper,
+	.biggy-autocomplete {
 		width: 655px;
 	}
 	:global(.vtex-flex-layout-0-x-flexRow--main-wishlist-title-container) .container,
@@ -468,7 +470,14 @@
 		max-height: 600px;
 	}
 }
+@media only screen and (max-width: 1025px) {
+	:global(.vtex-store-components-3-x-logoImage) {
+		width: 150px;
+	}
+}
+
 @media only screen and (max-width: 640px) {
+	
 	.logoContainer {
 		padding: 0;
 	}
@@ -568,11 +577,6 @@
 	.autoCompleteOuterContainer--search-bar-header :global(.vtex-input__suffix) {
 		display: none;
 	}
-	.autoCompleteOuterContainer--search-bar-header
-		:global(.vtex-input-prefix__group)
-		:global(.vtex-styleguide-9-x-input) {
-		max-width: 180px;
-	}
 }
 :global(.vtex-flex-layout-0-x-flexRow--not-found-shelf-title) .container,
 :global(.vtex-flex-layout-0-x-flexRow--deals-not-found) .container {
@@ -628,4 +632,11 @@
 
 .imageElement--instagram-footer {
 	margin-left: 1rem;
+}
+
+@media (max-width: 1025px) {
+	.suffixWrapper--search-bar-header .searchBarIcon--search-bar-header--search {
+		display: none;
+	}
+
 }
