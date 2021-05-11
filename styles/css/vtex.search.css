@@ -83,9 +83,8 @@
 }
 .biggy-autocomplete-wrapper,
 .biggy-autocomplete {
-	flex-direction: column !important;
-	max-width: 523px;
-	min-width: 523px;
+	min-width: 47vw;
+	max-width: 47vw;
 }
 .tileListList {
 	padding: 0 24px !important;
@@ -225,4 +224,60 @@
 		width: 95vw !important;
 		min-width: 95vw !important;
 	}
+}
+
+:global(.vtex-search-2-x-tileList)
+:global(.vtex-product-summary-2-x-productBrand) {
+	font-size: 14px !important;
+	color: #000000;
+
+}
+
+:global(.vtex-search-2-x-tileList)
+:global(.vtex-flex-layout-0-x-flexColChild--product-info):first-child {
+	margin-bottom: 0.8rem !important;
+}
+
+:global(.vtex-search-2-x-tileList)
+:global(.vtex-flex-layout-0-x-flexColChild--product-info):last-child {
+	margin-top: 0.8rem !important;
+}
+
+:global(.vtex-product-price-1-x-sellingPrice--summary) {
+	color: #F71963;
+}
+
+:global(.vtex-search-2-x-tileListSeeMore) {
+	background-color: #142032;
+	color: #FFFFFF;
+	text-decoration: none;
+	border-radius: 6px;
+	width: 40%;
+	height: 50px;
+	margin-top: 2rem;
+	font-size: 14px;
+}
+
+:global(.vtex-search-2-x-tileListFooter),
+:global(.vtex-search-2-x-tileListSeeMore) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+:global(.vtex-search-2-x-itemList--suggestion) 
+:global(.vtex-search-2-x-itemListSubItemLink),
+:global(.vtex-search-2-x-itemList--suggestion) 
+:global(.vtex-search-2-x-itemListLinkTitle){
+	color: #F71963 !important;
+}
+
+:global(.vtex-search-2-x-tileListTitle) {
+	margin-top: 0;
+}
+
+:global(.vtex-search-2-x-itemList--suggestion) {
+	flex-grow: 0;
+    flex-shrink: 0;
+	flex-basis: 20%;
 }
