@@ -5,7 +5,6 @@
 			"stack-layout#prodsum",
 			"product-summary-name",
 			"flex-layout.col#selling-and-list-price",
-			"flex-layout.row#fixed-prices-plus-btn",
 			"flex-layout.row#add-btn-shelf-pdp-custom-component"
 		]
 	},
@@ -59,23 +58,12 @@
 			"blockClass": "summary"
 		}
 	},
-	"flex-layout.row#wholesale-price": {
-		"props": {
-			"colGap": 2,
-			"preserveLayoutOnMobile": true,
-			"preventHorizontalStretch": true,
-			"blockClass": "wholesale"
-		},
-		"children": [],
-		"title": "Produto - Preço Atacado"
-	},
 	"product-summary.shelf#pdp-shelf": {
 		"children": [
 			"add-to-list-btn#list-buy",
 			"stack-layout#prodsum",
 			"product-summary-name",
 			"flex-layout.col#selling-and-list-price",
-			"flex-layout.row#fixed-prices-plus-btn",
 			"flex-layout.row#add-btn-shelf-pdp-custom-component"
 		]
 	},
