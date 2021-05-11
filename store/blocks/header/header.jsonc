@@ -60,6 +60,7 @@
 		"children": [
 			"flex-layout.col#logo-desktop",
 			"flex-layout.col#spacer",
+			"search-bar#biggy",
 			"flex-layout.col#spacer",
 			"flex-layout.row#icons-desktop"
 		]
@@ -97,8 +98,7 @@
 				"type": "internal",
 				"href": "/wishlist",
 				"noFollow": false,
-				"tagTitle": "minhas listas",
-				"text": "Minhas Listas"
+				"tagTitle": "minhas listas"
 			},
 			"iconProps": {
 				"id": "list-icon",
@@ -120,7 +120,7 @@
 			"preventVerticalStretch": true,
 			"fullWidth": true
 		},
-		"children": ["flex-layout.col#category-menu", "search-bar#biggy"]
+		"children": ["flex-layout.col#category-menu"]
 	},
 
 	"flex-layout.col#category-menu": {
@@ -218,9 +218,6 @@
 		"children": ["modal-trigger#location-mobile"]
 	},
 	"modal-trigger#location-mobile": {
-		"props": {
-			"trigger": "load"
-		},
 		"children": [
 			"current-address-component#localization-mobile",
 		  	"modal-layout#localization-mobile"
@@ -239,7 +236,7 @@
 		"props": {
 			"blockClass": "icons-header"
 		},
-		"children": ["login", "menu-item#wish-list-mobile", "minicart.v2"]
+		"children": [ "minicart.v2", "menu-item#wish-list-mobile", "login"]
 	},
 	"menu-item#wish-list-mobile": {
 		"props": {
@@ -257,7 +254,7 @@
 			"iconProps": {
 				"id": "list-icon",
 				"size": 32,
-				"viewBox": "0 0 32 32",
+				"viewBox": "-3 -3 24 24",
 				"activeClassName": "wishlist-active-heart",
 				"mutedClassName": "wishlist-muted-heart"
 			},
