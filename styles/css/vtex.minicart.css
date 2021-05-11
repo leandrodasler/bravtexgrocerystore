@@ -27,7 +27,6 @@
 }
 @media only screen and (min-width: 641px) {
   .openIconContainer::after {
-    content: 'Meu Carrinho';
     max-width: 50px;
     display: inline-flex;
     vertical-align: middle;
