@@ -18,7 +18,7 @@
 	"product-selling-price#summary": {
 		"props": {
 			"blockClass": "summary",
-			"message": "{sellingPriceValue} /un"
+			"message": "Por: {sellingPriceValue} /un"
 		}
 	},
 	"product-list-price#summary": {
@@ -60,6 +60,6 @@
 			"preventHorizontalStretch": true,
 			"blockClass": "pdp-selling-and-list-price-container"
 		},
-		"children": ["flex-layout.col#selling-and-list-price", "flex-layout.col#fixed-prices-plus-btn"]
+		"children": ["flex-layout.col#selling-and-list-price"]
 	}
 }
