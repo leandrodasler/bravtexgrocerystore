@@ -26,7 +26,6 @@
 			"flex-layout.row#product-name",
 			"product-identifier.product",
 			"flex-layout.col#selling-and-list-price",
-			"flex-layout.col#fixed-prices-plus-btn",
 			"sku-selector",
 			"flex-layout.row#quantity-buy-button-custom-component",
 			"availability-subscriber"
