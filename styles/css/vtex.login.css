@@ -96,6 +96,6 @@ span[class*='vtex-login-2-x-profile']::after {
 }
 @media only screen and (max-width: 1025px) {
 	.container :global(.vtex-button__label) {
-		margin: 0 9px;
+		margin: 0 18px 0 0 !important;
 	}
 }
