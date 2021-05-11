@@ -147,7 +147,7 @@
 	},
 	"rich-text#footer": {
 		"props": {
-			"text": "VTEX Atacado © - 2021 - Todos os direitos reservados.",
+			"text": "VTEX Grocery © - 2021 - Todos os direitos reservados.",
 			"blockClass": "footer-copyright"
 		},
 		"title": "Footer copyright text"
@@ -223,7 +223,7 @@
 		}
 	},
 	"flex-layout.row#footer-3-mobile-infos": {
-		"children": ["image#logo-footer", "rich-text#footer"],
+		"children": ["rich-text#footer"],
 		"props": {
 			"blockClass": "payment-methods-flags"
 		}
@@ -235,8 +235,7 @@
 			"preventHorizontalStretch": true
 		},
 		"children": [
-			"flex-layout.col#developedby-container-mobile",
-			"flex-layout.col#img-vtex-container-mobile"
+			"flex-layout.col#developedby-container-mobile"
 		],
 		"title": "Footer ACCT"
 	},
@@ -256,7 +255,7 @@
 	},
 	"image#vtex-footer": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/vtex-logo-mobile-new.png",
+			"src": "",
 			"blockClass": "acct-logo-footer"
 		},
 		"title": "VTEX - Logo"
