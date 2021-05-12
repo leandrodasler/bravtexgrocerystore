@@ -9,15 +9,20 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [0.3.6] - 2021-05-12
 
-## [0.3.5] - 2021-05-11
+### Added
 
-## [0.3.4] - 2021-05-06
+- New checkout and cart UI.
+- New search bar UI.
 
-## [0.3.3] - 2021-05-04
+### Changed
 
-## [0.3.2] - 2021-04-30
+- 404 page layout.
+- Category menu z-index
 
-## [0.3.1] - 2021-04-29
+### Removed
+
+- Old logo at 404 page.
+- Fixed-prices component.
 
 ## [0.3.0] - 2021-04-29
 ### Changed
