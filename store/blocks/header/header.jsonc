@@ -81,6 +81,16 @@
 			"iconLabel": "Entre ou Cadastre-se"
 		}
 	},
+	"login#mobile": {
+		"props": {
+			"emailAndPasswordTitle": "entrar com e-mail e senha",
+			"accessCodeTitle": "receber código de acesso por e-mail",
+			"emailPlaceholder": "e-mail",
+			"passwordPlaceholder": "senha",
+			"showPasswordVerificationIntoTooltip": true,
+			"hideIconLabel": true
+		}
+	},
 	"flex-layout.col#logo-desktop": {
 		"props": {
 			"verticalAlign": "middle",
@@ -168,7 +178,7 @@
 		"props": {
 			"blockClass": "icons-header"
 		},
-		"children": ["menu-item#wish-list", "minicart.v2", "login"]
+		"children": ["menu-item#wish-list", "minicart.v2", "login#mobile"]
 	},
 	"sticky-layout#1-mobile": {
 		"props": {
@@ -236,7 +246,7 @@
 		"props": {
 			"blockClass": "icons-header"
 		},
-		"children": [ "minicart.v2", "menu-item#wish-list-mobile", "login"]
+		"children": [ "minicart.v2", "menu-item#wish-list-mobile", "login#mobile"]
 	},
 	"menu-item#wish-list-mobile": {
 		"props": {
@@ -265,7 +275,7 @@
 		"children": ["menu#drawer"]
 	},
 	"menu#drawer": {
-		"children": ["menu#header-mobile", "flex-layout.row#icons-desktop"],
+		"children": ["menu#header-mobile"],
 		"props": {
 			"orientation": "vertical"
 		}
