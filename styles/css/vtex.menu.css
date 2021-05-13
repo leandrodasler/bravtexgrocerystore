@@ -45,9 +45,26 @@
   font-weight: 400;
   font-size: 16px;
 }
-.styledLinkContainer--main-category-menu {
-  margin-right: 1.3rem;
-  margin-left: 0;
+.submenuContainer--megamenu-header .menuItem--main-category-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
+  .submenuContainer--megamenu-header .menuItem--main-category-menu::after {
+	content: "";
+    background: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.01411 4L0 0.991195L0.992944 0L5 4L0.992944 8L0 7.0088L3.01411 4Z' fill='%234D4A48'/%3E%3C/svg%3E")
+    no-repeat;
+    display: flex;
+    height: 8px;
+    width: 6px;
+    position: absolute;
+    right: 10px;
+  }
+  .submenuContainer--megamenu-header .styledLinkContainer--main-category-menu {
+  	margin: 0 1.3rem;
+  	max-height: 39px;
+	width: 100%;
 }
 .styledLinkContainer--wishlist-custom {
   margin: 0 9px;
@@ -154,7 +171,8 @@
     padding: 21px 0;
   }
   .submenuWrapper--megamenu-header--isOpen {
-    margin: 0;
+    margin: 0px;
+	width: 200px;
   }
   .submenu--megamenu-header .menuContainer {
     align-items: flex-start;
@@ -253,3 +271,28 @@
   margin-left: 12px;
 }
 /* Ajustes Footer */
+
+
+@media only screen and (max-width: 1024px) {
+	:global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) {
+		align-items: flex-start;
+	}
+
+	:global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) .menuItem--main-category-menu {
+		display: flex;
+    	align-items: center;
+    	width: 100%;
+    	position: relative;
+	}
+
+	:global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) .menuItem--main-category-menu::after {
+	content: "";
+    background: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.01411 4L0 0.991195L0.992944 0L5 4L0.992944 8L0 7.0088L3.01411 4Z' fill='%234D4A48'/%3E%3C/svg%3E")
+    no-repeat;
+    display: flex;
+    height: 8px;
+    width: 6px;
+    position: absolute;
+    right: 10px;
+  }
+}
