@@ -124,7 +124,7 @@
 	},
 	"image#shelf-banner": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/banner_ofertas.png",
+			"src": "",
 			"maxHeight": 516,
 			"blockClass": "banner-sales"
 		},
@@ -140,7 +140,7 @@
 	},
 	"image#banner-home": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/banner-ofertas-2-desk.png",
+			"src": "",
 			"maxHeight": 184,
 			"blockClass": "banner-home"
 		},
