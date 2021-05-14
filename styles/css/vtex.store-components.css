@@ -640,3 +640,7 @@
 	}
 
 }
+
+:global(.vtex-flex-layout-0-x-flexCol--flex-dropdown-pdp) .productDescriptionTitle {
+	display: none;
+}
