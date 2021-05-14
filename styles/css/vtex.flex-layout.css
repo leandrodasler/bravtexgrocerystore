@@ -294,7 +294,6 @@
 	justify-content: space-evenly;
 }
 .flexRowContent--pdp-main-container {
-	border-bottom: 2px solid #9bd219;
 	justify-content: flex-end;
 }
 .flexRow--add-to-cart-btn-container-shelf :global(.vtex-button) {
@@ -309,7 +308,7 @@
 	color: #fff;
 	font-weight: 700;
 }
-.flexColChild--product-info-content .flexCol--pdp-selling-and-list-price-container {
+.flexColChild--product-info-content:last-child{
 	padding: 25px 0 0;
 }
 .flexRow--quantity-and-buy-btn-container :global(.vtex-button__label),
@@ -409,6 +408,14 @@
 	padding-left: 24px;
 }
 
+.flexColChild--flex-dropdown-pdp {
+	display: flex;
+	flex-direction: column;
+	margin-top: 3rem;
+}
+.flexColChild--product-review-container:last-child {
+	display: none;
+}
 :global(.vtex-flex-layout-0-x-flexCol--search-byggy) {
 	flex-direction: column-reverse;
 }
