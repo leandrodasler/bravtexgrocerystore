@@ -5,3 +5,7 @@
 .specificationName {
   font-weight: bold;
 }
+
+.specificationValue {
+	margin-left: 1rem;
+}
