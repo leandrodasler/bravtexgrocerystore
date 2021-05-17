@@ -165,7 +165,7 @@
 			"muted-2": "#979899",
 			"muted-3": "#cacbcc",
 			"muted-4": "#e3e4e6",
-			"muted-5": "#FDB31B"
+			"muted-5": "#a1a8b3"
 		},
 		"hover-border": {
 			"action-primary": "#F71963",
@@ -203,7 +203,7 @@
 			"base": "#3f3f40",
 			"base--inverted": "#ffffff",
 			"action-primary": "#ffffff",
-			"action-secondary": "#fdb31b",
+			"action-secondary": "#a1a8b3",
 			"emphasis": "#ffffff",
 			"disabled": "#979899",
 			"success": "#ffffff",
