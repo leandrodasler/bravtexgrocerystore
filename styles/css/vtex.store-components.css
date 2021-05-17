@@ -58,7 +58,7 @@
 	font-size: 36px;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-button) {
-	color: #F71963;
+	color: #FFFFFF;
 	font-weight: 700;
 }
 :global(.vtex-shelf-1-x-slide--pdp-related-shelf) .imageElement--static-img {
@@ -278,6 +278,31 @@
 	height: 516px;
 	object-fit: cover;
 	border-radius: 8px;
+}
+
+:global(.vtex-rich-text-0-x-heading--pdp-shipping-text) {
+	margin: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer {
+
+	max-width: 435px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-input__label) {
+	display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-button) {
+	width: 40%;
+	height: 40px;
+	font-size: 14px;
+}
+
+@media (max-width: 1024px) {
+	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-address-form-4-x-input) {
+		width: 85%;
+	}
 }
 
 @media (max-width: 1024px) {
