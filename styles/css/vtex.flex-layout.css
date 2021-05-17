@@ -413,8 +413,8 @@
 	flex-direction: column;
 	margin-top: 3rem;
 }
-.flexColChild--product-review-container:last-child {
-	display: none;
+:global(.vtex-disclosure-layout-1-x-content) :global(.vtex-reviews-and-ratings-1-x-container):last-child {
+	display: none !important;
 }
 :global(.vtex-flex-layout-0-x-flexCol--search-byggy) {
 	flex-direction: column-reverse;
