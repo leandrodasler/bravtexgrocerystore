@@ -120,68 +120,6 @@
 		}
 	},
 
-	"product-specification-group#table": {
-    "children": ["flex-layout.row#spec-group"]
-  	},
-  	"flex-layout.row#spec-group": {
-    "props": {
-      "blockClass": "productSpecificationGroup"
-    },
-    "children": ["flex-layout.col#spec-group"]
-  	},
-  "flex-layout.col#spec-group": {
-    "children": ["flex-layout.row#spec-group-name", "product-specification"]
-  },
-  "flex-layout.row#spec-group-name": {
-    "props": {
-      "blockClass": "productSpecificationGroupName"
-    },
-    "children": ["product-specification-text#group"]
-  },
-  "product-specification": {
-    "children": ["flex-layout.row#spec-item"]
-  },
-  "flex-layout.row#spec-item": {
-    "props": {
-      "blockClass": "productSpecification"
-    },
-    "children": ["flex-layout.col#spec-name", "flex-layout.col#spec-value"]
-  },
-  "flex-layout.col#spec-name": {
-    "props": {
-      "blockClass": "productSpecificationName",
-      "width": {
-        "mobile": "50%",
-        "desktop": "25%"
-      }
-    },
-    "children": ["product-specification-text#specification"]
-  },
-  "flex-layout.col#spec-value": {
-    "props": {
-      "blockClass": "productSpecificationValue"
-    },
-    "children": ["product-specification-values"]
-  },
-  "product-specification-values": {
-    "children": ["product-specification-text#value"]
-  },
-  "product-specification-text#group": {
-    "props": {
-      "message": "{groupName}"
-    }
-  },
-  "product-specification-text#specification": {
-    "props": {
-      "message": "{specificationName}"
-    }
-  },
-  "product-specification-text#value": {
-    "props": {
-      "message": "{specificationValue}"
-    }
-  },
-
 	"flex-layout.row#product-image": {
 		"props": {
 			"blockClass": "product-image-content",
@@ -212,7 +150,10 @@
 			"flex-layout.row#product-name",
 			"product-identifier.product",
 			"sku-selector",
-			"flex-layout.row#price-and-add-to-cart"
+			"flex-layout.row#price-and-add-to-cart",
+			"rich-text#texto-entrega",
+			"rich-text#texto-cep",
+			"flex-layout.col#shipping-product"
 		],
 		"title": "Informações do Produto"
 	},
@@ -238,6 +179,37 @@
 	},
 	"add-to-cart-quantity-stepper#pdp": {
 		"blocks": ["add-to-cart-button#pdp"]
+	},
+	"rich-text#texto-entrega": {
+		"props": {
+			"blockClass": "pdp-delivery-text",
+			"text": "### Opções de entrega"
+		},
+		"title": "PDP delivery text"
+	},
+	"rich-text#texto-cep": {
+		"props": {
+			"blockClass": "pdp-shipping-text",
+			"text": "###### Receba em casa"
+		},
+		"title": "PDP delivery text"
+	},
+	"flex-layout.col#shipping-product": {
+		"children": [
+		  "shipping-simulator"
+		]
+	  },
+	"flex-layout.row#choose-store": {
+		"children": [
+			"rich-text#questiondescription"
+		]
+	},
+	"rich-text#choose-store": {
+		"props": {
+			"blockClass": "pdp-delivery-text",
+			"text": "### Opções de entrega"
+		},
+		"title": "PDP delivery text"
 	},
 	"flex-layout.row#product-brand": {
 		"props": {

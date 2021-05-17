@@ -3,7 +3,6 @@
 		"children": [
 			"flex-layout.row#product-breadcrumb",
 			"flex-layout.row#product-main-mobile",
-			"flex-layout.row#title-shelf-pdp-1",
 			"flex-layout.row#shelf-pdp-1"
 		],
 		"title": "PdP - Phone"
@@ -13,7 +12,16 @@
 			"blockClass": "pdp-main-container",
 			"paddingBottom": 8
 		},
-		"children": ["flex-layout.col#stack", "flex-layout.col#right-col-mobile"]
+		"children": ["flex-layout.col#stack-mobile"]
+	},
+	"flex-layout.col#stack-mobile": {
+		"children": ["stack-layout", "flex-layout.col#right-col-mobile", "flex-layout.col#dropdown"],
+		"props": {
+			"width": "43%",
+			"rowGap": 0,
+			"blockClass": "product-images-container"
+		},
+		"title": "Imagem - Produto"
 	},
 	"flex-layout.col#right-col-mobile": {
 		"props": {
@@ -28,7 +36,10 @@
 			"flex-layout.col#selling-and-list-price",
 			"sku-selector",
 			"flex-layout.row#quantity-buy-button-custom-component",
-			"availability-subscriber"
+			"availability-subscriber",
+			"rich-text#texto-entrega",
+			"rich-text#texto-cep",
+			"flex-layout.col#shipping-product"
 		],
 		"title": "Informações do Produto"
 	},
