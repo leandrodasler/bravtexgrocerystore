@@ -312,10 +312,76 @@
 	width: 70%;
 }
 
+@media (min-width: 1025px) {
+	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-disclosure-layout-1-x-trigger) {
+		width: 445px;
+	}
+}
+
 @media (max-width: 1024px) {
 	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-address-form-4-x-input) {
 		width: 85%;
 	}
+
+	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-disclosure-layout-1-x-trigger) {
+		max-width: 445px;
+	}
+
+	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-rich-text-0-x-container--pdp-pickup-button-text) {
+		padding: 0 !important;
+		text-align: center;
+	}
+
+	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-rich-text-0-x-paragraph--pdp-pickup-button-text) {
+		margin: 0;
+	}
+}
+
+@media (max-width: 640px) {
+	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-rich-text-0-x-container--pdp-pickup-button-text) {
+		padding: 0 8px !important;
+		text-align: center;
+	}
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-disclosure-layout-1-x-trigger) {
+	border: none;
+	justify-content: space-between;
+	height: 70px;
+	padding-left: 0;
+	cursor: pointer;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-rich-text-0-x-container--pdp-pickup-button-text) {
+	background-color: #142032;
+	border-radius: 6px;
+	padding: 0 26px;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-rich-text-0-x-heading--pdp-pickup-text),
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-rich-text-0-x-heading--pdp-shipping-text) { 
+	font-weight: bold;
+	font-size: 16px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-disclosure-layout-1-x-content) {
+	border: none;
+	padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-disclosure-layout-1-x-content--hidden) {
+	display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-location-availability-0-x-availabilityHeader) {
+	font-size: 20px;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-rich-text-0-x-heading--pdp-delivery-text) {
+	margin: 10px 0 0 0;
 }
 
 @media (max-width: 1024px) {
