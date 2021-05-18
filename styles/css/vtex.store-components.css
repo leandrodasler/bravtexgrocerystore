@@ -287,6 +287,7 @@
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer {
 	display: flex;
 	width: 100%;
+	max-width: 435px;
 
 }
 
@@ -296,7 +297,7 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-button) {
-	width: 40%;
+	width: 60%;
 	height: 40px;
 	font-size: 14px;
 	background-color: #142032;
@@ -308,7 +309,7 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-address-form-4-x-input) {
-	width: 60%;
+	width: 70%;
 }
 
 @media (max-width: 1024px) {

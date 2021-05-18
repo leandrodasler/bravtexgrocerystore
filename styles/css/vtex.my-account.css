@@ -702,7 +702,6 @@ main[class*='vtex-account__page-body  vtex-my-account-1-x-addressEdit'] {
 :global(.vtex-address-form__postalCode) label + div a {
 	color: #1e5bc6;
 	font-size: 14px;
-	padding-left: 20px;
 	line-height: 20px;
 	text-decoration: none;
 	padding-top: 10px;
