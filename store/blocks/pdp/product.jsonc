@@ -152,7 +152,8 @@
 			"sku-selector",
 			"flex-layout.row#price-and-add-to-cart",
 			"rich-text#texto-entrega",
-			"rich-text#texto-cep",
+			"disclosure-layout#pickup",
+			"rich-text#texto-cep",	
 			"flex-layout.col#shipping-product"
 		],
 		"title": "Informações do Produto"
@@ -182,7 +183,7 @@
 	},
 	"rich-text#texto-entrega": {
 		"props": {
-			"blockClass": "pdp-delivery-text",
+			"blockClass": "pdp-delivery-text-title",
 			"text": "### Opções de entrega"
 		},
 		"title": "PDP delivery text"
@@ -193,6 +194,57 @@
 			"text": "###### Receba em casa"
 		},
 		"title": "PDP delivery text"
+	},
+	"disclosure-layout#pickup": {
+		"children": ["disclosure-trigger#pickup", "disclosure-content#pickup"]
+	},
+	"disclosure-trigger#pickup": {
+		"children": ["rich-text#texto-pickup", "disclosure-state-indicator#pickup"]
+	},
+	"disclosure-content#pickup": {
+		"children": ["location-context"]
+	},
+	"disclosure-state-indicator#pickup": {
+		"props": {
+		  "Show": "rich-text#button-pickup"
+		}
+	},
+	"rich-text#button-pickup": {
+		"props": {
+			"blockClass": "pdp-pickup-button-text",
+			"text": "ESCOLHER LOJA"
+		}
+	},
+	"rich-text#texto-pickup": {
+		"props": {
+			"blockClass": "pdp-pickup-text",
+			"text": "###### Retire na loja mais próxima"
+		},
+		"title": "PDP pickup text"
+	},
+	"location-context": {
+		"children": [
+			"modal-trigger#location-availability",
+			"flex-layout.row#location-availability"
+		]
+	},
+	"flex-layout.row#location-availability": {
+		"children": [
+			"product-location-pickup-options"
+		]
+	},
+	"modal-trigger#location-availability": {
+		"children": ["product-location-availability-header", "modal-layout#pickup"]
+	},
+	"modal-layout#pickup": {
+		"children": [
+		  "current-address-modal"
+		]
+	  },
+	"product-location-availability-header": {
+		"props": {
+			"styleAsLink": true
+		}
 	},
 	"flex-layout.col#shipping-product": {
 		"children": [
@@ -332,32 +384,5 @@
 			}
 		},
 		"title": "Produtos Relacionados #1"
-	},
-	"flex-layout.row#pdp-product-informations": {
-		"props": {
-			"blockClass": "pdp-product-informations-container",
-			"preventHorizontalStretch": true
-		},
-		"children": ["menu-item#pdp-product-info"],
-		"title": "Informações do Produto"
-	},
-	"menu-item#pdp-product-info": {
-		"props": {
-			"id": "menu-item-product-info",
-			"type": "custom",
-			"highlight": false,
-			"itemProps": {
-				"type": "internal",
-				"href": "",
-				"noFollow": false,
-				"tagTitle": "Informações do produto",
-				"text": "Informações do produto"
-			},
-			"blockClass": "pdp-product-menu-information"
-		},
-		"blocks": ["vtex.menu@2.x:submenu.accordion#pdp-product-info"]
-	},
-	"vtex.menu@2.x:submenu.accordion#pdp-product-info": {
-		"children": ["rich-text#under-construct"]
 	}
 }

@@ -42,6 +42,7 @@
 			"flex-layout.row#quantity-buy-button-custom-component",
 			"availability-subscriber",
 			"rich-text#texto-entrega",
+			"disclosure-layout#pickup",
 			"rich-text#texto-cep",
 			"flex-layout.col#shipping-product"
 		],
