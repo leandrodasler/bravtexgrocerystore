@@ -285,18 +285,30 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer {
+	display: flex;
+	width: 100%;
 
-	max-width: 435px;
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-input__label) {
 	display: none;
+	width: 100%;
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-button) {
 	width: 40%;
 	height: 40px;
 	font-size: 14px;
+	background-color: #142032;
+	border: 1px solid #142032;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-address-form__postalCode) {
+	width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-address-form-4-x-input) {
+	width: 60%;
 }
 
 @media (max-width: 1024px) {
