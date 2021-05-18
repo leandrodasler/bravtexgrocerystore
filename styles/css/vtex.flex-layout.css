@@ -309,7 +309,7 @@
 	font-weight: 700;
 }
 .flexColChild--product-info-content:last-child{
-	padding: 25px 0 0;
+	padding: 15px 0 0;
 }
 .flexRow--quantity-and-buy-btn-container :global(.vtex-button__label),
 .flexRow--add-to-cart-btn-container-shelf :global(.vtex-button__label) {
