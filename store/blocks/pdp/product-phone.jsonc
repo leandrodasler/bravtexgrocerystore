@@ -34,8 +34,9 @@
 			"flex-layout.row#product-name",
 			"product-identifier.product",
 			"flex-layout.col#selling-and-list-price",
-			"sku-selector",
 			"flex-layout.row#quantity-buy-button-custom-component",
+			"sku-selector",
+			"seller-text",
 			"availability-subscriber",
 			"rich-text#texto-entrega",
 			"disclosure-layout#pickup",
@@ -58,7 +59,7 @@
 		"props": {
 			"blockClass": "product-brand-container"
 		},
-		"children": ["flex-layout.col#product-brand-pdp", "flex-layout.col#wish-and-share-mobile"],
+		"children": ["flex-layout.col#product-brand-pdp"],
 		"title": "Marca do Produto"
 	},
 	"flex-layout.col#product-brand-pdp": {
