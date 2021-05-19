@@ -9,21 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0.0] - 2021-05-19
 
-## [0.3.14] - 2021-05-18
+### Added
 
-## [0.3.13] - 2021-05-18
-
-## [0.3.12] - 2021-05-18
-
-## [0.3.11] - 2021-05-18
-
-## [0.3.10] - 2021-05-17
-
-## [0.3.9] - 2021-05-14
-
-## [0.3.8] - 2021-05-13
-
-## [0.3.7] - 2021-05-13
+- Location availability to peerDependencies.
+- Disclosure menu containing prodfuct description, technical specifications and ratings to PDP page.
+- Seller info to PDP page.
+- Product pickup and shipping price simulator to PDP page.
 
 ## [0.3.6] - 2021-05-12
 
