@@ -150,11 +150,13 @@
 			"flex-layout.row#product-name",
 			"product-identifier.product",
 			"sku-selector",
+			"seller-text",
 			"flex-layout.row#price-and-add-to-cart",
 			"rich-text#texto-entrega",
 			"disclosure-layout#pickup",
 			"rich-text#texto-cep",	
 			"flex-layout.col#shipping-product"
+			
 		],
 		"title": "Informações do Produto"
 	},
@@ -285,9 +287,8 @@
 	},
 	"sku-selector": {
 		"props": {
-			"variationsSpacing": 3,
-			"showValueNameForImageVariation": true,
-			"visibility": "always"
+		"hideImpossibleCombinations": false,
+		"visibility": "always"
 		}
 	},
 	"flex-layout.row#quantity-buy-button": {
