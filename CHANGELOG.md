@@ -9,6 +9,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0.1] - 2021-05-19
 
+### Added
+
+- Seller info to mobile header page.
+
+### Changed
+
+- Minicart position in header.
+
 ## [1.0.0] - 2021-05-19
 
 ### Added
