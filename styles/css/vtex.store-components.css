@@ -312,13 +312,13 @@
 	width: 70%;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1026px) {
 	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-disclosure-layout-1-x-trigger) {
 		width: 445px;
 	}
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
 	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-address-form-4-x-input) {
 		width: 85%;
 	}

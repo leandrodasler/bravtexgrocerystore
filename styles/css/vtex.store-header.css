@@ -78,3 +78,20 @@
 		transition: none;
 	}
 }
+
+:global(.vtex-sticky-layout-0-x-container) :global(.vtex-minicart-2-x-openIconContainer) {
+	margin-left: 190px;
+}
+
+@media (max-width: 1025px) {
+	:global(.vtex-sticky-layout-0-x-container) :global(.vtex-minicart-2-x-openIconContainer) {
+		margin-right: 20px;
+		margin-left: 0 !important;
+	}
+}
+
+@media (max-width: 1285px) {
+	:global(.vtex-sticky-layout-0-x-container) :global(.vtex-minicart-2-x-openIconContainer) {
+		margin-left: 280px;
+	}
+}
