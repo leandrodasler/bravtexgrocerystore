@@ -9,7 +9,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0.3] - 2021-05-20
 
-## [1.0.2] - 2021-05-20
+### Added
+
+- SKU selector style.
 
 ## [1.0.1] - 2021-05-19
 
