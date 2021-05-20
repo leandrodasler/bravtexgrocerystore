@@ -748,3 +748,32 @@
 :global(.vtex-flex-layout-0-x-flexCol--flex-dropdown-pdp) .productDescriptionTitle {
 	display: none;
 }
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .skuSelectorContainer {
+	display: flex;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .skuSelectorSubcontainer:first-child {
+	margin-right: 3rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .skuSelectorName {
+	font-size: 20px;
+	font-weight: bold;
+	color: #4d4a48;
+}
+
+@media (max-width: 1024px) {
+	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .skuSelectorContainer {
+		max-height: 200px !important;
+	}
+}
+
+@media (min-width: 1025px) {
+
+	:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .skuSelectorContainer {
+		max-height: 80px;
+		margin-bottom: 0;
+	}
+	
+}
