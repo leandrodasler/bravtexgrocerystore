@@ -435,12 +435,13 @@
 	bottom: unset;
 	right: unset;
 	background: #FEDDE8;
-	border-radius: 12px;
+	border-radius: 4px;
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 16px;
 	letter-spacing: 0.015em;
 	color: #F71963;
+	margin-left: 5px;
 }
 :global(.vtex-flex-layout-0-x-flexRowContent--search-byggy) .discountInsideContainer {
 	display: none;

@@ -18,7 +18,7 @@
 	"product-selling-price#summary": {
 		"props": {
 			"blockClass": "summary",
-			"message": "{sellingPriceValue}"
+			"message": "{sellingPriceValue}/ un"
 		}
 	},
 	"product-list-price#summary": {
@@ -51,7 +51,7 @@
 			"preventHorizontalStretch": true,
 			"blockClass": "pdp-selling-and-list-price-container"
 		},
-		"children": ["product-list-price#summary", "product-selling-price#summary"]
+		"children": ["product-selling-price#summary"]
 	},
 	/* Futura Estrutura da PdP*/
 	"flex-layout.row#selling-and-list-price-new": {

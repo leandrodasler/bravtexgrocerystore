@@ -28,11 +28,12 @@
 	font-size: 14px;
 	line-height: 20px;
 	color: #36403b;
+	margin-top: 500px;
 }
 .sellingPriceValue--summary,
 .currencyContainer--main-sell-summary {
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 22px;
 	line-height: 20px;
 	color: #F71963;
 }

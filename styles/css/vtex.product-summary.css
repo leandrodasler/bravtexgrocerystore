@@ -73,12 +73,13 @@
 .nameContainer--shelfName {
 	min-height: 72px;
 	padding: 12px 0 0;
+	margin-bottom: 0.5rem;
 }
 .productBrand--shelfName {
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 20px;
-	color: #F71963;
+	color: #000000;
 }
 :global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .element .brandName {
 	font-size: 16px;
