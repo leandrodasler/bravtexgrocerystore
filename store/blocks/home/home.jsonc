@@ -42,7 +42,11 @@
 			"infinite": true,
 			"showNavigationArrows": "desktopOnly",
 			"showPaginationDots": "never",
-			"blockClass": "carousel"
+			"blockClass": "carousel",
+			"autoplay": {
+				"timeout": 6000,
+				"stopOnHover": true
+			}
 		},
 		"title": "Home - Slider"
 	},
