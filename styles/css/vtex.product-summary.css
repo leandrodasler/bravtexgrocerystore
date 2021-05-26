@@ -71,7 +71,6 @@
 }
 /*search pages*/
 .nameContainer--shelfName {
-	min-height: 72px;
 	padding: 12px 0 0;
 	margin-bottom: 0.5rem;
 }
@@ -93,7 +92,6 @@
 }
 :global(.vtex-shelf-1-x-slide--pdp-related-shelf) .nameContainer {
 	padding: 0;
-	min-height: 72px;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--product-info) .productBrand--shelfName {
 	font-weight: bold;

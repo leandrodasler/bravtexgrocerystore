@@ -64,7 +64,7 @@
 	border-radius: 6px;
 	margin: 4px;
 	max-width: calc(20% - 8px) !important;
-	height: 396px;
+	height: 370px;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--switcher-orderByCol) .orderByButton {
 	padding: 0.5rem 4px 0 0;
