@@ -226,7 +226,7 @@
 	},
 	"location-context": {
 		"children": [
-			"modal-trigger#location-availability",
+			"product-location-availability-header",
 			"flex-layout.row#location-availability"
 		]
 	},
@@ -235,17 +235,9 @@
 			"product-location-pickup-options"
 		]
 	},
-	"modal-trigger#location-availability": {
-		"children": ["product-location-availability-header", "modal-layout#pickup"]
-	},
-	"modal-layout#pickup": {
-		"children": [
-		  "current-address-modal"
-		]
-	  },
 	"product-location-availability-header": {
 		"props": {
-			"styleAsLink": true
+			"styleAsLink": false
 		}
 	},
 	"flex-layout.col#shipping-product": {

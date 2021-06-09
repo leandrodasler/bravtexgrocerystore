@@ -60,31 +60,18 @@
 		},
 		"blocks": ["vtex.menu@2.x:submenu#category"]
 	},
-
 	"flex-layout.row#localization": {
 		"props": {
 			"blockClass": "localization-row"
 		},
-		"children": ["modal-trigger#location"]
+		"children": ["region-selector"]
 	},
-	"modal-trigger#location": {
-		"children": [
-			"current-address-component#localization",
-		  	"modal-layout#localization"
-		]
-	  },
-	"current-address-component#localization": {
-	},
-	  "modal-layout#localization": {
-		"children": [
-		  "current-address-modal"
-		]
-	  },
-	  "modal-actions.close": {
-		  "props": {
-			  "label": "Fechar"
-		  }
-	  }
+	"region-selector": {
+		"props": {
+			"centerContent": true
+		}
+	}
+
 	// "menu-item#location": {
 	//   "props": {
 	//     "id": "menu-item-category-home",
