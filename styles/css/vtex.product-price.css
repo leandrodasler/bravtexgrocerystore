@@ -69,11 +69,11 @@
 	margin-top: 0px;
 }
 .listPrice {
-	font-weight: 400;
-	font-size: 12px;
+	font-weight: 400 !important;
+	font-size: 12px !important;
 	line-height: 16px;
 	letter-spacing: 0.015em;
-	color: #aab0ad;
+	color: #aab0ad !important;
 }
 .currencyContainer--list-price {
 	font-weight: 400;
@@ -81,7 +81,7 @@
 	line-height: 16px;
 	letter-spacing: 0.015em;
 	text-decoration-line: line-through;
-	color: #aab0ad;
+	color: #aab0ad !important;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .sellingPriceValue {
 	color: #F71963;
@@ -90,7 +90,7 @@
 	line-height: 52px;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .listPrice--list-price {
-	color: #F71963;
+	color: #aab0ad;
 	font-size: 14px;
 	font-weight: 800;
 	text-decoration: line-through;
@@ -106,7 +106,7 @@
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) .listPrice--list-price {
 	font-size: 15px;
 	font-weight: bold;
-	color: #F71963;
+	color: #aab0ad;
 	line-height: 32px;
 	text-decoration: line-through;
 	text-decoration-color: #666360;

@@ -280,6 +280,15 @@
 	border-radius: 8px;
 }
 
+:global(.vtex-seller-selector-0-x-linkSellerContainer) {
+	margin-right: 1rem;
+}
+
+:global(.vtex-seller-selector-0-x-linkSeller) {
+	color: #F71963;
+	text-decoration: none;
+}
+
 :global(.vtex-rich-text-0-x-heading--pdp-shipping-text) {
 	margin: 0;
 }
