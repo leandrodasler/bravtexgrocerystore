@@ -155,8 +155,8 @@
 			"rich-text#texto-entrega",
 			"disclosure-layout#pickup",
 			"rich-text#texto-cep",	
-			"flex-layout.col#shipping-product"
-			
+			"flex-layout.col#shipping-product",
+			"product-assembly-options"
 		],
 		"title": "Informações do Produto"
 	},
