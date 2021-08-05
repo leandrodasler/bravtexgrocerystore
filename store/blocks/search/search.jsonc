@@ -296,7 +296,7 @@
 		}
 	},
 	"flex-layout.row#notfound": {
-		"children": ["flex-layout.col#not-found-text", "flex-layout.col#not-found-image"],
+		"children": ["flex-layout.col#not-found-text"],
 		"props": {
 			"blockClass": "not-found",
 			"fullWidth": true
@@ -316,20 +316,6 @@
 			"textPosition": "LEFT",
 			"text": "#### Nenhum produto foi encontrado \n ## Oops!! \n ### O que eu faço agora? \n * Verifique os termos digitados. \n * Tente utilizar uma única palavra. \n * Utilize termos genéricos na busca. \n * Procure utilizar sinônimos ao termo desejado."
 		}
-	},
-	"flex-layout.col#not-found-image": {
-		"children": ["image#not-found"],
-		"props": {
-			"blockClass": "not-found-image",
-			"width": "50%"
-		}
-	},
-	"image#not-found": {
-		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/product-not-found-3.png",
-			"maxHeight": "251px"
-		},
-		"title": "Produto não encontrado - Imagem"
 	},
 	"search-content": {
 		"blocks": ["gallery", "not-found"]

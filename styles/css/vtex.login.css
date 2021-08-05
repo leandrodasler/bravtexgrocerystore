@@ -5,6 +5,9 @@
 	font-family: 'Nunito', sans-serif;
 	font-weight: normal;
 }
+:global(.vtex-login-2-x-container) {
+	z-index: 2;
+}
 :global(.vtex-login-2-x-container) :global(.vtex-button__label):before {
 	content: '';
 	background-image: url("https://bravtexgrocerystore.vtexassets.com/arquivos/user.png");
@@ -17,10 +20,10 @@
 	margin-top: 0;
 }
 :global(.vtex-login-2-x-label) {
-	white-space: pre-wrap;
-	font-size: 12px;
+	white-space: nowrap;
+	font-size: 14px;
 	font-weight: bold;
-	color: #4d4a48;
+	color: #F71963;
 	text-align: left;
 	text-transform: none;
 }
@@ -36,7 +39,7 @@ h3[class*='vtex-login-2-x-formTitle'] {
 	text-align: start;
 	border-bottom: 1px solid #dddddd;
 	border-radius: 0;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 div[class*='vtex-login-2-x-accessCodeOptionBtn'] button:global(.vtex-button) div[class*='vtex-button__label'],
 div[class*='vtex-login-2-x-emailPasswordOptionBtn'] button:global(.vtex-button) div[class*='vtex-button__label'] {
@@ -49,7 +52,6 @@ div[class*='vtex-login-2-x-emailPasswordOptionBtn'] button:global(.vtex-button) 
 	color: #000000;
 	text-transform: none;
 }
-div[class*='vtex-login-2-x-accessCodeOptionBtn'] button:global(.vtex-button):hover,
 div[class*='vtex-login-2-x-emailPasswordOptionBtn'] button:global(.vtex-button):hover {
 	border: 1px solid #F71963;
 	background-color: #F71963;
@@ -62,15 +64,15 @@ div[class*='vtex-login-2-x-arrowUp'] {
 	width: 1.5rem;
 }
 span[class*='vtex-login-2-x-profile'] {
-	white-space: pre-wrap;
+	white-space: nowrap;
 	text-transform: initial;
 	max-width: 77px;
 	text-align: start;
 	display: flex;
-	font-size: 12px;
+	font-size: 14px;
 	align-items: flex-end;
 	font-weight: bold;
-	color: #36403b;
+	color: #F71963;
 }
 span[class*='vtex-login-2-x-profile']::after {
 	content: '';
@@ -96,6 +98,27 @@ span[class*='vtex-login-2-x-profile']::after {
 }
 @media only screen and (max-width: 1025px) {
 	.container :global(.vtex-button__label) {
-		margin: 0 9px;
+		margin: 0 18px 0 0 !important;
 	}
+}
+
+.formTitle {
+	text-align: center !important;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.accessCodeOptionBtn :global(.vtex-button) {
+	border: none !important;
+	color: #F71963 !important;
+	font-size: 14px;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button){
+	background-color: #F71963 !important;
+	color: white !important;
+	font-weight: bold;
+	text-transform: uppercase !important;
+	border: 1px solid #F71963 !important;
+	font-size: 14px;
 }

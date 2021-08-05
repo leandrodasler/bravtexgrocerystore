@@ -13,9 +13,9 @@
 :global(.vtex-product-summary-2-x-element) .buttonText {
 	display: flex;
 	align-items: center;
-	color: #F71963;
+	color: #FFFFFF;
 	font-weight: bold;
-	font-size: 16px;
+	font-size: 12px;
 }
 /* Pdp */
 .buttonDataContainer--pdp-add-to-cart-btn,

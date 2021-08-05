@@ -22,7 +22,6 @@
 .formSubmitContainer--newsletter-input-button {
 	display: flex;
 	align-items: center;
-	margin-top: 16px;
 }
 .formSubmitContainer :global(.vtex-button) {
 	background: #F71963;
@@ -32,14 +31,16 @@
 .phoneInputContainer :global(.vtex-input-prefix__group) {
 	margin: 0 8px;
 }
-.formSubmitContainer--newsletter-input-button :global(.vtex-button) {
-	max-width: 139px;
-}
-@media only screen and (max-width: 1232px) {
+@media only screen and (max-width: 650px) {
 	.formSubmitContainer--newsletter-input-button :global(.vtex-button) {
-		max-width: 108px;
+		margin-top: 10px;
 	}
+	.formSubmitContainer {
+		justify-content: center;
+	}
+
 }
+
 @media only screen and (max-width: 420px) {
 	.newsletter-input-name--input {
 		width: 288px;
@@ -124,3 +125,4 @@
 		margin: 0;
 	}
 }
+

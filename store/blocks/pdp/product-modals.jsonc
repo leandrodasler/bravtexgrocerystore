@@ -1,31 +1,11 @@
 {
 	"flex-layout.row#payment-methods-and-shipping-simulator": {
 		"props": {
-			"blockClass": "product-payment-methods-and-shipping-container",
+			"blockClass": "product-pickup-methods",
 			"preventHorizontalStretch": true
 		},
-		"children": ["modal-trigger#pdp-payment-methods", "menu-item#pdp-shipping-info"],
-		"title": "Modal de Condições de Pagamento + Informações de Entrega"
-	},
-	"modal-trigger#pdp-payment-methods": {
-		"props": {
-			"blockClass": "payment-method-trigger-container"
-		},
-		"children": ["rich-text#payment-methods", "modal-layout#payment-methods"]
-	},
-	"rich-text#payment-methods": {
-		"props": {
-			"blockClass": "payment-methods-text",
-			"text": "Condições de pagamento",
-			"textAlignment": "LEFT",
-			"textPosition": "LEFT"
-		}
-	},
-	"modal-layout#payment-methods": {
-		"props": {
-			"blockClass": "payment-method-modal-content"
-		},
-		"children": ["rich-text#under-construct"]
+		"children": ["menu-item#pdp-shipping-info"],
+		"title": "Modal de Informações de Pickup"
 	},
 	"menu-item#pdp-shipping-info": {
 		"props": {
@@ -40,25 +20,13 @@
 				"text": "Consultar Informações de Entrega"
 			},
 			"iconProps": {
-				"id": "ship-info-pdp",
-				"size": 22,
-				"viewBox": "0 0 22 22",
-				"activeClassName": "active-class-ship",
-				"mutedClassName": "muted-class-ship"
+				"id": null
 			},
 			"blockClass": "pdp-ship-menu-information"
 		},
 		"blocks": ["vtex.menu@2.x:submenu.accordion#pdp-shipping-simulator"]
 	},
 	"vtex.menu@2.x:submenu.accordion#pdp-shipping-simulator": {
-		"children": ["rich-text#under-construct"]
-	},
-	"rich-text#under-construct": {
-		"props": {
-			"blockClass": "construct-text",
-			"text": "**Em construção / à ser definido**",
-			"textPosition": "CENTER",
-			"textAlignment": "CENTER"
-		}
+		"children": ["shipping-simulator"]
 	}
 }

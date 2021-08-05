@@ -35,3 +35,31 @@
   height: 0;
   overflow: hidden;
 }
+
+.trigger {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #FFFFFF;
+	border: none;
+	color: #142032;
+}
+
+
+
+.trigger--hidden {
+	border-bottom: 1px solid #CCCED8;
+} 
+
+.trigger:first-child {
+	border-top: 1px solid #CCCED8;
+} 
+
+.content--visible {
+	border-bottom: 1px solid #CCCED8;
+}
+
+.content {
+	padding: 0 0 1rem 6px;
+}

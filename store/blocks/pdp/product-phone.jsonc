@@ -3,7 +3,6 @@
 		"children": [
 			"flex-layout.row#product-breadcrumb",
 			"flex-layout.row#product-main-mobile",
-			"flex-layout.row#title-shelf-pdp-1",
 			"flex-layout.row#shelf-pdp-1"
 		],
 		"title": "PdP - Phone"
@@ -13,7 +12,16 @@
 			"blockClass": "pdp-main-container",
 			"paddingBottom": 8
 		},
-		"children": ["flex-layout.col#stack", "flex-layout.col#right-col-mobile"]
+		"children": ["flex-layout.col#stack-mobile"]
+	},
+	"flex-layout.col#stack-mobile": {
+		"children": ["stack-layout", "flex-layout.col#right-col-mobile", "flex-layout.col#dropdown"],
+		"props": {
+			"width": "43%",
+			"rowGap": 0,
+			"blockClass": "product-images-container"
+		},
+		"title": "Imagem - Produto"
 	},
 	"flex-layout.col#right-col-mobile": {
 		"props": {
@@ -26,10 +34,14 @@
 			"flex-layout.row#product-name",
 			"product-identifier.product",
 			"flex-layout.col#selling-and-list-price",
-			"flex-layout.col#fixed-prices-plus-btn",
-			"sku-selector",
 			"flex-layout.row#quantity-buy-button-custom-component",
-			"availability-subscriber"
+			"sku-selector",
+			"seller-text",
+			"availability-subscriber",
+			"rich-text#texto-entrega",
+			"disclosure-layout#pickup",
+			"rich-text#texto-cep",
+			"flex-layout.col#shipping-product"
 		],
 		"title": "Informações do Produto"
 	},
@@ -47,7 +59,7 @@
 		"props": {
 			"blockClass": "product-brand-container"
 		},
-		"children": ["flex-layout.col#product-brand-pdp", "flex-layout.col#wish-and-share-mobile"],
+		"children": ["flex-layout.col#product-brand-pdp"],
 		"title": "Marca do Produto"
 	},
 	"flex-layout.col#product-brand-pdp": {

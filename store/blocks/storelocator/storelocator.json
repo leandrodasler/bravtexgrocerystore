@@ -1,0 +1,41 @@
+{
+  "store.storelocator": {
+    "blocks": [
+      "flex-layout.row#title",
+      "flex-layout.row#shelf-banner-desktop",
+      "flex-layout.row#container"
+    ]
+  },
+  "flex-layout.row#title": {
+    "children": [
+      "flex-layout.col#title"
+    ],
+    "props": {
+      "blockClass": "content"
+    }
+  },
+  "flex-layout.row#container": {
+    "children": [
+      "store-list"
+    ],
+    "props": {
+      "blockClass": "content",
+      "marginTop": 8,
+      "marginBottom": 10
+    }
+  },
+  "flex-layout.col#title": {
+    "children": [
+      "rich-text#title"
+    ],
+    "props": {
+      "blockClass": "title",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#title": {
+    "props": {
+      "text": "## Nossas Lojas"
+    }
+  }
+}

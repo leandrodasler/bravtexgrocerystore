@@ -11,7 +11,7 @@
 		],
 		"title": "Footer desktop"
 	},
-	"flex-layout.row#footer-1-desktop": {
+	"flex-layout.row#footer-2-desktop": {
 		"title": "Footer menu",
 		"children": [
 			"vtex.menu@2.x:menu#Politica",
@@ -25,7 +25,7 @@
 			"paddingBottom": 3
 		}
 	},
-	"flex-layout.row#footer-2-desktop": {
+	"flex-layout.row#footer-1-desktop": {
 		"title": "Footer payment",
 		"children": ["rich-text#texto-cartoes", "flex-layout.row#payments"],
 		"props": {
@@ -51,14 +51,13 @@
 			"image#elo",
 			"image#diners",
 			"image#aexpress",
-			"image#alelo",
-			"image#caixa"
+			"image#alelo"
 		],
 		"title": "Footer flags payment"
 	},
 	"image#visa": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/cartaovisa_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaovisa.png",
 			"maxHeight": 24,
 			"maxWidth": 32,
 			"blockClass": "first-img-grid"
@@ -66,28 +65,28 @@
 	},
 	"image#master": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/master_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaomaster.png",
 			"maxHeight": 24,
 			"maxWidth": 32
 		}
 	},
 	"image#elo": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/elo_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaoamerican.png",
 			"maxHeight": 24,
 			"maxWidth": 32
 		}
 	},
 	"image#diners": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/diners_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaoelo.png",
 			"maxHeight": 24,
 			"maxWidth": 32
 		}
 	},
 	"image#aexpress": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/american_express_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaohipercard.png",
 			"maxHeight": 24,
 			"maxWidth": 32,
 			"blockClass": "first-img-grid"
@@ -95,15 +94,7 @@
 	},
 	"image#alelo": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/alelo_footer.png",
-			"maxHeight": 24,
-			"maxWidth": 32
-		}
-	},
-	"image#caixa": {
-		"props": {
-			"blockClass": "caixa-image",
-			"src": "https://gigadigital.vteximg.com.br/arquivos/caixa_footer.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/cartaohiper.png",
 			"maxHeight": 24,
 			"maxWidth": 32
 		}
@@ -131,7 +122,7 @@
 			"blockClass": "container-developedby-desk",
 			"preventHorizontalStretch": true
 		},
-		"children": ["rich-text#developedBy", "image#vtex-footer"]
+		"children": []
 	},
 	"flex-layout.col#developedby-container-desktop": {
 		"props": {
@@ -156,7 +147,7 @@
 	},
 	"rich-text#footer": {
 		"props": {
-			"text": "VTEX Grocery © - 2020 - Todos os direitos reservados.",
+			"text": "VTEX Grocery © - 2021 - Todos os direitos reservados.",
 			"blockClass": "footer-copyright"
 		},
 		"title": "Footer copyright text"
@@ -232,7 +223,7 @@
 		}
 	},
 	"flex-layout.row#footer-3-mobile-infos": {
-		"children": ["image#logo-footer", "rich-text#footer"],
+		"children": ["rich-text#footer"],
 		"props": {
 			"blockClass": "payment-methods-flags"
 		}
@@ -244,8 +235,7 @@
 			"preventHorizontalStretch": true
 		},
 		"children": [
-			"flex-layout.col#developedby-container-mobile",
-			"flex-layout.col#img-vtex-container-mobile"
+			"flex-layout.col#developedby-container-mobile"
 		],
 		"title": "Footer ACCT"
 	},
@@ -254,7 +244,7 @@
 			"blockClass": "container-developedby-mobile",
 			"width": "50%"
 		},
-		"children": ["rich-text#developedBy"]
+		"children": []
 	},
 	"flex-layout.col#img-vtex-container-mobile": {
 		"props": {
@@ -265,7 +255,7 @@
 	},
 	"image#vtex-footer": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/vtex-logo-mobile-new.png",
+			"src": "",
 			"blockClass": "acct-logo-footer"
 		},
 		"title": "VTEX - Logo"

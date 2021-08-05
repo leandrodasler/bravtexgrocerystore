@@ -69,16 +69,27 @@
 		"props": {
 			"blockClass": "icons-header"
 		},
-		"children": ["login", "menu-item#wish-list", "minicart.v2"]
+		"children": ["menu-item#wish-list", "login", "minicart.v2"]
 	},
 	"login": {
+		"props": {
+			"emailAndPasswordTitle": "Entrar com e-mail e senha",
+			"accessCodeTitle": "Receber código de acesso por e-mail",
+			"emailPlaceholder": "e-mail",
+			"passwordPlaceholder": "senha",
+			"showPasswordVerificationIntoTooltip": true,
+			"iconLabel": "Entre ou Cadastre-se",
+			"hideIconLabel": true
+		}
+	},
+	"login#mobile": {
 		"props": {
 			"emailAndPasswordTitle": "entrar com e-mail e senha",
 			"accessCodeTitle": "receber código de acesso por e-mail",
 			"emailPlaceholder": "e-mail",
 			"passwordPlaceholder": "senha",
 			"showPasswordVerificationIntoTooltip": true,
-			"iconLabel": "Entre ou Cadastre-se"
+			"hideIconLabel": true
 		}
 	},
 	"flex-layout.col#logo-desktop": {
@@ -98,8 +109,7 @@
 				"type": "internal",
 				"href": "/wishlist",
 				"noFollow": false,
-				"tagTitle": "minhas listas",
-				"text": "Minhas Listas"
+				"tagTitle": "minhas listas"
 			},
 			"iconProps": {
 				"id": "list-icon",
@@ -169,7 +179,7 @@
 		"props": {
 			"blockClass": "icons-header"
 		},
-		"children": ["menu-item#wish-list", "minicart.v2", "login"]
+		"children": ["menu-item#wish-list", "login#mobile", "minicart.v2"]
 	},
 	"sticky-layout#1-mobile": {
 		"props": {
@@ -213,17 +223,17 @@
 	},
 	"flex-layout.row#4-mobile": {
 		"props": {
-			"blockClass": "row-localization",
+			"blockClass": "row-localization-mobile",
 			"fullWidth": true
 		},
-		"children": ["flex-layout.row#localization-mobile"]
+		"children": ["region-selector"]
 	},
 
 	"flex-layout.row#icons-mobile": {
 		"props": {
 			"blockClass": "icons-header"
 		},
-		"children": ["login", "menu-item#wish-list-mobile", "minicart.v2"]
+		"children": [ "menu-item#wish-list-mobile", "login#mobile", "minicart.v2"]
 	},
 	"menu-item#wish-list-mobile": {
 		"props": {
@@ -241,7 +251,7 @@
 			"iconProps": {
 				"id": "list-icon",
 				"size": 32,
-				"viewBox": "0 0 32 32",
+				"viewBox": "-3 -3 22 20",
 				"activeClassName": "wishlist-active-heart",
 				"mutedClassName": "wishlist-muted-heart"
 			},
@@ -252,7 +262,7 @@
 		"children": ["menu#drawer"]
 	},
 	"menu#drawer": {
-		"children": ["menu#header-mobile", "flex-layout.row#icons-desktop"],
+		"children": ["menu#header-mobile"],
 		"props": {
 			"orientation": "vertical"
 		}

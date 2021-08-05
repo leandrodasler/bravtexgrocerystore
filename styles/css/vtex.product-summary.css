@@ -43,7 +43,7 @@
 }
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) .containerNormal :global(.vtex-button):hover,
 .element :global(.vtex-button):hover :global(.vtex-add-to-cart-button-0-x-buttonText) {
-	color: #F71963;
+	color: #FFFFFF;
 }
 
 @media (max-width: 1024px) {
@@ -71,14 +71,14 @@
 }
 /*search pages*/
 .nameContainer--shelfName {
-	min-height: 72px;
 	padding: 12px 0 0;
+	margin-bottom: 0.5rem;
 }
 .productBrand--shelfName {
 	font-weight: 700;
-	font-size: 14px;
+	font-size: 18px;
 	line-height: 20px;
-	color: #F71963;
+	color: #000000;
 }
 :global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .element .brandName {
 	font-size: 16px;
@@ -92,14 +92,13 @@
 }
 :global(.vtex-shelf-1-x-slide--pdp-related-shelf) .nameContainer {
 	padding: 0;
-	min-height: 72px;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--product-info) .productBrand--shelfName {
 	font-weight: bold;
 	font-size: 12px;
 }
 :global(.vtex-search-2-x-tileListItem) .container {
-	max-width: none !important;
+	max-width: 176px !important;
 }
 :global(.vtex-flex-layout-0-x-flexRow--search-byggy) .nameContainer--shelfName {
 	padding: 0;

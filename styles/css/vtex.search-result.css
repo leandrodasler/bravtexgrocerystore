@@ -6,7 +6,7 @@
 .searchResultContainer--departament-desktop,
 .searchResultContainer {
 	padding: 0 0 96px;
-	background-color: #f7faf9;
+	background-color: #FFFFFF;
 	max-width: unset;
 }
 .filters--layout {
@@ -64,7 +64,7 @@
 	border-radius: 6px;
 	margin: 4px;
 	max-width: calc(20% - 8px) !important;
-	height: 396px;
+	height: 370px;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--switcher-orderByCol) .orderByButton {
 	padding: 0.5rem 4px 0 0;
@@ -203,7 +203,7 @@
 	text-transform: lowercase;
 }
 .notFound--layout {
-	background-color: #f7faf9;
+	background-color: #FFFFFF;
 	margin: 0;
 	max-width: 100%;
 	padding-top: 24px !important;
