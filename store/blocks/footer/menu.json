@@ -115,7 +115,7 @@
 			"blockClass": "footer-menu-items",
 			"itemProps": {
 				"type": "internal",
-				"href": "#",
+				"href": "/stores",
 				"noFollow": false,
 				"tagTitle": "nossasLojas",
 				"text": "Nossas Lojas"
@@ -215,3 +215,4 @@
 		}
 	}
 }
+

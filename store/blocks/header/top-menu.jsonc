@@ -96,7 +96,7 @@
 			"preventHorizontalStretch": false,
 			"horizontalAlign": "right"
 		},
-		"children": ["rich-text#top-text-1-col-2", "rich-text#top-text-2-col-2", "rich-text#top-text-3-col-2"]
+		"children": ["rich-text#top-text-1-col-2", "link#top-text-2-col-2", "rich-text#top-text-3-col-2"]
 	},
 	"rich-text#top-text-1-col-2": {
 		"props": {
@@ -105,9 +105,10 @@
 			"blockClass": "text-top-1"
 		}
 	},
-	"rich-text#top-text-2-col-2": {
+	"link#top-text-2-col-2": {
 		"props": {
-			"text": "Nossas Lojas",
+			"label": "Nossas Lojas",
+      "href": "/stores",
 			"textColor": "c-on-emphasis",
 			"blockClass": "text-top-1"
 		}
