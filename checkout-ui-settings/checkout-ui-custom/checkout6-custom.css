@@ -41,7 +41,17 @@
 
 @media (min-width: 1200px) {
   .container-cart {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
+  }
+
+  .container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 24px;
+    box-sizing: border-box;
   }
 }
 
