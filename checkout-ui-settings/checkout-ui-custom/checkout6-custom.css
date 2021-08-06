@@ -1,167 +1,177 @@
 #cart-title {
-	color: #f71963;
-	padding-bottom: 16px;
-  }
-  
-  .cart {
-	border: none;
-  }
-  
-  .cart-items th {
-	font-size: 20px;
-	margin-bottom: 16px;
-	font-weight: 400;
-  }
-  
-  .cart-items thead {
-	border-bottom: 1px solid #e7e9ee;
-  }
-  
-  .cart-template-holder {
-	background-color: #ffffff;
-  }
-  
-  .product-image img {
-	width: 96px;
-	height: 96px;
-	max-width: 96px;
-	object-fit: none;
-  }
-  
-  .product-name a {
-	max-width: 320px;
-  }
-  
-  .product-item span,
-  .product-name a {
-	color: #4a596b;
-	font-size: 16px;
-	font-weight: 400;
-  }
-  
-  
-  @media (min-width: 1200px) {
-	.container-cart {
-	  width: 1440px;
-	}
-  }
-  
-  .cart-more-options {
-	display: none !important;
-  }
-  
-  .link-coupon-add {
-	padding: 16px 21px;
-	background-color: #142032;
-	border-radius: 6px;
-	color: #ffffff;
-  }
-  
-  .link-coupon-add:hover {
-	color: #ffffff;
-	text-decoration: none;
-  }
-  
-  .full-cart .Items, .full-cart .Discounts, .full-cart .Shipping, .full-cart .srp-summary-result {
-	border-bottom: none !important;
-  }
-  
-  .full-cart .Items .info, .Discounts .info, .Shipping .info, .srp-summary-result .info {
-	text-align: left !important;
-	font-size: 16px;
-	font-weight: 400;
-  }
-  
-  .full-cart .Items .monetary, .full-cart .Discounts .monetary, .full-cart .Shipping .monetary, .full-cart .srp-summary-result .monetary {
-	font-weight: bold;
-	font-size: 20px;
-	text-align: right !important;
-	width: 50%;
-  }
-  
-  .full-cart tfoot .monetary {
-	font-weight: bold;
-	font-size: 22px !important;
-	color: #f71963;
-	text-align: right !important;
-	width: 50%;
-  }
-  
-  .full-cart tfoot .info {
-	text-align: left !important;
-  }
-  
-  .accordion-inner .empty {
-	display: none;
-  }
-  
-  #cart-to-orderform, 
-  #btn-client-pre-email, 
-  #go-to-shipping, 
-  #go-to-payment, 
-  #find-pickups-manualy-button-denied, 
-  #payment-data-submit,
-  #btn-go-to-payment {
-	background-color: #f71963 !important;
-	background-image: none !important;
-	color: #ffffff;
-	border-radius: 6px;
-	font-size: 14px;
-	padding: 16px 84px;
-	border: none !important;
-  }
+  color: #f71963;
+  padding-bottom: 16px;
+}
 
-  #payment-data-submit {
-	  padding: 8px;
-  }
-  
-  #cart-coupon-add {
-	background-color: #f71963 !important;
-	background-image: none !important;
-	color: #ffffff;
-	border-radius: 6px;
-	font-size: 14px;
-	border: none !important;
-  }
-  
-  #cart-choose-more-products {
-	font-size: 14px;
-	color: #f71963 !important;
-	padding: 16px 84px;
-	background-color: none !important;
-	text-decoration: none;
-  }
-  
-  .full-cart .summary-totalizers {
-	width: 100%;
-  }
-  
-  .coupon-column {
-	text-align: left !important;
-	display: flex;
-  }
-  
-  .full-cart .accordion-group {
-	width: 25%;
-	margin-left: auto;
-  }
-  
-  .summary-template-holder {
-	margin-top: 25px;
-  }
-  
-  .icon-remove:before {
-	content: '\f014';
-  }
+.cart {
+  border: none;
+}
 
-  .client-pre-email .emailInfo .icon-lock {
-	  color: #FFF3F6;
-  }
+.cart-items th {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
 
-  .client-pre-email .emailInfo .icon-ok, .client-pre-email .emailInfo h3 {
-	  color: #f71963
-  }
+.cart-items thead {
+  border-bottom: 1px solid #e7e9ee;
+}
 
-  .cart-fixed tfoot .info, .cart-fixed tfoot .monetary {
-	  color: #f71963 !important;
+.cart-template-holder {
+  background-color: #ffffff;
+}
+
+.product-image img {
+  width: 96px;
+  height: 96px;
+  max-width: 96px;
+  object-fit: none;
+}
+
+.product-name a {
+  max-width: 320px;
+}
+
+.product-item span,
+.product-name a {
+  color: #4a596b;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@media (min-width: 1200px) {
+  .container-cart {
+    width: 1440px;
   }
+}
+
+.cart-more-options {
+  display: none !important;
+}
+
+.link-coupon-add {
+  padding: 16px 21px;
+  background-color: #142032;
+  border-radius: 6px;
+  color: #ffffff;
+}
+
+.link-coupon-add:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.full-cart .Items,
+.full-cart .Discounts,
+.full-cart .Shipping,
+.full-cart .srp-summary-result {
+  border-bottom: none !important;
+}
+
+.full-cart .Items .info,
+.Discounts .info,
+.Shipping .info,
+.srp-summary-result .info {
+  text-align: left !important;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.full-cart .Items .monetary,
+.full-cart .Discounts .monetary,
+.full-cart .Shipping .monetary,
+.full-cart .srp-summary-result .monetary {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: right !important;
+  width: 50%;
+}
+
+.full-cart tfoot .monetary {
+  font-weight: bold;
+  font-size: 22px !important;
+  color: #f71963;
+  text-align: right !important;
+  width: 50%;
+}
+
+.full-cart tfoot .info {
+  text-align: left !important;
+}
+
+.accordion-inner .empty {
+  display: none;
+}
+
+#cart-to-orderform,
+#btn-client-pre-email,
+#go-to-shipping,
+#go-to-payment,
+#find-pickups-manualy-button-denied,
+#payment-data-submit,
+#btn-go-to-payment {
+  background-color: #f71963 !important;
+  background-image: none !important;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  padding: 16px 84px;
+  border: none !important;
+}
+
+#payment-data-submit {
+  padding: 8px;
+}
+
+#cart-coupon-add {
+  background-color: #f71963 !important;
+  background-image: none !important;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+  border: none !important;
+}
+
+#cart-choose-more-products {
+  font-size: 14px;
+  color: #f71963 !important;
+  padding: 16px 84px;
+  background-color: none !important;
+  text-decoration: none;
+}
+
+.full-cart .summary-totalizers {
+  width: 100%;
+}
+
+.coupon-column {
+  text-align: left !important;
+  display: flex;
+}
+
+.full-cart .accordion-group {
+  width: 25%;
+  margin-left: auto;
+}
+
+.summary-template-holder {
+  margin-top: 25px;
+}
+
+.icon-remove:before {
+  content: '\f014';
+}
+
+.client-pre-email .emailInfo .icon-lock {
+  color: #fff3f6;
+}
+
+.client-pre-email .emailInfo .icon-ok,
+.client-pre-email .emailInfo h3 {
+  color: #f71963;
+}
+
+.cart-fixed tfoot .info,
+.cart-fixed tfoot .monetary {
+  color: #f71963 !important;
+}
