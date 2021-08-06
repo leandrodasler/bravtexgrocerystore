@@ -1,0 +1,137 @@
+{
+  "store.custom#logistic": {
+    "children": [
+      "flex-layout.row#LogisticTitle",
+      "flex-layout.row#LogisticParagraph",
+      "flex-layout.row#LogisticMap"
+    ]
+  },
+  "flex-layout.row#LogisticTitle": {
+    "children": [
+      "flex-layout.col#LogisticTitle"
+    ],
+    "props": {
+      "blockClass": "content",
+      "marginTop": 6
+    }
+  },
+  "flex-layout.row#LogisticParagraph": {
+    "children": [
+      "flex-layout.col#LogisticParagraph"
+    ],
+    "props": {
+      "blockClass": "content",
+      "marginBottom": 6
+    }
+  },
+  "flex-layout.row#LogisticMap": {
+    "children": [
+      "flex-layout.col#LogisticImage",
+      "flex-layout.col#LogisticContent"
+    ],
+    "props": {
+      "blockClass": "content",
+      "marginBottom": 6
+    }
+  },
+  "flex-layout.col#LogisticTitle": {
+    "children": [
+      "rich-text#LogisticTitle"
+    ],
+    "props": {
+      "blockClass": "title",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#LogisticParagraph": {
+    "children": [
+      "rich-text#LogisticParagraph"
+    ]
+  },
+  "flex-layout.col#LogisticImage": {
+    "children": [
+      "image#logistic-map"
+    ],
+    "props": {
+      "marginRight": "10"
+    }
+  },
+  "flex-layout.col#LogisticContent": {
+    "children": [
+      "flex-layout.col#LogisticContent1",
+      "flex-layout.col#LogisticContent2"
+    ],
+    "props": {
+      "blockClass": "logistic-card-content",
+      "preventVerticalStretch": true,
+      "width": "35%"
+    }
+  },
+  "flex-layout.col#LogisticContent1": {
+    "children": [
+      "rich-text#LogisticContentTitle",
+      "rich-text#LogisticContentParagraph"
+    ],
+    "props": {
+      "blockClass": "logistic-info-card",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#LogisticContent2": {
+    "children": [
+      "rich-text#LogisticContentTitle2",
+      "rich-text#LogisticContentParagraph2"
+    ],
+    "props": {
+      "blockClass": "logistic-info-card",
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#LogisticTitle": {
+    "props": {
+      "text": "## Logística",
+      "blockClass": "page-title"
+    }
+  },
+  "rich-text#LogisticParagraph": {
+    "props": {
+      "text": "Saiba mais sobre nossa entrega e veja a disponibilidade para o seu estado.",
+      "marginTop": 0,
+      "blockClass": "page-paragraph"
+    }
+  },
+  "image#logistic-map": {
+		"props": {
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/logistic-map-01.jpg"
+		},
+		"title": "Mapa Logística"
+	},
+  "rich-text#LogisticContentTitle": {
+    "props": {
+      "text": "#### São Paulo",
+      "marginTop": 0,
+      "blockClass": "logistic-card-title"
+    }
+  },
+  "rich-text#LogisticContentParagraph": {
+    "props": {
+      "text": "Loja Física na cidade de São Paulo. Retirada disponível para a Grande São Paulo. Entrega expressa em todo o estado.",
+      "marginTop": 0,
+      "blockClass": "logistic-card-paragraph"
+    }
+  },
+  "rich-text#LogisticContentTitle2": {
+    "props": {
+      "text": "#### Rio de Janeiro",
+      "marginTop": 0,
+      "blockClass": "logistic-card-title"
+    }
+  },
+  "rich-text#LogisticContentParagraph2": {
+    "props": {
+      "text": "Loja Física na cidade de Rio de Janeiro. Retirada disponível para a capital. Entrega expressa em todo o estado.",
+      "marginTop": 0,
+      "blockClass": "logistic-card-paragraph"
+    }
+  }
+}

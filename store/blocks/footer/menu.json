@@ -80,7 +80,7 @@
 		"children": ["flex-layout.col#menuInstucional"]
 	},
 	"flex-layout.col#menuInstucional": {
-		"children": ["rich-text#institucionalTitle", "menu-item#quemSomos", "menu-item#nossasLojas", "menu-item#Folhetos"]
+		"children": ["rich-text#institucionalTitle", "menu-item#quemSomos", "menu-item#nossasLojas", "menu-item#logistics", "menu-item#Folhetos"]
 	},
 	"rich-text#institucionalTitle": {
 		"props": {
@@ -119,6 +119,23 @@
 				"noFollow": false,
 				"tagTitle": "nossasLojas",
 				"text": "Nossas Lojas"
+			}
+		},
+		"title": "Footer block item"
+	},
+	"menu-item#logistics": {
+		"props": {
+			"id": "menu-item-logistics",
+			"type": "custom",
+			"iconId": null,
+			"highlight": false,
+			"blockClass": "footer-menu-items",
+			"itemProps": {
+				"type": "internal",
+				"href": "/logistics",
+				"noFollow": false,
+				"tagTitle": "logistics",
+				"text": "Logística"
 			}
 		},
 		"title": "Footer block item"

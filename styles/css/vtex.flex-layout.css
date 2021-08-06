@@ -425,6 +425,18 @@
   flex-direction: column-reverse;
 }
 
+.flexCol--logistic-info-card {
+  background: #ffffff;
+  box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 32px;
+}
+
+.flexCol--logistic-card-content {
+  height: fit-content;
+}
+
 @media (min-width: 1540px) {
   .flexRow--home-shelf-1 {
     padding: 0;
