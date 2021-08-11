@@ -39,9 +39,7 @@
 			"seller-text",
 			"availability-subscriber",
 			"rich-text#texto-entrega",
-			"disclosure-layout#pickup",
-			"rich-text#texto-cep",
-			"flex-layout.col#shipping-product"
+			"rich-text#texto-cep"
 		],
 		"title": "Informações do Produto"
 	},

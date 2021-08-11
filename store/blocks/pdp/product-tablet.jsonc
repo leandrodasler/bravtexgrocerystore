@@ -36,16 +36,14 @@
 		"children": [
 			"flex-layout.row#product-brand-wish-share",
 			"flex-layout.row#product-name",
-			"product-identifier.product",	
+			"product-identifier.product",
 			"flex-layout.col#selling-and-list-price",
 			"flex-layout.row#quantity-buy-button-custom-component",
 			"sku-selector",
 			"seller-text",
 			"availability-subscriber",
 			"rich-text#texto-entrega",
-			"disclosure-layout#pickup",
-			"rich-text#texto-cep",
-			"flex-layout.col#shipping-product"
+			"rich-text#texto-cep"
 		],
 		"title": "Informações do Produto"
 	}
