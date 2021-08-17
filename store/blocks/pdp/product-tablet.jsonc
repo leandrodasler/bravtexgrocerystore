@@ -3,7 +3,9 @@
 		"children": [
 			"flex-layout.row#product-breadcrumb",
 			"flex-layout.row#product-main-tablet",
-			"flex-layout.row#shelf-pdp-1"
+			"flex-layout.row#shelf-pdp-1",
+			"flex-layout.row#shelf-pdp-2",
+			"flex-layout.row#shelf-pdp-3"
 		],
 		"title": "PdP - Tablet"
 	},

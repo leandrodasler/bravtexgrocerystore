@@ -5,7 +5,10 @@
 	"responsive-layout.desktop#pdp": {
 		"children": [
 			"flex-layout.row#product-breadcrumb",
-			"flex-layout.row#product-main"
+			"flex-layout.row#product-main",
+      "flex-layout.row#shelf-pdp-1",
+      "flex-layout.row#shelf-pdp-2",
+      "flex-layout.row#shelf-pdp-3"
 		],
 		"title": "PdP - Desktop"
 	},
@@ -59,7 +62,7 @@
 	"flex-layout.col#stack": {
 		"children": ["stack-layout", "flex-layout.col#dropdown"],
 		"props": {
-			"width": "43%",
+			"width": "50%",
 			"rowGap": 0,
 			"blockClass": "product-images-container"
 		},
@@ -142,7 +145,7 @@
 	"flex-layout.col#right-col": {
 		"props": {
 			"preventVerticalStretch": true,
-			"width": "43%",
+			"width": "50%",
 			"blockClass": "product-info-content"
 		},
 		"children": [
@@ -296,21 +299,6 @@
 		},
 		"children": ["add-to-list-btn#heart-pdp", "share#custom"]
 	},
-	"flex-layout.row#title-shelf-pdp-1": {
-		"props": {
-			"blockClass": "title-shelf-pdp-container"
-		},
-		"children": ["rich-text#title-shelf-1"]
-	},
-	"rich-text#title-shelf-1": {
-		"props": {
-			"blockClass": "title-shelf-content",
-			"text": "## Mais Populares",
-			"textAlignment": "LEFT",
-			"textPosition": "LEFT"
-		},
-		"title": "Titulo - Produtos Relacionados #1"
-	},
 	"flex-layout.row#shelf-pdp-1": {
 		"props": {
 			"blockClass": "shelf-pdp-container"
@@ -320,17 +308,67 @@
 	"shelf.relatedProducts#pdp-shelf-1": {
 		"blocks": ["product-summary.shelf#pdp-shelf"],
 		"props": {
-			"blockClass": "pdp-related-shelf",
+			"blockClass": "pdp-related-products",
+      "recommendation": "suggestions",
 			"productList": {
 				"maxItems": 10,
 				"itemsPerPage": 4,
-				"minItemsPerPage": 2,
+				"minItemsPerPage": 1,
 				"scroll": "ONE_BY_PAGE",
 				"arrows": true,
-				"showTitle": false,
-				"paginationDotsVisibility": "never"
+				"showTitle": true,
+				"paginationDotsVisibility": "never",
+        "titleText": "Sugestão de compra"
 			}
 		},
 		"title": "Produtos Relacionados #1"
+	},
+	"flex-layout.row#shelf-pdp-2": {
+		"props": {
+			"blockClass": "shelf-pdp-container"
+		},
+		"children": ["shelf.relatedProducts#pdp-shelf-2"]
+	},
+	"shelf.relatedProducts#pdp-shelf-2": {
+		"blocks": ["product-summary.shelf#pdp-shelf"],
+		"props": {
+			"blockClass": "pdp-related-products",
+      "recommendation": "similars",
+			"productList": {
+				"maxItems": 10,
+				"itemsPerPage": 4,
+				"minItemsPerPage": 1,
+				"scroll": "ONE_BY_PAGE",
+				"arrows": true,
+				"showTitle": true,
+				"paginationDotsVisibility": "never",
+        "titleText": "Produtos Similares"
+			}
+		},
+		"title": "Produtos Relacionados #2"
+	},
+	"flex-layout.row#shelf-pdp-3": {
+		"props": {
+			"blockClass": "shelf-pdp-container"
+		},
+		"children": ["shelf.relatedProducts#pdp-shelf-3"]
+	},
+	"shelf.relatedProducts#pdp-shelf-3": {
+		"blocks": ["product-summary.shelf#pdp-shelf"],
+		"props": {
+			"blockClass": "pdp-related-products",
+      "recommendation": "view",
+			"productList": {
+				"maxItems": 10,
+				"itemsPerPage": 4,
+				"minItemsPerPage": 1,
+				"scroll": "ONE_BY_PAGE",
+				"arrows": true,
+				"showTitle": true,
+				"paginationDotsVisibility": "never",
+        "titleText": "Quem viu este, viu também"
+			}
+		},
+		"title": "Produtos Relacionados #3"
 	}
 }

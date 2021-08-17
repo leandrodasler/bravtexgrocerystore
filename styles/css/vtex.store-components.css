@@ -50,12 +50,18 @@
 	line-height: 16px;
 	letter-spacing: 0.015em;
 	font-weight: bold;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.shippingTableCell {
+	padding-bottom: 16px;
 }
 :global(.vtex-flex-layout-0-x-flexRow--pdp-product-name-container) .productBrand--pdp-product-name-content {
 	color: #4d4a48;
 	font-weight: 800;
-	line-height: 52px;
-	font-size: 36px;
+	line-height: 48px;
+	font-size: 32px;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-button) {
 	color: #FFFFFF;
@@ -82,7 +88,7 @@
 	max-width: 504px;
 }
 :global(.vtex-flex-layout-0-x-flexCol--product-images-container) .productImagesContainer .productImagesGallerySlide {
-	width: 400px !important;
+	width: 490px !important;
 }
 :global(.vtex-flex-layout-0-x-flexCol--product-images-container) .productImagesContainer .carouselGaleryThumbs {
 	width: 104px;
@@ -296,7 +302,7 @@
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer {
 	display: flex;
 	width: 100%;
-	max-width: 435px;
+  max-width: 485px;
 
 }
 
@@ -306,11 +312,13 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-button) {
-	width: 60%;
+	width: 100%;
+  max-width: 200px;
 	height: 40px;
 	font-size: 14px;
 	background-color: #142032;
 	border: 1px solid #142032;
+  margin-left: 32px;
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-address-form__postalCode) {
@@ -318,7 +326,7 @@
 }
 
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-address-form-4-x-input) {
-	width: 70%;
+	width: 100%;
 }
 
 @media (min-width: 1026px) {

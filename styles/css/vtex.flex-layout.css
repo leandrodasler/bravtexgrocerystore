@@ -288,18 +288,18 @@
   background-color: #f71963;
 }
 .flexCol--product-info-content {
-  padding-left: 32px;
-  max-width: 504px;
+  padding-left: 48px;
+  /* max-width: 504px; */
 }
 .flexCol--product-images-container {
-  max-width: 504px;
+  max-width: none;
 }
 .flexRowContent--pdp-wish-and-share-content {
   align-items: center;
   justify-content: space-evenly;
 }
 .flexRowContent--pdp-main-container {
-  justify-content: flex-end;
+  justify-content: center;
 }
 .flexRow--add-to-cart-btn-container-shelf :global(.vtex-button) {
   background: #142032;
@@ -323,6 +323,7 @@
 .flexRow--quantity-and-buy-btn-container :global(.vtex-button) {
   white-space: nowrap;
   min-height: 48px;
+  max-width: none;
 }
 .flexRow--quantity-and-buy-btn-container :global(.vtex-button):hover {
   background-color: #f71963;
