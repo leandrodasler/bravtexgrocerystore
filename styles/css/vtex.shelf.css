@@ -80,11 +80,14 @@
   color: #000000 !important;
 }
 
+.sliderContainer--pdp-related-products :global(.vtex-flex-layout-0-x-flexCol--pdp-selling-and-list-price-container) {
+  margin: 24px 0;
+}
+
 .sliderContainer--pdp-related-products :global(.vtex-product-price-1-x-sellingPrice--summary) {
   color: #F71963 !important;
   display: inline-block;
   margin-top: 0;
-  margin: 24px 0;
 }
 
 .sliderContainer--pdp-related-products :global(.vtex-product-price-1-x-sellingPriceValue--summary) {
