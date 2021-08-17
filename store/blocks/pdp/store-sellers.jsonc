@@ -1,0 +1,51 @@
+{
+  "store.sellers": {
+    "blocks": ["seller-table"]
+  },
+  "seller-table": {
+    "children": ["vtex.store-components:product-name", "seller-simulate-shipping", "seller-head", "seller-body"]
+  },
+  "seller-head": {
+    "children": [
+      "seller-head-cell#Seller",
+      "seller-head-cell#Price",
+      "seller-head-cell#Shipping",
+      "seller-head-cell#PriceWithShipping",
+      "seller-head-cell#BuyButton"
+    ]
+  },
+  "seller-head-cell#Seller": {
+    "props": {
+      "title": "Loja"
+    }
+  },
+  "seller-head-cell#Price": {
+    "props": {
+      "title": "Preço"
+    }
+  },
+  "seller-head-cell#Shipping": {
+    "props": {
+      "title": "Frete"
+    }
+  },
+  "seller-head-cell#PriceWithShipping": {
+    "props": {
+      "title": "Preço com frete"
+    }
+  },
+  "seller-head-cell#BuyButton": {
+    "props": {
+      "title": "Adicionar ao carrinho"
+    }
+  },
+  "seller-body": {
+    "children": ["seller-row"]
+  },
+  "seller-row": {
+    "children": ["seller-name", "seller-price", "seller-shipping", "seller-price-with-shipping", "seller-add-to-cart"]
+  },
+  "seller-add-to-cart": {
+    "blocks": ["add-to-cart-button"]
+  }
+}

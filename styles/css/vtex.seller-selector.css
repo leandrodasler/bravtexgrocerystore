@@ -1,3 +1,24 @@
+.sellerMasterContainer {
+  max-width: 1238px;
+  margin: 0 auto;
+}
+
+.simulateShipping {
+  width: 100%;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.simulateShipping :global(.vtex-address-form__postalCode) {
+  width: 80%;
+}
+
+.simulateShipping :global(.vtex-address-form__postalCode) :global(.vtex-input__label)::before {
+  content: 'Insira o seu CEP' !important;
+}
+
 .linkSeller {
   margin-right: 40px;
   margin-top: -16px;
