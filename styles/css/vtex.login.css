@@ -66,22 +66,13 @@ div[class*='vtex-login-2-x-arrowUp'] {
 span[class*='vtex-login-2-x-profile'] {
 	white-space: nowrap;
 	text-transform: initial;
-	max-width: 77px;
+	max-width: 124px;
 	text-align: start;
 	display: flex;
 	font-size: 14px;
 	align-items: flex-end;
 	font-weight: bold;
 	color: #F71963;
-}
-span[class*='vtex-login-2-x-profile']::after {
-	content: '';
-	background: url("data:image/svg+xml,%3Csvg width='16' height='16' viewBox='0 0 16 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 7L8 11L12 7' stroke='%2300AC5A' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A")
-		no-repeat;
-	display: flex;
-	width: 16px;
-	height: 16px;
-	margin-right: 12px;
 }
 @media screen and (min-width: 1025px) {
 	.container :global(.vtex-button__label) span div div {
