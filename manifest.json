@@ -67,7 +67,8 @@
     "bravtexgrocerystore.bravtexgrocery-components": "0.x",
     "bravtexgrocerystore.bravtexgrocery-newcomponents": "0.x",
     "vtex.region-selector": "2.x",
-    "vtex.seller-selector": "0.x"
+    "vtex.seller-selector": "0.x",
+    "vtex.my-subscriptions": "3.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",

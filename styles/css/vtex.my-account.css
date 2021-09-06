@@ -143,7 +143,7 @@
 }
 .menuLinks
 	> div
-	> div:nth-child(5)
+	> div:nth-child(n+5):nth-child(-n+6)
 	> a[class*='vtex-account_menu-link f6 no-underline db hover-near-black pv5 mv3 pl5 bl bw2 nowrap c-muted-1 b--transparent']::before {
 	content: '';
 	width: 24px;
@@ -154,7 +154,7 @@
 }
 .menuLinks
 	> div
-	> div:nth-child(5)
+	> div:nth-child(n+5):nth-child(-n+6)
 	> a[class*='vtex-account_menu-link f6 no-underline db hover-near-black pv5 mv3 pl5 bl bw2 nowrap c-on-base b b--action-primary']::before {
 	content: '';
 	width: 24px;
