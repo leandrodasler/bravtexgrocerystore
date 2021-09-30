@@ -38,6 +38,37 @@
   font-size: 28px;
   line-height: 32px;
 }
+.paragraph--receita-params {
+  margin: 0 0 8px;
+  color: #4a596b;
+}
+.strong--receita-params {
+  font-weight: normal;
+  color: #f71963;
+}
+.paragraph--receita-description {
+  color: #4a596b;
+}
+.paragraph--receita-filtros {
+  color: #4a596b;
+  margin: 0 0 8px;
+}
+.strong--receita-filtros {
+  font-weight: normal;
+  color: #f71963;
+  background: #fedde8;
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-size: 14px;
+}
+.heading--receita-title {
+  margin: 40px 0 34px;
+  color: #f71963;
+}
+.heading--receita-ingredientes {
+  margin: 64px 0 41px;
+  color: #f71963;
+}
 .container--inputName__newsletter_label {
   font-size: 12px;
   line-height: 16px;

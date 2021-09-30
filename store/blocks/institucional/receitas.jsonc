@@ -1,0 +1,245 @@
+{
+  "store.custom#receitas": {
+    "children": ["flex-layout.row#receitas", "flex-layout.row#receitasContent", "flex-layout.row#receitaInfos"]
+  },
+
+  "flex-layout.row#receitas": {
+    "props": {
+      "blockClass": "content"
+    },
+    "children": ["flex-layout.col#receitas"]
+  },
+
+  "flex-layout.col#receitas": {
+    "children": ["rich-text#receitas"]
+  },
+
+  "rich-text#receitas": {
+    "props": {
+      "text": "## Receitas: Vegetais grelhados",
+      "title": "Título",
+      "blockClass": "receita-title"
+    }
+  },
+
+  "flex-layout.row#receitasContent": {
+    "props": {
+      "blockClass": "content"
+    },
+    "children": ["flex-layout.col#receitaImagem", "flex-layout.col#receitaInfo"]
+  },
+
+  "flex-layout.col#receitaImagem": {
+    "props": {
+      "width": "695px"
+    },
+    "children": ["image#receita-image"]
+  },
+
+  "flex-layout.col#receitaInfo": {
+    "props": {
+      "preventVerticalStretch": true,
+      "marginLeft": 8,
+      "marginRight": 9
+    },
+    "children": [
+      "rich-text#receitaDificuldade",
+      "rich-text#receitaTempoDePreparo",
+      "rich-text#receitaFiltros",
+      "rich-text#receitaDescricao",
+      "link#receitaProdutos"
+    ]
+  },
+
+  "image#receita-image": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vteximg.com.br/arquivos/vegetais-grelhados.png",
+      "blockClass": "receitas-image"
+    }
+  },
+
+  "rich-text#receitaDificuldade": {
+    "props": {
+      "text": "Dificuldade: **Fácil**",
+      "blockClass": "receita-params"
+    }
+  },
+  "rich-text#receitaTempoDePreparo": {
+    "props": {
+      "text": "Tempo de preparo: **15 minutos**",
+      "blockClass": "receita-params"
+    }
+  },
+  "rich-text#receitaFiltros": {
+    "props": {
+      "text": "Filtros: **Almoço** **Jantar** **Saudável**",
+      "blockClass": "receita-filtros"
+    }
+  },
+
+  "rich-text#receitaDescricao": {
+    "props": {
+      "text": "Uma opção saudável e gostosa para saborear no almoço ou jantar. Perfeito para quem quer manter a dieta sem abrir mão de sabor. Rica em nutrientes, leva tomates, cenouras, brócolis, pepino e ervilhas. Pode ser preparado no forno, na grelha ou até na frigideira.",
+      "blockClass": "receita-description"
+    }
+  },
+
+  "link#receitaProdutos": {
+    "props": {
+      "href": "#",
+      "label": "comprar todos os ingredientes",
+      "blockClass": "receitas-link"
+    }
+  },
+
+  "flex-layout.row#receitaInfos": {
+    "props": {
+      "blockClass": "content",
+      "marginTop": 8,
+      "marginBottom": 6
+    },
+    "children": ["flex-layout.col#receitaInfos"]
+  },
+
+  "flex-layout.col#receitaInfos": {
+    "props": {
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "disclosure-layout-group#receitas",
+      "rich-text#receita-produtos",
+      "list-context.product-list#ingredientes"
+    ]
+  },
+
+  "disclosure-layout-group#receitas": {
+    "children": [
+      "disclosure-layout#receita-ingredientes",
+      "disclosure-layout#receita-preparo",
+      "disclosure-layout#receita-infos"
+    ]
+  },
+
+  "disclosure-layout#receita-ingredientes": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#receita1", "disclosure-content#receita1"]
+  },
+  "disclosure-trigger#receita1": {
+    "props": {
+      "blockClass": "receitas",
+      "as": "div"
+    },
+    "children": ["rich-text#receita-title1", "disclosure-state-indicator"]
+  },
+  "disclosure-content#receita1": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#receita-content1"]
+  },
+  "rich-text#receita-title1": {
+    "props": {
+      "text": "Lista de Ingredientes"
+    }
+  },
+  "rich-text#receita-content1": {
+    "props": {
+      "text": "Com design moderno e elegante que combina com qualquer projeto de decoração, a Geladeira Brastemp Frost Free Side by Side 3 Portas Inverse BRO80AK 540 Litros Evox 110V é um modelo de duas portas com excelente espaço interno e capacidade total de 540 litros. As geladeiras frost free são ideais para quem deseja ter praticidade e economia na cozinha. Uma geladeira com esta tecnologia permite que você nunca mais precise fazer o degelo do seu freezer. Você aproveita melhor o espaço do congelador, pois não há acúmulo de gelo. Ela conta com a capacidade de uma Side by Side, mas com o diferencial do refrigerador em cima e freezer embaixo, o que garante um melhor aproveitamento interno. Além disso, possui Ice Maker, uma funcionalidade que permite a produção de até 12 bandejas de gelo automaticamente. As prateleiras e cestas são desenvolvidas com vidro temperado super resistente, o que deixa o item mais sofisticado."
+    }
+  },
+
+  "disclosure-layout#receita-preparo": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#receita2", "disclosure-content#receita2"]
+  },
+  "disclosure-trigger#receita2": {
+    "props": {
+      "blockClass": "receitas",
+      "as": "div"
+    },
+    "children": ["rich-text#receita-title2", "disclosure-state-indicator"]
+  },
+  "disclosure-content#receita2": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#receita-content2"]
+  },
+  "rich-text#receita-title2": {
+    "props": {
+      "text": "Modo de Preparo"
+    }
+  },
+  "rich-text#receita-content2": {
+    "props": {
+      "text": "Com design moderno e elegante que combina com qualquer projeto de decoração, a Geladeira Brastemp Frost Free Side by Side 3 Portas Inverse BRO80AK 540 Litros Evox 110V é um modelo de duas portas com excelente espaço interno e capacidade total de 540 litros. As geladeiras frost free são ideais para quem deseja ter praticidade e economia na cozinha. Uma geladeira com esta tecnologia permite que você nunca mais precise fazer o degelo do seu freezer. Você aproveita melhor o espaço do congelador, pois não há acúmulo de gelo. Ela conta com a capacidade de uma Side by Side, mas com o diferencial do refrigerador em cima e freezer embaixo, o que garante um melhor aproveitamento interno. Além disso, possui Ice Maker, uma funcionalidade que permite a produção de até 12 bandejas de gelo automaticamente. As prateleiras e cestas são desenvolvidas com vidro temperado super resistente, o que deixa o item mais sofisticado."
+    }
+  },
+
+  "disclosure-layout#receita-infos": {
+    "props": {
+      "animated": true
+    },
+    "children": ["disclosure-trigger#receita3", "disclosure-content#receita3"]
+  },
+  "disclosure-trigger#receita3": {
+    "props": {
+      "blockClass": "receitas",
+      "as": "div"
+    },
+    "children": ["rich-text#receita-title3", "disclosure-state-indicator"]
+  },
+  "disclosure-content#receita3": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#receita-content3"]
+  },
+  "rich-text#receita-title3": {
+    "props": {
+      "text": "Informações nutricionais"
+    }
+  },
+  "rich-text#receita-content3": {
+    "props": {
+      "text": "Com design moderno e elegante que combina com qualquer projeto de decoração, a Geladeira Brastemp Frost Free Side by Side 3 Portas Inverse BRO80AK 540 Litros Evox 110V é um modelo de duas portas com excelente espaço interno e capacidade total de 540 litros. As geladeiras frost free são ideais para quem deseja ter praticidade e economia na cozinha. Uma geladeira com esta tecnologia permite que você nunca mais precise fazer o degelo do seu freezer. Você aproveita melhor o espaço do congelador, pois não há acúmulo de gelo. Ela conta com a capacidade de uma Side by Side, mas com o diferencial do refrigerador em cima e freezer embaixo, o que garante um melhor aproveitamento interno. Além disso, possui Ice Maker, uma funcionalidade que permite a produção de até 12 bandejas de gelo automaticamente. As prateleiras e cestas são desenvolvidas com vidro temperado super resistente, o que deixa o item mais sofisticado."
+    }
+  },
+
+  "rich-text#receita-produtos": {
+    "props": {
+      "text": "### Veja os ingredientes",
+      "blockClass": "receita-ingredientes",
+      "marginTop": 8
+    }
+  },
+
+  "list-context.product-list#ingredientes": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#receita-products1"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    },
+    "title": "Ingredientes"
+  },
+
+  "slider-layout#receita-products1": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 2
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly"
+    },
+    "title": "Ingredientes"
+  }
+}
