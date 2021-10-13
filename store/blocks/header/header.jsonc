@@ -140,6 +140,11 @@
 		},
 		"children": ["vtex.menu@2.x:menu#category-menu"]
 	},
+	"mega-menu#header": {
+		"props": {
+			"title": "Categorias"
+		}
+	},
 	"logo#desktop": {
 		"props": {
 			"title": "Logo",

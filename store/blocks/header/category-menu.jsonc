@@ -1,99 +1,124 @@
 {
-	"vtex.menu@2.x:menu#category-menu": {
-		"props": {
-			"experimentalOptimizeRendering": true,
-			"items": [
-			{
-				"id": "menu-item-category-ofertas",
-				"type": "custom",
-				"blockClass": "category-menu",
-				"iconId": null,
-				"highlight": false,
-				"itemProps": {
-				"type": "internal",
-				"href": "/home---ofertas/",
-				"noFollow": false,
-				"tagTitle": "ofertas",
-				"text": "Ofertas"
-				}
-			},
-			{
-				"id": "menu-item-category-maisvendidos",
-				"type": "custom",
-				"blockClass": "category-maisvendidos",
-				"iconId": null,
-				"highlight": false,
-				"itemProps": {
-				"type": "internal",
-				"href": "/home---maisvendidos/",
-				"noFollow": false,
-				"tagTitle": "maisvendidos",
-				"text": "Mais Vendidos"
-				}
-			}
-			]
-		},
-		"children": ["flex-layout.row#localization", "menu-item#category"]
-		},
-	"menu-item#category": {
-		"props": {
-			"id": "menu-item-category-home",
-			"type": "custom",
-			"blockClass": "main-category-menu",
-			"iconId": null,
-			"highlight": false,
-			"itemProps": {
-				"type": "internal",
-				"href": "/apparel---categorias/",
-				"noFollow": false,
-				"tagTitle": "categorias",
-				"text": "Categorias"
-			},
-			"iconProps": {
-				"id": "menu-icon",
-				"size": 24,
-				"viewBox": "0 0 20 20",
-				"activeClassName": "main-menu-category",
-				"mutedClassName": "main-menu"
-			},
-			"iconToTheLeft": true
-		},
-		"blocks": ["vtex.menu@2.x:submenu#category"]
-	},
-	"flex-layout.row#localization": {
-		"props": {
-			"blockClass": "localization-row"
-		},
-		"children": ["region-selector"]
-	},
-	"region-selector": {
-		"props": {
-			"centerContent": true
-		}
-	}
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "items": [
+        {
+          "id": "menu-item-category-ofertas",
+          "type": "custom",
+          "blockClass": "category-menu",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/home---ofertas/",
+            "noFollow": false,
+            "tagTitle": "ofertas",
+            "text": "Ofertas"
+          }
+        },
+        {
+          "id": "menu-item-category-maisvendidos",
+          "type": "custom",
+          "blockClass": "category-maisvendidos",
+          "iconId": null,
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "/home---maisvendidos/",
+            "noFollow": false,
+            "tagTitle": "maisvendidos",
+            "text": "Mais Vendidos"
+          }
+        }
+      ]
+    },
+    "children": ["flex-layout.row#localization", "sticky-layout#mega-menu"/*, "menu-item#category"*/]
+  },
+  "menu-item#category": {
+    "props": {
+      "id": "menu-item-category-home",
+      "type": "custom",
+      "blockClass": "main-category-menu",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/apparel---categorias/",
+        "noFollow": false,
+        "tagTitle": "categorias",
+        "text": "Categorias"
+      },
+      "iconProps": {
+        "id": "menu-icon",
+        "size": 24,
+        "viewBox": "0 0 20 20",
+        "activeClassName": "main-menu-category",
+        "mutedClassName": "main-menu"
+      },
+      "iconToTheLeft": true
+    },
+    "blocks": ["vtex.menu@2.x:submenu#category"]
+  },
+  "flex-layout.row#localization": {
+    "props": {
+      "blockClass": "localization-row"
+    },
+    "children": ["region-selector"]
+  },
+  "region-selector": {
+    "props": {
+      "centerContent": true
+    }
+  },
+  "sticky-layout#mega-menu": {
+    "children": ["flex-layout.row#trigger-mega-menu", "flex-layout.row#mega-menu"]
+  },
+  "flex-layout.row#trigger-mega-menu": {
+    "children": [
+      "flex-layout.col#trigger-mega-menu"
+    ]
+  },
+  "flex-layout.col#trigger-mega-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["mega-menu-trigger-btn"]
+  },
+  "flex-layout.row#mega-menu": {
+    "children": ["flex-layout.col#mega-menu"]
+  },
+  "flex-layout.col#mega-menu": {
+	"children": ["mega-menu"]
+  },
+  "mega-menu": {
+	  "props": {
+		  "title": null
+	  }
+  }
 
-	// "menu-item#location": {
-	//   "props": {
-	//     "id": "menu-item-category-home",
-	//     "type": "custom",
-	//     "blockClass": "location-menu",
-	//     "iconId": null,
-	//     "highlight": false,
-	//     "itemProps": {
-	//       "type": "internal",
-	//       "href": "/apparel---accessories/",
-	//       "noFollow": false,
-	//       "tagTitle": "Enviado para",
-	//       "text": "Enviado para: São Paulo"
-	//     },
-	//     "iconProps": {
-	// 			"id": "pin-icon",
-	// 			"size": 25,
-	// 			"viewBox": "0 0 24 24",
-	// 			"activeClassName": "",
-	// 			"mutedClassName": ""
-	// 		},
-	// 		"iconToTheLeft": true
-	//   }
-	// }
+  // "menu-item#location": {
+  //   "props": {
+  //     "id": "menu-item-category-home",
+  //     "type": "custom",
+  //     "blockClass": "location-menu",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/apparel---accessories/",
+  //       "noFollow": false,
+  //       "tagTitle": "Enviado para",
+  //       "text": "Enviado para: São Paulo"
+  //     },
+  //     "iconProps": {
+  // 			"id": "pin-icon",
+  // 			"size": 25,
+  // 			"viewBox": "0 0 24 24",
+  // 			"activeClassName": "",
+  // 			"mutedClassName": ""
+  // 		},
+  // 		"iconToTheLeft": true
+  //   }
+  // }
 }

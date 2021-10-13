@@ -1,0 +1,36 @@
+.triggerContainer {
+  display: flex;
+  color: #f71963;
+  column-gap: 5px;
+}
+
+.triggerContainer::after {
+  content: 'Categorias';
+  font-family: Fabriga, Nunito, 'San Francisco', -apple-system, BlinkMacSystemFont, 'avenir next', avenir,
+    'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
+}
+
+.menuContainer {
+  max-height: unset;
+}
+
+.styledLinkText {
+  color: #f71963;
+}
+
+.seeAllLink {
+  display: none;
+}
+
+.submenuList .seeAllLinkContainer {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.submenuList .seeAllLink {
+  position: absolute;
+  display: block;
+  color: transparent;
+  margin-top: -20px;
+  width: 70%;
+}

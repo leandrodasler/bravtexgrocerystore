@@ -2,7 +2,7 @@
   align-items: center;
   font-size: 14px;
   font-weight: bold;
-  color: #F71963;
+  color: #f71963;
   max-width: 90px;
 }
 .styledLinkIcon--wishlist-custom {
@@ -13,7 +13,7 @@
   align-items: center;
 }
 .menuItem--location-menu::before {
-  content: "";
+  content: '';
   width: 1px;
   height: 36px;
   background-color: #f1efed;
@@ -46,25 +46,31 @@
   font-size: 16px;
 }
 .submenuContainer--megamenu-header .menuItem--main-category-menu {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    position: relative;
-  }
-  .submenuContainer--megamenu-header .menuItem--main-category-menu::after {
-	content: "";
-    background: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.01411 4L0 0.991195L0.992944 0L5 4L0.992944 8L0 7.0088L3.01411 4Z' fill='%234D4A48'/%3E%3C/svg%3E")
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.submenuContainer--megamenu-header .menuItem--main-category-menu::after {
+  content: '';
+  background: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.01411 4L0 0.991195L0.992944 0L5 4L0.992944 8L0 7.0088L3.01411 4Z' fill='%234D4A48'/%3E%3C/svg%3E")
     no-repeat;
-    display: flex;
-    height: 8px;
-    width: 6px;
-    position: absolute;
-    right: 10px;
-  }
-  .submenuContainer--megamenu-header .styledLinkContainer--main-category-menu {
-  	margin: 0 1.3rem;
-  	max-height: 39px;
-	width: 100%;
+  display: flex;
+  height: 8px;
+  width: 6px;
+  position: absolute;
+  right: 10px;
+}
+.submenuContainer--megamenu-header .styledLinkContainer--main-category-menu {
+  margin: 0 1.3rem;
+  max-height: 39px;
+  width: 100%;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+/* submenu de segundo nível */
+.submenuContainer--megamenu-header .submenuContainer--megamenu-header {
+  top: -25px;
 }
 .styledLinkContainer--wishlist-custom {
   margin: 0 9px;
@@ -172,10 +178,11 @@
   }
   .submenuWrapper--megamenu-header--isOpen {
     margin: 0px;
-	width: 200px;
+    width: 200px;
   }
   .submenu--megamenu-header .menuContainer {
     align-items: flex-start;
+    flex-direction: column;
   }
   .styledLinkContainer--sub-menu-header {
     margin-left: 0;
@@ -184,7 +191,7 @@
   .styledLinkIcon--main-category-menu {
     display: flex;
     align-items: center;
-	margin-right: 1rem;
+    margin-right: 1rem;
   }
   .menuItem--sub-menu-header {
     display: flex;
@@ -193,7 +200,7 @@
     position: relative;
   }
   .menuItem--sub-menu-header::after {
-    content: "";
+    content: '';
     background: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.01411 4L0 0.991195L0.992944 0L5 4L0.992944 8L0 7.0088L3.01411 4Z' fill='%234D4A48'/%3E%3C/svg%3E")
       no-repeat;
     display: flex;
@@ -215,7 +222,7 @@
     color: #f71963;
   }
   .submenuWrapper--megamenu-header--isOpen::after {
-    content: "";
+    content: '';
     width: 90%;
     height: 0.5px;
     position: absolute;
@@ -272,23 +279,22 @@
 }
 /* Ajustes Footer */
 
-
 @media only screen and (max-width: 1024px) {
-	:global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) {
-		align-items: flex-start;
-	}
+  :global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) {
+    align-items: flex-start;
+  }
 
-	:global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) .menuItem--main-category-menu {
-		display: flex;
-    	align-items: center;
-    	width: 100%;
-    	position: relative;
-	}
+  :global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) .menuItem--main-category-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+  }
 
-	:global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) .menuItem--main-category-menu::after {
-	content: "";
+  :global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) .menuItem--main-category-menu::after {
+    content: '';
     background: url("data:image/svg+xml,%3Csvg width='5' height='8' viewBox='0 0 5 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M3.01411 4L0 0.991195L0.992944 0L5 4L0.992944 8L0 7.0088L3.01411 4Z' fill='%234D4A48'/%3E%3C/svg%3E")
-    no-repeat;
+      no-repeat;
     display: flex;
     height: 8px;
     width: 6px;

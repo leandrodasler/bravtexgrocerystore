@@ -19,6 +19,45 @@
 				"tagTitle": "categorias",
 				"text": "Categorias"
 			}
+		},
+		"children": ["menu-item#receitas"]
+	},
+	"menu-item#receitas": {
+		"props": {
+			"id": "menu-item-receitas-home",
+			"type": "custom",
+			"blockClass": "main-category-menu",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"noFollow": false,
+				"tagTitle": "receitas",
+				"text": "Receitas"
+			}
+		},
+		"blocks": ["vtex.menu@2.x:submenu#receitas"]
+	},
+	"vtex.menu@2.x:submenu#receitas": {
+		"props": {
+			"width": "auto",
+			"blockClass": "megamenu-header"
+		},
+		"children": ["vtex.menu@2.x:menu#receitas"]
+	},
+	"vtex.menu@2.x:menu#receitas": {
+		"props": {
+			"id": "menu-item-category-home",
+			"type": "custom",
+			"blockClass": "main-category-menu",
+			"iconId": null,
+			"highlight": false,
+			"itemProps": {
+				"type": "internal",
+				"noFollow": false,
+				"tagTitle": "categorias",
+				"text": "Receitas"
+			}
 		}
 	}
 }
