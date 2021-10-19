@@ -12,7 +12,8 @@
 			"flex-layout.row#1-desktop",
 			"flex-layout.row#2-desktop",
 			"sticky-layout#3-desktop",
-			"flex-layout.row#4-desktop"
+			"flex-layout.row#4-desktop",
+			"modal-trigger#cookie-bar"
 		],
 		"title": "Header - Desktop"
 	},
@@ -160,7 +161,8 @@
 			"sticky-layout#1-mobile",
 			"sticky-layout#1-tablet",
 			"flex-layout.row#3-mobile",
-			"flex-layout.row#4-mobile"
+			"flex-layout.row#4-mobile",
+			"modal-trigger#cookie-bar"
 		],
 		"title": "Header - Mobile"
 	},
@@ -264,12 +266,46 @@
 		}
 	},
 	"drawer": {
-		"children": ["menu#drawer"]
+		// "children": ["menu#drawer"]
+		"children": ["mega-menu"],
+    	"blocks": ["drawer-header#my-drawer"]
 	},
 	"menu#drawer": {
 		"children": ["menu#header-mobile"],
 		"props": {
 			"orientation": "vertical"
+		}
+	},
+	"drawer-header#my-drawer": {
+		"children": ["flex-layout.row#drawer-header"]
+	},
+	"flex-layout.row#drawer-header": {
+		"children": [
+			"flex-layout.col#mega-menu-go-back-btn",
+			"flex-layout.col#spacer",
+			"flex-layout.col#drawer-close-button"
+		],
+		"props": {
+			"blockClass": "drawer-header",
+			"preventHorizontalStretch": true,
+			"preventVerticalStretch": true,
+			"preserveLayoutOnMobile": true,
+			"fullWidth": true
+		}
+	},
+	"flex-layout.col#drawer-close-button": {
+		"children": ["drawer-close-button"],
+		"props": {
+			"verticalAlign": "middle",
+			"horizontalAlign": "right"
+		}
+	},
+	"flex-layout.col#mega-menu-go-back-btn": {
+		"children": ["mega-menu-go-back-btn"],
+		"props": {
+			"verticalAlign": "middle",
+			"horizontalAlign": "left",
+			"paddingLeft": 4
 		}
 	},
 	"logo#mobile": {

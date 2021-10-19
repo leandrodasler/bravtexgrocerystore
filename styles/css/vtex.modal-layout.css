@@ -1,103 +1,157 @@
 @media screen and (min-width: 40em) {
-	.paper--quickview {
-		height: 260px;
-		width: 580px;
-	}
+  .paper--quickview {
+    height: 260px;
+    width: 580px;
+  }
 
-	.actionsContainer--quickview {
-		padding: 0 2rem 2rem 2rem;
-	}
+  .actionsContainer--quickview {
+    padding: 0 2rem 2rem 2rem;
+  }
 }
 
 @media screen and (min-width: 50em) {
-	.paper--quickview {
-		height: 450px;
-		width: 900px;
-	}
+  .paper--quickview {
+    height: 450px;
+    width: 900px;
+  }
 }
 
 @media screen and (min-width: 75em) {
-	.paper--quickview {
-		width: calc(100% - 4rem);
-		height: auto;
-	}
+  .paper--quickview {
+    width: calc(100% - 4rem);
+    height: auto;
+  }
 }
 
 @media screen and (min-width: 82em) {
-	.actionsContainer--quickview {
-		padding: 0 2.5rem 2.5rem 2.5rem;
-	}
+  .actionsContainer--quickview {
+    padding: 0 2.5rem 2.5rem 2.5rem;
+  }
 }
 
 .paper--quickview {
-	min-width: 320px;
-	max-width: 96rem;
+  min-width: 320px;
+  max-width: 96rem;
 }
 
 .headerContainer--quickview {
-	border: none;
-	position: absolute;
-	right: 0;
+  border: none;
+  position: absolute;
+  right: 0;
 }
 
 .actionsContainer--quickview {
-	height: 100%;
-	width: 100%;
-	transition: box-shadow 150ms ease-in-out, border-top 150ms ease-in-out;
-	border-top-style: solid;
-	border-top-width: 1px;
-	border-top-color: transparent;
-	box-shadow: -4px 0px 27px -12px transparent;
+  height: 100%;
+  width: 100%;
+  transition: box-shadow 150ms ease-in-out, border-top 150ms ease-in-out;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: transparent;
+  box-shadow: -4px 0px 27px -12px transparent;
 }
 
 .actionsContentWrapper {
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #aaa;
-	padding-top: 1.5rem;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #aaa;
+  padding-top: 1.5rem;
 }
 
 .contentContainer--quickviewContent {
-	padding: 2.5rem 0 2.5rem 2rem;
-	overflow-x: hidden;
+  padding: 2.5rem 0 2.5rem 2rem;
+  overflow-x: hidden;
 }
 
 .triggerContainer--quickview {
-	padding: 0.75rem;
+  padding: 0.75rem;
 }
 
 .triggerContainer {
-	outline: none;
+  outline: none;
 }
 
 .actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview) {
-	border-top-color: rgb(238, 238, 238);
-	box-shadow: -4px 0px 27px -12px rgba(0, 0, 0, 0.64);
+  border-top-color: rgb(238, 238, 238);
+  box-shadow: -4px 0px 27px -12px rgba(0, 0, 0, 0.64);
 }
 
 .actionsContainer--quickview:not(.actionsContainerEndOfContent--quickview) .actionsContentWrapper {
-	border-top-color: transparent;
+  border-top-color: transparent;
 }
 
 .closeButton {
-	padding-right: 1rem;
+  padding-right: 1rem;
 }
 
 .paper--product-gifts {
-	padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 /* PdP */
 .paper--payment-method-modal-content {
-	width: 800px;
-	height: 100px;
+  width: 800px;
+  height: 100px;
 }
 .triggerContainer--payment-method-trigger-container {
-	cursor: pointer;
+  cursor: pointer;
 }
 @media only screen and (max-width: 640px) {
-	.paper--payment-method-modal-content {
-		height: auto;
-		width: 100%;
-	}
+  .paper--payment-method-modal-content {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* Cookie bar */
+.modal--cookie-bar {
+  /* z-index: unset!important;
+  height: 25%; */
+  inset: unset!important;
+  left: 5% !important;
+  bottom: 55px!important;
+  right: 5% !important;
+}
+.hiddenContainer {
+  overflow: auto;
+}
+.container--cookie-bar {
+  align-items: flex-end;
+}
+.paper--cookie-bar {
+  width: 90vw;
+  max-width: 1238px;
+  background-color: #333;
+  padding: 15px 10%;
+  gap: 15px;
+  align-items: center;
+}
+@media (min-width: 641px) {
+  .paper--cookie-bar {
+    flex-direction: row;
+  }
+}
+.container--cookie-bar :global(.vtex-rich-text-0-x-paragraph),
+.container--cookie-bar :global(.vtex-rich-text-0-x-link),
+.container--cookie-bar :global(.vtex-modal-layout-0-x-closeButton) {
+  font-weight: 800;
+}
+.container--cookie-bar :global(.vtex-rich-text-0-x-paragraph) {
+  color: #fff;
+  margin: 0;
+  text-align: justify;
+}
+.container--cookie-bar :global(.vtex-rich-text-0-x-link) {
+  color: #f71963;
+}
+.container--cookie-bar :global(.vtex-modal-layout-0-x-actionsContentWrapper) {
+  border-top: none;
+  padding-top: 0;
+}
+.container--cookie-bar :global(.vtex-modal-layout-0-x-closeButton),
+.container--cookie-bar :global(.vtex-modal-layout-0-x-closeButton):hover {
+  border: none;
+  background-color: #f71963;
+  color: #fff;
+  text-transform: none;
+  width: 200px;
 }

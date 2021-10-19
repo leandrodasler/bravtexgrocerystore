@@ -1,0 +1,31 @@
+{
+  "modal-trigger#cookie-bar": {
+    "children": ["modal-layout#cookie-bar"],
+    "props": {
+      "trigger": "load-session"
+    },
+    "title": "Cookie Bar"
+  },
+  "modal-layout#cookie-bar": {
+    "children": ["rich-text#cookie-bar", "modal-actions#cookie-bar"],
+    "props": {
+      "blockClass": "cookie-bar",
+      "disableEscapeKeyDown": true
+    }
+  },
+  "rich-text#cookie-bar": {
+    "props": {
+      "text": "Usamos cookies para melhorar a sua experiência em nosso site. Ao continuar a navegação consideramos que você aceita a utilização. [Maiores informações](/institucional/politica-privacidade)"
+    },
+    "title": "Cookie Bar - Text"
+  },
+  "modal-actions#cookie-bar": {
+    "children": ["modal-actions.close#cookie-bar"]
+  },
+  "modal-actions.close#cookie-bar": {
+    "props": {
+      "label": "Entendi"
+    },
+    "title": "Cookie Bar - Close Button"
+  }
+}

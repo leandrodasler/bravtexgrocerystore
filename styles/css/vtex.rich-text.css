@@ -61,7 +61,8 @@
   padding: 4px 6px;
   font-size: 14px;
 }
-.heading--receita-title {
+.heading--receita-title,
+.heading--privacy-policy-title {
   margin: 40px 0 34px;
   color: #f71963;
 }

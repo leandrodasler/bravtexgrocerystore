@@ -1,0 +1,38 @@
+{
+  "store.custom#privacy-policy": {
+    "children": ["flex-layout.row#privacy-policy-title", "flex-layout.row#privacy-policy-content"]
+  },
+  "flex-layout.row#privacy-policy-title": {
+    "children": ["flex-layout.col#privacy-policy-title"],
+    "props": {
+      "blockClass": "content"
+    },
+    "title": "Área para o título da política de privacidade"
+  },
+  "flex-layout.col#privacy-policy-title": {
+    "children": ["rich-text#privacy-policy-title"]
+  },
+  "rich-text#privacy-policy-title": {
+    "props": {
+      "text": "## Política de privacidade",
+      "blockClass": "privacy-policy-title"
+    },
+    "title": "Título da política de privacidade"
+  },
+  "flex-layout.row#privacy-policy-content": {
+    "children": ["flex-layout.col#privacy-policy-content"],
+    "props": {
+      "blockClass": "content"
+    },
+    "title": "Área para o texto da política de privacidade"
+  },
+  "flex-layout.col#privacy-policy-content": {
+    "children": ["rich-text#privacy-policy-content"]
+  },
+  "rich-text#privacy-policy-content": {
+    "props": {
+      "text": "Este conteúdo pode ser editado em [/admin/cms/site-editor/institucional/politica-privacidade](/admin/cms/site-editor/institucional/politica-privacidade)"
+    },
+    "title": "Texto da política de privacidade"
+  }
+}
