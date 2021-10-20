@@ -12,8 +12,8 @@
 			"flex-layout.row#1-desktop",
 			"flex-layout.row#2-desktop",
 			"sticky-layout#3-desktop",
-			"flex-layout.row#4-desktop"/*,
-			"modal-trigger#cookie-bar"*/
+			"flex-layout.row#4-desktop",
+			"modal-trigger#cookie-bar"
 		],
 		"title": "Header - Desktop"
 	},
@@ -161,8 +161,8 @@
 			"sticky-layout#1-mobile",
 			"sticky-layout#1-tablet",
 			"flex-layout.row#3-mobile",
-			"flex-layout.row#4-mobile"/*,
-			"modal-trigger#cookie-bar"*/
+			"flex-layout.row#4-mobile",
+			"modal-trigger#cookie-bar"
 		],
 		"title": "Header - Mobile"
 	},

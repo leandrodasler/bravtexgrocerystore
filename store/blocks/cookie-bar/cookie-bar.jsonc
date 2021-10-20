@@ -2,7 +2,7 @@
   "modal-trigger#cookie-bar": {
     "children": ["modal-layout#cookie-bar"],
     "props": {
-      "trigger": "load"
+      "trigger": "load-session"
     },
     "title": "Cookie Bar"
   },
