@@ -5,7 +5,8 @@
 	/* Estrutura de ResponsiveLayoutsHome*/
 	"responsive-layout.desktop#home": {
 		"children": [
-			"list-context.image-list#demo",
+			"region-banner",
+			// "list-context.image-list#demo",
 			"flex-layout.row#deals",
 			"flex-layout.row#shelf-banner-desktop",
 			"flex-layout.row#shelf-title1",
@@ -14,6 +15,23 @@
 			"flex-layout.row#shelf2"
 		],
 		"title": "Home - Desktop"
+	},
+	"region-banner": {
+		"title": "Banners regionais",
+		"children": ["slider-layout#demo-images"],
+		"props": {
+			"height": 328,
+			"images": [
+				{
+					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Azeite-Desktop1.png",
+					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Azeite-Mobile1.png"
+				},
+				{
+					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Margarina-Desktop1.png",
+					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Margarina-Mobile1.png"
+				}
+			]
+		}
 	},
 	"list-context.image-list#demo": {
 		"children": ["slider-layout#demo-images"],

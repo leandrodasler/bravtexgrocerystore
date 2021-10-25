@@ -1,7 +1,8 @@
 {
 	"responsive-layout.tablet#home": {
 		"children": [
-			"list-context.image-list#demo",
+			"region-banner",
+			// "list-context.image-list#demo",
 			"flex-layout.row#deals",
 			"flex-layout.row#shelf-banner-mobile",
 			"flex-layout.row#shelf-title1",
