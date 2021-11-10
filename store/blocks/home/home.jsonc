@@ -10,6 +10,7 @@
 			"flex-layout.row#deals",
 			"flex-layout.row#shelf-banner-desktop",
 			"flex-layout.row#shelf-title1",
+			"__fold__",
 			"flex-layout.row#shelf1",
 			"flex-layout.row#shelf-title2",
 			"flex-layout.row#shelf2"
