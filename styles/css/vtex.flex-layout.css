@@ -124,6 +124,9 @@
   padding-bottom: 1rem;
 }
 /*header*/
+.flexRow--demo-store-warning {
+  background-color: #f8f7fc;
+}
 .flexRow--icons-header {
   display: flex;
 }
