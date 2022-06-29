@@ -132,7 +132,7 @@
 	  "checkout-summary.compact#minicart": {
 		"children": ["summary-totalizers#minicart"],
 		"props": {
-		  "totalizersToShow": ["Items"]
+		  "totalizersToShow": ["Items", "Discounts"]
 		}
 	  },
 	  "summary-totalizers#minicart": {
