@@ -15,10 +15,16 @@
 		},
 		"children": ["product-list-price"]
 	},
+	"product-selling-price": {
+		"props": {
+			"blockClass": "summary",
+			"message": "Por {sellingPriceValue}/ {hasUnitMultiplier, select, true {{unitMultiplier}} false {}} {measurementUnit}"
+		}
+	},
 	"product-selling-price#summary": {
 		"props": {
 			"blockClass": "summary",
-			"message": "Por {sellingPriceValue}/ un"
+			"message": "Por {sellingPriceValue}/ {hasUnitMultiplier, select, true {{unitMultiplier}} false {}} {measurementUnit}"
 		}
 	},
 	"product-list-price#summary": {
