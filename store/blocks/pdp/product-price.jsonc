@@ -18,13 +18,13 @@
 	"product-selling-price": {
 		"props": {
 			"blockClass": "summary",
-			"message": "Por {sellingPriceValue}/ {hasUnitMultiplier, select, true {{unitMultiplier}} false {}} {measurementUnit}"
+			"message": "Por {sellingPriceValue}/ {measurementUnit}"
 		}
 	},
 	"product-selling-price#summary": {
 		"props": {
 			"blockClass": "summary",
-			"message": "Por {sellingPriceValue}/ {hasUnitMultiplier, select, true {{unitMultiplier}} false {}} {measurementUnit}"
+			"message": "Por {sellingPriceValue}/ {measurementUnit}"
 		}
 	},
 	"product-list-price#summary": {

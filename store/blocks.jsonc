@@ -149,7 +149,7 @@
 		"props": {
 			"showDiscountValue": true,
 			"blockClass": "main-sell-summary",
-			"message": "Por {sellingPriceValue}/ {hasUnitMultiplier, select, true {{unitMultiplier}} false {}} {measurementUnit}"
+			"message": "Por {sellingPriceValue}/ {measurementUnit}"
 		},
 		"title": "Shelf- Preço de Venda"
 	},
