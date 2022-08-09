@@ -175,15 +175,15 @@
 		"props": {
 			"blockClass": "product-add-to-cart-quantity-stepper-container"
 		},
-		"children": ["bravtexgrocerystore.bravtexgrocery-components:add-to-cart-quantity-stepper"]
+		"children": ["bravtexgrocerystore.bravtexgrocery-newcomponents:add-to-cart-quantity-stepper"]
 	},
 	"flex-layout.row#quantity-buy-button-custom-component": {
 		"props": {
 			"blockClass": "quantity-and-buy-btn-container"
 		},
-		"children": ["bravtexgrocerystore.bravtexgrocery-components:add-to-cart-quantity-stepper#pdp"]
+		"children": ["bravtexgrocerystore.bravtexgrocery-newcomponents:add-to-cart-quantity-stepper#pdp"]
 	},
-	"bravtexgrocerystore.bravtexgrocery-components:add-to-cart-quantity-stepper#pdp": {
+	"bravtexgrocerystore.bravtexgrocery-newcomponents:add-to-cart-quantity-stepper#pdp": {
 		"blocks": ["add-to-cart-button#pdp"]
 	},
 	"rich-text#texto-entrega": {

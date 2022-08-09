@@ -71,9 +71,9 @@
 		"props": {
 			"blockClass": "add-to-cart-btn-container-shelf"
 		},
-		"children": ["bravtexgrocerystore.bravtexgrocery-components:add-to-cart-quantity-stepper#shelf"]
+		"children": ["bravtexgrocerystore.bravtexgrocery-newcomponents:add-to-cart-quantity-stepper#shelf"]
 	},
-	"bravtexgrocerystore.bravtexgrocery-components:add-to-cart-quantity-stepper#shelf": {
+	"bravtexgrocerystore.bravtexgrocery-newcomponents:add-to-cart-quantity-stepper#shelf": {
 		"blocks": ["add-to-cart-button#shelf"]
 	},
 	"flex-layout.row#add-btn-shelf-pdp": {
