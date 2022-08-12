@@ -14,6 +14,7 @@
 			//  "flex-layout.row#result"
 		],
 		"props": {
+			"showFacetQuantity": true,
 			"pagination": "show-more",
 			"preventRouteChange": false,
 			"mobileLayout": {

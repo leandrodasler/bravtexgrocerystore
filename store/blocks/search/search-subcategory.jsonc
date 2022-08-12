@@ -15,6 +15,7 @@
 			"flex-layout.row#fetchmore-subcategoria"
 		],
 		"props": {
+			"showFacetQuantity": true,
 			"pagination": "show-more",
 			"mobileLayout": {
 				"mode1": "small",

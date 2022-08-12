@@ -145,7 +145,16 @@
 	font-weight: bold;
 }
 .filterMessage {
-	display: none;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 24px;
+	color: #36403b;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+.filterMessage::before {
+	content: url("data:image/svg+xml,%0A%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.8846 18.125V12.5L22.6731 4.71154C23.1058 4.27885 23.25 3.84615 23.25 3.26923C23.25 2.11538 22.3846 1.25 21.2308 1.25H2.76924C1.6154 1.25 0.75 2.11538 0.75 3.26923C0.75 3.84615 0.894244 4.27885 1.32694 4.71154L9.11539 12.5V23.75L14.8846 18.125Z' stroke='%23000711' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
 }
 .filterTitle {
 	font-weight: 700;
@@ -158,33 +167,52 @@
 	width: 24px;
 	height: 12px;
 }
+.filtersWrapper {
+	display: grid;
+}
 .filter__container--title {
 	padding-bottom: 8px;
+	order: 1;
 }
-.filter__container--title::before {
+.filter__container--category-1 {
+	order: 2;
+}
+.filter__container--category-2 {
+	order: 3;
+}
+.filter__container--category-3 {
+	order: 4;
+}
+.filter__container--brand {
+	order: 5;
+}
+.filter__container--priceRange {
+	order: 6;
+}
+/* .filter__container--title::before {
 	content: 'Filtrar por';
 	font-weight: 700;
 	font-size: 18px;
 	line-height: 24px;
 	color: #36403b;
-}
-.filter__container--category-1 .filterTitle,
+} */
+/* .filter__container--category-1 .filterTitle,
 .filter__container--brand .filterTitle {
 	font-size: 0;
-}
-.filter__container--category-1 .filterTitle::before,
+} */
+/* .filter__container--category-1 .filterTitle::before,
 .filter__container--brand .filterTitle::before {
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 24px;
 	color: #36403b;
-}
-.filter__container--category-1 .filterTitle::before {
+} */
+/* .filter__container--category-1 .filterTitle::before {
 	content: 'Categoria';
 }
 .filter__container--brand .filterTitle::before {
 	content: 'Marcas';
-}
+} */
 .totalProductsMessage {
 	font-size: 0;
 }
@@ -207,6 +235,16 @@
 	margin: 0;
 	max-width: 100%;
 	padding-top: 24px !important;
+}
+.filterItem :global(.vtex-checkbox__label),
+.filterContent :global(.vtex-checkbox__label) {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.productCount {
+	width: 20%;
+	text-align: right;
 }
 /*breackpoint of container*/
 @media screen and (min-width: 40em) {

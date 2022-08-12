@@ -71,6 +71,7 @@
 			"flex-layout.row#fetchmore-search-page"
 		],
 		"props": {
+			"showFacetQuantity": true,
 			"pagination": "show-more",
 			"mobileLayout": {
 				"mode1": "small",
@@ -272,6 +273,11 @@
 			"blockClass": "fetch-more-button"
 		},
 		"children": ["search-fetch-more"]
+	},
+	"filter-navigator.v3": {
+		"props": {
+			
+		}
 	},
 	// "flex-layout.row#seo-text-department": {
 	// 	"children": ["rich-text#seo-text"],
