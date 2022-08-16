@@ -67,8 +67,8 @@
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#did-you-mean",
 			"flex-layout.row#banner-one",
-			"flex-layout.row#content-search-page",
-			"flex-layout.row#fetchmore-search-page"
+			"flex-layout.row#content-search-page"/* ,
+			"flex-layout.row#fetchmore-search-page" */
 		],
 		"props": {
 			"showFacetQuantity": true,
@@ -127,14 +127,15 @@
 		}
 	},
 	"flex-layout.col#filter-search-page": {
-		"children": ["filter-navigator.v3"],
+		"children": ["filter-navigator.v3", "search-banner#two"],
 		"props": {
 			"width": "20%",
-			"blockClass": "filterCol"
+			"blockClass": "filterCol",
+			"preventVerticalStretch": true
 		}
 	},
 	"flex-layout.col#products-search-page": {
-		"children": ["flex-layout.row#search-page-searchinfo-corredor", "flex-layout.row#search-page-products-corredor"],
+		"children": ["flex-layout.row#search-page-searchinfo-corredor", "flex-layout.row#search-page-products-corredor", "flex-layout.row#fetchmore-search-page"],
 		"props": {
 			"preventVerticalStretch": true,
 			"blockClass": "searchbread-row-department"
@@ -177,10 +178,19 @@
   	"search-banner#one": {
     	"props": {
       		"area": "one",
-      	"blockClass": "myBanner",
-      	"horizontalAlignment": "center"
-    }
-  },
+			"blockClass": "myBanner",
+			"horizontalAlignment": "center"
+		},
+		"title": "Banner Topo Busca"
+  	},
+	"search-banner#two": {
+    	"props": {
+      		"area": "two",
+			"blockClass": "two",
+			"horizontalAlignment": "center"
+		},
+		"title": "Banner Após Filtros"
+  	},
 	"flex-layout.row#seo-text-search-pageDesk": {
 		"children": ["rich-text#seo-search-pageDesk"],
 		"props": {
@@ -212,6 +222,7 @@
 			// "flex-layout.row#seo-text-department"
 		],
 		"props": {
+			"showFacetQuantity": true,
 			"pagination": "show-more",
 			"mobileLayout": {
 				"mode1": "small",

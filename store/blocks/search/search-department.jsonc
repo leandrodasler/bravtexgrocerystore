@@ -10,8 +10,8 @@
 	"search-result-layout.desktop#departament": {
 		"children": [
 			"flex-layout.row#searchbread-departament",
-			"flex-layout.row#content-departament",
-			"flex-layout.row#fetchmore-departament"
+			"flex-layout.row#content-departament"/* ,
+			"flex-layout.row#fetchmore-departament" */
 		],
 		"props": {
 			"showFacetQuantity": true,
@@ -58,7 +58,7 @@
 		}
 	},
 	"flex-layout.col#filter-departament": {
-		"children": ["filter-navigator.v3"],
+		"children": ["filter-navigator.v3", "search-banner#two"],
 		"props": {
 			"width": "20%",
 			"blockClass": "filterCol"
@@ -68,7 +68,8 @@
 		"children": [
 			"flex-layout.col#title-banner",
 			"flex-layout.row#departament-searchinfo-corredor",
-			"flex-layout.row#departament-products-corredor"
+			"flex-layout.row#departament-products-corredor",
+			"flex-layout.row#fetchmore-departament"
 		],
 		"props": {
 			"preventVerticalStretch": true,
@@ -141,6 +142,7 @@
 			// "flex-layout.row#seo-text-department"
 		],
 		"props": {
+			"showFacetQuantity": true,
 			"pagination": "show-more",
 			"mobileLayout": {
 				"mode1": "small",

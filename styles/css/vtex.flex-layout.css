@@ -381,8 +381,8 @@
   line-height: 24px;
   color: #36403b;
   display: table;
-  width: 123px;
   margin-right: 4px;
+  white-space: nowrap;
 }
 .flexRow--did-you-mean-suggestions {
   margin-bottom: 20px;
