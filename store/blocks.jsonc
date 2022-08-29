@@ -111,6 +111,7 @@
 			"stack-layout#productsum",
 			"product-summary-name",
 			"flex-layout.col#selling-and-list-price",
+			"progressive-discount-table",
 			"flex-layout.row#add-btn-shelf-pdp-custom-component"
 		]
 	},
