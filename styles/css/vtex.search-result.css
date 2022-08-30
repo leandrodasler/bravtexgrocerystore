@@ -264,6 +264,7 @@
 .productCount {
 	width: 20%;
 	text-align: right;
+	white-space: nowrap;
 }
 /*breackpoint of container*/
 @media screen and (min-width: 40em) {
