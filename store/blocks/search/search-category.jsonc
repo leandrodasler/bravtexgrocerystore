@@ -10,6 +10,7 @@
 	"search-result-layout.desktop#category": {
 		"children": [
 			"flex-layout.row#searchbread-category",
+			"flex-layout.row#banner-one",
 			"flex-layout.row#content-category"/* ,
 			"flex-layout.row#fetchmore-category" */
 		],
@@ -132,7 +133,8 @@
 	"search-result-layout.mobile#category-corredor": {
 		"children": [
 			// "flex-layout.row#searchbread-category",
-			"flex-layout.row#mobile-banner-category",
+			// "flex-layout.row#mobile-banner-category",
+			"flex-layout.row#banner-one",
 			"flex-layout.row#search-info-tablet-corredor-category",
 			"flex-layout.row#search-info-mobile-corredor-category",
 			"flex-layout.row#category-productCount-corredormob",

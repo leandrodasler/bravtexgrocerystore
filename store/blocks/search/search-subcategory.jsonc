@@ -10,6 +10,7 @@
 	"search-result-layout.desktop#sub-categoria": {
 		"children": [
 			"flex-layout.row#searchbread-subcategoria",
+			"flex-layout.row#banner-one",
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#content-subcategoria"/* ,
 			"flex-layout.row#fetchmore-subcategoria" */
@@ -112,6 +113,7 @@
 	//-------mobile
 	"search-result-layout.mobile#sub-categoria-corredor": {
 		"children": [
+			"flex-layout.row#banner-one",
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#search-info-tablet-corredor-subcategoria",
 			"flex-layout.row#search-info-mobile-corredor-subcategoria",
