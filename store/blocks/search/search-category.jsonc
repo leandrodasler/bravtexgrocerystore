@@ -10,6 +10,8 @@
 	"search-result-layout.desktop#category": {
 		"children": [
 			"flex-layout.row#searchbread-category",
+			"flex-layout.row#searchtitle",
+			"flex-layout.row#vertical-spacer",
 			"flex-layout.row#banner-one",
 			"flex-layout.row#content-category"/* ,
 			"flex-layout.row#fetchmore-category" */
@@ -67,7 +69,7 @@
 	},
 	"flex-layout.col#products-category": {
 		"children": [
-			"flex-layout.col#title-banner-category",
+			// "flex-layout.col#title-banner-category",
 			"flex-layout.row#category-searchinfo-corredor",
 			"flex-layout.row#category-products-corredor",
 			"flex-layout.row#fetchmore-category"
@@ -134,13 +136,15 @@
 		"children": [
 			// "flex-layout.row#searchbread-category",
 			// "flex-layout.row#mobile-banner-category",
+			"flex-layout.row#searchtitle",
+			"flex-layout.row#vertical-spacer",
 			"flex-layout.row#banner-one",
 			"flex-layout.row#search-info-tablet-corredor-category",
 			"flex-layout.row#search-info-mobile-corredor-category",
 			"flex-layout.row#category-productCount-corredormob",
-			"flex-layout.row#searchtitle",
 			"flex-layout.row#departament-products-corredor",
-			"flex-layout.row#mobile-fetchmore-category"
+			"flex-layout.row#mobile-fetchmore-category",
+			"flex-layout.row#banner-two"
 			// "flex-layout.row#seo-text-department"
 		],
 		"props": {

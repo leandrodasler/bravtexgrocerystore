@@ -10,6 +10,8 @@
 	"search-result-layout.desktop#departament": {
 		"children": [
 			"flex-layout.row#searchbread-departament",
+			"flex-layout.row#searchtitle",
+			"flex-layout.row#vertical-spacer",
 			"flex-layout.row#banner-one",
 			"flex-layout.row#content-departament"/* ,
 			"flex-layout.row#fetchmore-departament" */
@@ -67,7 +69,7 @@
 	},
 	"flex-layout.col#products-departament": {
 		"children": [
-			"flex-layout.col#title-banner",
+			// "flex-layout.col#title-banner",
 			"flex-layout.row#departament-searchinfo-corredor",
 			"flex-layout.row#departament-products-corredor",
 			"flex-layout.row#fetchmore-departament"
@@ -134,13 +136,15 @@
 		"children": [
 			// "flex-layout.row#searchbread-departament",
 			// "flex-layout.row#mobile-banner-departament",
+			"flex-layout.row#searchtitle",
+			"flex-layout.row#vertical-spacer",
 			"flex-layout.row#banner-one",
 			"flex-layout.row#search-info-tablet-corredor-departament",
 			"flex-layout.row#search-info-mobile-corredor-departament",
 			"flex-layout.row#departament-productCount-corredormob",
-			"flex-layout.row#searchtitle",
 			"flex-layout.row#departament-products-corredor",
-			"flex-layout.row#mobile-fetchmore-departament"
+			"flex-layout.row#mobile-fetchmore-departament",
+			"flex-layout.row#banner-two"
 			// "flex-layout.row#seo-text-department"
 		],
 		"props": {

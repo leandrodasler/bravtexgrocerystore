@@ -53,6 +53,12 @@
 		}
 	},
 
+	"flex-layout.row#vertical-spacer": {
+		"props": {
+			"marginBottom": 5
+		}
+	},
+
 	"search-result-layout#search-result": {
 		"blocks": [
 			"search-result-layout.desktop#search-page",
@@ -181,7 +187,7 @@
   	"search-banner#one": {
     	"props": {
       		"area": "one",
-			"blockClass": "myBanner",
+			"blockClass": "one",
 			"horizontalAlignment": "center"
 		},
 		"title": "Banner Topo Busca"
@@ -194,6 +200,12 @@
 		},
 		"title": "Banner Após Filtros"
   	},
+	"flex-layout.row#banner-two": {
+		"props": {
+			"marginTop": 5
+		},
+		"children": ["search-banner#two"]
+	},
 	"flex-layout.row#seo-text-search-pageDesk": {
 		"children": ["rich-text#seo-search-pageDesk"],
 		"props": {
@@ -221,7 +233,8 @@
 			"flex-layout.row#search-info-mobile-corredor-search-page",
 			"flex-layout.row#search-page-productCount-corredormob",
 			"flex-layout.row#departament-products-corredor",
-			"flex-layout.row#mobile-fetchmore-search-page"
+			"flex-layout.row#mobile-fetchmore-search-page",
+			"flex-layout.row#banner-two"
 			// "flex-layout.row#seo-text-department"
 		],
 		"props": {
