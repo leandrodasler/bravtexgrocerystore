@@ -83,7 +83,7 @@ function groupSellers() {
       parentRow.addClass('first')
       groupedSellers[sellerSlug] = true
 
-      const sellerImageUrl = encodeURI(`/arquivos/${sellerName}.svg`)
+      const sellerImageUrl = encodeURI(`/arquivos/${sellerName}.svg?timestamp=${Date.now()}`)
 
       checkImage(
         sellerImageUrl,
