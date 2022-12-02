@@ -1,0 +1,33 @@
+.orderPlacedWrapper {
+  padding-top: 0;
+  background: #f4f2f2;
+  font-family: unset;
+}
+.orderPlacedHeader,
+.orderPlacedMainWrapper {
+  max-width: 1238px;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.orderPlacedHeader {
+  border-bottom: 1px solid #ccced8;
+}
+.noticesList {
+  background: none !important;
+  margin: 0 auto;
+}
+.noticeListItem {
+  max-width: 700px;
+  border: none;
+  background-color: #f4f2f2;
+  text-align: left;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+}
+.noticeListItem::before {
+  content: url("data:image/svg+xml,%0A%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1420_17806)'%3E%3Cpath d='M12 17.75C11.7929 17.75 11.625 17.5821 11.625 17.375C11.625 17.1679 11.7929 17 12 17' stroke='%23F71963' stroke-width='1.5'/%3E%3Cpath d='M12 17.75C12.2071 17.75 12.375 17.5821 12.375 17.375C12.375 17.1679 12.2071 17 12 17' stroke='%23F71963' stroke-width='1.5'/%3E%3Cpath d='M12 14V5.75' stroke='%23F71963' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round'/%3E%3Cpath d='M12 23.75C18.2132 23.75 23.25 18.7132 23.25 12.5C23.25 6.2868 18.2132 1.25 12 1.25C5.7868 1.25 0.75 6.2868 0.75 12.5C0.75 18.7132 5.7868 23.75 12 23.75Z' stroke='%23F71963' stroke-width='1.5' stroke-miterlimit='10'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1420_17806'%3E%3Crect width='24' height='24' fill='white' transform='translate(0 0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+}
+.orderList {
+  padding: 30px;
+}

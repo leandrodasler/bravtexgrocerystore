@@ -220,6 +220,7 @@ body.v-custom-step-payment .arrow.after-shipping {
 .orderform-template .cart-template.mini-cart .summary-template-holder {
   order: 2;
   background: #fff;
+  position: static;
   z-index: 999;
 }
 
@@ -237,10 +238,9 @@ body.v-custom-step-payment .arrow.after-shipping {
   display: flex;
   align-items: center;
   gap: 5px;
-  padding: 10px 0;
+  padding: 20px 0;
   font-weight: 500;
   color: #000711;
-  margin-top: 15px;
 }
 
 .orderform-template .custom-cart-template-wrap .summary-cart-template-holder {
@@ -381,7 +381,22 @@ body.v-custom-step-payment .arrow.after-shipping {
   tr + tr.product-item.first {
     margin-top: 15px !important;
   }
+
   .sellerInfo {
     width: 100%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .orderform-template .cart-template.mini-cart .item span.shipping-date {
+    max-width: 45%;
+    white-space: normal;
+    text-align: left;
+  }
+}
+
+@media (max-width: 690px) or (max-height: 490px) {
+  .orderform-template .cart-template.mini-cart .cart {
+    max-height: none;
   }
 }

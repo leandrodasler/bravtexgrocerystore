@@ -152,7 +152,7 @@
 		},
 		"border": {
 			"action-primary": "#F71963",
-			"action-secondary": "#FFC4DD",
+			"action-secondary": "#F71963",
 			"emphasis": "#E42760",
 			"disabled": "#A1A8B3",
 			"success": "#8bc34a",
@@ -169,7 +169,7 @@
 		},
 		"hover-border": {
 			"action-primary": "#F71963",
-			"action-secondary": "#FFC4DD",
+			"action-secondary": "#F71963",
 			"emphasis": "#E42760",
 			"success": "#8bc34a",
 			"success--faded": "#eafce3",
@@ -185,7 +185,7 @@
 		},
 		"active-border": {
 			"action-primary": "#F71963",
-			"action-secondary": "#FFC4DD",
+			"action-secondary": "#F71963",
 			"emphasis": "#E42760",
 			"success": "#8bc34a",
 			"success--faded": "#eafce3",
@@ -203,7 +203,7 @@
 			"base": "#3f3f40",
 			"base--inverted": "#ffffff",
 			"action-primary": "#ffffff",
-			"action-secondary": "#a1a8b3",
+			"action-secondary": "#ffffff",
 			"emphasis": "#ffffff",
 			"disabled": "#979899",
 			"success": "#ffffff",
@@ -220,7 +220,7 @@
 		},
 		"hover-on": {
 			"action-primary": "#ffffff",
-			"action-secondary": "#0F3E99",
+			"action-secondary": "#f71963",
 			"emphasis": "#ffffff",
 			"success": "#ffffff",
 			"success--faded": "#3f3f40",
@@ -231,7 +231,7 @@
 		},
 		"active-on": {
 			"action-primary": "#ffffff",
-			"action-secondary": "#0F3E99",
+			"action-secondary": "#f71963",
 			"emphasis": "#ffffff",
 			"success": "#ffffff",
 			"success--faded": "#3f3f40",

@@ -4,12 +4,26 @@
   },
   "op-header": {
     "children": [
+      "flex-layout.row#op-banner",
       "op-section#confirmation",
-      "op-section#notices",
       "op-summary-section",
       "op-bank-invoice-section"
     ]
   },
+  "flex-layout.row#op-banner": {
+		"children": ["image#op-banner"],
+		"props": {
+			"width": "100%",
+			"blockClass": "op-banner"
+		},
+		"title": "Order Placed - Banner"
+	},
+	"image#op-banner": {
+		"props": {
+			"src": "assets/checkout-complete-steps.png"
+		},
+		"title": "Order Placed - Imagem"
+	},
   "op-section#confirmation": {
     "props": {
       "name": "confirmation",
@@ -20,6 +34,7 @@
       "op-confirmation-icon",
       "op-confirmation-title",
       "op-confirmation-message",
+      "op-section#notices",
       "flex-layout.row#confirmation-buttons"
     ]
   },
