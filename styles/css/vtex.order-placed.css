@@ -5,12 +5,16 @@
 }
 .orderPlacedHeader,
 .orderPlacedMainWrapper {
+  width: 90%;
   max-width: 1238px;
   background-color: #fff;
   margin: 0 auto;
 }
 .orderPlacedHeader {
   border-bottom: 1px solid #ccced8;
+}
+.confirmationMessage {
+  padding: 5px;
 }
 .noticesList {
   background: none !important;

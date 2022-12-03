@@ -20,7 +20,7 @@
 	},
 	"image#op-banner": {
 		"props": {
-			"src": "assets/checkout-complete-steps.png"
+			"src": "assets/complete-checkout-steps.png"
 		},
 		"title": "Order Placed - Imagem"
 	},
