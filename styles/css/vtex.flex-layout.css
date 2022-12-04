@@ -404,9 +404,11 @@
 }
 .flexRow--not-found-shelf,
 .flexRow--not-found-shelf :global(.vtex-product-summary-2-x-productBrand--shelfName),
-.flexRow--not-found-shelf :global(.vtex-product-price-1-x-sellingPriceValue--summary),
 .flexRow--not-found-shelf :global(.vtex-product-price-1-x-currencyContainer--main-sell-summary) {
   font-size: 80% !important;
+}
+.flexRow--not-found-shelf :global(.vtex-product-price-1-x-sellingPriceValue--summary) {
+  font-size: 125% !important;
 }
 .flexRow--not-found-shelf :global(.vtex-product-summary-2-x-productNameContainer--shelfName) {
   height: 70px;
