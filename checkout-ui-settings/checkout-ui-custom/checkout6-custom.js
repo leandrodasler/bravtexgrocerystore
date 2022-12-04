@@ -151,9 +151,9 @@ function groupSellers() {
           const sku = $(item).attr('data-sku')
           const shippingElement = $(item).find('.shipping-date')
           const shippingText = shippingElement.text()
-          shippingElement.html(`Produto entregue <strong>${shippingText.toLowerCase()}</strong> por:`)
+          shippingElement.html(`<strong>${shippingText.charAt(0).toUpperCase() + shippingText.slice(1)}</strong> por:`)
 
-          $(item).append(`
+          $(item).find('.description').append(`
             <div class="sellerNameMinicart ${skuSellerMap[sku]?.sellerSlug}">
               ${skuSellerMap[sku]?.sellerName}
             </div>
