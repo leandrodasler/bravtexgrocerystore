@@ -59,6 +59,14 @@
 		},
 		"children": ["product-list-price#summary", "product-selling-price#summary"]
 	},
+	"flex-layout.col#selling-and-list-price-plp": {
+		"props": {
+			"preserveLayoutOnMobile": true,
+			"preventHorizontalStretch": true,
+			"blockClass": "pdp-selling-and-list-price-container"
+		},
+		"children": ["product-list-price#summary", "product-selling-price#summary", "progressive-discount-table"]
+	},
 	/* Futura Estrutura da PdP*/
 	"flex-layout.row#selling-and-list-price-new": {
 		"props": {

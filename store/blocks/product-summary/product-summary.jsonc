@@ -4,7 +4,7 @@
 			"add-to-list-btn#list-buy",
 			"stack-layout#prodsum",
 			"product-summary-name",
-			"flex-layout.col#selling-and-list-price",
+			"flex-layout.col#selling-and-list-price-plp",
 			"flex-layout.row#add-btn-shelf-pdp-custom-component"
 		]
 	},

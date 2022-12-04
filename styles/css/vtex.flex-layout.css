@@ -411,12 +411,15 @@
   font-size: 125% !important;
 }
 .flexRow--not-found-shelf :global(.vtex-product-summary-2-x-productNameContainer--shelfName) {
-  height: 70px;
   overflow: unset;
 }
-.flexRow--not-found-shelf .flexCol--pdp-selling-and-list-price-container {
-  margin-bottom: 8px;
-  height: 36px;
+.flexCol--pdp-selling-and-list-price-container {
+  min-height: 60px;
+  max-height: 60px;
+  justify-content: center;
+}
+.flexColChild--pdp-selling-and-list-price-container {
+  height: auto !important;
 }
 /* New Component*/
 .flexRowContent--pdp-selling-and-list-price-container {

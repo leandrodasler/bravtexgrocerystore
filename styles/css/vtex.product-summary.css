@@ -72,7 +72,9 @@
 /*search pages*/
 .nameContainer--shelfName {
 	padding: 12px 0 0;
-	margin-bottom: 0.5rem;
+	min-height: 80px !important;
+	max-height: 80px !important;
+	align-items: center;
 }
 .productBrand--shelfName {
 	font-weight: 700;
