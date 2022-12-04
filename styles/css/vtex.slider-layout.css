@@ -98,6 +98,12 @@
 	position: absolute;
 	margin: 0;
 }
+.sliderLeftArrow--not-found-shelf {
+	left: -30px;
+}
+.sliderRightArrow--not-found-shelf {
+	right: -30px;
+}
 .caretIcon--not-found-shelf {
 	width: 12px;
 	height: 12px;

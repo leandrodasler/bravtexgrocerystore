@@ -118,9 +118,8 @@
 }
 :global(.vtex-slider-layout-0-x-slide--not-found-shelf) .container {
 	background: #ffffff;
-	border: 1px solid #dadedc;
 	border-radius: 6px;
-	padding: 16px;
+	padding: 5px;
 	margin: 0;
 }
 @media only screen and (min-width: 1235px) {

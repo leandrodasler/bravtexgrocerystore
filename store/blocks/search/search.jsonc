@@ -91,8 +91,6 @@
 		"children": [
 			"flex-layout.row#searchbread-search-page",
 			"flex-layout.row#notfound",
-			"flex-layout.row#not-found-shelf-title",
-			"flex-layout.row#not-found-shelf",
 			"flex-layout.row#deals-v2"
 		],
 		"props": {
@@ -103,6 +101,16 @@
 			},
 			"blockClass": "departament-desktop"
 		}
+	},
+	"flex-layout.col#not-found-shelf": {
+		"props": {
+			"blockClass": "not-found-shelf",
+			"width": "60%"
+		},
+		"children": [
+			"flex-layout.row#not-found-shelf-title",
+			"flex-layout.row#not-found-shelf"
+		]
 	},
 	"flex-layout.row#searchbread-search-page": {
 		"children": ["breadcrumb.search#search-page"],
@@ -328,17 +336,19 @@
 		}
 	},
 	"flex-layout.row#notfound": {
-		"children": ["flex-layout.col#not-found-text"],
+		"children": ["flex-layout.col#not-found-text", "flex-layout.col#not-found-shelf"],
 		"props": {
 			"blockClass": "not-found",
-			"fullWidth": true
+			"colSizing": "auto",
+			"colJustify": "around",
+			"colGap": 5
 		}
 	},
 	"flex-layout.col#not-found-text": {
 		"children": ["rich-text#product-not-found"],
 		"props": {
 			"blockClass": "not-found-text",
-			"width": "50%"
+			"width": "40%"
 		}
 	},
 	"rich-text#product-not-found": {
@@ -396,7 +406,7 @@
 	"slider-layout#dnot-found": {
 		"props": {
 			"itemsPerPage": {
-				"desktop": 6,
+				"desktop": 4,
 				"tablet": 3,
 				"phone": 2
 			},
