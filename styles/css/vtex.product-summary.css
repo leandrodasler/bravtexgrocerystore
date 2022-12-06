@@ -56,10 +56,6 @@
 	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-2) .imageNormal {
 		max-height: 123px !important;
 	}
-	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-1) .nameWrapper,
-	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-2) .nameWrapper {
-		height: 51px;
-	}
 	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-1) .brandName,
 	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-2) .brandName {
 		font-size: 12px;

@@ -171,8 +171,40 @@ window.addEventListener('DOMContentLoaded', () => {
 
   $(window).on('orderFormUpdated.vtex ', (e) => {
     if (!$('.demo-store-warning').length) {
-      const demoWarning =
-        '<div class="demo-store-warning">Atenção! Esta é uma loja de demonstração da plataforma VTEX. Os produtos, preços e entregas são meramente ilustrativos.</div>'
+      const demoWarning = `<div class="demo-store-warning">
+        <div class="icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M13.3333 12.6667V10.6667H10.6667H8.66667V12.6667H10.6667V15.3333H8.66667V17.3333H10.6667H13.3333H15.3333V15.3333H13.3333V12.6667ZM12 9.33333C13.104 9.33333 14 8.43733 14 7.33333C14 6.22933 13.104 5.33333 12 5.33333C10.896 5.33333 10 6.22933 10 7.33333C10 8.43733 10.896 9.33333 12 9.33333ZM12 22C6.48533 22 2 17.5147 2 12C2 6.48533 6.48533 2 12 2C17.5147 2 22 6.48533 22 12C22 17.5147 17.5147 22 12 22ZM12 0C5.372 0 0 5.372 0 12C0 18.628 5.372 24 12 24C18.628 24 24 18.628 24 12C24 5.372 18.628 0 12 0Z"
+              fill="currentColor"
+            />
+            <mask
+              id="mask0_1425_16444"
+              style="mask-type: alpha"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="24"
+              height="24"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M13.3333 12.6667V10.6667H10.6667H8.66667V12.6667H10.6667V15.3333H8.66667V17.3333H10.6667H13.3333H15.3333V15.3333H13.3333V12.6667ZM12 9.33333C13.104 9.33333 14 8.43733 14 7.33333C14 6.22933 13.104 5.33333 12 5.33333C10.896 5.33333 10 6.22933 10 7.33333C10 8.43733 10.896 9.33333 12 9.33333ZM12 22C6.48533 22 2 17.5147 2 12C2 6.48533 6.48533 2 12 2C17.5147 2 22 6.48533 22 12C22 17.5147 17.5147 22 12 22ZM12 0C5.372 0 0 5.372 0 12C0 18.628 5.372 24 12 24C18.628 24 24 18.628 24 12C24 5.372 18.628 0 12 0Z"
+                fill="white"
+              />
+            </mask>
+            <g mask="url(#mask0_1425_16444)">
+              <rect x="-20" y="-20" width="64" height="64" fill="currentColor" />
+            </g>
+          </svg>
+        </div>
+        Atenção! Esta é uma loja de demonstração da plataforma VTEX. Os produtos, preços e entregas são meramente
+        ilustrativos.
+      </div>`
+
       $('.cart-template.full-cart .summary-template-holder').append(demoWarning)
       $('.cart-template.mini-cart .custom-cart-template-wrap').append(demoWarning)
     }
