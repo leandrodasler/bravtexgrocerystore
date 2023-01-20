@@ -12,7 +12,7 @@
 			"flex-layout.row#searchbread-category",
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#vertical-spacer",
-			"flex-layout.row#banner-one",
+			"flex-layout.row#banner-top",
 			"flex-layout.row#content-category"/* ,
 			"flex-layout.row#fetchmore-category" */
 		],
@@ -138,7 +138,7 @@
 			// "flex-layout.row#mobile-banner-category",
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#vertical-spacer",
-			"flex-layout.row#banner-one",
+			"flex-layout.row#banner-top",
 			"flex-layout.row#search-info-tablet-corredor-category",
 			"flex-layout.row#search-info-mobile-corredor-category",
 			"flex-layout.row#category-productCount-corredormob",

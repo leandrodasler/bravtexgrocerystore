@@ -62,6 +62,38 @@ function checkImage(imageSrc, ok, fail) {
   img.src = imageSrc
 }
 
+function getCartSellers() {
+  return vtexjs?.checkout?.orderForm?.sellers
+}
+
+function getCartItems() {
+  return vtexjs?.checkout?.orderForm?.items
+}
+
+function getCartItemBySkuId(skuId) {
+  return getCartItems()?.find((item) => item.id === skuId.toString())
+}
+
+function getSellerBySkuId(skuId) {
+  return getCartSellers()?.find((seller) => seller.id === getCartItemBySkuId(skuId)?.seller)
+}
+
+function groupedSellers2() {
+  const itemsElements = document.querySelectorAll(
+    '.cart-template.full-cart .cart-template-holder .cart-items .product-item'
+  )
+
+  itemsElements.forEach((itemElement) => {
+    const skuId = $(itemElement).attr('data-sku')
+    const sku = getCartItemBySkuId(skuId)
+    const seller = getSellerBySkuId(skuId)
+    const sellerName = seller?.name
+    console.log('SKU    |', sku.id, ' - ', sku.name)
+    console.log('Seller |', JSON.stringify(seller))
+    console.log('----------------------------------')
+  })
+}
+
 function groupSellers() {
   const sellers = document.querySelectorAll('[data-bind="text: sellerName"]')
   const groupedSellers = {}

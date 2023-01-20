@@ -12,7 +12,7 @@
 			"flex-layout.row#searchbread-departament",
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#vertical-spacer",
-			"flex-layout.row#banner-one",
+			"flex-layout.row#banner-top",
 			"flex-layout.row#content-departament"/* ,
 			"flex-layout.row#fetchmore-departament" */
 		],
@@ -138,7 +138,7 @@
 			// "flex-layout.row#mobile-banner-departament",
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#vertical-spacer",
-			"flex-layout.row#banner-one",
+			"flex-layout.row#banner-top",
 			"flex-layout.row#search-info-tablet-corredor-departament",
 			"flex-layout.row#search-info-mobile-corredor-departament",
 			"flex-layout.row#departament-productCount-corredormob",

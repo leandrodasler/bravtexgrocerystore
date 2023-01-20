@@ -12,7 +12,7 @@
 			"flex-layout.row#searchbread-subcategoria",
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#vertical-spacer",
-			"flex-layout.row#banner-one",
+			"flex-layout.row#banner-top",
 			"flex-layout.row#content-subcategoria"/* ,
 			"flex-layout.row#fetchmore-subcategoria" */
 		],
@@ -116,7 +116,7 @@
 		"children": [
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#vertical-spacer",
-			"flex-layout.row#banner-one",
+			"flex-layout.row#banner-top",
 			"flex-layout.row#search-info-tablet-corredor-subcategoria",
 			"flex-layout.row#search-info-mobile-corredor-subcategoria",
 			"flex-layout.row#sub-categoria-products-corredor",

@@ -72,7 +72,7 @@
 			"flex-layout.row#searchbread-search-page",
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#did-you-mean",
-			"flex-layout.row#banner-one",
+			"flex-layout.row#banner-top",
 			"flex-layout.row#content-search-page"/* ,
 			"flex-layout.row#fetchmore-search-page" */
 		],
@@ -185,14 +185,14 @@
 		},
 		"children": ["search-fetch-more"]
 	},
-  	"flex-layout.row#banner-one": {
-    	"children": ["search-banner#one"],
+  	"flex-layout.row#banner-top": {
+    	"children": ["search-banner#top"],
 		"props": {
 			"marginBottom": 4
 		}
   	},
 
-  	"search-banner#one": {
+  	"search-banner#top": {
     	"props": {
       		"area": "one",
 			"blockClass": "one",
@@ -236,7 +236,7 @@
 			// "flex-layout.row#searchbread-search-page",
 			"flex-layout.row#searchtitle",
 			"flex-layout.row#did-you-mean",
-			"flex-layout.row#banner-one",
+			"flex-layout.row#banner-top",
 			"flex-layout.row#search-info-tablet-corredor-search-page",
 			"flex-layout.row#search-info-mobile-corredor-search-page",
 			"flex-layout.row#search-page-productCount-corredormob",
