@@ -1,115 +1,92 @@
-:global(.vtex-login-2-x-label):before {
-	content: 'Bem vindo,';
-	display: block;
-	color: #b2ada8;
-	font-family: 'Nunito', sans-serif;
-	font-weight: normal;
+.container {
+  z-index: 2;
 }
-:global(.vtex-login-2-x-container) {
-	z-index: 2;
+.container :global(.vtex-button__label) {
+  padding: 0 !important;
+  text-transform: initial;
 }
-:global(.vtex-login-2-x-container) :global(.vtex-button__label):before {
-	content: '';
-	background-image: url("https://bravtexgrocerystore.vtexassets.com/arquivos/user.png");
-	background-repeat: no-repeat;
-	background-position: 50%;
-	background-size: contain;
-	padding: 0;
-	height: 26px;
-	width: 26px;
-	margin-top: 0;
+.container :global(.vtex-button__label):before {
+  content: '';
+  background-image: url('https://bravtexgrocerystore.vtexassets.com/arquivos/user.png');
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  padding: 0;
+  height: 28px;
+  width: 28px;
+  margin-right: 0.25rem;
 }
-:global(.vtex-login-2-x-label) {
-	white-space: nowrap;
-	font-size: 14px;
-	font-weight: bold;
-	color: #F71963;
-	text-align: left;
-	text-transform: none;
+.label,
+.profile {
+  font-size: 20px;
+  font-weight: 300;
+  color: #f71963;
+  text-transform: none;
+  white-space: nowrap;
 }
-div[class*='vtex-login-2-x-container'] :global(.vtex-button__label) {
-	padding: 0 !important;
-	margin-left: 18px;
-	text-transform: initial;
+.container :global(.relative) {
+  margin: auto;
 }
-div[class*='vtex-login-2-x-container'] :global(.relative) {
-	margin: auto;
+.formTitle {
+  text-align: start;
+  border-bottom: 1px solid #dddddd;
+  border-radius: 0;
+  padding-bottom: 20px;
 }
-h3[class*='vtex-login-2-x-formTitle'] {
-	text-align: start;
-	border-bottom: 1px solid #dddddd;
-	border-radius: 0;
-	padding-bottom: 20px;
+.accessCodeOptionBtn button:global(.vtex-button) div[class*='vtex-button__label'],
+.emailPasswordOptionBtn button:global(.vtex-button) div[class*='vtex-button__label'] {
+  padding: 0;
 }
-div[class*='vtex-login-2-x-accessCodeOptionBtn'] button:global(.vtex-button) div[class*='vtex-button__label'],
-div[class*='vtex-login-2-x-emailPasswordOptionBtn'] button:global(.vtex-button) div[class*='vtex-button__label'] {
-	padding: 0;
+.accessCodeOptionBtn button:global(.vtex-button),
+.emailPasswordOptionBtn button:global(.vtex-button) {
+  border: 1px solid #ccc6c0;
+  background-color: #ffffff;
+  color: #000000;
+  text-transform: none;
 }
-div[class*='vtex-login-2-x-accessCodeOptionBtn'] button:global(.vtex-button),
-div[class*='vtex-login-2-x-emailPasswordOptionBtn'] button:global(.vtex-button) {
-	border: 1px solid #ccc6c0;
-	background-color: #ffffff;
-	color: #000000;
-	text-transform: none;
+.emailPasswordOptionBtn button:global(.vtex-button):hover {
+  border: 1px solid #f71963;
+  background-color: #f71963;
+  color: #f71963;
 }
-div[class*='vtex-login-2-x-emailPasswordOptionBtn'] button:global(.vtex-button):hover {
-	border: 1px solid #F71963;
-	background-color: #F71963;
-	color: #F71963;
+.options {
+  min-width: 17rem;
 }
-div[class*='vtex-login-2-x-options'] {
-	min-width: 17rem;
+.arrowUp {
+  width: 1.5rem;
 }
-div[class*='vtex-login-2-x-arrowUp'] {
-	width: 1.5rem;
-}
-span[class*='vtex-login-2-x-profile'] {
-	white-space: nowrap;
-	text-transform: initial;
-	max-width: 124px;
-	text-align: start;
-	display: flex;
-	font-size: 14px;
-	align-items: flex-end;
-	font-weight: bold;
-	color: #F71963;
-}
-@media screen and (min-width: 1025px) {
-	.container :global(.vtex-button__label) span div div {
-		padding-top: 5px;
-		width: 100%;
-		display: block;
-	}
-	.container :global(.vtex-button) {
-		padding: 0;
-	}
-	.container :global(.vtex-button):focus {
-		background: transparent;
-	}
-}
-@media only screen and (max-width: 1025px) {
-	.container :global(.vtex-button__label) {
-		margin: 0 18px 0 0 !important;
-	}
+@media screen and (min-width: 64rem) {
+  .container :global(.vtex-button__label) span div div {
+    padding-top: 5px;
+    width: 100%;
+    display: block;
+  }
+  .container :global(.vtex-button) {
+    padding: 0;
+  }
+  .container :global(.vtex-button__label):after {
+    content: url("data:image/svg+xml,%0A%3Csvg width='12' height='7' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.6667 0H1.33335C0.929354 0 0.564021 0.244 0.409354 0.617333C0.254688 0.990667 0.340021 1.42133 0.626688 1.70667L5.29335 6.37333C5.48802 6.56933 5.74402 6.66667 6.00002 6.66667C6.25602 6.66667 6.51202 6.56933 6.70669 6.37333L11.3734 1.70667C11.66 1.42133 11.7454 0.990667 11.5907 0.617333C11.436 0.244 11.072 0 10.6667 0Z' fill='%23f71963'/%3E%3C/svg%3E%0A");
+    margin-left: 0.5rem;
+  }
 }
 
 .formTitle {
-	text-align: center !important;
-	font-size: 18px;
-	font-weight: bold;
+  text-align: center !important;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .accessCodeOptionBtn :global(.vtex-button) {
-	border: none !important;
-	color: #F71963 !important;
-	font-size: 14px;
+  border: none !important;
+  color: #f71963 !important;
+  font-size: 14px;
 }
 
-.emailPasswordOptionBtn :global(.vtex-button){
-	background-color: #F71963 !important;
-	color: white !important;
-	font-weight: bold;
-	text-transform: uppercase !important;
-	border: 1px solid #F71963 !important;
-	font-size: 14px;
+.emailPasswordOptionBtn :global(.vtex-button) {
+  background-color: #f71963 !important;
+  color: white !important;
+  font-weight: bold;
+  text-transform: uppercase !important;
+  border: 1px solid #f71963 !important;
+  font-size: 14px;
 }

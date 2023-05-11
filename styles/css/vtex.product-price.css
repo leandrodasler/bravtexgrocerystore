@@ -131,7 +131,7 @@
 	color: #F71963;
 }
 /*tablet*/
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: calc(64rem - 1px)) {
 	.listPrice,
 	.sellingPrice--main-sell-summary {
 		font-size: 14px;

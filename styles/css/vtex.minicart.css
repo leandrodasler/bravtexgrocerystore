@@ -1,11 +1,17 @@
 .cartIcon {
   display: none;
 }
-.minicartIconContainer {
-  height: 25px;
-  width: 5px;
+.minicartContainer :global(.vtex-button__label) {
+  padding: 0;
 }
 .minicartContainer :global(.vtex-button) {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.minicartContainer :global(.vtex-button)::before {
+  content: '';
+  display: block;
   background-image: url('https://bravtexgrocerystore.vtexassets.com/arquivos/shopping-cart.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -13,32 +19,19 @@
   width: 28px;
   height: 28px;
 }
+@media (min-width: 64rem) {
+  .minicartContainer :global(.vtex-button)::after {
+    content: 'Carrinho';
+    font-size: 20px;
+    text-transform: none;
+  }
+}
 .openIconContainer {
   padding: 12px 0;
 }
 .minicartQuantityBadgeDefault {
-  color: #fff7f2;
-  background: #f71963;
-  right: 4px;
-  top: -10px;
-  width: 12px;
-  height: 12px;
-  font-size: 0.65rem !important;
-}
-@media only screen and (min-width: 641px) {
-  .openIconContainer::after {
-    max-width: 50px;
-    display: inline-flex;
-    vertical-align: middle;
-    padding-left: 8px;
-    font-size: 14px;
-    font-weight: bold;
-    color: #f71963;
-    white-space: nowrap;
-  }
-  .minicartWrapperContainer {
-    width: 97px !important;
-  }
+  top: -20px;
+  right: 0;
 }
 @media only screen and (max-width: 640px) {
   .openIconContainer {

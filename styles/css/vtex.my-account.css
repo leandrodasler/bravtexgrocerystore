@@ -1587,7 +1587,7 @@ span[class*='vtex-my-orders-app-3-x-orderProductQuantityValue']
 	}
 	/*Cartões - END*/
 }
-@media (min-width: 1025px) {
+@media (min-width: 64rem) {
 	/*Menu*/
 	.menu {
 		margin-right: 60px !important;
@@ -1846,7 +1846,7 @@ main[class*='vtex-account__create-card'] button[class*='vtex-button'] {
 	> div {
 	text-transform: none;
 }
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: calc(64rem - 1px)) {
 	:global(.vtex-account) > div {
 		padding: 30px 5% 30px;
 	}

@@ -172,7 +172,7 @@
   }
 }
 /*breackpoint end*/
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 64rem) {
   .styledLinkContainer--category-menu {
     padding: 21px 0;
   }
@@ -279,7 +279,7 @@
 }
 /* Ajustes Footer */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: calc(64rem - 1px)) {
   :global(.vtex-store-drawer-0-x-drawer) :global(.vtex-menu-2-x-menuContainer) {
     align-items: flex-start;
   }

@@ -75,21 +75,27 @@
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
+      "colGap": 5,
       "fullWidth": true
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
-      "search-bar#biggy",
-      "flex-layout.col#spacer",
-      "flex-layout.row#icons-desktop"
+      "flex-layout.col#search-bar",
+      "login",
+      "minicart.v2"
     ]
+  },
+  "flex-layout.col#search-bar": {
+    "props": {
+      "width": "grow"
+    },
+    "children": ["search-bar#biggy"]
   },
   "flex-layout.row#icons-desktop": {
     "props": {
       "blockClass": "icons-header"
     },
-    "children": ["menu-item#wish-list", "login", "minicart.v2"]
+    "children": [/* "menu-item#wish-list",  */"login", "minicart.v2"]
   },
   "login": {
     "props": {
@@ -98,8 +104,8 @@
       "emailPlaceholder": "e-mail",
       "passwordPlaceholder": "senha",
       "showPasswordVerificationIntoTooltip": true,
-      "iconLabel": "Entre ou Cadastre-se",
-      "hideIconLabel": true
+      "iconLabel": "Entrar ou Registrar"/* ,
+      "hideIconLabel": true */
     }
   },
   "login#mobile": {
@@ -169,8 +175,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://bravtexgrocerystore.vtexassets.com/arquivos/VTEX-grocery.png",
-      "width": "150"
+      "url": "https://bravtexgrocerystore.vtexassets.com/arquivos/logo-grocery.svg",
+      "width": "185"
     }
   },
   /*Header Mobile*/
@@ -179,7 +185,7 @@
       "flex-layout.row#demo-store-warning",
       "flex-layout.row#1-mobile",
       "sticky-layout#1-mobile",
-      "sticky-layout#1-tablet",
+      // "sticky-layout#1-tablet",
       "flex-layout.row#3-mobile",
       "flex-layout.row#4-mobile",
       "modal-trigger#cookie-bar"
@@ -194,12 +200,13 @@
     "title": "Sticky Layout - Tablet"
   },
   "flex-layout.row#main-tablet": {
-    "children": ["drawer", "logo#mobile", "flex-layout.col#spacer", "flex-layout.row#icons-tablet"],
+    "children": ["drawer", "logo#mobile", "flex-layout.col#spacer", "login#mobile", "minicart.v2"/* , "flex-layout.row#icons-tablet" */],
     "props": {
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "colGap": 5
     }
   },
   "flex-layout.row#icons-tablet": {
@@ -232,7 +239,7 @@
     "children": []
   },
   "flex-layout.row#2-mobile": {
-    "children": ["drawer", "logo#mobile", "flex-layout.col#spacer", "flex-layout.row#icons-mobile"],
+    "children": ["drawer", "logo#mobile", "flex-layout.col#spacer", "login#mobile", "minicart.v2"/* , "flex-layout.row#icons-mobile" */],
     "props": {
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": true,
@@ -332,7 +339,7 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://bravtexgrocerystore.vtexassets.com/arquivos/logo-grocery.png",
+      "url": "https://bravtexgrocerystore.vtexassets.com/arquivos/logo-grocery.svg",
       "width": "58"
     }
   }

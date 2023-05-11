@@ -417,7 +417,7 @@
   color: #848a87;
   margin: 0;
 }
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 64rem) {
   .wrapper--facebook-header,
   .wrapper--instagram-header,
   .wrapper--whatsapp-header {
@@ -464,13 +464,13 @@
     line-height: 1.3em;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: calc(64rem - 1px)) {
   .headingLevel2--shelfTitle {
     font-size: 17px;
     margin: 0;
   }
 }
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: calc(64rem - 1px)) {
   .strong--localization {
     color: #36403b;
   }

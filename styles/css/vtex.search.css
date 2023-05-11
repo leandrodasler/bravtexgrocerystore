@@ -171,7 +171,7 @@
     font-size: 12px;
   }
 }
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: calc(64rem - 1px)) {
   .productBrand {
     color: #4d4a48;
     font-size: 17px;

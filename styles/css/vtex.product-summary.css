@@ -46,7 +46,7 @@
 	color: #FFFFFF;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: calc(64rem - 1px)) {
 	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-1) .containerNormal :global(.vtex-button),
 	:global(.vtex-flex-layout-0-x-flexRow--home-shelf-2) .containerNormal :global(.vtex-button) {
 		font-size: 12px;
@@ -131,7 +131,7 @@
 	}
 }
 /*tablet*/
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: calc(64rem - 1px)) {
 	.productBrand--shelfName {
 		font-size: 14px;
 	}

@@ -165,7 +165,7 @@
 	}
 }
 
-@media (min-width: 641px) and (max-width: 1025px) {
+@media (min-width: 641px) and (max-width: calc(64rem - 1px)) {
 	.containerWholesaleButton :global(.vtex-button) {
 		padding: 8px 12px;
 	}
