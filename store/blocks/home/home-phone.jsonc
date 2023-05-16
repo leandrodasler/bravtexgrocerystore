@@ -4,6 +4,7 @@
 			"region-banner",
 			// "list-context.image-list#demo",
 			"flex-layout.row#deals",
+			"flex-layout.row#category-cards",
 			"flex-layout.row#shelf-banner-mobile",
 			"flex-layout.row#shelf-title1",
 			"flex-layout.row#shelf1-mobile",

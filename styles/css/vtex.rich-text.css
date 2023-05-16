@@ -87,22 +87,14 @@
   color: #f71963;
   justify-content: flex-start;
   text-align: left;
-  max-width: 1238px;
+  max-width: var(--container-max-width);
   padding: 16px 0;
   margin: auto;
 }
 .wrapper--shelfTitle {
   width: 100%;
-  border-top: 2px solid;
-}
-.wrapper--shelfTitle-1 {
-  border-color: #f71963;
-}
-.wrapper--shelfTitle-2 {
-  border-color: #f71963;
 }
 .headingLevel2--shelfTitle {
-  font-weight: 800;
   margin: 16px 0;
 }
 .container--deals .paragraph {
@@ -403,19 +395,20 @@
   padding-left: 12px;
 }
 .headingLevel3--deals-not-found {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 24px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
   color: #f71963;
   margin: 0;
 }
 .paragraph--deals-not-found {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.015em;
+  font-weight: 300;
   color: #848a87;
   margin: 0;
+}
+.link--category-cards {
+  color: inherit;
+  text-decoration: none;
 }
 @media only screen and (min-width: 64rem) {
   .wrapper--facebook-header,
@@ -466,7 +459,7 @@
 }
 @media (max-width: calc(64rem - 1px)) {
   .headingLevel2--shelfTitle {
-    font-size: 17px;
+    font-size: 20px;
     margin: 0;
   }
 }

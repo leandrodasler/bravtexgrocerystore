@@ -6,7 +6,7 @@
 .orderPlacedHeader,
 .orderPlacedMainWrapper {
   width: 90%;
-  max-width: 1238px;
+  max-width: var(--container-max-width);
   background-color: #fff;
   margin: 0 auto;
 }

@@ -23,6 +23,7 @@
   color: #f71963;
   text-transform: none;
   white-space: nowrap;
+  padding-left: 0.5rem;
 }
 .container :global(.relative) {
   margin: auto;

@@ -15,12 +15,6 @@
 	will-change: padding, background;
 }
 
-/* main header desktop has a bigger padding when not stuck */
-:global(.vtex-flex-layout-0-x-flexRowContent--main-header) {
-	padding-top: 0.5rem;
-	padding-bottom: 0.5rem;
-}
-
 /* add a box-shadow to desktop/mobile header when stuck */
 /* :global(.vtex-sticky-layout-0-x-wrapper--stuck)
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header),
@@ -28,9 +22,15 @@
   :global(.vtex-flex-layout-0-x-flexRowContent--main-header-mobile) {
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
 } */
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) :global(.vtex-sticky-layout-0-x-container--sticky-header),
 :global(.vtex-flex-layout-0-x-flexRow--category-menu-header),
 .flexRow--row-localization {
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1); */
+  border-bottom: #e7e9ee solid 1px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--category-menu-header),
+.flexRow--row-localization {
   z-index: 2;
 }
 

@@ -73,11 +73,7 @@
 					"maxSuggestedProducts": 3
 				},
 				"lg": {
-					"width": 1360,
-					"maxSuggestedProducts": 3
-				},
-				"xlg": {
-					"width": 1440,
+					"width": 1238,
 					"maxSuggestedProducts": 3
 				}
 			}

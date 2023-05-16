@@ -1,0 +1,203 @@
+{
+  "flex-layout.row#category-cards": {
+    "children": ["slider-layout#category-cards"],
+    "props": {
+      "blockClass": "category-cards",
+	  "marginTop": 8,
+      "marginBottom": 6
+    },
+    "title": "Cards das categorias"
+  },
+
+  "slider-layout#category-cards": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 4,
+        "phone": 2
+      },
+      "infinite": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "blockClass": "category-cards"
+    },
+    "children": [
+      "flex-layout.col#category-cards-1",
+      "flex-layout.col#category-cards-2",
+      "flex-layout.col#category-cards-3",
+      "flex-layout.col#category-cards-4",
+      "flex-layout.col#category-cards-5",
+      "flex-layout.col#category-cards-6",
+      "flex-layout.col#category-cards-7"
+    ]
+  },
+  "flex-layout.col#category-cards-1": {
+    "children": ["image#category-cards-1", "rich-text#category-cards-1"],
+    "props": {
+      "blockClass": "category-cards"
+    },
+    "title": "Card 1"
+  },
+  "flex-layout.col#category-cards-2": {
+    "children": ["image#category-cards-2", "rich-text#category-cards-2"],
+    "props": {
+      "blockClass": "category-cards"
+    },
+    "title": "Card 2"
+  },
+  "flex-layout.col#category-cards-3": {
+    "children": ["image#category-cards-3", "rich-text#category-cards-3"],
+    "props": {
+      "blockClass": "category-cards"
+    },
+    "title": "Card 3"
+  },
+  "flex-layout.col#category-cards-4": {
+    "children": ["image#category-cards-4", "rich-text#category-cards-4"],
+    "props": {
+      "blockClass": "category-cards"
+    },
+    "title": "Card 4"
+  },
+  "flex-layout.col#category-cards-5": {
+    "children": ["image#category-cards-5", "rich-text#category-cards-5"],
+    "props": {
+      "blockClass": "category-cards"
+    },
+    "title": "Card 5"
+  },
+  "flex-layout.col#category-cards-6": {
+    "children": ["image#category-cards-6", "rich-text#category-cards-6"],
+    "props": {
+      "blockClass": "category-cards"
+    },
+    "title": "Card 6"
+  },
+  "flex-layout.col#category-cards-7": {
+    "children": ["image#category-cards-7", "rich-text#category-cards-7"],
+    "props": {
+      "blockClass": "category-cards"
+    },
+    "title": "Card 7"
+  },
+  "image#category-cards-1": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/category-mercearia.svg",
+      "link": {
+        "title": "Mercearia",
+        "url": "/mercearia"
+      }
+    },
+    "title": "Card 1 - Imagem"
+  },
+  "rich-text#category-cards-1": {
+    "props": {
+      "text": "[Mercearia](/mercearia)",
+      "blockClass": "category-cards"
+    },
+    "title": "Card 1 - Texto"
+  },
+  "image#category-cards-2": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/category-beverages.svg",
+      "link": {
+        "title": "Bebidas",
+        "url": "/bebidas"
+      }
+    },
+    "title": "Card 2 - Imagem"
+  },
+  "rich-text#category-cards-2": {
+    "props": {
+      "text": "[Bebidas](/bebidas)",
+      "blockClass": "category-cards"
+    },
+    "title": "Card 2 - Texto"
+  },
+  "image#category-cards-3": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/category-eletrodomesticos.svg",
+      "link": {
+        "title": "Eletrodomésticos",
+        "url": "/eletrodomesticos"
+      }
+    },
+    "title": "Card 3 - Imagem"
+  },
+  "rich-text#category-cards-3": {
+    "props": {
+      "text": "[Eletrodomésticos](/eletrodomesticos)",
+      "blockClass": "category-cards"
+    },
+    "title": "Card 3 - Texto"
+  },
+  "image#category-cards-4": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/category-pets.svg",
+      "link": {
+        "title": "Pets",
+        "url": "/pets"
+      }
+    },
+    "title": "Card 4 - Imagem"
+  },
+  "rich-text#category-cards-4": {
+    "props": {
+      "text": "[Pets](/pets)",
+      "blockClass": "category-cards"
+    },
+    "title": "Card 4 - Texto"
+  },
+  "image#category-cards-5": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/category-organicos.svg",
+      "link": {
+        "title": "Orgânicos",
+        "url": "/organicos"
+      }
+    },
+    "title": "Card 5 - Imagem"
+  },
+  "rich-text#category-cards-5": {
+    "props": {
+      "text": "[Orgânicos](/organicos)",
+      "blockClass": "category-cards"
+    },
+    "title": "Card 5 - Texto"
+  },
+  "image#category-cards-6": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/category-azeites.svg",
+      "link": {
+        "title": "Azeites",
+        "url": "/azeites"
+      }
+    },
+    "title": "Card 6 - Imagem"
+  },
+  "rich-text#category-cards-6": {
+    "props": {
+      "text": "[Azeites](/azeites)",
+      "blockClass": "category-cards"
+    },
+    "title": "Card 6 - Texto"
+  }
+  ,
+  "image#category-cards-7": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/category-cafes.svg",
+      "link": {
+        "title": "Cafés",
+        "url": "/cafes"
+      }
+    },
+    "title": "Card 7 - Imagem"
+  },
+  "rich-text#category-cards-7": {
+    "props": {
+      "text": "[Cafés](/cafes)",
+      "blockClass": "category-cards"
+    },
+    "title": "Card 7 - Texto"
+  }
+}

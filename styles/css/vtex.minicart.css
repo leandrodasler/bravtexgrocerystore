@@ -23,6 +23,7 @@
   .minicartContainer :global(.vtex-button)::after {
     content: 'Carrinho';
     font-size: 20px;
+    font-weight: 300;
     text-transform: none;
   }
 }

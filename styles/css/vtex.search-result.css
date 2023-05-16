@@ -1,6 +1,6 @@
 /*search pages*/
 .notFound--layout--departament-desktop {
-	max-width: 1238px;
+	max-width: var(--container-max-width);
 	margin: 0 auto;
 }
 .searchResultContainer--departament-desktop,
@@ -272,7 +272,7 @@
 		padding: 8px;
 	}
 }
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: var(--container-max-width)) {
 	.galleryItem--search-gallery {
 		max-width: calc(25% - 8px) !important;
 	}
@@ -290,7 +290,7 @@
 	}
 }
 .sliderLayoutContainer--shelf {
-	max-width: 1238px;
+	max-width: var(--container-max-width);
 }
 @media only screen and (max-width: 1149px) {
 	.notFound--layout--departament-desktop,

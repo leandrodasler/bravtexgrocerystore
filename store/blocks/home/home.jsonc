@@ -8,6 +8,7 @@
 			"region-banner",
 			// "list-context.image-list#demo",
 			"flex-layout.row#deals",
+			"flex-layout.row#category-cards",
 			"flex-layout.row#shelf-banner-desktop",
 			"flex-layout.row#shelf-title1",
 			"__fold__",

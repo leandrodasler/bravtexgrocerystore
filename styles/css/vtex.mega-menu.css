@@ -1,6 +1,6 @@
 .triggerContainer {
   display: flex;
-  color: #f71963;
+  color: #142032;
   column-gap: 5px;
 }
 
@@ -15,7 +15,7 @@
 }
 
 .styledLinkText {
-  color: #f71963;
+  color: #142032;
 }
 
 .seeAllLink {

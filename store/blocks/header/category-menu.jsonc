@@ -7,7 +7,7 @@
           "id": "menu-item-category-ofertas",
           "type": "custom",
           "blockClass": "category-menu",
-          "iconId": null,
+          // "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
@@ -21,7 +21,7 @@
           "id": "menu-item-category-maisvendidos",
           "type": "custom",
           "blockClass": "category-maisvendidos",
-          "iconId": null,
+          // "iconId": null,
           "highlight": false,
           "itemProps": {
             "type": "internal",
@@ -35,31 +35,31 @@
     },
     "children": ["flex-layout.row#localization", "sticky-layout#mega-menu"/*, "menu-item#category"*/]
   },
-  "menu-item#category": {
-    "props": {
-      "id": "menu-item-category-home",
-      "type": "custom",
-      "blockClass": "main-category-menu",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "/apparel---categorias/",
-        "noFollow": false,
-        "tagTitle": "categorias",
-        "text": "Categorias"
-      },
-      "iconProps": {
-        "id": "menu-icon",
-        "size": 24,
-        "viewBox": "0 0 20 20",
-        "activeClassName": "main-menu-category",
-        "mutedClassName": "main-menu"
-      },
-      "iconToTheLeft": true
-    },
-    "blocks": ["vtex.menu@2.x:submenu#category"]
-  },
+  // "menu-item#category": {
+  //   "props": {
+  //     "id": "menu-item-category-home",
+  //     "type": "custom",
+  //     "blockClass": "main-category-menu",
+  //     "iconId": null,
+  //     "highlight": false,
+  //     "itemProps": {
+  //       "type": "internal",
+  //       "href": "/apparel---categorias/",
+  //       "noFollow": false,
+  //       "tagTitle": "categorias",
+  //       "text": "Categorias"
+  //     },
+  //     "iconProps": {
+  //       "id": "menu-icon",
+  //       "size": 24,
+  //       "viewBox": "0 0 20 20",
+  //       "activeClassName": "main-menu-category",
+  //       "mutedClassName": "main-menu"
+  //     },
+  //     "iconToTheLeft": true
+  //   },
+  //   "blocks": ["vtex.menu@2.x:submenu#category"]
+  // },
   "flex-layout.row#localization": {
     "props": {
       "blockClass": "localization-row"

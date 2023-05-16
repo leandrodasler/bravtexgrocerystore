@@ -3,7 +3,7 @@
 }
 .sliderLayoutContainer--carousel {
 	background-color: #fff;
-	max-width: 1238px;
+	max-width: var(--container-max-width);
 	padding: 32px 0 16px;
 	margin: auto;
 }
@@ -75,7 +75,7 @@
 }
 /*image slider*/
 .sliderTrackContainer--carousel {
-	max-width: 1238px;
+	max-width: var(--container-max-width);
 	position: relative;
 }
 .imageElement--carousel-departament {
@@ -119,7 +119,7 @@
 	}
 }
 .sliderLayoutContainer--shelf {
-	max-width: 1238px;
+	max-width: var(--container-max-width);
 }
 @media only screen and (max-width: 1149px) {
 	.sliderLayoutContainer--carousel {
@@ -138,12 +138,14 @@
 		padding: 10px 10px;
 	}
 
-	.caretIcon--deals {
+	.caretIcon--deals,
+	.caretIcon--category-cards {
 		color: #F71963;
 		height: 16px;
 	}
 
-	.sliderArrows--deals {
+	.sliderArrows--deals,
+	.sliderArrows--category-cards {
 		margin: 0;
 		padding: 0;
 	}
@@ -158,7 +160,7 @@
 	}
 }
 
-@media (max-width: 1440px) and (min-width: 64rem) {
+@media (max-width: var(--container-max-width)) and (min-width: 64rem) {
 	.slide--not-found-shelf {
 		max-width: 180px;
 	}

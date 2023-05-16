@@ -1604,7 +1604,7 @@ span[class*='vtex-my-orders-app-3-x-orderProductQuantityValue']
 	}
 	:global(.vtex-account) > div {
 		padding: 30px 5% 30px;
-		/* max-width: 1238px !important; */
+		/* max-width: var(--container-max-width) !important; */
 		margin: 0 auto;
 	}
 	/*Título da página*/

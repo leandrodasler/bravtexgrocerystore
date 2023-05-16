@@ -28,7 +28,7 @@
 }
 .styledLinkContent--main-category-menu,
 .styledLinkContent--category-menu {
-  color: #f71963;
+  color: #142032;
   font-size: 14px;
   align-items: center;
 }
@@ -36,12 +36,14 @@
   font-weight: bold;
 }
 .menuContainer {
-  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+.menuContainer :global(.vtex-sticky-layout-0-x-wrapper) {
+  margin-left: -80px;
 }
 .menuContainer .styledLinkContent {
-  color: #f71963;
+  color: #142032;
   font-weight: 400;
   font-size: 16px;
 }
@@ -71,6 +73,9 @@
 /* submenu de segundo nível */
 .submenuContainer--megamenu-header .submenuContainer--megamenu-header {
   top: -25px;
+}
+.styledLinkContainer {
+  margin: 0;
 }
 .styledLinkContainer--wishlist-custom {
   margin: 0 9px;

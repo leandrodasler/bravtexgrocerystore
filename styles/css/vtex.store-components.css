@@ -36,7 +36,7 @@
 :global(.vtex-flex-layout-0-x-flexRow--newsletter) .container,
 :global(.vtex-flex-layout-0-x-flexRow--menu-row) .container,
 :global(.vtex-flex-layout-0-x-flexRow--credits) .container {
-  max-width: 1238px;
+  max-width: var(--container-max-width);
   margin: 0 auto;
 }
 .sizeMobile {
@@ -215,7 +215,7 @@
   text-align: center;
 }
 .imageElement--banner-sales {
-  width: 1238px !important;
+  width: var(--container-max-width) !important;
   height: 200px !important;
 }
 .logoLink .sizeDesktop,
@@ -444,6 +444,9 @@
   color: #f71963;
   margin-left: 5px;
 }
+.searchBarContainer {
+  max-width: unset !important;
+}
 :global(.vtex-flex-layout-0-x-flexRowContent--search-byggy) .discountInsideContainer {
   display: none;
 }
@@ -540,19 +543,10 @@
   }
 }
 /*breackpoint of container end*/
-@media (min-width: 640px) and (max-width: calc(64rem - 1px)) {
+@media (max-width: calc(64rem - 1px)) {
   .searchBarContainer {
-    max-width: unset !important;
-    padding: 0 12px 15px;
-  }
-  /* .autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group) {
-		max-width: 100%;
-		width: 955px;
-	} */
-}
-@media only screen and (max-width: 700px) {
-  .searchBarContainer {
-    padding: 0 8px 8px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 }
 @media only screen and (min-width: 640px) {
@@ -679,11 +673,11 @@
 }
 :global(.vtex-flex-layout-0-x-flexRow--not-found-shelf-title) .container,
 :global(.vtex-flex-layout-0-x-flexRow--deals-not-found) .container {
-  max-width: 1440px;
+  max-width: var(--container-max-width);
   padding: 0 5%;
 }
 :global(.vtex-flex-layout-0-x-flexRow--not-found-shelf) .container {
-  max-width: 1440px;
+  max-width: var(--container-max-width);
   padding: 0 calc(5% - 20px);
 }
 @media only screen and (max-width: 320px) {

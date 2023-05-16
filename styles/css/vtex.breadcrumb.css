@@ -1,5 +1,5 @@
 .container--search-bread {
-	max-width: 1440px;
+	max-width: var(--container-max-width);
 	padding: 0 5%;
 }
 .link--search-bread {

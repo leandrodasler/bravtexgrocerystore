@@ -506,7 +506,7 @@
 	},
 	"rich-text#deal3": {
 		"props": {
-			"text": "### Localização \n Visite nossas lojas",
+			"text": "### Localização \n Encontre nossas lojas",
 			"blockClass": "deals-not-found"
 		},
 		"title": "Régua de Vantagens - Texto 3"
@@ -520,14 +520,14 @@
 	},
 	"image#deal4": {
 		"props": {
-			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/discount.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/calendar.png",
 			"maxHeight": "40px"
 		},
 		"title": "Régua de Vantagens - Imagem 4"
 	},
 	"rich-text#deal4": {
 		"props": {
-			"text": "### O melhor lugar \n Para comprar barato",
+			"text": "### Agendamento \n Para retirar compras",
 			"blockClass": "deals-not-found"
 		},
 		"title": "Régua de Vantagens - Texto 4"
@@ -541,14 +541,14 @@
 	},
 	"image#deal5": {
 		"props": {
-			"src": "https://gigadigital.vteximg.com.br/arquivos/Advantages-Icons-5.png",
+			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/pix.png",
 			"maxHeight": "40px"
 		},
 		"title": "Régua de Vantagens - Imagem 5"
 	},
 	"rich-text#deal5": {
 		"props": {
-			"text": "### Variedade \n Mais de 500 marcas",
+			"text": "### Pague com PIX \n Em qualquer valor",
 			"blockClass": "deals-not-found"
 		},
 		"title": "Régua de Vantagens - Texto 5"
