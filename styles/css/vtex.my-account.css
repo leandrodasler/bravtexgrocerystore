@@ -17,7 +17,7 @@
 	display: none;
 }
 .menuLink {
-	color: #F71963;
+	color: var(--color-primary);
 	display: flex;
 	border-top: 1px solid #cccccc;
 	margin: 0;
@@ -32,7 +32,7 @@
 	line-height: 20px;
 	letter-spacing: normal;
 	text-align: left;
-	color: #F71963;
+	color: var(--color-primary);
 	padding: 0 0 0 20px;
 	margin: 0;
 	display: flex;
@@ -48,9 +48,9 @@
 	padding: 30px 20px 20px;
 }
 .menuLinks a[class*='b--action-primary'] {
-	color: #F71963;
+	color: var(--color-primary);
 	background: #FFFFFF;
-	border-color: #F71963;
+	border-color: var(--color-primary);
 	font-weight: bold;
 	text-transform: capitalize;
 }
@@ -193,7 +193,7 @@ div[class*='vtex-my-account-1-x-userInfo'] {
 	margin: 0;
 	border: 0;
 	outline: none;
-	color: #F71963;
+	color: var(--color-primary);
 	font-weight: bold;
 	font-size: 16px;
 }
@@ -205,7 +205,7 @@ div[class*='vtex-my-account-1-x-userInfo'] {
 	padding: 12px 0 0 !important;
 }
 :global(.vtex-pageHeader-link__container) :global(.vtex-button__label) span {
-	color: #F71963;
+	color: var(--color-primary);
 	margin: 0 !important;
 	text-transform: initial;
 	font-size: 14px;
@@ -702,7 +702,7 @@ main[class*='vtex-account__page-body  vtex-my-account-1-x-addressEdit'] {
 	display: flex;
 }
 :global(.vtex-address-form__postalCode) label + div a {
-	color: #F71963;
+	color: var(--color-primary);
   text-transform: uppercase;
 	font-size: 12px;
 	line-height: 20px;

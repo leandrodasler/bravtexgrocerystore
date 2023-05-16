@@ -1,5 +1,5 @@
 .caretIcon--pdp-related-shelf {
-	color: #F71963;
+	color: var(--color-primary);
 	width: 12px;
 	height: 12px;
 }
@@ -65,7 +65,7 @@
   font-size: 32px;
   font-weight: 700;
   line-height: 52px;
-  color: #f71963;
+  color: var(--color-primary);
 }
 
 .sliderContainer--pdp-related-products :global(.vtex-product-summary-2-x-container) {
@@ -85,11 +85,11 @@
 }
 
 .sliderContainer--pdp-related-products :global(.vtex-product-price-1-x-sellingPrice--summary) {
-  color: #F71963 !important;
+  color: var(--color-primary) !important;
   display: inline-block;
   margin-top: 0;
 }
 
 .sliderContainer--pdp-related-products :global(.vtex-product-price-1-x-sellingPriceValue--summary) {
-  color: #F71963 !important;
+  color: var(--color-primary) !important;
 }

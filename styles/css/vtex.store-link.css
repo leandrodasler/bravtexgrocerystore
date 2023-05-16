@@ -17,7 +17,7 @@
   text-decoration: none;
 
   display: block;
-  background: #f71963;
+  background: var(--color-primary);
   border-radius: 6px;
   padding: 16px;
   margin-top: 60px;

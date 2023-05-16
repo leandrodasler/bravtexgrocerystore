@@ -4,17 +4,17 @@
 }
 .link--search-bread {
 	font-size: 14px;
-	color: #F71963;
+	color: var(--color-primary);
 	font-weight: normal;
 }
 :global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .term {
-	color: #F71963;
+	color: var(--color-primary);
 	font-size: 14px;
 	line-height: 20px;
 	padding: 0 20px;
 }
 :global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .link {
-	color: #F71963;
+	color: var(--color-primary);
 	font-size: 14px;
 	line-height: 20px;
 	padding: 0 20px;

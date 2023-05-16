@@ -31,7 +31,7 @@
 	content: close-quote;
 }
 .caretIcon {
-	color: #F71963;
+	color: var(--color-primary);
 }
 .filterItem :global(.vtex-checkbox__line-container) {
 	display: flex;
@@ -39,10 +39,10 @@
 }
 .filterItem--selected :global(.vtex__icon-check) {
 	color: #ffffff;
-	background-color: #F71963;
+	background-color: var(--color-primary);
 }
 .filterItem--selected :global(.vtex-checkbox__inner-container) {
-	border-color: #F71963;
+	border-color: var(--color-primary);
 }
 .filter__container {
 	border-color: #dadedc;
@@ -52,7 +52,7 @@
 }
 :global(.vtex-search-result-3-x-filter__container--priceRange) :global(.vtex-slider__base-internal),
 :global(.vtex-search-result-3-x-filter__container--priceRange) :global(.vtex-slider__selector) {
-	background-color: #F71963;
+	background-color: var(--color-primary);
 }
 .gallery--search-gallery {
 	padding-left: 28px;
@@ -85,15 +85,15 @@
 }
 .buttonShowMore :global(.vtex-button) {
 	background-color: #ffffff;
-	color: #F71963;
-	border-color: #F71963;
+	color: var(--color-primary);
+	border-color: var(--color-primary);
 }
 .buttonShowMore :global(.vtex-button):hover {
-	background-color: #F71963;
+	background-color: var(--color-primary);
 	color: #ffffff;
 }
 .filterPopupTitle {
-	color: #F71963;
+	color: var(--color-primary);
 	text-transform: none;
 	font-size: 16px;
 	margin-left: 16px;
@@ -136,12 +136,12 @@
 }
 .orderByOptionItem:hover {
 	background-color: #e2fff3;
-	color: #F71963;
+	color: var(--color-primary);
 	font-weight: bold;
 }
 .orderByOptionItem--selected {
 	background-color: #e2fff3;
-	color: #F71963;
+	color: var(--color-primary);
 	font-weight: bold;
 }
 .filterMessage {

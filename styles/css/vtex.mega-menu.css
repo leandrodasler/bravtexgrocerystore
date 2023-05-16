@@ -10,6 +10,10 @@
     'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif;
 }
 
+.triggerContainer:hover {
+  color: var(--color-primary);
+}
+
 .menuContainer {
   max-height: unset;
 }

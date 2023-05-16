@@ -58,7 +58,7 @@
   color: #36403b;
 }
 .itemListLink:hover .itemListLinkTitle {
-  color: #f71963;
+  color: var(--color-primary);
 }
 .itemList--suggestion .itemListLink,
 .itemList--suggestion .itemListSubItemLink {
@@ -68,7 +68,7 @@
 }
 .itemListLink:hover,
 .itemListSubItemLink:hover {
-  color: #f71963;
+  color: var(--color-primary);
   background-color: #ffe0ef !important;
   font-weight: bold;
   font-size: 14px;
@@ -128,12 +128,12 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.015em;
-  color: #f71963;
+  color: var(--color-primary);
   cursor: pointer;
 }
 .didYouMeanTerm:hover {
   background: #e6fff3;
-  border-color: #f71963;
+  border-color: var(--color-primary);
 }
 @media only screen and (max-width: 1285px) {
   .biggy-autocomplete-wrapper,
@@ -178,7 +178,7 @@
     font-weight: bold;
   }
   .currencyContainer {
-    color: #f71963;
+    color: var(--color-primary);
     font-weight: 800;
     font-size: 19px;
   }
@@ -189,7 +189,7 @@
     max-width: unset;
   }
   .listPriceValue .currencyContainer {
-    color: #f71963;
+    color: var(--color-primary);
   }
   .itemList--suggestion .itemListLink,
   .itemList--suggestion .itemListSubItemLink {
@@ -203,7 +203,7 @@
     font-weight: bold;
   }
   .currencyContainer {
-    color: #f71963;
+    color: var(--color-primary);
     font-weight: 800;
     font-size: 17px;
   }
@@ -240,7 +240,7 @@
 }
 
 :global(.vtex-product-price-1-x-sellingPrice--summary) {
-  color: #f71963;
+  color: var(--color-primary);
 }
 
 :global(.vtex-search-2-x-tileListSeeMore) {
@@ -263,7 +263,7 @@
 
 :global(.vtex-search-2-x-itemList--suggestion) :global(.vtex-search-2-x-itemListSubItemLink),
 :global(.vtex-search-2-x-itemList--suggestion) :global(.vtex-search-2-x-itemListLinkTitle) {
-  color: #f71963 !important;
+  color: var(--color-primary) !important;
 }
 
 :global(.vtex-search-2-x-tileListTitle) {

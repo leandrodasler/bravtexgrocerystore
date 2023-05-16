@@ -23,7 +23,7 @@
   display: block;
   font-size: 28px;
   line-height: 38px;
-  color: #f71963;
+  color: var(--color-primary);
   margin-bottom: 0;
   padding-bottom: 8px;
   border-bottom: 1px solid #e7e9ee;

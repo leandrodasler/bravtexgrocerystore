@@ -1,6 +1,6 @@
 .notificationBarContainer {
   background-color: #e6f1e6;
-  color: #f71963;
+  color: var(--color-primary);
   font-weight: 700;
   font-size: 12px;
   text-decoration: underline;
@@ -12,7 +12,7 @@
   padding: 0px;
 }
 .newsletter {
-  background-color: #f71963;
+  background-color: var(--color-primary);
   height: 144px;
 }
 :global(.vtex-flex-layout-0-x-flexRow--payment-methods) .container {
@@ -45,7 +45,7 @@
 /* Pdp */
 :global(.vtex-flex-layout-0-x-flexRow--product-brand-container) .productBrandName--pdp-product-brand {
   font-size: 12px;
-  color: #f71963;
+  color: var(--color-primary);
   line-height: 16px;
   letter-spacing: 0.015em;
   font-weight: bold;
@@ -263,7 +263,7 @@
 }
 
 :global(.vtex-seller-selector-0-x-linkSeller) {
-  color: #f71963;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -441,7 +441,7 @@
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.015em;
-  color: #f71963;
+  color: var(--color-primary);
   margin-left: 5px;
 }
 .searchBarContainer {
@@ -582,7 +582,7 @@
     display: none;
   }
   .inputGroup :global(.vtex-styleguide-9-x-hideDecorators):focus {
-    outline-color: #f71963;
+    outline-color: var(--color-primary);
   }
   /* PdP Mobile */
   :global(.vtex-flex-layout-0-x-flexCol--product-images-container) .productImagesContainer .productImagesGallerySlide {
@@ -607,14 +607,14 @@
     height: 16px;
   }
   :global(.vtex-flex-layout-0-x-flexCol--product-images-container) .swiperBullet {
-    background-color: #f71963;
+    background-color: var(--color-primary);
     width: 24px;
     height: 4px;
     border-radius: 0;
     opacity: unset;
   }
   :global(.vtex-flex-layout-0-x-flexCol--product-images-container) .swiperBullet--active {
-    background-color: #f71963;
+    background-color: var(--color-primary);
   }
   :global(.vtex-flex-layout-0-x-flexCol--product-images-container) .swiper-pagination {
     bottom: -4px;

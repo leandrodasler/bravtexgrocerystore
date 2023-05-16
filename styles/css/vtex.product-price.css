@@ -7,7 +7,7 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
-	color: #F71963;
+	color: var(--color-primary);
 }
 .sellingPriceValue {
 	font-size: 2.25rem;
@@ -15,12 +15,12 @@
 	margin-right: 4px;
 }
 .installments {
-	color: #F71963;
+	color: var(--color-primary);
 	margin-bottom: 1rem;
 }
 .savings {
 	font-weight: 500;
-	color: #F71963;
+	color: var(--color-primary);
 }
 
 .sellingPrice--summary {
@@ -35,10 +35,10 @@
 	font-weight: 700;
 	font-size: 22px;
 	line-height: 20px;
-	color: #F71963;
+	color: var(--color-primary);
 }
 .savings--summary {
-	background: #F71963;
+	background: var(--color-primary);
 	border-radius: 1000px;
 	align-items: center;
 	display: flex;
@@ -63,7 +63,7 @@
 	margin-top: 18px;
 }
 .sellingPrice--main-sell-summary--hasListPrice {
-	color: #F71963;
+	color: var(--color-primary);
 	font-size: 15px;
 	font-weight: 800;
 	margin-top: 0px;
@@ -84,7 +84,7 @@
 	color: #aab0ad !important;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .sellingPriceValue {
-	color: #F71963;
+	color: var(--color-primary);
 	font-size: 36px;
 	font-weight: 800;
 	line-height: 52px;
@@ -122,13 +122,13 @@
 :global(.vtex-flex-layout-0-x-flexRow--search-byggy) .currencyContainer--summary {
 	font-size: 14px;
 	line-height: 20px;
-	color: #F71963;
+	color: var(--color-primary);
 }
 .sellingPriceValue--main-sell-summary {
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
-	color: #F71963;
+	color: var(--color-primary);
 }
 /*tablet*/
 @media only screen and (max-width: calc(64rem - 1px)) {

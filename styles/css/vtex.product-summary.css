@@ -17,7 +17,7 @@
 .brandName {
 	font-weight: 700;
 	font-size: 16px;
-	color: #F71963;
+	color: var(--color-primary);
 }
 .container {
 	text-align: start;
@@ -34,7 +34,7 @@
 	height: 120px;
 }
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) .containerNormal :global(.vtex-button) {
-	color: #F71963;
+	color: var(--color-primary);
 	font-weight: bold;
 	font-size: 16px;
 	line-height: 24px;
@@ -80,7 +80,7 @@
 }
 :global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .element .brandName {
 	font-size: 16px;
-	color: #F71963;
+	color: var(--color-primary);
 	font-weight: 700;
 	line-height: 24px;
 }

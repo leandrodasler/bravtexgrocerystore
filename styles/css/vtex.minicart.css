@@ -48,7 +48,7 @@
 
 :global(.vtex-product-list-0-x-productPrice) {
   font-size: 20px;
-  color: #f71963;
+  color: var(--color-primary);
 }
 
 :global(.vtex-product-list-0-x-inputContainer) {
@@ -58,7 +58,7 @@
 
 :global(.vtex-checkout-summary-0-x-summaryItemContainer),
 :global(.vtex-checkout-summary-0-x-summaryItemLabel) {
-  color: #f71963;
+  color: var(--color-primary);
 }
 
 :global(.vtex-checkout-summary-0-x-summarySmallDisclaimer) {

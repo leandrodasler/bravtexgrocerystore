@@ -2,7 +2,7 @@
   align-items: center;
   font-size: 14px;
   font-weight: bold;
-  color: #f71963;
+  color: var(--color-primary);
   max-width: 90px;
 }
 .styledLinkIcon--wishlist-custom {
@@ -42,10 +42,13 @@
 .menuContainer :global(.vtex-sticky-layout-0-x-wrapper) {
   margin-left: -80px;
 }
-.menuContainer .styledLinkContent {
+.menuContainer .styledLink {
   color: #142032;
   font-weight: 400;
   font-size: 16px;
+}
+.menuContainer .styledLink:hover {
+  color: var(--color-primary);
 }
 .submenuContainer--megamenu-header .menuItem--main-category-menu {
   display: flex;
@@ -108,11 +111,11 @@
   margin: 0;
   text-decoration: underline;
   font-size: 16px;
-  color: #f71963;
+  color: var(--color-primary);
 }
 .styledLinkContainer--pdp-ship-menu-information {
   font-size: 14px;
-  color: #f71963;
+  color: var(--color-primary);
   margin: 0 0 0 1.5rem;
 }
 .accordionIcon--pdp-product-menu-information,
@@ -224,7 +227,7 @@
     align-items: center;
     font-weight: 600;
     font-size: 12px;
-    color: #f71963;
+    color: var(--color-primary);
   }
   .submenuWrapper--megamenu-header--isOpen::after {
     content: '';

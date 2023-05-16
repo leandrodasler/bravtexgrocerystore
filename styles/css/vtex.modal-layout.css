@@ -141,7 +141,7 @@
   text-align: justify;
 }
 .container--cookie-bar :global(.vtex-rich-text-0-x-link) {
-  color: #f71963;
+  color: var(--color-primary);
 }
 .container--cookie-bar :global(.vtex-modal-layout-0-x-actionsContentWrapper) {
   border-top: none;
@@ -150,7 +150,7 @@
 .container--cookie-bar :global(.vtex-modal-layout-0-x-closeButton),
 .container--cookie-bar :global(.vtex-modal-layout-0-x-closeButton):hover {
   border: none;
-  background-color: #f71963;
+  background-color: var(--color-primary);
   color: #fff;
   text-transform: none;
   width: 200px;
