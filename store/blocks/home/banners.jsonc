@@ -172,5 +172,67 @@
       }
     },
     "title": "Full Banner 4 - Imagem"
+  },
+  "flex-layout.row#half-banners-1": {
+    "title": "Half Banners 1",
+    "children": ["image#half-banner-1", "image#half-banner-2"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "paddingBottom": 6
+    }
+  },
+  "flex-layout.row#half-banners-2": {
+    "title": "Half Banners 2",
+    "children": ["image#half-banner-3", "image#half-banner-4"],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "colSizing": "auto",
+      "paddingBottom": 6
+    }
+  },
+  "image#half-banner-1": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/e562d27d-1ebe-4231-b81d-41149d5c89da___c5cda1795f837fa55152c8737c041b67.jpg",
+      "alt": "Bebidas",
+      "title": "Bebidas",
+      "link": {
+        "url": "/bebidas"
+      }
+    },
+    "title": "Half Banners 1 - Imagem 1"
+  },
+  "image#half-banner-2": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/a4479e8f-ae3d-4045-82c0-7ba10e0c51f0___a85da74887ec6482a488f27e11bf1497.jpg",
+      "alt": "Azeites Oliveira",
+      "title": "Azeites Oliveira",
+      "link": {
+        "url": "/azeite-oliveira-extra-virgem-500ml/p"
+      }
+    },
+    "title": "Half Banners 1 - Imagem 2"
+  },
+  "image#half-banner-3": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/54e521c6-46e5-4b75-9f3a-42ecbe6ea758___f677c5e27ff8503d2aed73578a538ab2.jpg",
+      "alt": "Margarina Sofiteli",
+      "title": "Margarina Sofiteli",
+      "link": {
+        "url": "/margarina-sofiteli-sal-balde-3kg/p"
+      }
+    },
+    "title": "Half Banners 2 - Imagem 1"
+  },
+  "image#half-banner-4": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/74639f05-4465-4a27-a68c-d45e2ab2e6a0___ee1d78b420af793851b04f88b7fb5738.jpg",
+      "alt": "Chá Lipton Ice Tea Pêssego",
+      "title": "Chá Lipton Ice Tea Pêssego",
+      "link": {
+        "url": "/cha-ice-tea-pessego-lipton-zero-acucar-1-5-litros-1009621/p"
+      }
+    },
+    "title": "Half Banners 2 - Imagem 2"
   }
 }
