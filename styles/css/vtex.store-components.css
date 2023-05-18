@@ -16,21 +16,18 @@
   height: 144px;
 }
 :global(.vtex-flex-layout-0-x-flexRow--payment-methods) .container {
-  padding-top: 15px;
-  padding-bottom: 15px;
   border-top: 1px solid #222c44;
   border-bottom: 1px solid #222c44;
-  padding-bottom: 2.5rem !important;
-  padding-top: 2.5rem !important;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
 }
 .container {
   max-width: var(--container-max-width);
   margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
-/* :global(.vtex-flex-layout-0-x-flexRow--shelf) .container {
-  max-width: unset;
-  margin: 0 0 0 calc((100% - var(--container-max-width)) / 2);
-} */
+
 /* Pdp */
 :global(.vtex-flex-layout-0-x-flexRow--product-brand-container) .productBrandName--pdp-product-brand {
   font-size: 12px;
@@ -190,18 +187,6 @@
   background-color: #fff;
   color: #000;
 }
-.imageElement--banner-home {
-  width: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-}
-.imageElementLink--banner-sales {
-  text-align: center;
-}
-.imageElement--banner-sales {
-  width: var(--container-max-width) !important;
-  height: 200px !important;
-}
 .logoLink .sizeDesktop,
 .logoLink .sizeMobile {
   padding: 0;
@@ -232,14 +217,7 @@
 }
 
 .imageElement--carousel {
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-.imageElement--banner-sales {
-  height: 516px;
-  object-fit: cover;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 
 :global(.vtex-seller-selector-0-x-linkSellerContainer) {
@@ -370,21 +348,6 @@
 }
 
 @media (max-width: calc(64rem - 1px)) {
-  .imageElement--carousel {
-    height: auto;
-    max-height: 300px !important;
-    border-radius: unset;
-  }
-
-  .imageElement--banner-sales {
-    height: 100% !important;
-    width: 100%;
-  }
-
-  :global(.vtex-flex-layout-0-x-flexRow--banner-home) .container {
-    padding: 0 20px;
-  }
-
   :global(.vtex-flex-layout-0-x-flexRow--shelf-title) .container {
     padding: 0 20px;
   }
@@ -395,10 +358,6 @@
 }
 
 @media only screen and (min-width: 640px) {
-  .imageElement--carousel {
-    max-height: unset !important;
-  }
-
   .newsletter .container {
     padding: 140px;
   }
@@ -451,80 +410,16 @@
     max-height: 600px;
   }
 }
-/*breackpoint of container*/
-@media screen and (min-width: 40em) {
-  :global(.vtex-flex-layout-0-x-flexRow--content-row-department) .container {
-    padding: 0;
-  }
-}
-@media only screen and (max-width: 1600px) {
-  :global(.vtex-flex-layout-0-x-flexRow--main-wishlist-title-container) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--wishlist-shelf) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--menu-row) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--newsletter) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--menu-row) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--credits) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--payment-methods) .container {
-    max-width: 1160px;
-  }
-}
-@media only screen and (max-width: 1500px) {
-  :global(.vtex-flex-layout-0-x-flexRow--main-wishlist-title-container) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--wishlist-shelf) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--menu-row) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--newsletter) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--menu-row) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--credits) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--payment-methods) .container {
-    max-width: 1084px;
-  }
-}
-@media only screen and (max-width: 1400px) {
-  /* .autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group), 
-	.biggy-autocomplete-wrapper,
-	.biggy-autocomplete {
-		width: 655px;
-	} */
-  :global(.vtex-flex-layout-0-x-flexRow--main-wishlist-title-container) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--wishlist-shelf) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--menu-row) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--newsletter) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--menu-row) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--credits) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--payment-methods) .container {
-    max-width: 1000px;
-  }
-}
-@media only screen and (max-width: 1233px) {
-  /* .autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group) {
-		width: 555px;
-	} */
-}
-@media only screen and (max-width: 1150px) {
-  /* .autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group) {
-		width: 455px;
-	} */
-}
+
 @media only screen and (max-width: 1067px) {
-  /* .autoCompleteOuterContainer--search-bar-header :global(.vtex-input-prefix__group) {
-		width: 355px;
-	} */
   .flexRowContent--pdp-main-container {
     justify-content: center;
-  }
-  :global(.vtex-flex-layout-0-x-flexRow--main-wishlist-title-container) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--wishlist-shelf) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--menu-row) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--newsletter) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--menu-row) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--credits) .container,
-  :global(.vtex-flex-layout-0-x-flexRow--payment-methods) .container {
-    max-width: 920px;
   }
 }
 /*breackpoint of container end*/
 @media (max-width: calc(64rem - 1px)) {
-  .searchBarContainer {
+  .searchBarContainer,
+  :global(.vtex-region-selector-2-x-regionSelector) {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }

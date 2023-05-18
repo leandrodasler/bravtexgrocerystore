@@ -210,7 +210,8 @@
 	},
 	"flex-layout.row#midias": {
 		"props": {
-			"blockClass": "midias-footer"
+			"blockClass": "midias-footer",
+			"marginBottom": 4
 		},
 		"children": ["image#facebook", "image#instagram"],
 		"title": "Footer midias itens"

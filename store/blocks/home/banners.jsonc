@@ -3,7 +3,7 @@
     "title": "Seção de Banners regionais",
     "children": ["region-banner"],
     "props": {
-      "blockClass": ["deals"],
+      "blockClass": ["shelf-banner"],
       "paddingTop": 6
     }
   },

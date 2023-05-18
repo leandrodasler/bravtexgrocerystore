@@ -1,0 +1,14 @@
+.regionSelector {
+    padding: 0;
+}
+
+.regionSelector_icon {
+  color: #000;
+}
+
+.regionSelector_region {
+  width: 200px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

@@ -1,6 +1,9 @@
 .flexRowContent--menu-link,
-.flexRowContent--main-header {
-  padding: 0.5rem 0;
+.flexRowContent--main-header,
+.flexRowContent--category-menu-header {
+  padding: 0.5rem 1rem;
+  max-width: var(--container-max-width);
+  margin: 0 auto;
 }
 .flexRowContent--row-searchbar,
 .flexRow--main-header {
@@ -13,15 +16,14 @@
   align-items: center;
   overflow: hidden;
 }
+.flexRow--shelf-banner :global(.vtex-store-components-3-x-container) {
+  padding: 0;
+}
 .flexRow--shelf {
   overflow: hidden;
 }
 .flexRowContent--menu-link {
   background-color: var(--color-primary);
-}
-.flexRowContent--menu-link {
-  max-width: var(--container-max-width);
-  margin: 0 auto;
 }
 .flexRowContent--content {
   max-width: var(--container-max-width);
@@ -30,8 +32,6 @@
 }
 .flexRowContent--main-header {
   background-color: #ffffff;
-  max-width: var(--container-max-width);
-  margin: 0 auto;
 }
 .flexRowContent--main-header-mobile {
   align-items: center;
@@ -75,15 +75,6 @@
   width: 120px;
   height: 120px !important;
   overflow: hidden;
-}
-.flexRow--banner-home {
-  max-width: var(--container-max-width);
-  padding: 48px 0 16px;
-  margin: auto;
-}
-.flexRowContent--banner-home {
-  margin-left: -0.25rem;
-  margin-right: -0.25rem;
 }
 .flexRow--wholesale {
   height: 56px;
@@ -153,12 +144,8 @@
     margin-right: 150px;
   }
 }
-
 .flexRowContent--category-menu-header {
-  max-width: var(--container-max-width);
-  margin: 0 auto;
   justify-content: space-between;
-  margin-bottom: 0.5rem;
 }
 .flexRowContent--category-menu-header :local(> div) {
   width: 100% !important;
@@ -441,11 +428,6 @@
   margin-bottom: 15px;
 }
 
-@media (min-width: 1540px) {
-  .flexRow--banner-home {
-    padding: 48px 0 16px;
-  }
-}
 @media only screen and (max-width: calc(64rem - 1px)) {
   .flexRow--localization-row {
     padding: 4px 12px;
@@ -603,27 +585,11 @@
     padding-top: 16px;
   }
 }
-@media (min-width: 1540px) {
-  .flexRow--banner-home {
-    padding: 48px 0 16px;
-  }
-}
-@media (max-width: 1279px) {
-  .flexRowContent--category-menu-header {
-    padding: 0 0.5rem;
-  }
-}
 @media (max-width: calc(64rem - 1px)) {
   .flexRow--wholesale {
     height: 41px;
     margin-top: 0;
     margin-bottom: 6px;
-  }
-  .flexRow--banner-home {
-    padding-top: 30px;
-  }
-  .flexRowContent--banner-home {
-    margin: 0;
   }
   .flexRow--searchTitleDesktop .stretchChildrenWidth::before {
     padding: 12px 0;

@@ -82,34 +82,7 @@
   width: 12px;
   height: 12px;
 }
-/*breackpoint of container*/
-@media only screen and (max-width: 1285px) {
-  .sliderLayoutContainer--carousel {
-    max-width: 1160px;
-  }
-}
-@media only screen and (max-width: 1232px) {
-  .sliderLayoutContainer--carousel {
-    max-width: 1084px;
-  }
-}
-@media only screen and (max-width: 1149px) {
-  .sliderLayoutContainer--carousel {
-    max-width: 1000px;
-  }
-}
-@media only screen and (max-width: 1067px) {
-  .sliderLayoutContainer--carousel {
-    max-width: 920px;
-  }
-}
-/*breackpoint of container end*/
-
 @media (max-width: calc(64rem - 1px)) {
-  .sliderLayoutContainer--carousel {
-    padding: 10px 10px;
-  }
-
   .caretIcon--deals,
   .caretIcon--category-cards {
     color: var(--color-primary);
