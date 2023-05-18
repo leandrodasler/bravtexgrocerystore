@@ -23,32 +23,19 @@
   padding-bottom: 2.5rem !important;
   padding-top: 2.5rem !important;
 }
-:global(.vtex-flex-layout-0-x-flexRow--main-wishlist-title-container) .container,
-:global(.vtex-flex-layout-0-x-flexRow--wishlist-shelf) .container,
-:global(.vtex-flex-layout-0-x-flexRow--newsletter) .container,
-:global(.vtex-flex-layout-0-x-flexRow--pdp-main-container) .container,
-:global(.vtex-flex-layout-0-x-flexRow--breadcrumb-pdp-container) .container,
-:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .container,
-:global(.vtex-flex-layout-0-x-flexRow--title-shelf-pdp-container) .container,
-:global(.vtex-flex-layout-0-x-flexRow--wish-list-title-container) .container,
-:global(.vtex-flex-layout-0-x-flexRow--list-products-container) .container,
-:global(.vtex-flex-layout-0-x-flexRow--payment-methods) .container,
-:global(.vtex-flex-layout-0-x-flexRow--newsletter) .container,
-:global(.vtex-flex-layout-0-x-flexRow--menu-row) .container,
-:global(.vtex-flex-layout-0-x-flexRow--credits) .container {
+.container {
   max-width: var(--container-max-width);
   margin: 0 auto;
 }
-.sizeMobile {
-
-}
+/* :global(.vtex-flex-layout-0-x-flexRow--shelf) .container {
+  max-width: unset;
+  margin: 0 0 0 calc((100% - var(--container-max-width)) / 2);
+} */
 /* Pdp */
 :global(.vtex-flex-layout-0-x-flexRow--product-brand-container) .productBrandName--pdp-product-brand {
   font-size: 12px;
-  color: var(--color-primary);
   line-height: 16px;
   letter-spacing: 0.015em;
-  font-weight: bold;
   margin-bottom: 12px;
   display: block;
 }
@@ -65,9 +52,6 @@
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .shippingContainer :global(.vtex-button) {
   color: #ffffff;
   font-weight: 700;
-}
-:global(.vtex-shelf-1-x-slide--pdp-related-shelf) .imageElement--static-img {
-  margin: 12px 0;
 }
 :global(.vtex-flex-layout-0-x-flexRow--pdp-wish-and-share-content) .shareLabel {
   font-size: 0;
@@ -392,10 +376,6 @@
     border-radius: unset;
   }
 
-  :global(.vtex-flex-layout-0-x-flexRow--home-shelf-1) .container {
-    padding: 0 20px;
-  }
-
   .imageElement--banner-sales {
     height: 100% !important;
     width: 100%;
@@ -625,11 +605,6 @@
   :global(.vtex-flex-layout-0-x-flexCol--product-images-container) .productImageTag--pdp-images--main {
     min-height: 275px;
     object-fit: cover !important;
-  }
-  :global(.vtex-shelf-1-x-slide--pdp-related-shelf) .imageElement--static-img {
-    max-height: 41px !important;
-    margin-right: auto;
-    width: 100%;
   }
   :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .imageElement--static-img {
     width: 100%;

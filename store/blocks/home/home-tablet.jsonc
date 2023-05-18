@@ -1,16 +1,16 @@
-{
-	"responsive-layout.tablet#home": {
-		"children": [
-			"region-banner",
-			// "list-context.image-list#demo",
-			"flex-layout.row#deals",
-			"flex-layout.row#category-cards",
-			"flex-layout.row#shelf-banner-mobile",
-			"flex-layout.row#shelf-title1",
-			"flex-layout.row#shelf1-mobile",
-			"flex-layout.row#shelf-title2",
-			"flex-layout.row#shelf2"
-		],
-		"title": "Home - Tablet"
-	}
-}
+{}
+// {
+//   "responsive-layout.tablet#home": {
+//     "children": [
+//       "flex-layout.row#region-banner",
+//       "flex-layout.row#deals",
+//       "flex-layout.row#category-cards",
+//       "flex-layout.row#shelf-banner-mobile",
+//       "flex-layout.row#shelf-title1",
+//       "flex-layout.row#shelf1",
+//       "flex-layout.row#shelf-title2",
+//       "flex-layout.row#shelf2"
+//     ],
+//     "title": "Home - Tablet"
+//   }
+// }

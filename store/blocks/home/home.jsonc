@@ -1,218 +1,190 @@
 {
-	"store.home": {
-		"blocks": ["responsive-layout.desktop#home", "responsive-layout.tablet#home", "responsive-layout.phone#home"]
-	},
-	/* Estrutura de ResponsiveLayoutsHome*/
-	"responsive-layout.desktop#home": {
-		"children": [
-			"region-banner",
-			// "list-context.image-list#demo",
-			"flex-layout.row#deals",
-			"flex-layout.row#category-cards",
-			"flex-layout.row#shelf-banner-desktop",
-			"flex-layout.row#shelf-title1",
-			"__fold__",
-			"flex-layout.row#shelf1",
-			"flex-layout.row#shelf-title2",
-			"flex-layout.row#shelf2"
-		],
-		"title": "Home - Desktop"
-	},
-	"region-banner": {
-		"title": "Banners regionais",
-		"children": ["slider-layout#demo-images"],
-		"props": {
-			"height": 328,
-			"images": [
-				{
-					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Azeite-Desktop1.png",
-					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Azeite-Mobile1.png"
-				},
-				{
-					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Margarina-Desktop1.png",
-					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Margarina-Mobile1.png"
-				}
-			]
-		}
-	},
-	"list-context.image-list#demo": {
-		"children": ["slider-layout#demo-images"],
-		"props": {
-			"height": 328,
-			"images": [
-				{
-					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Azeite-Desktop1.png",
-					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Azeite-Mobile1.png"
-				},
-				{
-					"image": "https://bravtexgrocerystore.vtexassets.com/arquivos/Margarina-Desktop1.png",
-					"mobileImage": "https://bravtexgrocerystore.vtexassets.com/arquivos/Margarina-Mobile1.png"
-				}
-			]
-		},
-		"title": "Home - Carrossel"
-	},
-	"slider-layout#demo-images": {
-		"props": {
-			"itemsPerPage": {
-				"desktop": 1,
-				"tablet": 1,
-				"phone": 1
-			},
-			"infinite": true,
-			"showNavigationArrows": "desktopOnly",
-			"showPaginationDots": "never",
-			"blockClass": "carousel",
-			"autoplay": {
-				"timeout": 6000,
-				"stopOnHover": true
-			}
-		},
-		"title": "Home - Slider"
-	},
-
-	"flex-layout.row#shelf-title1": {
-		"children": ["rich-text#shelf-title1"],
-		"props": {
-			"blockClass": ["shelf-title"]
-		},
-		"title": "Home - Prateleira 1 - Título"
-	},
-	"rich-text#shelf-title1": {
-		"props": {
-			"text": "## Ofertas do dia",
-			"blockClass": ["shelfTitle", "shelfTitle-1"]
-		},
-		"title": "Prateleira 1 - Título"
-	},
-	"flex-layout.row#shelf1": {
-		"props": {
-			"blockClass": ["home-shelf-1"]
-		},
-		"children": ["flex-layout.col#shelf"],
-		"title": "Home - Prateleira 1"
-	},
-	"flex-layout.row#shelf-banner-desktop": {
-		"children": ["image#shelf-banner-desktop"],
-		"props": {
-			"width": "25%",
-			"blockClass": ["shelf-banner"]
-		},
-		"title": "Prateleira 1 - Banner"
-	},
-	"image#shelf-banner-desktop": {
-		"props": {
-			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/Cart%C3%A3o-Desktop.png",
-			"blockClass": "banner-sales",
-			"link": "/"
-		},
-		"title": "Prateleira 1 - Imagem"
-	},
-	"flex-layout.col#shelf": {
-		"children": ["list-context.product-list#demo1"],
-		"props": {
-			"width": "100%",
-			"horizontalAlign": "center"
-		},
-		"title": "Prateleira 1 - Prateleira"
-	},
-	"list-context.product-list#demo1": {
-		"blocks": ["product-summary.shelf#home"],
-		"children": ["slider-layout#demo-products1"],
-		"props": {
-			"orderBy": "OrderByTopSaleDESC"
-		},
-		"title": "Prateleira 1 - Produtos"
-	},
-	"slider-layout#demo-products1": {
-		"props": {
-			"itemsPerPage": {
-				"desktop": 3,
-				"tablet": 2,
-				"phone": 2
-			},
-			"infinite": true,
-			"fullWidth": false,
-			"blockClass": "shelf",
-			"showPaginationDots": "never",
-			"showNavigationArrows": "desktopOnly"
-		},
-		"title": "Prateleira 1 - Slider"
-	},
-	"flex-layout.col#shelf-banner": {
-		"children": ["image#shelf-banner"],
-		"props": {
-			"width": "25%"
-		},
-		"title": "Prateleira 1 - Banner"
-	},
-	"image#shelf-banner": {
-		"props": {
-			"src": "",
-			"maxHeight": 516,
-			"blockClass": "banner-sales"
-		},
-		"title": "Prateleira 1 - Imagem"
-	},
-
-	"flex-layout.row#banner-home": {
-		"children": ["image#banner-home"],
-		"props": {
-			"blockClass": "banner-home"
-		},
-		"title": "Home - Banner"
-	},
-	"image#banner-home": {
-		"props": {
-			"src": "",
-			"maxHeight": 184,
-			"blockClass": "banner-home"
-		},
-		"title": "Banner - imagem"
-	},
-
-	"flex-layout.row#shelf-title2": {
-		"children": ["rich-text#shelf-title2"],
-		"props": {
-			"blockClass": ["shelf-title"]
-		},
-		"title": "Home - Prateleira 2 - Título"
-	},
-	"rich-text#shelf-title2": {
-		"props": {
-			"text": "## Compre por categoria",
-			"blockClass": ["shelfTitle", "shelfTitle-2"]
-		},
-		"title": "Prateleira 2 - Título"
-	},
-	"flex-layout.row#shelf2": {
-		"props": {
-			"blockClass": ["home-shelf-2"]
-		},
-		"children": ["list-context.product-list#demo2"],
-		"title": "Home - Prateleira 2"
-	},
-	"list-context.product-list#demo2": {
-		"blocks": ["product-summary.shelf#home"],
-		"children": ["slider-layout#demo-products2"],
-		"props": {
-			"orderBy": "OrderByTopSaleDESC"
-		},
-		"title": "Prateleira 2 - Produtos"
-	},
-	"slider-layout#demo-products2": {
-		"props": {
-			"itemsPerPage": {
-				"desktop": 4,
-				"tablet": 2,
-				"phone": 2
-			},
-			"infinite": true,
-			"fullWidth": false,
-			"blockClass": "shelf",
-			"showPaginationDots": "never",
-			"showNavigationArrows": "desktopOnly"
-		},
-		"title": "Prateleira 2 - Slider"
-	}
+  // "store.home": {
+  //   "blocks": ["responsive-layout.desktop#home", "responsive-layout.tablet#home", "responsive-layout.phone#home"]
+  // },
+  /* Estrutura de ResponsiveLayoutsHome*/
+  // "responsive-layout.desktop#home"
+  "store.home": {
+    "children": [
+      "flex-layout.row#region-banner",
+      "flex-layout.row#deals",
+      "flex-layout.row#category-cards",
+      "flex-layout.row#full-banner-desktop1",
+      "flex-layout.row#shelf-title1",
+      "__fold__",
+      "flex-layout.row#shelf1",
+      "flex-layout.row#full-banner-desktop2",
+      "flex-layout.row#shelf-title2",
+      "flex-layout.row#shelf2",
+      "flex-layout.row#full-banner-desktop3",
+      "flex-layout.row#shelf-title3",
+      "flex-layout.row#shelf3",
+      // "flex-layout.row#shelf-banner-desktop",
+      "flex-layout.row#shelf-title4",
+      "flex-layout.row#shelf4",
+      "flex-layout.row#full-banner-desktop4"
+    ],
+    "title": "Home - Desktop"
+  },
+  "flex-layout.row#shelf-title1": {
+    "children": ["rich-text#shelf-title1"],
+    "props": {
+      "blockClass": ["shelf-title"]
+    },
+    "title": "Home - Prateleira 1 - Título"
+  },
+  "rich-text#shelf-title1": {
+    "props": {
+      "text": "## Promoções muito especiais",
+      "blockClass": ["shelfTitle", "shelfTitle-1"]
+    },
+    "title": "Prateleira 1 - Título"
+  },
+  "flex-layout.row#shelf1": {
+    "children": ["list-context.product-list#demo1"],
+    "props": {
+      "blockClass": "shelf",
+      "paddingBottom": 6
+    },
+    "title": "Home - Prateleira 1"
+  },
+  "list-context.product-list#demo1": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByNameASC",
+      "category": "2500000",
+      "maxItems": 15
+    },
+    "title": "Prateleira 1 - Produtos"
+  },
+  "slider-layout#demo-products": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 2,
+        "phone": 1
+      },
+      "centerMode": "to-the-left",
+      // "centerMode": {
+      //   "desktop": "center",
+      //   "mobile": "to-the-left"
+      // },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "desktopOnly"
+    },
+    "title": "Prateleira - Slider"
+  },
+  "flex-layout.row#shelf-title2": {
+    "children": ["rich-text#shelf-title2"],
+    "props": {
+      "blockClass": ["shelf-title"]
+    },
+    "title": "Home - Prateleira 2 - Título"
+  },
+  "rich-text#shelf-title2": {
+    "props": {
+      "text": "## Descontos da semana",
+      "blockClass": ["shelfTitle", "shelfTitle-2"]
+    },
+    "title": "Prateleira 2 - Título"
+  },
+  "flex-layout.row#shelf2": {
+    "props": {
+      "paddingBottom": 6,
+      "blockClass": "shelf"
+    },
+    "children": ["list-context.product-list#demo2"],
+    "title": "Home - Prateleira 2"
+  },
+  "list-context.product-list#demo2": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByBestDiscountDESC",
+      "category": "3",
+      "maxItems": 15
+    },
+    "title": "Prateleira 2 - Produtos"
+  },
+  "flex-layout.row#shelf-title3": {
+    "children": ["rich-text#shelf-title3"],
+    "props": {
+      "blockClass": ["shelf-title"]
+    },
+    "title": "Home - Prateleira 3 - Título"
+  },
+  "rich-text#shelf-title3": {
+    "props": {
+      "text": "## Mais vendidos",
+      "blockClass": ["shelfTitle", "shelfTitle-2"]
+    },
+    "title": "Prateleira 3 - Título"
+  },
+  "flex-layout.row#shelf3": {
+    "props": {
+      "paddingBottom": 6,
+      "blockClass": "shelf"
+    },
+    "children": ["list-context.product-list#demo3"],
+    "title": "Home - Prateleira 3"
+  },
+  "list-context.product-list#demo3": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "maxItems": 15
+    },
+    "title": "Prateleira 3 - Produtos"
+  },
+  "flex-layout.row#shelf-title4": {
+    "children": ["rich-text#shelf-title4"],
+    "props": {
+      "blockClass": ["shelf-title"]
+    },
+    "title": "Home - Prateleira 4 - Título"
+  },
+  "rich-text#shelf-title4": {
+    "props": {
+      "text": "## Lançamentos",
+      "blockClass": ["shelfTitle", "shelfTitle-2"]
+    },
+    "title": "Prateleira 4 - Título"
+  },
+  "flex-layout.row#shelf4": {
+    "props": {
+      "paddingBottom": 6,
+      "blockClass": "shelf"
+    },
+    "children": ["list-context.product-list#demo4"],
+    "title": "Home - Prateleira 4"
+  },
+  "list-context.product-list#demo4": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByReleaseDateDESC",
+      "maxItems": 15
+    },
+    "title": "Prateleira 4 - Produtos"
+  }/* ,
+  "slider-layout#demo-products2": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always"
+    },
+    "title": "Prateleira 2 - Slider"
+  } */
 }

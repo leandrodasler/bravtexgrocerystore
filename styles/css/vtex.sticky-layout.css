@@ -8,8 +8,8 @@
     display: none;
   }
 } */
-.container :global(.vtex-button):hover,
+/* .container :global(.vtex-button):hover,
 .container :global(.vtex-button):active,
 .container :global(.vtex-button):focus {
   background-color: #eee;
-}
+} */

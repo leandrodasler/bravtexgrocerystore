@@ -1,57 +1,14 @@
-.caretIcon--pdp-related-shelf {
-	color: var(--color-primary);
-	width: 12px;
-	height: 12px;
-}
-:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .sliderContainer--pdp-related-shelf .arrow {
-	background: #ffffff;
-	width: 32px;
-	height: 32px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-	border-radius: 50%;
-	padding: 10px;
-}
-.sliderContainer--pdp-related-shelf {
-	padding: 0 50px;
-}
-.slide--pdp-related-shelf {
-	padding: 24px;
-}
-@media only screen and (max-width: 640px) {
-	.sliderContainer--pdp-related-shelf {
-		padding: 0;
-	}
-	.slide--pdp-related-shelf {
-		padding: 0;
-	}
-	.slide--pdp-related-shelf {
-		border-right: 1px solid #f1efed;
-	}
-	.slide--pdp-related-shelf:nth-child(even) {
-		border-right: none;
-	}
-	:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container)
-		.sliderContainer--pdp-related-shelf
-		.arrowLeft--pdp-related-shelf {
-		width: 21px;
-		padding: 0px;
-		top: 37%;
-		left: -1%;
-		height: 21px;
-		justify-content: center;
-		align-items: center;
-	}
-	:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container)
-		.sliderContainer--pdp-related-shelf
-		.arrowRight--pdp-related-shelf {
-		width: 21px;
-		padding: 0px;
-		top: 37%;
-		right: -1%;
-		height: 21px;
-		justify-content: center;
-		align-items: center;
-	}
+.arrow {
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  align-items: center;
+  color: var(--color-primary);
 }
 
 .sliderContainer--pdp-related-products {
@@ -63,7 +20,7 @@
   justify-content: flex-start;
   margin-left: 42px;
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 300;
   line-height: 52px;
   color: var(--color-primary);
 }
@@ -75,17 +32,7 @@
   margin-left: 16px;
 }
 
-.sliderContainer--pdp-related-products :global(.vtex-product-summary-2-x-brandName--shelfName) {
-  line-height: 150% !important;
-  color: #000000 !important;
-}
-
-.sliderContainer--pdp-related-products :global(.vtex-flex-layout-0-x-flexCol--pdp-selling-and-list-price-container) {
-  margin: 24px 0;
-}
-
 .sliderContainer--pdp-related-products :global(.vtex-product-price-1-x-sellingPrice--summary) {
-  color: var(--color-primary) !important;
   display: inline-block;
   margin-top: 0;
 }

@@ -6,16 +6,16 @@
 		"props": {
 			"blockClass": "main-wishlist-title-container"
 		},
-		"children": ["flex-layout.col#title"]
+		"children": ["flex-layout.col#title-wishlist"]
 	},
-	"flex-layout.col#title": {
-		"children": ["rich-text#title"],
+	"flex-layout.col#title-wishlist": {
+		"children": ["rich-text#title-wishlist"],
 		"props": {
 			"blockClass": "titleWishlist",
 			"preventVerticalStretch": true
 		}
 	},
-	"rich-text#title": {
+	"rich-text#title-wishlist": {
 		"props": {
 			"blockClass": "wishlist-title-text",
 			"text": "### Wishlist"

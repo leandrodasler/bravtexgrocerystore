@@ -2,8 +2,8 @@
   "flex-layout.row#deals": {
     "children": ["slider-layout#deals"],
     "props": {
-      "blockClass": "deals",
-	  "marginTop": 6
+      "blockClass": ["deals"],
+      "paddingTop": 6
     },
     "title": "Régua de Vantagens"
   },
@@ -20,7 +20,13 @@
       "showPaginationDots": "never",
       "blockClass": "deals"
     },
-    "children": ["flex-layout.col#deals1", "flex-layout.col#deals2", "flex-layout.col#deals3", "flex-layout.col#deals4", "flex-layout.col#deals5"]
+    "children": [
+      "flex-layout.col#deals1",
+      "flex-layout.col#deals2",
+      "flex-layout.col#deals3",
+      "flex-layout.col#deals4",
+      "flex-layout.col#deals5"
+    ]
   },
 
   "flex-layout.col#deals1": {
@@ -58,5 +64,4 @@
     },
     "title": "Régua de Vantagens - Item 5"
   }
-
 }

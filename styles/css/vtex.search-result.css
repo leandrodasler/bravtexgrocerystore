@@ -57,15 +57,6 @@
 .gallery--search-gallery {
 	padding-left: 28px;
 }
-.galleryItem--search-gallery {
-	background: #ffffff;
-	border: 1px solid #dadedc;
-	box-sizing: border-box;
-	border-radius: 6px;
-	margin: 4px;
-	max-width: calc(20% - 8px) !important;
-	height: 360px;
-}
 :global(.vtex-flex-layout-0-x-flexColChild--switcher-orderByCol) .orderByButton {
 	padding: 0.5rem 4px 0 0;
 	background: none;
@@ -272,11 +263,6 @@
 		padding: 8px;
 	}
 }
-@media only screen and (max-width: var(--container-max-width)) {
-	.galleryItem--search-gallery {
-		max-width: calc(25% - 8px) !important;
-	}
-}
 @media only screen and (max-width: 1439px) {
 	.notFound--layout--departament-desktop,
 	.searchResultContainer--departament-desktop {
@@ -375,8 +361,5 @@
 	}
 	.orderByOptionsContainer {
 		top: 36px;
-	}
-	.galleryItem--search-gallery {
-		max-width: calc(50% - 8px) !important;
 	}
 }

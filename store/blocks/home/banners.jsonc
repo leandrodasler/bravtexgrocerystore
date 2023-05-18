@@ -1,0 +1,176 @@
+{
+  "flex-layout.row#region-banner": {
+    "title": "Seção de Banners regionais",
+    "children": ["region-banner"],
+    "props": {
+      "blockClass": ["deals"],
+      "paddingTop": 6
+    }
+  },
+  "region-banner": {
+    "title": "Banners regionais",
+    "children": ["slider-layout#demo-images"],
+    "props": {
+      "height": 328,
+      "images": [
+        {
+          /* azeite oliveira */
+          "image": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/c3fc2170-8ce5-4693-a13f-eb334bce7b4f___3a727dc6245f192e22bb0bc2ec6ec141.png",
+          "mobileImage": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/294f0a6a-6e85-4392-a779-e2d495e13f93___c640fd4a8eaacad73385adc0b4958c3c.png",
+          "description": "Azeite Oliveira Leve 3 Pague 2",
+          "title": "Azeite Oliveira Leve 3 Pague 2",
+          "link": { "url": "/azeite-oliveira-extra-virgem-500ml/p" },
+          "franchises": "bravtexgrocerystore01"
+        },
+        {
+          /* chá ice tea 1 a 5 unidades por R$ 7,00 */
+          "image": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/e0cdbcd0-921a-42ee-b1bf-ff4a4550986d___9be5b33aa92e2e4d4f94d76b1d77237f.png",
+          "mobileImage": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/eea5e75a-ebfb-4b3b-b30f-0ed6988a7906___d28e094f6c68afcb0035c45127a018a4.png",
+          "description": "Chá Ice Tea Pêssego Lipton Zero Açúcar 1,5 Litros",
+          "title": "Chá Ice Tea Pêssego Lipton Zero Açúcar 1,5 Litros",
+          "link": { "url": "/cha-ice-tea-pessego-lipton-zero-acucar-1-5-litros-1009621/p" },
+          "franchises": "bravtexgrocerystore01"
+        },
+        {
+          /* chá ice tea 1 a 5 unidades por R$ 6,99 */
+          "image": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/cb6bfa61-63b7-4bf4-8f65-9371a8e1d01c___8f6a5e8b30478880c603d8f01e3a4f46.png",
+          "mobileImage": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/332db66b-78f9-49d6-81e2-6594022900d6___b7e1c0300a75b9d7d8ba24c8e71c07b6.png",
+          "description": "Chá Ice Tea Pêssego Lipton Zero Açúcar 1,5 Litros",
+          "title": "Chá Ice Tea Pêssego Lipton Zero Açúcar 1,5 Litros",
+          "link": { "url": "/cha-ice-tea-pessego-lipton-zero-acucar-1-5-litros-1009621/p" },
+          "franchises": "bravtexgrocerystore02"
+        },
+        {
+          /* bala 7 belo */
+          "image": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/9c0998e1-81a4-45f5-8dc2-7bd447ae79d8___390dd21631d91c759f4ac372f0817810.jpg",
+          "description": "Bala 7 Belo Arcor",
+          "title": "Bala 7 Belo Arcor",
+          "link": { "url": "/bala-7-belo-framboesa-600g-arcor/p" },
+          "franchises": "bravtexgrocerystore01"
+        },
+        {
+          /* biscoito globo */
+          "image": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/6127b6bb-2699-4ecd-a144-92bc368ebba2___34b5ab40c26acb1ce86dbee7aedf818d.jpg",
+          "description": "Biscoito Globo",
+          "title": "Biscoito Globo",
+          "link": { "url": "/biscoito-polvilho-salgado-globo-pacote-30-g-819298/p" },
+          "franchises": "bravtexgrocerystore02"
+        },
+        {
+          /* assinatura do pão quentinho */
+          "image": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/ada5fc8f-266e-4abd-93b2-c862c0148bce___94ca0e24d10f2327b4208afdb4557a10.jpg",
+          "description": "Assinatura de Pão Quentinho",
+          "title": "Assinatura de Pão Quentinho",
+          "link": { "url": "/assinatura-pao-quentinho/p" },
+          "franchises": ""
+        },
+        {
+          /* receita fettuccine alfredo */
+          "image": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/332f93c4-4b49-4144-8e32-7325f913c006___9db94af02842cf3531ff9039997ba919.jpg",
+          "description": "Receita Fettuccine Alfredo",
+          "title": "Receita Fettuccine Alfredo",
+          "link": { "url": "/receita-fettuccine-alfredo" },
+          "franchises": ""
+        }
+      ]
+    }
+  },
+  "slider-layout#demo-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "showPaginationDots": "never",
+      "blockClass": "carousel",
+      "autoplay": {
+        "timeout": 6000,
+        "stopOnHover": true
+      }
+    },
+    "title": "Home - Slider"
+  },
+  "flex-layout.row#full-banner-desktop1": {
+    "children": ["image#full-banner-desktop1"],
+    "props": {
+      "paddingBottom": 6,
+      "blockClass": ["shelf-banner"]
+    },
+    "title": "Full Banner 1"
+  },
+  "image#full-banner-desktop1": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/5c6db280-102f-48e4-8fa6-ad2baa7a1d62___d54cced9c6f8abd1c73e3065800c3360.jpg",
+      "blockClass": "banner-sales",
+      "alt": "Entregas Agendadas",
+      "title": "Entregas Agendadas",
+      "link": {
+        "url": "/"
+      }
+    },
+    "title": "Full Banner 1 - Imagem"
+  },
+  "flex-layout.row#full-banner-desktop2": {
+    "children": ["image#full-banner-desktop2"],
+    "props": {
+      "paddingBottom": 6,
+      "blockClass": ["shelf-banner"]
+    },
+    "title": "Full Banner 2"
+  },
+  "image#full-banner-desktop2": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/800d098e-569c-4a33-9892-103c2c6ff924___7514b36767b074d35805dcb13df9b9ed.png",
+      "blockClass": "banner-sales",
+      "alt": "Cartão VTEX Grocery",
+      "title": "Cartão VTEX Grocery",
+      "link": {
+        "url": "/cartao-vtex-grocery"
+      }
+    },
+    "title": "Full Banner 2 - Imagem"
+  },
+  "flex-layout.row#full-banner-desktop3": {
+    "children": ["image#full-banner-desktop3"],
+    "props": {
+      "paddingBottom": 6,
+      "blockClass": ["shelf-banner"]
+    },
+    "title": "Full Banner 3"
+  },
+  "image#full-banner-desktop3": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/8ccdc758-922a-4f77-85a4-fd617018cee1___1e622646b3fa7632400b3472abe1f3ec.jpg",
+      "blockClass": "banner-sales",
+      "alt": "Pagamentos por PIX",
+      "title": "Pagamentos por PIX",
+      "link": {
+        "url": "/"
+      }
+    },
+    "title": "Full Banner 3 - Imagem"
+  },
+  "flex-layout.row#full-banner-desktop4": {
+    "children": ["image#full-banner-desktop4"],
+    "props": {
+      "paddingBottom": 6,
+      "blockClass": ["shelf-banner"]
+    },
+    "title": "Full Banner 4"
+  },
+  "image#full-banner-desktop4": {
+    "props": {
+      "src": "https://bravtexgrocerystore.vtexassets.com/assets/vtex.file-manager-graphql/images/77483d1a-412d-4563-b763-07f223198d7f___05fbb626264b30402fa6da98b81dc61b.jpg",
+      "blockClass": "banner-sales",
+      "alt": "Frete Grátis",
+      "title": "Frete Grátis",
+      "link": {
+        "url": "/"
+      }
+    },
+    "title": "Full Banner 4 - Imagem"
+  }
+}

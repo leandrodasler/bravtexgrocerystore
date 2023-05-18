@@ -18,19 +18,19 @@
 	"product-selling-price": {
 		"props": {
 			"blockClass": "summary",
-			"message": "Por {sellingPriceValue}/ {measurementUnit}"
+			"message": "{sellingPriceValue}/ {measurementUnit}"
 		}
 	},
 	"product-selling-price#summary": {
 		"props": {
 			"blockClass": "summary",
-			"message": "Por {sellingPriceValue}/ {measurementUnit}"
+			"message": "{sellingPriceValue}/ {measurementUnit}"
 		}
 	},
 	"product-list-price#summary": {
 		"props": {
 			"blockClass": "list-price",
-			"message": "De {listPriceValue}"
+			"message": "{listPriceValue}"
 		}
 	},
 	"flex-layout.row#list-price-savings": {

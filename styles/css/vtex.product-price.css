@@ -1,157 +1,107 @@
-.listPrice {
-	color: #727273;
-	margin-bottom: 0.25rem;
-	font-size: 1rem;
-}
-.sellingPrice {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
-	color: var(--color-primary);
-}
 .sellingPriceValue {
-	font-size: 2.25rem;
-	font-weight: 700;
-	margin-right: 4px;
+  font-size: 2.25rem;
+  font-weight: 300;
+  margin-right: 4px;
 }
 .installments {
-	color: var(--color-primary);
-	margin-bottom: 1rem;
+  color: var(--color-primary);
+  margin-bottom: 1rem;
 }
 .savings {
-	font-weight: 500;
-	color: var(--color-primary);
+  font-weight: 500;
+  color: var(--color-primary);
 }
 
 .sellingPrice--summary {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
-	color: #36403b;
-	margin-top: 500px;
+  color: #36403b;
 }
 .sellingPriceValue--summary,
 .currencyContainer--main-sell-summary {
-	font-weight: 700;
-	font-size: 22px;
-	line-height: 20px;
-	color: var(--color-primary);
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 1.25;
+  color: var(--color-primary);
 }
 .savings--summary {
-	background: var(--color-primary);
-	border-radius: 1000px;
-	align-items: center;
-	display: flex;
+  background: var(--color-primary);
+  border-radius: 1000px;
+  align-items: center;
+  display: flex;
 }
 .savings-discount--summary {
-	font-size: 0.875rem;
-	font-weight: 600;
-	vertical-align: baseline;
-	color: #ffffff;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-}
-.listPrice--summary {
-	margin-bottom: 0.25rem;
-	font-size: 0.875rem;
-}
-.installments--summary {
-	margin-bottom: 2rem;
-	font-size: 0.875rem;
-}
-.sellingPrice--main-sell-summary {
-	margin-top: 18px;
-}
-.sellingPrice--main-sell-summary--hasListPrice {
-	color: var(--color-primary);
-	font-size: 15px;
-	font-weight: 800;
-	margin-top: 0px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  vertical-align: baseline;
+  color: #ffffff;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .listPrice {
-	font-weight: 400 !important;
-	font-size: 12px !important;
-	line-height: 16px;
-	letter-spacing: 0.015em;
-	color: #aab0ad !important;
+  color: #aab0ad;
 }
-.currencyContainer--list-price {
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 16px;
-	letter-spacing: 0.015em;
-	text-decoration-line: line-through;
-	color: #aab0ad !important;
+.listPrice--summary {
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+.installments--summary {
+  margin-bottom: 2rem;
+  font-size: 0.875rem;
+}
+.sellingPrice--main-sell-summary {
+  margin-top: 18px;
+}
+.sellingPrice--main-sell-summary--hasListPrice {
+  color: var(--color-primary);
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 0px;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .sellingPriceValue {
-	color: var(--color-primary);
-	font-size: 36px;
-	font-weight: 800;
-	line-height: 52px;
-}
-:global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .listPrice--list-price {
-	color: #aab0ad;
-	font-size: 14px;
-	font-weight: 800;
-	text-decoration: line-through;
-	text-decoration-color: #666360;
-	text-decoration-thickness: 2px;
+  color: var(--color-primary);
+  font-size: 36px;
+  font-weight: 300;
 }
 :global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .sellingPriceValue {
-	color: #c11638;
-	font-size: 28px;
-	font-weight: 800;
-}
-:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .listPrice--list-price,
-:global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf) .listPrice--list-price {
-	font-size: 15px;
-	font-weight: bold;
-	color: #aab0ad;
-	line-height: 32px;
-	text-decoration: line-through;
-	text-decoration-color: #666360;
-	text-decoration-thickness: 2px;
+  color: #c11638;
+  font-size: 28px;
+  font-weight: 300;
 }
 :global(.vtex-flex-layout-0-x-flexColChild--product-info) .listPrice {
-	font-size: 14px;
-}
-:global(.vtex-flex-layout-0-x-flexColChild--product-info) .sellingPriceValue {
-	font-weight: bold;
-	font-size: 16px;
+  font-size: 14px;
 }
 :global(.vtex-flex-layout-0-x-flexRow--search-byggy) .currencyContainer--summary {
-	font-size: 14px;
-	line-height: 20px;
-	color: var(--color-primary);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-primary);
 }
 .sellingPriceValue--main-sell-summary {
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 20px;
-	color: var(--color-primary);
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-primary);
 }
 /*tablet*/
 @media only screen and (max-width: calc(64rem - 1px)) {
-	.listPrice,
-	.sellingPrice--main-sell-summary {
-		font-size: 14px;
-	}
-	.sellingPriceValue--summary {
-		font-size: 19px;
-	}
+  .listPrice,
+  .sellingPrice--main-sell-summary {
+    font-size: 14px;
+  }
+  .sellingPriceValue--summary {
+    font-size: 19px;
+  }
 }
 /*mobile*/
 @media only screen and (max-width: 640px) {
-	:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .sellingPriceValue {
-		font-size: 19px;
-		line-height: 20px;
-	}
-	:global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .listPrice--list-price {
-		font-size: 12px;
-		line-height: 20px;
-	}
-	.listPrice,
-	.sellingPrice--main-sell-summary {
-		font-size: 12px;
-	}
+  :global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .sellingPriceValue {
+    font-size: 19px;
+    line-height: 20px;
+  }
+  :global(.vtex-flex-layout-0-x-flexRow--shelf-pdp-container) .listPrice--list-price {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .listPrice,
+  .sellingPrice--main-sell-summary {
+    font-size: 12px;
+  }
 }

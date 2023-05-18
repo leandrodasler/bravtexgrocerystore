@@ -1,40 +1,34 @@
-{
-	"responsive-layout.phone#home": {
-		"children": [
-			"region-banner",
-			// "list-context.image-list#demo",
-			"flex-layout.row#deals",
-			"flex-layout.row#category-cards",
-			"flex-layout.row#shelf-banner-mobile",
-			"flex-layout.row#shelf-title1",
-			"flex-layout.row#shelf1-mobile",
-			"flex-layout.row#shelf-title2",
-			"flex-layout.row#shelf2"
-		],
-		"title": "Home - Phone"
-	},
-	
-	"flex-layout.row#shelf1-mobile": {
-		"children": ["flex-layout.col#shelf"],
-		"props": {
-			"blockClass": ["home-shelf-1"]
-		},
-		"title": "Home - Prateleira 1"
-	},
+{}
+// {
+//   "responsive-layout.phone#home": {
+//     "children": [
+//       "flex-layout.row#region-banner",
+//       "flex-layout.row#deals",
+//       "flex-layout.row#category-cards",
+//       "flex-layout.row#shelf-banner-mobile",
+//       "flex-layout.row#shelf-title1",
+//       "flex-layout.row#shelf1",
+//       "flex-layout.row#shelf-title2",
+//       "flex-layout.row#shelf2"
+//     ],
+//     "title": "Home - Phone"
+//   },
 
-	"flex-layout.row#shelf-banner-mobile": {
-		"children": ["image#shelf-banner-mobile"],
-		"props": {
-			"width": "25%",
-			"blockClass": ["shelf-banner"]
-		},
-		"title": "Prateleira 1 - Banner"
-	},
-	"image#shelf-banner-mobile": {
-		"props": {
-			"src": "https://bravtexgrocerystore.vtexassets.com/arquivos/Cart%C3%A3o-Mobile.png",
-			"blockClass": "banner-sales",
-			"link": "/"
-		}
-	}
-}
+//   "flex-layout.row#shelf-banner-mobile": {
+//     "children": ["image#shelf-banner-mobile"],
+//     "props": {
+//       "width": "25%",
+//       "blockClass": ["shelf-banner"]
+//     },
+//     "title": "Prateleira 1 - Banner"
+//   },
+//   "image#shelf-banner-mobile": {
+//     "props": {
+//       "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/Cart%C3%A3o-Mobile.png",
+//       "blockClass": "banner-sales",
+//       "link": {
+//         "url": "/"
+//       }
+//     }
+//   }
+// }

@@ -2,7 +2,7 @@
   "store.storelocator": {
     "blocks": [
       "flex-layout.row#title",
-      "flex-layout.row#shelf-banner-desktop",
+      "flex-layout.row#full-banner-desktop1",
       "flex-layout.row#container"
     ]
   },

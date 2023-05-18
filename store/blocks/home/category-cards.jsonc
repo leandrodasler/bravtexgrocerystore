@@ -2,9 +2,9 @@
   "flex-layout.row#category-cards": {
     "children": ["slider-layout#category-cards"],
     "props": {
-      "blockClass": "category-cards",
-	  "marginTop": 8,
-      "marginBottom": 6
+      "blockClass": ["category-cards"],
+      "paddingTop": 8,
+      "paddingBottom": 6
     },
     "title": "Cards das categorias"
   },
@@ -16,8 +16,12 @@
         "tablet": 4,
         "phone": 2
       },
+      "centerMode": {
+        "desktop": "disabled",
+        "mobile": "to-the-left"
+      },
       "infinite": true,
-      "showNavigationArrows": "mobileOnly",
+      "showNavigationArrows": "never",
       "showPaginationDots": "never",
       "blockClass": "category-cards"
     },
@@ -119,14 +123,14 @@
       "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/category-eletrodomesticos.svg",
       "link": {
         "title": "Eletrodomésticos",
-        "url": "/eletrodomesticos"
+        "url": "/Eletrodomesticos"
       }
     },
     "title": "Card 3 - Imagem"
   },
   "rich-text#category-cards-3": {
     "props": {
-      "text": "[Eletrodomésticos](/eletrodomesticos)",
+      "text": "[Eletrodomésticos](/Eletrodomesticos)",
       "blockClass": "category-cards"
     },
     "title": "Card 3 - Texto"
@@ -136,14 +140,14 @@
       "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/category-pets.svg",
       "link": {
         "title": "Pets",
-        "url": "/pets"
+        "url": "/Pet-Shop"
       }
     },
     "title": "Card 4 - Imagem"
   },
   "rich-text#category-cards-4": {
     "props": {
-      "text": "[Pets](/pets)",
+      "text": "[Pets](/Pet-Shop)",
       "blockClass": "category-cards"
     },
     "title": "Card 4 - Texto"
@@ -170,32 +174,31 @@
       "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/category-azeites.svg",
       "link": {
         "title": "Azeites",
-        "url": "/azeites"
+        "url": "/mercearia/azeite-oleo-e-vinagre/azeites"
       }
     },
     "title": "Card 6 - Imagem"
   },
   "rich-text#category-cards-6": {
     "props": {
-      "text": "[Azeites](/azeites)",
+      "text": "[Azeites](/mercearia/azeite-oleo-e-vinagre/azeites)",
       "blockClass": "category-cards"
     },
     "title": "Card 6 - Texto"
-  }
-  ,
+  },
   "image#category-cards-7": {
     "props": {
       "src": "https://bravtexgrocerystore.vtexassets.com/arquivos/category-cafes.svg",
       "link": {
         "title": "Cafés",
-        "url": "/cafes"
+        "url": "/mercearia/cafes-chas-e-achocolatados/cafes"
       }
     },
     "title": "Card 7 - Imagem"
   },
   "rich-text#category-cards-7": {
     "props": {
-      "text": "[Cafés](/cafes)",
+      "text": "[Cafés](/mercearia/cafes-chas-e-achocolatados/cafes)",
       "blockClass": "category-cards"
     },
     "title": "Card 7 - Texto"
