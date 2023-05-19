@@ -1,3 +1,13 @@
 /* .modalContainer {
   margin: 0.5rem 0;
 } */
+.containerInfo {
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.containerInfo .currencyContainer {
+  color: var(--color-primary);
+  font-size: 22px;
+  font-weight: 300;
+}

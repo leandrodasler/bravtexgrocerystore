@@ -15,11 +15,11 @@
       "flex-layout.row#shelf1",
       "flex-layout.row#full-banner-desktop2",
       "flex-layout.row#shelf-title2",
-      "__fold__",
+      // "__fold__",
       "flex-layout.row#shelf2",
       "flex-layout.row#full-banner-desktop3",
       "flex-layout.row#shelf-title3",
-      "__fold__",
+      // "__fold__",
       "flex-layout.row#shelf3",
       "flex-layout.row#half-banners-1",
       "flex-layout.row#half-banners-2",
@@ -171,6 +171,7 @@
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByReleaseDateDESC",
+      // "category": "2/3791/10041", // chás prontos
       "maxItems": 15
     },
     "title": "Prateleira 4 - Produtos"

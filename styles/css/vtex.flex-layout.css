@@ -385,7 +385,7 @@
 }
 .flexCol--pdp-selling-and-list-price-container {
   padding: 1rem 0;
-  justify-content: end;
+  justify-content: center;
 }
 .flexColChild--pdp-selling-and-list-price-container {
   height: auto !important;
