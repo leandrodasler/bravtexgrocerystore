@@ -1,6 +1,10 @@
 /* .modalContainer {
   margin: 0.5rem 0;
 } */
+.container {
+  margin-top: 1rem;
+}
+
 .containerInfo {
   border-radius: 4px;
   margin-top: 1rem;
