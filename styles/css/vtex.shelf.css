@@ -18,7 +18,7 @@
 
 .title--pdp-related-products {
   justify-content: flex-start;
-  margin-left: 42px;
+  padding-left: 42px;
   font-size: 32px;
   font-weight: 300;
   line-height: 52px;
