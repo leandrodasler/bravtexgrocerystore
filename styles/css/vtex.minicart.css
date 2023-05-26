@@ -31,8 +31,8 @@
   padding: 12px 0;
 }
 .minicartQuantityBadgeDefault {
-  top: -20px;
-  right: 0;
+  top: -20px !important;
+  right: 0 !important;
 }
 @media only screen and (max-width: 640px) {
   .openIconContainer {
