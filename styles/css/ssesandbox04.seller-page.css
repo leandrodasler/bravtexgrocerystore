@@ -1,0 +1,14 @@
+.sellerLink {
+  text-decoration: none;
+}
+
+.sellerLink--sellers-page {
+  width: 20%;
+}
+.sellerLink--sellers-page :global(.vtex-seller-selector-0-x-sellerName) {
+  width: 100%;
+}
+
+.priceContainer {
+  padding: 1rem 0;
+}

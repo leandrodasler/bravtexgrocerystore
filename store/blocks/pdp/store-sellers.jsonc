@@ -43,9 +43,15 @@
     "children": ["seller-row"]
   },
   "seller-row": {
-    "children": ["seller-name", "seller-price", "seller-shipping", "seller-price-with-shipping", "seller-add-to-cart"]
+    "children": ["seller-page-link#sellers-page", "seller-price", "seller-shipping", "seller-price-with-shipping", "seller-add-to-cart"]
   },
   "seller-add-to-cart": {
     "blocks": ["add-to-cart-button"]
-  }
+  },
+  "seller-page-link#sellers-page": {
+    "props": {
+			"blockClass": "sellers-page"
+		},
+		"children": ["seller-name"]
+	}
 }

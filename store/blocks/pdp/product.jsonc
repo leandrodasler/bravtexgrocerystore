@@ -153,7 +153,7 @@
 			"flex-layout.row#product-name",
 			"product-identifier.product",
 			"sku-selector",
-			"seller-text",
+			"seller-page-link",
 			"flex-layout.row#price-and-add-to-cart",
 			"link-seller",
 			"progressive-discount-table",
@@ -163,6 +163,9 @@
 			"flex-layout.col#shipping-product"
 		],
 		"title": "Informações do Produto"
+	},
+	"seller-page-link": {
+		"children": ["seller-text"]
 	},
 	"flex-layout.row#price-and-add-to-cart": {
 		"props": {
