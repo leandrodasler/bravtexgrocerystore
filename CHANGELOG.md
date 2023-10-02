@@ -203,7 +203,3 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Colors, logo;
 ## [0.1.0] - 2021-02-08
-
-### Added
-
-- Cloning giga-theme.

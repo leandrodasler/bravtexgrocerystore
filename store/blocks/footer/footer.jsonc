@@ -141,7 +141,7 @@
 	"image#logo-footer": {
 		"props": {
 			"src": "",
-			"blockClass": "logo-giga-footer"
+			"blockClass": "logo-footer"
 		},
 		"title": "Footer logo"
 	},

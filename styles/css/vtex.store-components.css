@@ -91,7 +91,7 @@
 :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) .imageElement--static-img {
   padding: 20px 0 30px 0;
 }
-.imageElement--logo-giga-footer {
+.imageElement--logo-footer {
   max-width: 38px;
   max-height: 32px;
 }
@@ -531,7 +531,7 @@
     margin: 0;
     width: 100%;
   }
-  .imageElement--logo-giga-footer {
+  .imageElement--logo-footer {
     margin-top: 18px;
   }
   .imageElement--image--newsletter {
@@ -558,7 +558,7 @@
   .newsletter-input-phone--input {
     margin-top: 8px;
   }
-  .imageElement--logo-giga-footer {
+  .imageElement--logo-footer {
     margin-top: 1rem;
   }
 }

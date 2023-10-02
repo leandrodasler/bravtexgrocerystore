@@ -63,7 +63,7 @@
 	width: 24px;
 	height: 24px;
 	margin-right: 8px;
-	background-image: url('https://gigadigital.vteximg.com.br/arquivos/User2.png');
+	background-image: url('https://bravtexgrocerystore.vteximg.com.br/arquivos/User2.png');
 }
 .menuLinks
 	> div
@@ -73,7 +73,7 @@
 	width: 24px;
 	height: 24px;
 	margin-right: 8px;
-	background-image: url('https://gigadigital.vteximg.com.br/arquivos/User.png');
+	background-image: url('https://bravtexgrocerystore.vteximg.com.br/arquivos/User.png');
 }
 .menuLinks
 	> div
@@ -1396,7 +1396,7 @@ span[class*='vtex-my-orders-app-3-x-orderProductQuantityValue']
 		button[class*='vtex-my-orders-app-3-x-reorderBtn']
 		span[class*='vtex-my-orders-app-3-x-font']::before {
 		content: '';
-		background-image: url('https://gigadigital.vteximg.com.br/arquivos/Rotate Clockwise.png');
+		background-image: url('https://bravtexgrocerystore.vteximg.com.br/arquivos/Rotate Clockwise.png');
 		background-repeat: no-repeat;
 		width: 24px;
 		height: 24px;
@@ -1497,7 +1497,7 @@ span[class*='vtex-my-orders-app-3-x-orderProductQuantityValue']
 	}
 	main[class*='vtex-account__order-details'] a[class*='f6 link underline c-link hover-c-link relative']::before {
 		content: '';
-		background-image: url('https://gigadigital.vteximg.com.br/arquivos/Rotate Clockwise.png');
+		background-image: url('https://bravtexgrocerystore.vteximg.com.br/arquivos/Rotate Clockwise.png');
 		background-repeat: no-repeat;
 		width: 24px;
 		height: 24px;
