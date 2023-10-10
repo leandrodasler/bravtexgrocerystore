@@ -7,7 +7,7 @@
 }
 .container :global(.vtex-button__label):before {
   content: '';
-  background-image: url('https://bravtexgrocerystore.vtexassets.com/arquivos/user.png');
+  background-image: url('https://bravtexgrocerystore.vtexassets.com/arquivos/user-rebel-pink.png');
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: contain;
