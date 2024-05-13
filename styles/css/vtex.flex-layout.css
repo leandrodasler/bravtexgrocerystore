@@ -220,7 +220,7 @@
   padding: 1rem;
 }
 .flexCol--productSpecificationValue {
-  padding: 1rem 1rem 1rem 0;
+  padding: 1rem;
 }
 .flexRow--productSpecification:nth-child(even) {
   background-color: #f9f9f9;

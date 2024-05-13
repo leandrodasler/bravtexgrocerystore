@@ -77,10 +77,13 @@
 	"disclosure-layout-group#pdp": {
 		"children": ["disclosure-layout#description", "disclosure-layout#specifications", "disclosure-layout#rating"],
 		"props": {
-			"maxVisible": "one"
+			"maxVisible": "many"
 		}
 	},
 	"disclosure-layout#description": {
+		"props": {
+			"initialVisibility": "visible"
+		},
 		"children": ["disclosure-trigger#description", "disclosure-content#description"]
 	},
 	"disclosure-trigger#description": {
@@ -91,10 +94,13 @@
 	},
 	  "rich-text#questiondescription": {
 		"props": {
-		  "text": "Descrição do Produto"
+		  "text": "**Descrição do Produto**"
 		}
 	},
 	"disclosure-layout#specifications": {
+		"props": {
+			"initialVisibility": "visible"
+		},
 		"children": ["disclosure-trigger#specifications", "disclosure-content#specifications"]
 	},
 	"disclosure-trigger#specifications": {
@@ -105,7 +111,7 @@
 	},
 	  "rich-text#questionspecifications": {
 		"props": {
-		  "text": "Especificações Técnicas"
+		  "text": "**Especificações Técnicas**"
 		}
 	},
 	"disclosure-layout#rating": {
@@ -119,7 +125,7 @@
 	},
 	  "rich-text#questionrating": {
 		"props": {
-		  "text": "Avaliações"
+		  "text": "**Avaliações**"
 		}
 	},
 

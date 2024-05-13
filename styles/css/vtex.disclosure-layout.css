@@ -46,7 +46,9 @@
 	color: #142032;
 }
 
-
+.trigger :global(.vtex-rich-text-0-x-strong) {
+  font-size: 1.2rem;
+}
 
 .trigger--hidden {
 	border-bottom: 1px solid #CCCED8;

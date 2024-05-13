@@ -1,11 +1,26 @@
-.groupName {
-  font-size: 1.25rem;
-}
-
 .specificationName {
   font-weight: bold;
 }
 
-.specificationValue {
-	margin-left: 1rem;
+.specificationValue :local(table) {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.specificationValue :local(table) :local(td:not([align])),
+.specificationValue :local(table) :local(th:not([align])) {
+  text-align: left;
+}
+
+.specificationValue :local(table) :local(td),
+.specificationValue :local(table) :local(th),
+.specificationValue :local(table) :local(caption) {
+  border-bottom: 1px solid #ccc;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.specificationValue :local(table) :local(caption) {
+  padding-top: 0;
 }

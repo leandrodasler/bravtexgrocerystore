@@ -42,6 +42,7 @@
   },
   "flex-layout.col#spec-name": {
     "props": {
+      "verticalAlign": "middle",
       "blockClass": "productSpecificationName",
       "width": {
         "mobile": "50%",

@@ -266,6 +266,10 @@
   width: 100%;
 }
 
+.productDescriptionText {
+  color: inherit !important;
+}
+
 @media (min-width: 64rem) {
   :global(.vtex-flex-layout-0-x-flexColChild--product-info-content) :global(.vtex-disclosure-layout-1-x-trigger) {
     width: 445px;
