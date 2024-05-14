@@ -1,7 +1,7 @@
 {
   "vendor": "bravtexgrocerystore",
   "name": "bravtexgrocerystore-theme",
-  "version": "4.0.2",
+  "version": "4.0.3",
   "builders": {
     "styles": "2.x",
     "store": "0.x",
