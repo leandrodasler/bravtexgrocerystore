@@ -4,7 +4,6 @@
     "children": ["recommendation-shelf#similar-items"],
     "props": {
       "paddingTop": "8",
-      "blockClass": "recommendation-shelf-similar-items",
       "paddingRight": "4",
       "paddingLeft": "4",
       "paddingBottom": "4"
@@ -14,7 +13,8 @@
     "blocks": ["list-context.product-list-static"],
     "props": {
       "recommendationType": "SIMILAR_ITEMS",
-      "title": "Produtos Similares"
+      "title": "Produtos Similares",
+      "blockClass": "recommendation-shelf-similar-items"
     }
   },
   // Cross selling
@@ -22,7 +22,6 @@
     "children": ["recommendation-shelf#cross-selling"],
     "props": {
       "paddingTop": "8",
-      "blockClass": "recommendation-shelf-cross-selling",
       "paddingRight": "4",
       "paddingLeft": "4",
       "paddingBottom": "4"
@@ -32,7 +31,8 @@
     "blocks": ["list-context.product-list-static"],
     "props": {
       "recommendationType": "CROSS_SELL",
-      "title": "Produtos Complementares"
+      "title": "Produtos Complementares",
+      "blockClass": "recommendation-shelf-cross-selling"
     }
   },
   // Personalized recommendations
@@ -73,12 +73,8 @@
   },
   // Commons
   "list-context.product-list-static": {
-    "blocks": [
-      "product-summary.shelf#home"
-    ],
-    "children": [
-      "slider-layout#recommendation-slider"
-    ]
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#recommendation-slider"]
   },
   "slider-layout#recommendation-slider": {
     "props": {
