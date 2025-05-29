@@ -1,0 +1,20 @@
+.shelfTitle {
+  color: rgb(247, 25, 99);
+  font-size: 52px;
+  font-weight: 300;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.shelfTitleContainer {
+  text-align: left;
+  padding-bottom: 25px;
+}
+
+.shelfTitle--recommendation-shelf-similar-items {
+  font-size: 32px;
+}
+
+.shelfTitle--recommendation-shelf-cross-selling {
+  font-size: 32px;
+}

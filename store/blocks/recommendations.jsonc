@@ -1,0 +1,89 @@
+{
+  // Similar items
+  "flex-layout.row#recommendation-similar-items": {
+    "children": ["recommendation-shelf#similar-items"],
+    "props": {
+      "paddingTop": "8",
+      "paddingRight": "4",
+      "paddingLeft": "4",
+      "paddingBottom": "4"
+    }
+  },
+  "recommendation-shelf#similar-items": {
+    "blocks": ["list-context.product-list-static"],
+    "props": {
+      "recommendationType": "SIMILAR_ITEMS",
+      "title": "Produtos Similares",
+      "blockClass": "recommendation-shelf-similar-items"
+    }
+  },
+  // Cross selling
+  "flex-layout.row#recommendation-cross-selling": {
+    "children": ["recommendation-shelf#cross-selling"],
+    "props": {
+      "paddingTop": "8",
+      "paddingRight": "4",
+      "paddingLeft": "4",
+      "paddingBottom": "4"
+    }
+  },
+  "recommendation-shelf#cross-selling": {
+    "blocks": ["list-context.product-list-static"],
+    "props": {
+      "recommendationType": "CROSS_SELL",
+      "title": "Produtos Complementares",
+      "blockClass": "recommendation-shelf-cross-selling"
+    }
+  },
+  // Personalized recommendations
+  "flex-layout.row#recommendation-personalized": {
+    "children": ["recommendation-shelf#personalized"],
+    "props": {
+      "paddingTop": "8",
+      "blockClass": "recommendation-shelf-personalized",
+      "paddingRight": "4",
+      "paddingLeft": "4",
+      "paddingBottom": "4"
+    }
+  },
+  "recommendation-shelf#personalized": {
+    "blocks": ["list-context.product-list-static"],
+    "props": {
+      "recommendationType": "PERSONALIZED",
+      "title": "Para você"
+    }
+  },
+  // Last seen
+  "flex-layout.row#recommendation-last-seen": {
+    "children": ["recommendation-shelf#last-seen"],
+    "props": {
+      "paddingTop": "8",
+      "blockClass": "recommendation-shelf-last-seen",
+      "paddingRight": "4",
+      "paddingLeft": "4",
+      "paddingBottom": "4"
+    }
+  },
+  "recommendation-shelf#last-seen": {
+    "blocks": ["list-context.product-list-static"],
+    "props": {
+      "recommendationType": "LAST_SEEN",
+      "title": "Produtos Vistos"
+    }
+  },
+  // Commons
+  "list-context.product-list-static": {
+    "blocks": ["product-summary.shelf#home"],
+    "children": ["slider-layout#recommendation-slider"]
+  },
+  "slider-layout#recommendation-slider": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "infinite": true
+    }
+  }
+}
