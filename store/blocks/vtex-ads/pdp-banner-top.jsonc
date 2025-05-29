@@ -1,0 +1,54 @@
+{
+  /**
+   * Ads banner
+   */
+  "vtex-ads-banner#pdp-top": {
+    "title": "VTEX Ads - Product banner",
+    "props": {
+      "placementName": "pdp-top_banner",
+      "size": "super_leaderboard",
+      "sizeMobile": "smartphone_banner"
+    }
+  },
+
+  /**
+   * Responsive layout
+   */
+  "flex-layout.row#vtex-ads-pdp-top-banner.desktop": {
+    "children": ["vtex-ads-banner#pdp-top"],
+    "props": {
+      "paddingBottom": 4
+    }
+  },
+
+  "responsive-layout.desktop#vtex-ads-pdp-top-banner": {
+    "children": ["flex-layout.row#vtex-ads-pdp-top-banner.desktop"]
+  },
+
+  "flex-layout.row#vtex-ads-pdp-top-banner.mobile": {
+    "children": ["vtex-ads-banner#pdp-top"],
+    "props": {
+      "blockClass": "vtexads-banner-top-container",
+      "paddingBottom": 3
+    }
+  },
+
+  "responsive-layout.mobile#vtex-ads-pdp-top-banner": {
+    "children": ["flex-layout.row#vtex-ads-pdp-top-banner.mobile"]
+  },
+
+  /**
+   * export components
+   */
+
+  "flex-layout.col#vtex-ads-pdp-top-banner": {
+    "children": [
+      "responsive-layout.desktop#vtex-ads-pdp-top-banner",
+      "responsive-layout.mobile#vtex-ads-pdp-top-banner"
+    ]
+  },
+
+  "flex-layout.row#vtex-ads-pdp-top-banner": {
+    "children": ["flex-layout.col#vtex-ads-pdp-top-banner"]
+  }
+}
