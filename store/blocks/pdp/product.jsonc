@@ -7,10 +7,9 @@
       "flex-layout.row#vtex-ads-pdp-top-banner",
       "flex-layout.row#product-breadcrumb",
       "flex-layout.row#product-main",
-      "flex-layout.row#vtex-ads-pdp-products-footer",
-      "flex-layout.row#shelf-pdp-1",
-      "flex-layout.row#shelf-pdp-2",
-      "flex-layout.row#shelf-pdp-3"
+      "flex-layout.row#recommendation-similar-items",
+      "flex-layout.row#recommendation-cross-selling",
+      "flex-layout.row#vtex-ads-pdp-products-footer"
     ],
     "title": "PdP - Desktop"
   },
