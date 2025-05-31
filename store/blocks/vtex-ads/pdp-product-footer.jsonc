@@ -1,0 +1,80 @@
+{
+  /**
+   * Ads shelf
+   */
+  "vtex-ads-shelf#pdp-footer": {
+    "title": "VTEX Ads - Product shelf",
+    "blocks": ["list-context.product-list-static#vtex-ads"],
+    "props": {
+      "placementName": "site_pdp_footer_product"
+    }
+  },
+
+  /**
+   * Responsive layout
+   */
+
+  // Desktop
+  "flex-layout.col#vtex-ads-pdp-products-footer.desktop": {
+    "children": ["vtex-ads-shelf#pdp-footer"],
+    "props": {
+      "blockClass": ["new-home-shelf"],
+      "preventVerticalStretch": true,
+      "paddingLeft": 3,
+      "paddingRight": 3
+    }
+  },
+
+  "flex-layout.row#vtex-ads-pdp-products-footer.desktop": {
+    "children": ["flex-layout.col#vtex-ads-pdp-products-footer.desktop"],
+    "props": {
+      "blockClass": ["new-shelf-vtex-ads", "new-shelf-vtex-ads--desktop"],
+      "marginTop": 7
+    }
+  },
+
+  "responsive-layout.desktop#vtex-ads-pdp-products-footer": {
+    "children": ["flex-layout.row#vtex-ads-pdp-products-footer.desktop"]
+  },
+
+  // Mobile
+  "flex-layout.col#vtex-ads-pdp-products-footer.mobile": {
+    "children": ["vtex-ads-shelf#pdp-footer"],
+    "props": {
+      "blockClass": ["new-home-shelf"],
+      "preventVerticalStretch": true,
+      "paddingLeft": 5,
+      "paddingRight": 5
+    }
+  },
+
+  "flex-layout.row#vtex-ads-pdp-products-footer.mobile": {
+    "children": ["flex-layout.col#vtex-ads-pdp-products-footer.mobile"],
+    "props": {
+      "blockClass": ["new-shelf-vtex-ads"],
+      "marginTop": 7
+    }
+  },
+
+  "responsive-layout.mobile#vtex-ads-pdp-products-footer": {
+    "children": ["flex-layout.row#vtex-ads-pdp-products-footer.mobile"]
+  },
+
+  /**
+   * export components
+   */
+
+  "flex-layout.col#vtex-ads-pdp-products-footer": {
+    "children": [
+      "responsive-layout.desktop#vtex-ads-pdp-products-footer",
+      "responsive-layout.mobile#vtex-ads-pdp-products-footer"
+    ]
+  },
+
+  "flex-layout.row#vtex-ads-pdp-products-footer": {
+    "children": ["flex-layout.col#vtex-ads-pdp-products-footer"],
+    "props": {
+      "blockClass": ["background", "vtexads"]
+    }
+  }
+}

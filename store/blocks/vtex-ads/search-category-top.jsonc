@@ -1,0 +1,55 @@
+{
+  /**
+   * Ads banner
+   */
+  "vtex-ads-banner#search-hero": {
+    "title": "VTEX Ads - Product banner",
+    "props": {
+      "placementName": "site_search_top_banner",
+      "size": "super_leaderboard",
+      "sizeMobile": "smartphone_banner"
+    }
+  },
+
+  "vtex-ads-banner#search-top": {
+    "title": "VTEX Ads - Product banner",
+    "props": {
+      "placementName": "site_search_top_banner",
+      "size": "leaderboard",
+      "sizeMobile": "smartphone_banner"
+    }
+  },
+
+  "flex-layout.col#vtex-ads-search-top-banner": {
+    "children": ["vtex-ads-banner#search-top"],
+    "props": {
+      "blockClass": ["background"],
+      "paddingLeft": 7,
+      "paddingRight": 4
+    }
+  },
+
+  "flex-layout.col#vtex-ads-search-top-banner.mobile": {
+    "children": ["vtex-ads-banner#search-top"],
+    "props": {
+      "blockClass": ["background"],
+      "paddingLeft": 0,
+      "paddingRight": 0
+    }
+  },
+  /**
+   * export components
+   */
+  "flex-layout.row#vtex-ads-search-top-banner": {
+    "children": ["flex-layout.col#vtex-ads-search-top-banner"],
+    "props": {
+      "blockClass": ["background"]
+    }
+  },
+  "flex-layout.row#vtex-ads-search-top-banner.mobile": {
+    "children": ["flex-layout.col#vtex-ads-search-top-banner.mobile"],
+    "props": {
+      "blockClass": ["background"]
+    }
+  }
+}
