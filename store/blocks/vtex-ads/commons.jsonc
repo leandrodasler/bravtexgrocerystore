@@ -53,6 +53,12 @@
     "blocks": ["product-summary.shelf#product-card-custom-ads"],
     "children": ["slider-layout#vtex-ads-slider-shelf"],
     "title": "VTEX Ads - Product shelf - Wrapper context"
+  },
+  "list-context.product-list-static#vtex-ads-mini": {
+    // "blocks": ["product-summary.shelf#searchs"],
+    "blocks": ["product-summary.shelf#product-card-custom-ads-mini"],
+    "children": ["slider-layout#vtex-ads-slider-shelf"],
+    "title": "VTEX Ads - Product shelf - Wrapper context"
   }
 
   /**

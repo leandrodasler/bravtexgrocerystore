@@ -125,6 +125,20 @@
       "blockClass": ["product-card-custom"]
     }
   },
+  "product-summary.shelf#product-card-custom-ads-mini": {
+    "children": [
+      "vtex-ads-pixel-event",
+      "stack-layout#productsum",
+      "product-summary-name",
+      // "flex-layout.col#selling-and-list-price-plp",
+      // "progressive-discount-table",
+      // "flex-layout.row#add-btn-shelf-pdp-custom-component",
+      "rich-text#vtex-ads-sponsored-tag"
+    ],
+    "props": {
+      "blockClass": ["product-card-custom"]
+    }
+  },
   "stack-layout#productsum": {
     "children": ["product-summary-image", "product-bookmark"]
   },

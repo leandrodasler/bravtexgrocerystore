@@ -143,9 +143,10 @@
   },
   "flex-layout.col#products-search-page": {
     "children": [
-      "flex-layout.row#vtex-ads-search-top-banner",
+      "flex-layout.row#vtex-ads-search-top-sb",
       "flex-layout.row#search-page-searchinfo-corredor",
       "flex-layout.row#search-page-products-corredor",
+      "flex-layout.row#vtex-ads-search-top-banner",
       "flex-layout.row#fetchmore-search-page"
     ],
     "props": {
